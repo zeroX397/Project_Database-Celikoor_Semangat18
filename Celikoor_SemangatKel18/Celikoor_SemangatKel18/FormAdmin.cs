@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Celikoor_SemangatKel18
 {
-    public partial class FormAdmin : Form
+    public partial class FormLoginAdmin : Form
     {
-        public FormAdmin()
+        public FormLoginAdmin()
         {
             InitializeComponent();
         }

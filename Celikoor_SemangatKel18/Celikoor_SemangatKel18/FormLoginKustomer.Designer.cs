@@ -1,7 +1,7 @@
 ﻿
 namespace Celikoor_SemangatKel18
 {
-    partial class FormLoginKustomer
+    partial class FormLoginCustomer
     {
         /// <summary>
         /// Required designer variable.
@@ -81,7 +81,7 @@ namespace Celikoor_SemangatKel18
             // textBoxPassword
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(39, 12);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(250, 20);
             this.textBoxPassword.TabIndex = 6;
@@ -91,7 +91,7 @@ namespace Celikoor_SemangatKel18
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.InitialImage = null;
             this.pictureBox3.Location = new System.Drawing.Point(14, 8);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(21, 21);
             this.pictureBox3.TabIndex = 5;
@@ -102,7 +102,7 @@ namespace Celikoor_SemangatKel18
             this.panel2.Controls.Add(this.textBoxPassword);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Location = new System.Drawing.Point(258, 125);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(293, 37);
             this.panel2.TabIndex = 16;
@@ -110,7 +110,7 @@ namespace Celikoor_SemangatKel18
             // textBoxUsername
             // 
             this.textBoxUsername.Location = new System.Drawing.Point(39, 12);
-            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(250, 20);
             this.textBoxUsername.TabIndex = 6;
@@ -120,7 +120,7 @@ namespace Celikoor_SemangatKel18
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(14, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(21, 21);
             this.pictureBox1.TabIndex = 5;
@@ -131,7 +131,7 @@ namespace Celikoor_SemangatKel18
             this.button_KustomerLogin.BackColor = System.Drawing.Color.BurlyWood;
             this.button_KustomerLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button_KustomerLogin.Location = new System.Drawing.Point(461, 172);
-            this.button_KustomerLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_KustomerLogin.Margin = new System.Windows.Forms.Padding(2);
             this.button_KustomerLogin.Name = "button_KustomerLogin";
             this.button_KustomerLogin.Size = new System.Drawing.Size(85, 24);
             this.button_KustomerLogin.TabIndex = 17;
@@ -143,7 +143,7 @@ namespace Celikoor_SemangatKel18
             this.panel1.Controls.Add(this.textBoxUsername);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(258, 92);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(293, 37);
             this.panel1.TabIndex = 15;
@@ -154,7 +154,7 @@ namespace Celikoor_SemangatKel18
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.Location = new System.Drawing.Point(537, 8);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(27, 26);
             this.buttonExit.TabIndex = 12;
@@ -214,7 +214,7 @@ namespace Celikoor_SemangatKel18
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox2.InitialImage = null;
             this.pictureBox2.Location = new System.Drawing.Point(55, 34);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(80, 78);
             this.pictureBox2.TabIndex = 1;
@@ -242,12 +242,12 @@ namespace Celikoor_SemangatKel18
             this.panel.Controls.Add(this.pictureBox2);
             this.panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel.Location = new System.Drawing.Point(0, 0);
-            this.panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel.Margin = new System.Windows.Forms.Padding(2);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(200, 331);
             this.panel.TabIndex = 11;
             // 
-            // FormLoginKustomer
+            // FormLoginCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -261,9 +261,9 @@ namespace Celikoor_SemangatKel18
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "FormLoginKustomer";
-            this.Text = "FormLoginKustomer";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "FormLoginCustomer";
+            this.Text = "FormLoginCustomer";
             this.Load += new System.EventHandler(this.FormLoginKustomer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);

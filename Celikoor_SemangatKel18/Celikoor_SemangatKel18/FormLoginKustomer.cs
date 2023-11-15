@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Celikoor_SemangatKel18
 {
-    public partial class FormLoginKustomer : Form
+    public partial class FormLoginCustomer : Form
     {
-        public FormLoginKustomer()
+        public FormLoginCustomer()
         {
             InitializeComponent();
         }
