@@ -21,5 +21,10 @@ namespace Celikoor_SemangatKel18
         {
 
         }
+
+        private void linkLabel_Register_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
