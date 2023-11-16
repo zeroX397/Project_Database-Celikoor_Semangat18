@@ -23,6 +23,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+<<<<<<< HEAD
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
 		<PlatformTarget>AnyCPU</PlatformTarget>
 		<DebugType>pdbonly</DebugType>
@@ -62,6 +63,46 @@
 		</Compile>
 		<SubType>Form</SubType>
 	</ItemGroup>
+=======
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoginKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoginKasir.Designer.cs">
+      <DependentUpon>FormLoginKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoginKonsumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> parent of 8b4b0bb (Update Celikoor_SemangatKel18.csproj)
     <Compile Include="FormLoginKonsumen.Designer.cs">
       <DependentUpon>FormLoginKonsumen.cs</DependentUpon>
     </Compile>
@@ -79,9 +120,15 @@
     <EmbeddedResource Include="FormLoginKasir.resx">
       <DependentUpon>FormLoginKasir.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
 	<EmbeddedResource Include="FormLoginKonsumen.resx">
 		<DependentUpon>FormLoginKonsumen.cs</DependentUpon>
 	</EmbeddedResource>
+=======
+    <EmbeddedResource Include="FormLoginKonsumen.resx">
+      <DependentUpon>FormLoginKonsumen.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> parent of 8b4b0bb (Update Celikoor_SemangatKel18.csproj)
     <EmbeddedResource Include="FormUtama.resx">
       <DependentUpon>FormUtama.cs</DependentUpon>
     </EmbeddedResource>
