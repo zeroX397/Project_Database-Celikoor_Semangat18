@@ -93,6 +93,12 @@
     <Compile Include="FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormKonsumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKonsumen.Designer.cs">
+      <DependentUpon>FormKonsumen.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLoginKasir.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKonsumen.resx">
+      <DependentUpon>FormKonsumen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLoginKasir.resx">
       <DependentUpon>FormLoginKasir.cs</DependentUpon>
