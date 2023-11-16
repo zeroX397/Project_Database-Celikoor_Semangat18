@@ -1,0 +1,11 @@
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\Celikoor_SemangatKel18.exe.config
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\Celikoor_SemangatKel18.exe
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\Celikoor_SemangatKel18.pdb
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.AssemblyReference.cache
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.FormLoginKustomer.resources
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.FormUtama.resources
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.Properties.Resources.resources
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.GenerateResource.cache
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.CoreCompileInputs.cache
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.exe
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.pdb
