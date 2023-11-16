@@ -1,7 +1,7 @@
 ﻿
 namespace Celikoor_SemangatKel18
 {
-    partial class FormLoginCustomer
+    partial class FormLoginKasir
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,6 @@ namespace Celikoor_SemangatKel18
         /// </summary>
         private void InitializeComponent()
         {
-            this.linkLabel_Register = new System.Windows.Forms.LinkLabel();
-            this.label6 = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -53,30 +51,6 @@ namespace Celikoor_SemangatKel18
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // linkLabel_Register
-            // 
-            this.linkLabel_Register.AutoSize = true;
-            this.linkLabel_Register.Location = new System.Drawing.Point(403, 261);
-            this.linkLabel_Register.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.linkLabel_Register.Name = "linkLabel_Register";
-            this.linkLabel_Register.Size = new System.Drawing.Size(68, 13);
-            this.linkLabel_Register.TabIndex = 18;
-            this.linkLabel_Register.TabStop = true;
-            this.linkLabel_Register.Text = "register here ";
-            this.linkLabel_Register.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_Register_LinkClicked);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label6.Location = new System.Drawing.Point(269, 260);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(144, 16);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Dont have an account? ";
             // 
             // textBoxPassword
             // 
@@ -228,9 +202,9 @@ namespace Celikoor_SemangatKel18
             this.label5.Location = new System.Drawing.Point(281, 58);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 21);
+            this.label5.Size = new System.Drawing.Size(208, 21);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Login to your account";
+            this.label5.Text = "Login to Cashier Account";
             // 
             // panel
             // 
@@ -247,13 +221,11 @@ namespace Celikoor_SemangatKel18
             this.panel.Size = new System.Drawing.Size(200, 331);
             this.panel.TabIndex = 11;
             // 
-            // FormLoginCustomer
+            // FormLoginKasir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 331);
-            this.Controls.Add(this.linkLabel_Register);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button_KustomerLogin);
             this.Controls.Add(this.panel1);
@@ -262,9 +234,9 @@ namespace Celikoor_SemangatKel18
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FormLoginCustomer";
-            this.Text = "FormLoginCustomer";
-            this.Load += new System.EventHandler(this.FormLoginKustomer_Load);
+            this.Name = "FormLoginKasir";
+            this.Text = "FormLoginKasir";
+            this.Load += new System.EventHandler(this.FormLoginKonsumen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -280,9 +252,6 @@ namespace Celikoor_SemangatKel18
         }
 
         #endregion
-
-        private System.Windows.Forms.LinkLabel linkLabel_Register;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;

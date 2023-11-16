@@ -58,11 +58,17 @@
     <Compile Include="FormKonsumen.Designer.cs">
       <DependentUpon>FormKonsumen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLoginKustomer.cs">
+    <Compile Include="FormLoginKasir.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLoginKustomer.Designer.cs">
-      <DependentUpon>FormLoginKustomer.cs</DependentUpon>
+    <Compile Include="FormLoginKasir.Designer.cs">
+      <DependentUpon>FormLoginKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoginKonsumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoginKonsumen.Designer.cs">
+      <DependentUpon>FormLoginKonsumen.cs</DependentUpon>
     </Compile>
     <Compile Include="FormUtama.cs">
       <SubType>Form</SubType>
@@ -78,8 +84,11 @@
     <EmbeddedResource Include="FormKonsumen.resx">
       <DependentUpon>FormKonsumen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLoginKustomer.resx">
-      <DependentUpon>FormLoginKustomer.cs</DependentUpon>
+    <EmbeddedResource Include="FormLoginKasir.resx">
+      <DependentUpon>FormLoginKasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoginKonsumen.resx">
+      <DependentUpon>FormLoginKonsumen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUtama.resx">
       <DependentUpon>FormUtama.cs</DependentUpon>
@@ -105,6 +114,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Folder Kasir\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
