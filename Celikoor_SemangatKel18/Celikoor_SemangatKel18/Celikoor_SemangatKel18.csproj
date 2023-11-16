@@ -52,6 +52,7 @@
     <Compile Include="FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Include="FormLoginKasir.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +60,9 @@
       <DependentUpon>FormLoginKasir.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLoginKonsumen.cs">
+=======
+    <Compile Include="FormLoginKustomer.cs">
+>>>>>>> Stashed changes
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLoginKonsumen.Designer.cs">
@@ -72,6 +76,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< Updated upstream
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +85,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLoginKonsumen.resx">
       <DependentUpon>FormLoginKonsumen.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FormLoginKustomer.resx">
+      <DependentUpon>FormLoginKustomer.cs</DependentUpon>
+>>>>>>> Stashed changes
     </EmbeddedResource>
     <EmbeddedResource Include="FormUtama.resx">
       <DependentUpon>FormUtama.cs</DependentUpon>
