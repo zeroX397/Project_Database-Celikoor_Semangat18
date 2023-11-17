@@ -64,6 +64,12 @@
     <Compile Include="FormLoginKaryawan.Designer.cs">
       <DependentUpon>FormLoginKaryawan.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegisterKonsumen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLoginKaryawan.resx">
       <DependentUpon>FormLoginKaryawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainMenu.resx">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegisterKonsumen.resx">
       <DependentUpon>FormRegisterKonsumen.cs</DependentUpon>

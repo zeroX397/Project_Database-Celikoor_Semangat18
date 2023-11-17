@@ -16,7 +16,7 @@ namespace tes
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLoginKonsumen());
+            Application.Run(new FormMainMenu());
         }
     }
 }

@@ -1,0 +1,14 @@
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\tes.exe.config
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\tes.exe
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\tes.pdb
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.AssemblyReference.cache
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.FormKonfirmasi.resources
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.FormLoginKonsumen.resources
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.FormLoginKaryawan.resources
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.FormMainMenu.resources
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.FormRegisterKonsumen.resources
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.Properties.Resources.resources
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.GenerateResource.cache
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.CoreCompileInputs.cache
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.exe
+C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.pdb
