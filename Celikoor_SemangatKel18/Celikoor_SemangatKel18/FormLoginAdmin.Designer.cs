@@ -1,6 +1,7 @@
-﻿namespace tes
+﻿
+namespace tes
 {
-    partial class FormLoginKasir
+    partial class FormLoginAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -35,6 +36,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -62,11 +64,11 @@
             // 
             this.panel2.Controls.Add(this.textBoxPassword);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(204, 173);
+            this.panel2.Location = new System.Drawing.Point(203, 174);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(293, 37);
-            this.panel2.TabIndex = 22;
+            this.panel2.TabIndex = 16;
             // 
             // pictureBox3
             // 
@@ -92,11 +94,11 @@
             // 
             this.button2.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(407, 221);
+            this.button2.Location = new System.Drawing.Point(406, 222);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 24);
-            this.button2.TabIndex = 17;
+            this.button2.TabIndex = 3;
             this.button2.Text = "LOGIN";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -104,11 +106,11 @@
             // 
             this.panel1.Controls.Add(this.textBoxUsername);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(204, 141);
+            this.panel1.Location = new System.Drawing.Point(203, 142);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(293, 37);
-            this.panel1.TabIndex = 21;
+            this.panel1.TabIndex = 15;
             // 
             // pictureBox1
             // 
@@ -121,6 +123,20 @@
             this.pictureBox1.Size = new System.Drawing.Size(21, 21);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.FlatAppearance.BorderSize = 0;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.Location = new System.Drawing.Point(487, 8);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(27, 26);
+            this.buttonExit.TabIndex = 12;
+            this.buttonExit.Text = "X";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // label4
             // 
@@ -176,11 +192,11 @@
             this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label5.Location = new System.Drawing.Point(227, 107);
+            this.label5.Location = new System.Drawing.Point(226, 108);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(181, 21);
-            this.label5.TabIndex = 20;
+            this.label5.TabIndex = 14;
             this.label5.Text = "Login to your account";
             // 
             // panel
@@ -196,7 +212,7 @@
             this.panel.Margin = new System.Windows.Forms.Padding(2);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(200, 344);
-            this.panel.TabIndex = 18;
+            this.panel.TabIndex = 11;
             // 
             // pictureBox2
             // 
@@ -210,7 +226,7 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // FormLoginKasir
+            // FormLoginAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -218,11 +234,14 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel);
-            this.Name = "FormLoginKasir";
-            this.Text = "Login Kasir";
-            this.Load += new System.EventHandler(this.FormLoginKasir_Load);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "FormLoginAdmin";
+            this.Text = "Login Admin";
+            this.Load += new System.EventHandler(this.FormLoginAdmin_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -238,20 +257,20 @@
         }
 
         #endregion
-
         private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
