@@ -20,7 +20,7 @@ namespace tes
 
         private void FormLoginKasir_Load(object sender, EventArgs e)
         {
-            frmMainMenu.Owner = this;
+            frmMainMenu.MdiParent = this;
         }
     }
 }

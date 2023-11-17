@@ -23,11 +23,6 @@ namespace tes
             this.IsMdiContainer = true;
         }
 
-        private void buttonExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             //Button login di Form Main Menu buat apa
@@ -47,17 +42,19 @@ namespace tes
             frmLoginKonsumen.Show();
         }
 
+        private void operatorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void kasirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormLoginKasir frmLoginKasir = new FormLoginKasir();
+            frmLoginKasir.MdiParent = this;
+            frmLoginKasir.Show();
         }
 
-        private void kasirToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void operatorToolStripMenuItem_Click(object sender, EventArgs e)
+        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

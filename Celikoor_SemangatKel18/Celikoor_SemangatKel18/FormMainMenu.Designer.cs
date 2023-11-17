@@ -29,7 +29,6 @@ namespace tes
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonExit = new System.Windows.Forms.Button();
             this.panel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,7 +38,7 @@ namespace tes
             this.konsumenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.konsumenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.kasirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kasirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.operatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,26 +51,9 @@ namespace tes
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonExit
-            // 
-            this.buttonExit.BackColor = System.Drawing.Color.GhostWhite;
-            this.buttonExit.FlatAppearance.BorderSize = 0;
-            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExit.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExit.Location = new System.Drawing.Point(545, 2);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(20, 20);
-            this.buttonExit.TabIndex = 13;
-            this.buttonExit.Text = "X";
-            this.buttonExit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonExit.UseVisualStyleBackColor = false;
-            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
-            // 
             // panel
             // 
             this.panel.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.panel.Controls.Add(this.buttonExit);
             this.panel.Controls.Add(this.label2);
             this.panel.Controls.Add(this.label1);
             this.panel.Controls.Add(this.menuStrip1);
@@ -138,7 +120,7 @@ namespace tes
             // konsumenToolStripMenuItem
             // 
             this.konsumenToolStripMenuItem.Name = "konsumenToolStripMenuItem";
-            this.konsumenToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.konsumenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.konsumenToolStripMenuItem.Text = "Konsumen";
             this.konsumenToolStripMenuItem.Click += new System.EventHandler(this.konsumenRegister_ToolStripMenuItem_Click);
             // 
@@ -146,7 +128,7 @@ namespace tes
             // 
             this.loginToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.konsumenToolStripMenuItem1,
-            this.kasirToolStripMenuItem,
+            this.adminToolStripMenuItem,
             this.kasirToolStripMenuItem1,
             this.operatorToolStripMenuItem});
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
@@ -160,19 +142,19 @@ namespace tes
             this.konsumenToolStripMenuItem1.Text = "Konsumen";
             this.konsumenToolStripMenuItem1.Click += new System.EventHandler(this.konsumenLogin_ToolStripMenuItem_Click);
             // 
-            // kasirToolStripMenuItem
+            // adminToolStripMenuItem
             // 
-            this.kasirToolStripMenuItem.Name = "kasirToolStripMenuItem";
-            this.kasirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.kasirToolStripMenuItem.Text = "Admin";
-            this.kasirToolStripMenuItem.Click += new System.EventHandler(this.kasirToolStripMenuItem_Click);
+            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adminToolStripMenuItem.Text = "Admin";
+            this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
             // kasirToolStripMenuItem1
             // 
             this.kasirToolStripMenuItem1.Name = "kasirToolStripMenuItem1";
             this.kasirToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.kasirToolStripMenuItem1.Text = "Kasir";
-            this.kasirToolStripMenuItem1.Click += new System.EventHandler(this.kasirToolStripMenuItem1_Click);
+            this.kasirToolStripMenuItem1.Click += new System.EventHandler(this.kasirToolStripMenuItem_Click);
             // 
             // operatorToolStripMenuItem
             // 
@@ -261,8 +243,6 @@ namespace tes
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -277,7 +257,7 @@ namespace tes
         private System.Windows.Forms.Label labelNam;
         private System.Windows.Forms.ToolStripMenuItem konsumenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem konsumenToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem kasirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kasirToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem operatorToolStripMenuItem;
     }

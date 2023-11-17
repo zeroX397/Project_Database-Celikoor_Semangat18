@@ -1,12 +1,107 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4AE00188-960B-4283-B7E1-9F18DFD1F21C}|Celikoor_SemangatKel18\\Celikoor_SemangatKel18.csproj|c:\\users\\chris\\documents\\github\\project_database-celikoor_semangat18\\celikoor_semangatkel18\\celikoor_semangatkel18\\formmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AE00188-960B-4283-B7E1-9F18DFD1F21C}|Celikoor_SemangatKel18\\Celikoor_SemangatKel18.csproj|solutionrelative:celikoor_semangatkel18\\formmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AE00188-960B-4283-B7E1-9F18DFD1F21C}|Celikoor_SemangatKel18\\Celikoor_SemangatKel18.csproj|c:\\users\\chris\\documents\\github\\project_database-celikoor_semangat18\\celikoor_semangatkel18\\celikoor_semangatkel18\\formloginkonsumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AE00188-960B-4283-B7E1-9F18DFD1F21C}|Celikoor_SemangatKel18\\Celikoor_SemangatKel18.csproj|solutionrelative:celikoor_semangatkel18\\formloginkonsumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AE00188-960B-4283-B7E1-9F18DFD1F21C}|Celikoor_SemangatKel18\\Celikoor_SemangatKel18.csproj|c:\\users\\chris\\documents\\github\\project_database-celikoor_semangat18\\celikoor_semangatkel18\\celikoor_semangatkel18\\formloginkasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4AE00188-960B-4283-B7E1-9F18DFD1F21C}|Celikoor_SemangatKel18\\Celikoor_SemangatKel18.csproj|solutionrelative:celikoor_semangatkel18\\formloginkasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AE00188-960B-4283-B7E1-9F18DFD1F21C}|Celikoor_SemangatKel18\\Celikoor_SemangatKel18.csproj|c:\\users\\chris\\documents\\github\\project_database-celikoor_semangat18\\celikoor_semangatkel18\\celikoor_semangatkel18\\formloginkasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AE00188-960B-4283-B7E1-9F18DFD1F21C}|Celikoor_SemangatKel18\\Celikoor_SemangatKel18.csproj|solutionrelative:celikoor_semangatkel18\\formloginkasir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AE00188-960B-4283-B7E1-9F18DFD1F21C}|Celikoor_SemangatKel18\\Celikoor_SemangatKel18.csproj|c:\\users\\chris\\documents\\github\\project_database-celikoor_semangat18\\celikoor_semangatkel18\\celikoor_semangatkel18\\formmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4AE00188-960B-4283-B7E1-9F18DFD1F21C}|Celikoor_SemangatKel18\\Celikoor_SemangatKel18.csproj|solutionrelative:celikoor_semangatkel18\\formmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormLoginKasir.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\Celikoor_SemangatKel18\\FormLoginKasir.cs",
+              "RelativeDocumentMoniker": "Celikoor_SemangatKel18\\FormLoginKasir.cs",
+              "ToolTip": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\Celikoor_SemangatKel18\\FormLoginKasir.cs",
+              "RelativeToolTip": "Celikoor_SemangatKel18\\FormLoginKasir.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-17T07:12:12.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormLoginKasir.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\Celikoor_SemangatKel18\\FormLoginKasir.cs",
+              "RelativeDocumentMoniker": "Celikoor_SemangatKel18\\FormLoginKasir.cs",
+              "ToolTip": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\Celikoor_SemangatKel18\\FormLoginKasir.cs [Design]",
+              "RelativeToolTip": "Celikoor_SemangatKel18\\FormLoginKasir.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-17T07:12:10.817Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormLoginKonsumen.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\Celikoor_SemangatKel18\\FormLoginKonsumen.cs",
+              "RelativeDocumentMoniker": "Celikoor_SemangatKel18\\FormLoginKonsumen.cs",
+              "ToolTip": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\Celikoor_SemangatKel18\\FormLoginKonsumen.cs",
+              "RelativeToolTip": "Celikoor_SemangatKel18\\FormLoginKonsumen.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-17T07:09:43.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormMainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\Celikoor_SemangatKel18\\FormMainMenu.cs",
+              "RelativeDocumentMoniker": "Celikoor_SemangatKel18\\FormMainMenu.cs",
+              "ToolTip": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\Celikoor_SemangatKel18\\FormMainMenu.cs",
+              "RelativeToolTip": "Celikoor_SemangatKel18\\FormMainMenu.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAADUAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-17T07:04:04.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormMainMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\Celikoor_SemangatKel18\\FormMainMenu.cs",
+              "RelativeDocumentMoniker": "Celikoor_SemangatKel18\\FormMainMenu.cs",
+              "ToolTip": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\Celikoor_SemangatKel18\\FormMainMenu.cs [Design]",
+              "RelativeToolTip": "Celikoor_SemangatKel18\\FormMainMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-17T07:04:01.837Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

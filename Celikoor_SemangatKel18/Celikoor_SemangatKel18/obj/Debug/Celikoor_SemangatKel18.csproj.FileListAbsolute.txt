@@ -18,7 +18,6 @@ C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_Se
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.AssemblyReference.cache
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.FormKonfirmasi.resources
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.FormLoginKonsumen.resources
-C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.FormLoginKaryawan.resources
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.FormMainMenu.resources
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.FormRegisterKonsumen.resources
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.Properties.Resources.resources
@@ -26,3 +25,5 @@ C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_Se
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.CoreCompileInputs.cache
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.exe
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.pdb
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.FormLoginKasir.resources
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\tes.FormLoginOperator.resources
