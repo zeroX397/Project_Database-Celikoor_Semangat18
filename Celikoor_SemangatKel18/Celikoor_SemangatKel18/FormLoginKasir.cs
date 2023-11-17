@@ -12,7 +12,6 @@ namespace tes
 {
     public partial class FormLoginKasir : Form
     {
-        FormMainMenu frmMainMenu;
         public FormLoginKasir()
         {
             InitializeComponent();
@@ -20,7 +19,7 @@ namespace tes
 
         private void FormLoginKasir_Load(object sender, EventArgs e)
         {
-            frmMainMenu.MdiParent = this;
+
         }
     }
 }

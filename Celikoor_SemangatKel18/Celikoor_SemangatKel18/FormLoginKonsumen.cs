@@ -12,7 +12,6 @@ namespace tes
 {
     public partial class FormLoginKonsumen : Form
     {
-        FormMainMenu frmMainMenu;
         public FormLoginKonsumen()
         {
             InitializeComponent();

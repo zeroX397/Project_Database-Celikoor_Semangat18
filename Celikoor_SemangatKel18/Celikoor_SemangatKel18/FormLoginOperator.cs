@@ -12,7 +12,6 @@ namespace tes
 {
     public partial class FormLoginOperator : Form
     {
-        FormMainMenu frmMainMenu;
         public FormLoginOperator()
         {
             InitializeComponent();
@@ -20,7 +19,7 @@ namespace tes
 
         private void FormLoginOperator_Load(object sender, EventArgs e)
         {
-            frmMainMenu.Owner = this;
+
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
