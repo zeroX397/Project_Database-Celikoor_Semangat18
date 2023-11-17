@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4AE00188-960B-4283-B7E1-9F18DFD1F21C}|Celikoor_SemangatKel18\\Celikoor_SemangatKel18.csproj|c:\\users\\chris\\documents\\github\\project_database-celikoor_semangat18\\celikoor_semangatkel18\\celikoor_semangatkel18\\formmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AE00188-960B-4283-B7E1-9F18DFD1F21C}|Celikoor_SemangatKel18\\Celikoor_SemangatKel18.csproj|solutionrelative:celikoor_semangatkel18\\formmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4AE00188-960B-4283-B7E1-9F18DFD1F21C}|Celikoor_SemangatKel18\\Celikoor_SemangatKel18.csproj|c:\\users\\chris\\documents\\github\\project_database-celikoor_semangat18\\celikoor_semangatkel18\\celikoor_semangatkel18\\formmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AE00188-960B-4283-B7E1-9F18DFD1F21C}|Celikoor_SemangatKel18\\Celikoor_SemangatKel18.csproj|solutionrelative:celikoor_semangatkel18\\formmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -23,6 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FormMainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\Celikoor_SemangatKel18\\FormMainMenu.cs",
+              "RelativeDocumentMoniker": "Celikoor_SemangatKel18\\FormMainMenu.cs",
+              "ToolTip": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\Celikoor_SemangatKel18\\FormMainMenu.cs",
+              "RelativeToolTip": "Celikoor_SemangatKel18\\FormMainMenu.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAkwCgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-17T08:34:24.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FormMainMenu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\chris\\Documents\\GitHub\\Project_Database-Celikoor_Semangat18\\Celikoor_SemangatKel18\\Celikoor_SemangatKel18\\FormMainMenu.cs",
               "RelativeDocumentMoniker": "Celikoor_SemangatKel18\\FormMainMenu.cs",
