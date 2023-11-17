@@ -27,5 +27,12 @@ namespace tes
         {
             this.Close();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormLoginKonsumen frmLoginKonsumen = new FormLoginKonsumen();
+            frmLoginKonsumen.MdiParent = this;
+            frmLoginKonsumen.ShowDialog();
+        }
     }
 }

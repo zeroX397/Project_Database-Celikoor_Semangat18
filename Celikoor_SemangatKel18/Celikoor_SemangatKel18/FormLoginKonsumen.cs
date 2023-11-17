@@ -26,5 +26,12 @@ namespace tes
         {
             textBoxUsername.Focus();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormRegisterKonsumen frmRegisterKonsumen = new FormRegisterKonsumen();
+            frmRegisterKonsumen.MdiParent = this;
+            frmRegisterKonsumen.Show();
+        }
     }
 }

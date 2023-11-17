@@ -16,15 +16,5 @@ namespace tes
         {
             InitializeComponent();
         }
-
-        private void buttonExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void FormLoginAdmin_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -38,8 +38,15 @@ namespace tes
         private void konsumenLogin_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormLoginKonsumen frmLoginKonsumen = new FormLoginKonsumen();
-            frmLoginKonsumen.MdiParent = this;
+            frmLoginKonsumen.Owner = this;
             frmLoginKonsumen.Show();
+        }
+
+        private void kasirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormLoginKasir frmLoginKasir = new FormLoginKasir();
+            frmLoginKasir.MdiParent = this;
+            frmLoginKasir.Show();
         }
 
         private void operatorToolStripMenuItem_Click(object sender, EventArgs e)
