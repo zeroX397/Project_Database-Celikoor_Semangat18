@@ -38,7 +38,7 @@ namespace tes
         private void konsumenLogin_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormLoginKonsumen frmLoginKonsumen = new FormLoginKonsumen();
-            frmLoginKonsumen.Owner = this;
+            frmLoginKonsumen.MdiParent = this;
             frmLoginKonsumen.Show();
         }
 
