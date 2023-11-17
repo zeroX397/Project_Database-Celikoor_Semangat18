@@ -1,112 +1,141 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0"
-	xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-	<PropertyGroup>
-		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-		<ProjectGuid>{05449AF5-144E-411C-B7AE-97F2474ACD9C}</ProjectGuid>
-		<OutputType>WinExe</OutputType>
-		<RootNamespace>Celikoor_SemangatKel18</RootNamespace>
-		<AssemblyName>Celikoor_SemangatKel18</AssemblyName>
-		<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-		<FileAlignment>512</FileAlignment>
-		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-		<Deterministic>true</Deterministic>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-		<PlatformTarget>AnyCPU</PlatformTarget>
-		<DebugSymbols>true</DebugSymbols>
-		<DebugType>full</DebugType>
-		<Optimize>false</Optimize>
-		<OutputPath>bin\Debug\</OutputPath>
-		<DefineConstants>DEBUG;TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<PlatformTarget>AnyCPU</PlatformTarget>
-		<DebugType>pdbonly</DebugType>
-		<Optimize>true</Optimize>
-		<OutputPath>bin\Release\</OutputPath>
-		<DefineConstants>TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<ItemGroup>
-		<Compile Include="FormAdmin.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="FormAdmin.Designer.cs">
-			<DependentUpon>FormAdmin.cs</DependentUpon>
-		</Compile>
-		<Compile Include="FormKonsumen.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="FormKonsumen.Designer.cs">
-			<DependentUpon>FormKonsumen.cs</DependentUpon>
-		</Compile>
-			<Compile Include="FormLoginKasir.cs">
-				<SubType>Form</SubType>
-			</Compile>
-			<Compile Include="FormLoginKustomer.Designer.cs">
-				<DependentUpon>FormLoginKustomer.cs</DependentUpon>
-				<Compile Include="FormLoginKasir.Designer.cs">
-					<DependentUpon>FormLoginKasir.cs</DependentUpon>
-				</Compile>
-				<Compile Include="FormLoginKonsumen.cs">
-					<SubType>Form</SubType>
-				</Compile>
-
-				</Compile>
-				<Compile Include="FormUtama.cs">
-					<SubType>Form</SubType>
-				</Compile>
-				<Compile Include="FormUtama.Designer.cs">
-					<DependentUpon>FormUtama.cs</DependentUpon>
-				</Compile>
-				<Compile Include="Program.cs" />
-				<Compile Include="Properties\AssemblyInfo.cs" />
-				<EmbeddedResource Include="FormAdmin.resx">
-					<DependentUpon>FormAdmin.cs</DependentUpon>
-				</EmbeddedResource>
-				<EmbeddedResource Include="FormKonsumen.resx">
-					<DependentUpon>FormKonsumen.cs</DependentUpon>
-				</EmbeddedResource>
-
-					<EmbeddedResource Include="FormLoginKasir.resx">
-						<DependentUpon>FormLoginKasir.cs</DependentUpon>
-					</EmbeddedResource>
-					<EmbeddedResource Include="FormLoginKonsumen.resx">
-						<DependentUpon>FormLoginKonsumen.cs</DependentUpon>
-					</EmbeddedResource>
-					<EmbeddedResource Include="FormUtama.resx">
-						<DependentUpon>FormUtama.cs</DependentUpon>
-					</EmbeddedResource>
-					<EmbeddedResource Include="Properties\Resources.resx">
-						<Generator>ResXFileCodeGenerator</Generator>
-						<LastGenOutput>Resources.Designer.cs</LastGenOutput>
-						<SubType>Designer</SubType>
-					</EmbeddedResource>
-					<Compile Include="Properties\Resources.Designer.cs">
-						<AutoGen>True</AutoGen>
-						<DependentUpon>Resources.resx</DependentUpon>
-					</Compile>
-					<None Include="Properties\Settings.settings">
-						<Generator>SettingsSingleFileGenerator</Generator>
-						<LastGenOutput>Settings.Designer.cs</LastGenOutput>
-					</None>
-					<Compile Include="Properties\Settings.Designer.cs">
-						<AutoGen>True</AutoGen>
-						<DependentUpon>Settings.settings</DependentUpon>
-						<DesignTimeSharedInput>True</DesignTimeSharedInput>
-					</Compile>
-				</ItemGroup>
-				<ItemGroup>
-					<None Include="App.config" />
-				</ItemGroup>
-				<ItemGroup>
-					<Folder Include="Folder Kasir\" />
-				</ItemGroup>
-				<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-			</Project>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4AE00188-960B-4283-B7E1-9F18DFD1F21C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>tes</RootNamespace>
+    <AssemblyName>tes</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormKonfirmasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKonfirmasi.Designer.cs">
+      <DependentUpon>FormKonfirmasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoginKonsumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoginKonsumen.Designer.cs">
+      <DependentUpon>FormLoginKonsumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoginKaryawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoginKaryawan.Designer.cs">
+      <DependentUpon>FormLoginKaryawan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegisterKonsumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegisterKonsumen.Designer.cs">
+      <DependentUpon>FormRegisterKonsumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormKonfirmasi.resx">
+      <DependentUpon>FormKonfirmasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoginKonsumen.resx">
+      <DependentUpon>FormLoginKonsumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoginKaryawan.resx">
+      <DependentUpon>FormLoginKaryawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegisterKonsumen.resx">
+      <DependentUpon>FormRegisterKonsumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-username-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erd_celikoor_project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CELIKOOR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CELIKOOR-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-email-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-email-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-email-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-phone-64.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

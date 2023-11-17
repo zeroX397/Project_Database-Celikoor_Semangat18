@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace tes
 {
-    public partial class FormLoginKonsumen : Form
+    public partial class FormLoginKaryawan : Form
     {
-        public FormLoginKonsumen()
+        public FormLoginKaryawan()
         {
             InitializeComponent();
         }
 
-        private void buttonExit_Click(object sender, EventArgs e)
+        private void FormKaryawan_Load(object sender, EventArgs e)
         {
-            this.Close();
-        }
 
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
-            textBoxUsername.Focus();
         }
     }
 }

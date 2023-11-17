@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Celikoor_SemangatKel18")]
+[assembly: AssemblyTitle("tes")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Celikoor_SemangatKel18")]
+[assembly: AssemblyProduct("tes")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("05449af5-144e-411c-b7ae-97f2474acd9c")]
+[assembly: Guid("4ae00188-960b-4283-b7e1-9f18dfd1f21c")]
 
 // Version information for an assembly consists of the following four values:
 //
