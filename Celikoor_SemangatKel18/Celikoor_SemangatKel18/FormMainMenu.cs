@@ -38,13 +38,15 @@ namespace tes
         private void konsumenLogin_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormLoginKonsumen frmLoginKonsumen = new FormLoginKonsumen();
-            frmLoginKonsumen.MdiParent = this;
+            frmLoginKonsumen.Owner = this;
             frmLoginKonsumen.Show();
         }
 
         private void operatorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormLoginOperator frmLoginOperator = new FormLoginOperator();
+            frmLoginOperator.MdiParent = this;
+            frmLoginOperator.Show();
         }
 
         private void kasirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,7 +58,9 @@ namespace tes
 
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormLoginAdmin frmLoginAdmin = new FormLoginAdmin();
+            frmLoginAdmin.MdiParent = this;
+            frmLoginAdmin.Show();
         }
     }
 }

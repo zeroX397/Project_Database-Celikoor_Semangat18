@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace tes
 {
-    public partial class FormLoginKasir : Form
+    public partial class FormLoginAdmin : Form
     {
-        FormMainMenu frmMainMenu;
-        public FormLoginKasir()
+        public FormLoginAdmin()
         {
             InitializeComponent();
-        }
-
-        private void FormLoginKasir_Load(object sender, EventArgs e)
-        {
-            
         }
     }
 }
