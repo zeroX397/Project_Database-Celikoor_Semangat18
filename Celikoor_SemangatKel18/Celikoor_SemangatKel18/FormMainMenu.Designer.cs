@@ -40,6 +40,8 @@ namespace tes
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.konsumenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.kasirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kasirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.operatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonLogin = new System.Windows.Forms.Button();
@@ -136,7 +138,7 @@ namespace tes
             // konsumenToolStripMenuItem
             // 
             this.konsumenToolStripMenuItem.Name = "konsumenToolStripMenuItem";
-            this.konsumenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.konsumenToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.konsumenToolStripMenuItem.Text = "Konsumen";
             this.konsumenToolStripMenuItem.Click += new System.EventHandler(this.konsumenRegister_ToolStripMenuItem_Click);
             // 
@@ -144,7 +146,9 @@ namespace tes
             // 
             this.loginToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.konsumenToolStripMenuItem1,
-            this.kasirToolStripMenuItem});
+            this.kasirToolStripMenuItem,
+            this.kasirToolStripMenuItem1,
+            this.operatorToolStripMenuItem});
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
             this.loginToolStripMenuItem.Size = new System.Drawing.Size(49, 22);
             this.loginToolStripMenuItem.Text = "Login";
@@ -160,8 +164,22 @@ namespace tes
             // 
             this.kasirToolStripMenuItem.Name = "kasirToolStripMenuItem";
             this.kasirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.kasirToolStripMenuItem.Text = "Karyawan";
-            this.kasirToolStripMenuItem.Click += new System.EventHandler(this.kasirLogin_ToolStripMenuItem_Click);
+            this.kasirToolStripMenuItem.Text = "Admin";
+            this.kasirToolStripMenuItem.Click += new System.EventHandler(this.kasirToolStripMenuItem_Click);
+            // 
+            // kasirToolStripMenuItem1
+            // 
+            this.kasirToolStripMenuItem1.Name = "kasirToolStripMenuItem1";
+            this.kasirToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.kasirToolStripMenuItem1.Text = "Kasir";
+            this.kasirToolStripMenuItem1.Click += new System.EventHandler(this.kasirToolStripMenuItem1_Click);
+            // 
+            // operatorToolStripMenuItem
+            // 
+            this.operatorToolStripMenuItem.Name = "operatorToolStripMenuItem";
+            this.operatorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.operatorToolStripMenuItem.Text = "Operator";
+            this.operatorToolStripMenuItem.Click += new System.EventHandler(this.operatorToolStripMenuItem_Click);
             // 
             // RecordToolStripMenuItem
             // 
@@ -260,5 +278,7 @@ namespace tes
         private System.Windows.Forms.ToolStripMenuItem konsumenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem konsumenToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem kasirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kasirToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem operatorToolStripMenuItem;
     }
 }

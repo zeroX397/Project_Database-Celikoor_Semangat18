@@ -1,7 +1,7 @@
 ﻿
 namespace tes
 {
-    partial class FormLoginKaryawan
+    partial class FormLoginOperator
     {
         /// <summary>
         /// Required designer variable.
@@ -226,7 +226,7 @@ namespace tes
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // FormLoginKaryawan
+            // FormLoginOperator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -239,9 +239,9 @@ namespace tes
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FormLoginKaryawan";
-            this.Text = "FormLoginKustomer";
-            this.Load += new System.EventHandler(this.FormKaryawan_Load);
+            this.Name = "FormLoginOperator";
+            this.Text = "Login Operator";
+            this.Load += new System.EventHandler(this.FormLoginOperator_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

@@ -8,21 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Celikoor_SemangatKel18
+namespace tes
 {
     public partial class FormLoginKasir : Form
     {
+        FormMainMenu frmMainMenu;
         public FormLoginKasir()
         {
             InitializeComponent();
         }
-        private void FormLoginKonsumen_Load(object sender, EventArgs e)
-        {
 
-        }
-        private void linkLabel_Register_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void FormLoginKasir_Load(object sender, EventArgs e)
         {
-
+            frmMainMenu.Owner = this;
         }
     }
 }

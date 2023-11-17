@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace tes
 {
-    public partial class FormLoginKaryawan : Form
+    public partial class FormLoginOperator : Form
     {
-        public FormLoginKaryawan()
+        FormMainMenu frmMainMenu;
+        public FormLoginOperator()
         {
             InitializeComponent();
         }
 
-        private void FormKaryawan_Load(object sender, EventArgs e)
+        private void FormLoginOperator_Load(object sender, EventArgs e)
         {
-
+            frmMainMenu.Owner = this;
         }
 
         private void buttonExit_Click(object sender, EventArgs e)

@@ -47,11 +47,19 @@ namespace tes
             frmLoginKonsumen.Show();
         }
 
-        private void kasirLogin_ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void kasirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormLoginKaryawan frmLoginKaryawan = new FormLoginKaryawan();
-            frmLoginKaryawan.MdiParent = this;
-            frmLoginKaryawan.Show();
+
+        }
+
+        private void kasirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void operatorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

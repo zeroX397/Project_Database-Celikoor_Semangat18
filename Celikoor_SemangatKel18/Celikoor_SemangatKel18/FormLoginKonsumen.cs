@@ -12,6 +12,7 @@ namespace tes
 {
     public partial class FormLoginKonsumen : Form
     {
+        FormMainMenu frmMainMenu;
         public FormLoginKonsumen()
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace tes
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
+            frmMainMenu.Owner = this;
             textBoxUsername.Focus();
         }
     }
