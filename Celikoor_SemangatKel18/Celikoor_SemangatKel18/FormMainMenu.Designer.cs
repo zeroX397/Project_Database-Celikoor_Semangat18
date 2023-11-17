@@ -36,8 +36,11 @@ namespace tes
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.masterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.RecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.konsumenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.konsumenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.kasirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.RecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,9 +56,10 @@ namespace tes
             this.buttonExit.FlatAppearance.BorderSize = 0;
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExit.Location = new System.Drawing.Point(817, 3);
+            this.buttonExit.Location = new System.Drawing.Point(545, 2);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(30, 30);
+            this.buttonExit.Size = new System.Drawing.Size(20, 20);
             this.buttonExit.TabIndex = 13;
             this.buttonExit.Text = "X";
             this.buttonExit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -71,8 +75,9 @@ namespace tes
             this.panel.Controls.Add(this.menuStrip1);
             this.panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel.Location = new System.Drawing.Point(0, 0);
+            this.panel.Margin = new System.Windows.Forms.Padding(2);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(860, 163);
+            this.panel.Size = new System.Drawing.Size(573, 106);
             this.panel.TabIndex = 14;
             // 
             // label2
@@ -80,9 +85,10 @@ namespace tes
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(109, 107);
+            this.label2.Location = new System.Drawing.Point(73, 70);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 34);
+            this.label2.Size = new System.Drawing.Size(83, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "Celikoor";
             // 
@@ -91,68 +97,97 @@ namespace tes
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(14, 73);
+            this.label1.Location = new System.Drawing.Point(9, 47);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 34);
+            this.label1.Size = new System.Drawing.Size(160, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "Welcome to the ";
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.masterToolStripMenuItem,
             this.registerToolStripMenuItem,
-            this.RecordToolStripMenuItem,
-            this.loginToolStripMenuItem});
+            this.loginToolStripMenuItem,
+            this.RecordToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(860, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(573, 24);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // masterToolStripMenuItem
             // 
             this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
-            this.masterToolStripMenuItem.Size = new System.Drawing.Size(82, 29);
+            this.masterToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
             this.masterToolStripMenuItem.Text = "Master";
             // 
             // registerToolStripMenuItem
             // 
+            this.registerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.konsumenToolStripMenuItem});
             this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
-            this.registerToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
             this.registerToolStripMenuItem.Text = "Register";
+            // 
+            // konsumenToolStripMenuItem
+            // 
+            this.konsumenToolStripMenuItem.Name = "konsumenToolStripMenuItem";
+            this.konsumenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.konsumenToolStripMenuItem.Text = "Konsumen";
+            this.konsumenToolStripMenuItem.Click += new System.EventHandler(this.konsumenRegister_ToolStripMenuItem_Click);
+            // 
+            // loginToolStripMenuItem
+            // 
+            this.loginToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.konsumenToolStripMenuItem1,
+            this.kasirToolStripMenuItem});
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(49, 22);
+            this.loginToolStripMenuItem.Text = "Login";
+            // 
+            // konsumenToolStripMenuItem1
+            // 
+            this.konsumenToolStripMenuItem1.Name = "konsumenToolStripMenuItem1";
+            this.konsumenToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.konsumenToolStripMenuItem1.Text = "Konsumen";
+            this.konsumenToolStripMenuItem1.Click += new System.EventHandler(this.konsumenLogin_ToolStripMenuItem_Click);
+            // 
+            // kasirToolStripMenuItem
+            // 
+            this.kasirToolStripMenuItem.Name = "kasirToolStripMenuItem";
+            this.kasirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kasirToolStripMenuItem.Text = "Karyawan";
+            this.kasirToolStripMenuItem.Click += new System.EventHandler(this.kasirLogin_ToolStripMenuItem_Click);
             // 
             // RecordToolStripMenuItem
             // 
             this.RecordToolStripMenuItem.Name = "RecordToolStripMenuItem";
-            this.RecordToolStripMenuItem.Size = new System.Drawing.Size(83, 29);
+            this.RecordToolStripMenuItem.Size = new System.Drawing.Size(56, 22);
             this.RecordToolStripMenuItem.Text = "Record";
-            // 
-            // loginToolStripMenuItem
-            // 
-            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(72, 29);
-            this.loginToolStripMenuItem.Text = "Login";
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::tes.Properties.Resources.CELIKOOR_removebg_preview;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 169);
+            this.pictureBox2.Location = new System.Drawing.Point(8, 110);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(271, 271);
+            this.pictureBox2.Size = new System.Drawing.Size(181, 176);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // buttonLogin
             // 
             this.buttonLogin.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.Location = new System.Drawing.Point(686, 387);
+            this.buttonLogin.Location = new System.Drawing.Point(457, 252);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(161, 53);
+            this.buttonLogin.Size = new System.Drawing.Size(107, 34);
             this.buttonLogin.TabIndex = 15;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = true;
@@ -163,9 +198,10 @@ namespace tes
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label5.Location = new System.Drawing.Point(289, 169);
+            this.label5.Location = new System.Drawing.Point(193, 110);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(246, 34);
+            this.label5.Size = new System.Drawing.Size(165, 22);
             this.label5.TabIndex = 5;
             this.label5.Text = "Selamat datang ";
             // 
@@ -174,23 +210,25 @@ namespace tes
             this.labelNam.AutoSize = true;
             this.labelNam.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNam.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.labelNam.Location = new System.Drawing.Point(541, 169);
+            this.labelNam.Location = new System.Drawing.Point(362, 112);
+            this.labelNam.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNam.Name = "labelNam";
-            this.labelNam.Size = new System.Drawing.Size(84, 28);
+            this.labelNam.Size = new System.Drawing.Size(57, 19);
             this.labelNam.TabIndex = 16;
             this.labelNam.Text = "nama";
             // 
             // FormMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(860, 482);
+            this.ClientSize = new System.Drawing.Size(573, 313);
             this.Controls.Add(this.labelNam);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.pictureBox2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormMainMenu";
             this.Text = "FormMainMenu";
             this.Load += new System.EventHandler(this.FormMainMenu_Load);
@@ -219,5 +257,8 @@ namespace tes
         private System.Windows.Forms.ToolStripMenuItem RecordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.Label labelNam;
+        private System.Windows.Forms.ToolStripMenuItem konsumenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem konsumenToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem kasirToolStripMenuItem;
     }
 }

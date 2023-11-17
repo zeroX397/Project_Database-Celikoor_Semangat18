@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,7 +20,7 @@ namespace tes
 
         private void FormMainMenu_Load(object sender, EventArgs e)
         {
-            
+            this.IsMdiContainer = true;
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
@@ -29,7 +30,28 @@ namespace tes
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
+            //Button login di Form Main Menu buat apa
+        }
 
+        private void konsumenRegister_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRegisterKonsumen frmRegisterKonsumen = new FormRegisterKonsumen();
+            frmRegisterKonsumen.MdiParent = this;
+            frmRegisterKonsumen.Show();
+        }
+
+        private void konsumenLogin_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormLoginKonsumen frmLoginKonsumen = new FormLoginKonsumen();
+            frmLoginKonsumen.MdiParent = this;
+            frmLoginKonsumen.Show();
+        }
+
+        private void kasirLogin_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormLoginKaryawan frmLoginKaryawan = new FormLoginKaryawan();
+            frmLoginKaryawan.MdiParent = this;
+            frmLoginKaryawan.Show();
         }
     }
 }
