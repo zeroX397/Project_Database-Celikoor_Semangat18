@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Celikoor_SemangatKel18
+namespace Celikoor_Semangat18.Konsumen
 {
-    public partial class FormLoginAdmin : Form
+    public partial class FormProfilKonsumen : Form
     {
-        public FormLoginAdmin()
+        public FormProfilKonsumen()
         {
             InitializeComponent();
         }
