@@ -1,0 +1,13 @@
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\Celikoor_Library.dll
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\Celikoor_Library.pdb
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\MySql.Data.dll
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\System.Memory.dll
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\System.Buffers.dll
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\MySql.Data.xml
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.csproj.AssemblyReference.cache
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.csproj.CoreCompileInputs.cache
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.csproj.CopyComplete
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.dll
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.pdb

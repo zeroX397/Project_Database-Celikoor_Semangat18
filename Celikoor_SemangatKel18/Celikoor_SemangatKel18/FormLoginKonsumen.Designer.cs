@@ -115,7 +115,7 @@ namespace tes
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::tes.Properties.Resources.CELIKOOR_removebg_preview;
+            this.pictureBox2.BackgroundImage = global::Celikoor_Semangat18.Properties.Resources.CELIKOOR_removebg_preview;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.InitialImage = null;
             this.pictureBox2.Location = new System.Drawing.Point(73, 42);
@@ -171,7 +171,7 @@ namespace tes
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::tes.Properties.Resources.icons8_username_64;
+            this.pictureBox1.BackgroundImage = global::Celikoor_Semangat18.Properties.Resources.icons8_username_64;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(19, 10);
@@ -201,7 +201,7 @@ namespace tes
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackgroundImage = global::tes.Properties.Resources.icons8_password_64;
+            this.pictureBox3.BackgroundImage = global::Celikoor_Semangat18.Properties.Resources.icons8_password_64;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.InitialImage = null;
             this.pictureBox3.Location = new System.Drawing.Point(19, 10);
