@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34310.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celikoor_SemangatKel18", "Celikoor_SemangatKel18\Celikoor_SemangatKel18.csproj", "{4AE00188-960B-4283-B7E1-9F18DFD1F21C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celikoor_Library", "Celikoor_Library\Celikoor_Library.csproj", "{293046DE-1C87-4AC6-AD41-AD83012F11FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4AE00188-960B-4283-B7E1-9F18DFD1F21C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AE00188-960B-4283-B7E1-9F18DFD1F21C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AE00188-960B-4283-B7E1-9F18DFD1F21C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{293046DE-1C87-4AC6-AD41-AD83012F11FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{293046DE-1C87-4AC6-AD41-AD83012F11FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{293046DE-1C87-4AC6-AD41-AD83012F11FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{293046DE-1C87-4AC6-AD41-AD83012F11FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -32,8 +32,8 @@ namespace tes
             this.buttonExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
-            this.radioButtonKustomer = new System.Windows.Forms.RadioButton();
             this.radioButtonKaryawan = new System.Windows.Forms.RadioButton();
+            this.radioButtonKustomer = new System.Windows.Forms.RadioButton();
             this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,9 +42,10 @@ namespace tes
             this.buttonExit.FlatAppearance.BorderSize = 0;
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExit.Location = new System.Drawing.Point(726, 12);
+            this.buttonExit.Location = new System.Drawing.Point(484, 8);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(40, 40);
+            this.buttonExit.Size = new System.Drawing.Size(27, 26);
             this.buttonExit.TabIndex = 12;
             this.buttonExit.Text = "X";
             this.buttonExit.UseVisualStyleBackColor = true;
@@ -54,9 +55,10 @@ namespace tes
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(22, 34);
+            this.label1.Location = new System.Drawing.Point(15, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(313, 34);
+            this.label1.Size = new System.Drawing.Size(209, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "Anda Login Sebagai?";
             // 
@@ -66,46 +68,50 @@ namespace tes
             this.panel.Controls.Add(this.radioButtonKaryawan);
             this.panel.Controls.Add(this.radioButtonKustomer);
             this.panel.Controls.Add(this.label1);
-            this.panel.Location = new System.Drawing.Point(0, 58);
+            this.panel.Location = new System.Drawing.Point(0, 38);
+            this.panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(827, 222);
+            this.panel.Size = new System.Drawing.Size(551, 144);
             this.panel.TabIndex = 11;
-            // 
-            // radioButtonKustomer
-            // 
-            this.radioButtonKustomer.AutoSize = true;
-            this.radioButtonKustomer.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonKustomer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.radioButtonKustomer.Location = new System.Drawing.Point(96, 137);
-            this.radioButtonKustomer.Name = "radioButtonKustomer";
-            this.radioButtonKustomer.Size = new System.Drawing.Size(125, 27);
-            this.radioButtonKustomer.TabIndex = 3;
-            this.radioButtonKustomer.TabStop = true;
-            this.radioButtonKustomer.Text = "Kustomer";
-            this.radioButtonKustomer.UseVisualStyleBackColor = true;
             // 
             // radioButtonKaryawan
             // 
             this.radioButtonKaryawan.AutoSize = true;
             this.radioButtonKaryawan.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonKaryawan.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.radioButtonKaryawan.Location = new System.Drawing.Point(509, 137);
+            this.radioButtonKaryawan.Location = new System.Drawing.Point(339, 89);
+            this.radioButtonKaryawan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonKaryawan.Name = "radioButtonKaryawan";
-            this.radioButtonKaryawan.Size = new System.Drawing.Size(136, 27);
+            this.radioButtonKaryawan.Size = new System.Drawing.Size(98, 23);
             this.radioButtonKaryawan.TabIndex = 4;
             this.radioButtonKaryawan.TabStop = true;
             this.radioButtonKaryawan.Text = "Karyawan";
             this.radioButtonKaryawan.UseVisualStyleBackColor = true;
             // 
+            // radioButtonKustomer
+            // 
+            this.radioButtonKustomer.AutoSize = true;
+            this.radioButtonKustomer.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonKustomer.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.radioButtonKustomer.Location = new System.Drawing.Point(64, 89);
+            this.radioButtonKustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonKustomer.Name = "radioButtonKustomer";
+            this.radioButtonKustomer.Size = new System.Drawing.Size(89, 23);
+            this.radioButtonKustomer.TabIndex = 3;
+            this.radioButtonKustomer.TabStop = true;
+            this.radioButtonKustomer.Text = "Kustomer";
+            this.radioButtonKustomer.UseVisualStyleBackColor = true;
+            // 
             // FormKonfirmasi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(778, 338);
+            this.ClientSize = new System.Drawing.Size(519, 220);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.panel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormKonfirmasi";
             this.Text = "FormKonfirmasi";
             this.panel.ResumeLayout(false);
