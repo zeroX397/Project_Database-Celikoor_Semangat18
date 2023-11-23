@@ -34,12 +34,7 @@ namespace tes
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.masterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.konsumenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.konsumenLogin_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kasirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.operatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -52,10 +47,9 @@ namespace tes
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(65, 54);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(98, 83);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(363, 22);
+            this.label1.Size = new System.Drawing.Size(551, 34);
             this.label1.TabIndex = 2;
             this.label1.Text = "Welcome to the Celikoor Cinema Apps";
             // 
@@ -65,15 +59,15 @@ namespace tes
             this.pictureBox2.BackgroundImage = global::Celikoor_Semangat18.Properties.Resources.CELIKOOR_removebg_preview;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(11, 39);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(16, 60);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(75, 77);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.masterToolStripMenuItem,
@@ -82,75 +76,35 @@ namespace tes
             this.RecordToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1184, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1776, 33);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // masterToolStripMenuItem
             // 
             this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
-            this.masterToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
+            this.masterToolStripMenuItem.Size = new System.Drawing.Size(82, 29);
             this.masterToolStripMenuItem.Text = "Master";
             // 
             // registerToolStripMenuItem
             // 
-            this.registerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.konsumenToolStripMenuItem});
             this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
-            this.registerToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
             this.registerToolStripMenuItem.Text = "Register";
-            // 
-            // konsumenToolStripMenuItem
-            // 
-            this.konsumenToolStripMenuItem.Name = "konsumenToolStripMenuItem";
-            this.konsumenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.konsumenToolStripMenuItem.Text = "Konsumen";
-            this.konsumenToolStripMenuItem.Click += new System.EventHandler(this.konsumenRegister_ToolStripMenuItem_Click);
+            this.registerToolStripMenuItem.Click += new System.EventHandler(this.registerToolStripMenuItem_Click);
             // 
             // loginToolStripMenuItem
             // 
-            this.loginToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.konsumenLogin_ToolStripMenuItem,
-            this.adminToolStripMenuItem,
-            this.kasirToolStripMenuItem,
-            this.operatorToolStripMenuItem});
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(49, 22);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(72, 29);
             this.loginToolStripMenuItem.Text = "Login";
-            // 
-            // konsumenLogin_ToolStripMenuItem
-            // 
-            this.konsumenLogin_ToolStripMenuItem.Name = "konsumenLogin_ToolStripMenuItem";
-            this.konsumenLogin_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.konsumenLogin_ToolStripMenuItem.Text = "Konsumen";
-            this.konsumenLogin_ToolStripMenuItem.Click += new System.EventHandler(this.konsumenLogin_ToolStripMenuItem_Click);
-            // 
-            // adminToolStripMenuItem
-            // 
-            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.adminToolStripMenuItem.Text = "Admin";
-            this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
-            // 
-            // kasirToolStripMenuItem
-            // 
-            this.kasirToolStripMenuItem.Name = "kasirToolStripMenuItem";
-            this.kasirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.kasirToolStripMenuItem.Text = "Kasir";
-            this.kasirToolStripMenuItem.Click += new System.EventHandler(this.kasirToolStripMenuItem_Click);
-            // 
-            // operatorToolStripMenuItem
-            // 
-            this.operatorToolStripMenuItem.Name = "operatorToolStripMenuItem";
-            this.operatorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.operatorToolStripMenuItem.Text = "Operator";
-            this.operatorToolStripMenuItem.Click += new System.EventHandler(this.operatorToolStripMenuItem_Click);
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // RecordToolStripMenuItem
             // 
             this.RecordToolStripMenuItem.Name = "RecordToolStripMenuItem";
-            this.RecordToolStripMenuItem.Size = new System.Drawing.Size(56, 22);
+            this.RecordToolStripMenuItem.Size = new System.Drawing.Size(83, 29);
             this.RecordToolStripMenuItem.Text = "Record";
             // 
             // panel
@@ -161,19 +115,17 @@ namespace tes
             this.panel.Controls.Add(this.menuStrip1);
             this.panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel.Location = new System.Drawing.Point(0, 0);
-            this.panel.Margin = new System.Windows.Forms.Padding(2);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1184, 106);
+            this.panel.Size = new System.Drawing.Size(1776, 163);
             this.panel.TabIndex = 14;
             // 
             // FormMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 765);
+            this.ClientSize = new System.Drawing.Size(1776, 1177);
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMainMenu";
@@ -193,12 +145,7 @@ namespace tes
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem masterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem konsumenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem konsumenLogin_ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kasirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem operatorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem RecordToolStripMenuItem;
         private System.Windows.Forms.Panel panel;
     }

@@ -47,35 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormKonfirmasi.cs">
+    <Compile Include="LOGIN\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormKonfirmasi.Designer.cs">
-      <DependentUpon>FormKonfirmasi.cs</DependentUpon>
+    <Compile Include="LOGIN\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kasir\FormLoginKasir.cs">
+    <Compile Include="LOGIN\FormProfilKonsumen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kasir\FormLoginKasir.Designer.cs">
-      <DependentUpon>FormLoginKasir.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Konsumen\FormLoginKonsumen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Konsumen\FormLoginKonsumen.Designer.cs">
-      <DependentUpon>FormLoginKonsumen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Konsumen\FormProfilKonsumen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Konsumen\FormProfilKonsumen.Designer.cs">
+    <Compile Include="LOGIN\FormProfilKonsumen.Designer.cs">
       <DependentUpon>FormProfilKonsumen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Operator\FormLoginOperator.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Operator\FormLoginOperator.Designer.cs">
-      <DependentUpon>FormLoginOperator.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMainMenu.cs">
       <SubType>Form</SubType>
@@ -83,43 +65,25 @@
     <Compile Include="FormMainMenu.Designer.cs">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Konsumen\FormRegisterKonsumen.cs">
+    <Compile Include="LOGIN\FormRegisterKonsumen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Konsumen\FormRegisterKonsumen.Designer.cs">
+    <Compile Include="LOGIN\FormRegisterKonsumen.Designer.cs">
       <DependentUpon>FormRegisterKonsumen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\FornLoginAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\FornLoginAdmin.Designer.cs">
-      <DependentUpon>FornLoginAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormKonfirmasi.resx">
-      <DependentUpon>FormKonfirmasi.cs</DependentUpon>
+    <EmbeddedResource Include="LOGIN\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kasir\FormLoginKasir.resx">
-      <DependentUpon>FormLoginKasir.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Konsumen\FormLoginKonsumen.resx">
-      <DependentUpon>FormLoginKonsumen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Konsumen\FormProfilKonsumen.resx">
+    <EmbeddedResource Include="LOGIN\FormProfilKonsumen.resx">
       <DependentUpon>FormProfilKonsumen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Operator\FormLoginOperator.resx">
-      <DependentUpon>FormLoginOperator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Konsumen\FormRegisterKonsumen.resx">
+    <EmbeddedResource Include="LOGIN\FormRegisterKonsumen.resx">
       <DependentUpon>FormRegisterKonsumen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\FornLoginAdmin.resx">
-      <DependentUpon>FornLoginAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
