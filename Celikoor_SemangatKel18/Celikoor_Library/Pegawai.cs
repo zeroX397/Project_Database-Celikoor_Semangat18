@@ -56,7 +56,7 @@ namespace Celikoor_Library
                 "'" + obj.Email_Pegawai + "'," +
                 "'" + obj.Username_Pegawai + "'," +
                 "'" + obj.Password_Pegawai + "'," +
-                "'" + obj.Roles_Pegawai + ");";
+                "'" + obj.Roles_Pegawai + "');";
             Koneksi.JalankanPerintahNonQuery(sql);
         }
         public static List<Pegawai> BacaData(string filter = "", string nilai = "")
