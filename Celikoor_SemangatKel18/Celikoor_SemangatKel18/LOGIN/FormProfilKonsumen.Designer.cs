@@ -39,6 +39,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label_SaldoKonsumen = new System.Windows.Forms.Label();
             this.linkLabel_Logout = new System.Windows.Forms.LinkLabel();
+            this.buttonExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +49,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(176, 472);
+            this.label4.Location = new System.Drawing.Point(175, 473);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(108, 21);
             this.label4.TabIndex = 4;
@@ -104,7 +105,7 @@
             this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label5.Location = new System.Drawing.Point(306, 14);
+            this.label5.Location = new System.Drawing.Point(306, 112);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(156, 30);
             this.label5.TabIndex = 13;
@@ -130,7 +131,7 @@
             this.label_NamaKonsumen.BackColor = System.Drawing.SystemColors.Control;
             this.label_NamaKonsumen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_NamaKonsumen.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label_NamaKonsumen.Location = new System.Drawing.Point(464, 14);
+            this.label_NamaKonsumen.Location = new System.Drawing.Point(454, 112);
             this.label_NamaKonsumen.Name = "label_NamaKonsumen";
             this.label_NamaKonsumen.Size = new System.Drawing.Size(21, 30);
             this.label_NamaKonsumen.TabIndex = 14;
@@ -142,7 +143,7 @@
             this.label7.BackColor = System.Drawing.SystemColors.Control;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label7.Location = new System.Drawing.Point(306, 52);
+            this.label7.Location = new System.Drawing.Point(306, 142);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(142, 30);
             this.label7.TabIndex = 15;
@@ -154,7 +155,7 @@
             this.label_SaldoKonsumen.BackColor = System.Drawing.SystemColors.Control;
             this.label_SaldoKonsumen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_SaldoKonsumen.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label_SaldoKonsumen.Location = new System.Drawing.Point(448, 52);
+            this.label_SaldoKonsumen.Location = new System.Drawing.Point(454, 142);
             this.label_SaldoKonsumen.Name = "label_SaldoKonsumen";
             this.label_SaldoKonsumen.Size = new System.Drawing.Size(21, 30);
             this.label_SaldoKonsumen.TabIndex = 16;
@@ -163,19 +164,35 @@
             // linkLabel_Logout
             // 
             this.linkLabel_Logout.AutoSize = true;
-            this.linkLabel_Logout.Location = new System.Drawing.Point(1100, 14);
+            this.linkLabel_Logout.Location = new System.Drawing.Point(1075, 24);
             this.linkLabel_Logout.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel_Logout.Name = "linkLabel_Logout";
             this.linkLabel_Logout.Size = new System.Drawing.Size(66, 20);
             this.linkLabel_Logout.TabIndex = 17;
             this.linkLabel_Logout.TabStop = true;
             this.linkLabel_Logout.Text = "Log Out";
+            this.linkLabel_Logout.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_Logout_LinkClicked);
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.FlatAppearance.BorderSize = 0;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.Location = new System.Drawing.Point(1148, 11);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(40, 40);
+            this.buttonExit.TabIndex = 18;
+            this.buttonExit.Text = "X";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // FormProfilKonsumen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.linkLabel_Logout);
             this.Controls.Add(this.label_SaldoKonsumen);
             this.Controls.Add(this.label7);
@@ -206,5 +223,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label_SaldoKonsumen;
         private System.Windows.Forms.LinkLabel linkLabel_Logout;
+        private System.Windows.Forms.Button buttonExit;
     }
 }

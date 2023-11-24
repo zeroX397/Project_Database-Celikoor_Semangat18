@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,47 @@ namespace Celikoor_Library
             }
             DB_Connection.Open();
         }
+        public Koneksi(string pServer, string pDb, string pUID, string pPWD)
+        {
+            string vConnString = "Server=" + pServer + ";Database=" + pDb + ";Uid=" + pUID + ";Pwd=" + pPWD + ";";
 
+            DB_Connection = new MySqlConnection();
+            DB_Connection.ConnectionString = vConnString;
+
+            Connect();
+        }
+        public Koneksi()
+        {
+            Configuration myConf = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            ConfigurationSectionGroup userSetting = myConf.SectionGroups["userSettings"];
+            var settingSection = userSetting.Sections["Celikoor_Semangat18.connect"] as ClientSettingsSection; 
+            string vServer = settingSection.Settings.Get("dbServer").Value.ValueXml.InnerText;
+            string vDb = settingSection.Settings.Get("dbName").Value.ValueXml.InnerText;
+            string vUID = settingSection.Settings.Get("dbUsername").Value.ValueXml.InnerText;
+            string vPWD = settingSection.Settings.Get("dbPassword").Value.ValueXml.InnerText;
+
+            string vConnString = "Server=" + vServer + ";Database=" + vDb + ";Uid=" + vUID + ";Pwd=" + vPWD + ";";
+
+            DB_Connection = new MySqlConnection();
+            DB_Connection.ConnectionString = vConnString;
+
+            Connect();
+        }
+        public static MySqlDataReader JalankanPerintahSelect(string sql)
+        {
+            Koneksi k = new Koneksi();
+
+            MySqlCommand cmd = new MySqlCommand(sql, k.DB_Connection);
+            MySqlDataReader hasil = cmd.ExecuteReader();
+            return hasil;
+        }
+
+        public static void JalankanPerintahNonQuery(string sql)
+        {
+            Koneksi k = new Koneksi();
+
+            MySqlCommand cmd = new MySqlCommand(sql, k.DB_Connection);
+            cmd.ExecuteNonQuery();
+        }
     }
 }

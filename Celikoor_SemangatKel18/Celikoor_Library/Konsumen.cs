@@ -25,15 +25,27 @@ namespace Celikoor_Library
         public Konsumen(int id_Konsumen, string nama_Konsumen, string email_Konsumen, string noHP_Konsumen, string gender_Konsumen, 
             DateTime ttl_Konsumen, double saldo_Konsumen, string username_Konsumen, string password_Konsumen)
         {
-            this.Id_Konsumen = id_Konsumen;
-            this.Nama_Konsumen = nama_Konsumen;
-            this.Email_Konsumen = email_Konsumen;
-            this.NoHP_Konsumen = noHP_Konsumen;
-            this.Gender_Konsumen = gender_Konsumen;
-            this.Ttl_Konsumen = ttl_Konsumen;
-            this.Saldo_Konsumen = saldo_Konsumen;
-            this.Username_Konsumen = username_Konsumen;
-            this.Password_Konsumen = password_Konsumen;
+            Id_Konsumen = id_Konsumen;
+            Nama_Konsumen = nama_Konsumen;
+            Email_Konsumen = email_Konsumen;
+            NoHP_Konsumen = noHP_Konsumen;
+            Gender_Konsumen = gender_Konsumen;
+            Ttl_Konsumen = ttl_Konsumen;
+            Saldo_Konsumen = saldo_Konsumen;
+            Username_Konsumen = username_Konsumen;
+            Password_Konsumen = password_Konsumen;
+        }
+        public Konsumen()
+        {
+            Id_Konsumen = 0;
+            Nama_Konsumen = "";
+            Email_Konsumen = "";
+            NoHP_Konsumen = "";
+            Gender_Konsumen = "";
+            Ttl_Konsumen = DateTime.Now;
+            Saldo_Konsumen = 0;
+            Username_Konsumen = "";
+            Password_Konsumen = "";
         }
         #endregion
 
@@ -49,7 +61,21 @@ namespace Celikoor_Library
         public string Password_Konsumen { get => password_Konsumen; set => password_Konsumen = value; }
         #endregion
 
-        private void Isi_Sendiri_YGY()
+        public static void TambahData(Konsumen obj)
+        {
+            string sql = "INSERT INTO konsumens(nama, email, no_hp, gender, tgl_lahir, saldo, username, password) " + 
+                "VALUES("+
+                "'" + obj.Nama_Konsumen + "'," +
+                "'" + obj.Email_Konsumen + "'," +
+                "'" + obj.NoHP_Konsumen+ "'," +
+                "'" + obj.Gender_Konsumen + "'," +
+                "'" + obj.Ttl_Konsumen.ToString("yyyy-MM-dd") + "'," +
+                "'" + obj.Saldo_Konsumen + "'," +
+                "'" + obj.Username_Konsumen + "'," +
+                "'" + obj.Password_Konsumen + "');";
+            Koneksi.JalankanPerintahNonQuery(sql);
+        }
+        public static void BacaData(Konsumen obj)
         {
 
         }
