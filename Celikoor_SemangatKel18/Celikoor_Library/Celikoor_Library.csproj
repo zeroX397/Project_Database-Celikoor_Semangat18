@@ -48,10 +48,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.cs" />
+    <Compile Include="Aktor.cs" />
+    <Compile Include="Cinema.cs" />
+    <Compile Include="Genre.cs" />
     <Compile Include="Koneksi.cs" />
     <Compile Include="Pegawai.cs" />
     <Compile Include="Konsumen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Kelompok.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

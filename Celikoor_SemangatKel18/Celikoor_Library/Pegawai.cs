@@ -76,24 +76,21 @@ namespace Celikoor_Library
             while (drHasil.Read() == true)//selama data reader masih ada isinya lakukan baca
             {
                 Pegawai tampung = new Pegawai();
-                Jabatan tampungPosisi = new Jabatan();
+                /*Jabatan tampungPosisi = new Jabatan();
 
                 tampungPosisi.Id = drHasil.GetValue(7).ToString();
-                tampungPosisi.Nama = drHasil.GetValue(8).ToString();
+                tampungPosisi.Nama = drHasil.GetValue(8).ToString();*/
 
-
-                tampung.kode = int.Parse(drHasil.GetValue(0).ToString());
-                tampung.Nama = drHasil.GetValue(1).ToString();
-                tampung.TglLahir = DateTime.Parse(drHasil.GetValue(2).ToString());
-                tampung.alamat = drHasil.GetValue(3).ToString();
-                tampung.Gaji = int.Parse(drHasil.GetValue(4).ToString());
-                tampung.Username = drHasil.GetValue(5).ToString();
-                tampung.Password = "";
-                tampung.Posisi = tampungPosisi;
+                tampung.Nama_Pegawai = drHasil.GetValue(1).ToString();
+                tampung.Email_Pegawai= drHasil.GetValue(2).ToString());
+                tampung.Username_Pegawai = drHasil.GetValue(3).ToString();
+                tampung.Password_Pegawai = drHasil.GetValue(4).ToString();
+                tampung.Roles_Pegawai = drHasil.GetValue(5).ToString();
 
                 listHasil.Add(tampung);
             }
             return listHasil;
         }
+
     }
 }

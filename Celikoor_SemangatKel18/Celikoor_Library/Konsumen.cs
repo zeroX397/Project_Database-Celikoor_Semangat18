@@ -77,7 +77,24 @@ namespace Celikoor_Library
         }
         public static void BacaData(Konsumen obj)
         {
+            string sql = "SELECT * FROM konsumens;";
 
+            Koneksi.JalankanPerintahSelect(sql);
         }
+        public static void UbahData(Konsumen obj)
+        {   //password tdk boleh diubah melalui method ini
+            string perintah = "UPDATE konsumens SET " +
+                    "Nama='" + obj.Nama_Konsumen + "', " +
+                    "email='" + obj.Email_Konsumen + "', " +
+                    "no_hp='" + obj.NoHP_Konsumen + "', " +
+                    "gender='" + obj.Gender_Konsumen + "', " +
+                    "tgl_lahir='" + obj.Ttl_Konsumen + "', " +
+                    "saldo='" + obj.Saldo_Konsumen + "' " +
+                    "username='" + obj.Username_Konsumen + "' " +
+                    "password='" + obj.Password_Konsumen + "')";
+
+            Koneksi.JalankanPerintahNonQuery(perintah);
+        }
+        
     }
 }
