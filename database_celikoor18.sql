@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Dec 01, 2023 at 01:35 PM
--- Server version: 8.0.35
--- PHP Version: 8.2.12
+-- Host: kresnayangasli.my.id:12788
+-- Generation Time: Dec 03, 2023 at 03:40 PM
+-- Server version: 10.9.8-MariaDB-1:10.9.8+maria~ubu2204
+-- PHP Version: 8.2.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `celikoor_semangat18`
+-- Database: `database_celikoor18`
 --
 
 -- --------------------------------------------------------
@@ -28,12 +28,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `aktors` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `nama` varchar(45) NOT NULL,
   `tgl_lahir` date NOT NULL,
   `gender` enum('L','P') NOT NULL,
   `negara_asal` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 --
 -- Dumping data for table `aktors`
@@ -53,10 +53,10 @@ INSERT INTO `aktors` (`id`, `nama`, `tgl_lahir`, `gender`, `negara_asal`) VALUES
 --
 
 CREATE TABLE `aktor_film` (
-  `aktors_id` int NOT NULL,
-  `films_id` int NOT NULL,
+  `aktors_id` int(11) NOT NULL,
+  `films_id` int(11) NOT NULL,
   `peran` enum('UTAMA','PEMBANTU','FIGURAN') DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- --------------------------------------------------------
 
@@ -65,12 +65,12 @@ CREATE TABLE `aktor_film` (
 --
 
 CREATE TABLE `cinemas` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `nama_cabang` varchar(45) NOT NULL,
   `alamat` varchar(45) NOT NULL,
-  `tgl_dibuka` date NOT NULL,
+  `tgl_dibuka` date DEFAULT NULL,
   `kota` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 --
 -- Dumping data for table `cinemas`
@@ -90,17 +90,17 @@ INSERT INTO `cinemas` (`id`, `nama_cabang`, `alamat`, `tgl_dibuka`, `kota`) VALU
 --
 
 CREATE TABLE `films` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `judul` varchar(45) NOT NULL,
   `sinopsis` text NOT NULL,
-  `tahun` int NOT NULL,
-  `durasi` smallint NOT NULL,
-  `kelompoks_id` int NOT NULL,
+  `tahun` int(11) NOT NULL,
+  `durasi` smallint(6) NOT NULL,
+  `kelompoks_id` int(11) NOT NULL,
   `bahasa` enum('EN','ID','CHN','KOR','JPN','OTH') NOT NULL DEFAULT 'EN',
-  `is_sub_indo` tinyint NOT NULL DEFAULT '1',
+  `is_sub_indo` tinyint(4) NOT NULL DEFAULT 1,
   `cover_image` varchar(45) DEFAULT NULL,
   `diskon_nominal` double DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- --------------------------------------------------------
 
@@ -109,9 +109,9 @@ CREATE TABLE `films` (
 --
 
 CREATE TABLE `film_studio` (
-  `studios_id` int NOT NULL,
-  `films_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+  `studios_id` int(11) NOT NULL,
+  `films_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- --------------------------------------------------------
 
@@ -120,10 +120,10 @@ CREATE TABLE `film_studio` (
 --
 
 CREATE TABLE `genres` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `nama` varchar(45) NOT NULL,
   `deskripsi` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- --------------------------------------------------------
 
@@ -132,9 +132,9 @@ CREATE TABLE `genres` (
 --
 
 CREATE TABLE `genre_film` (
-  `films_id` int NOT NULL,
-  `genres_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+  `films_id` int(11) NOT NULL,
+  `genres_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- --------------------------------------------------------
 
@@ -143,14 +143,14 @@ CREATE TABLE `genre_film` (
 --
 
 CREATE TABLE `invoices` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `tanggal` datetime NOT NULL,
   `grand_total` double NOT NULL,
   `diskon_nominal` double DEFAULT NULL,
-  `konsumens_id` int NOT NULL,
-  `kasir_id` int DEFAULT NULL,
+  `konsumens_id` int(11) NOT NULL,
+  `kasir_id` int(11) DEFAULT NULL,
   `status` enum('PENDING','VALIDASI','TERBAYAR') NOT NULL DEFAULT 'PENDING'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- --------------------------------------------------------
 
@@ -159,10 +159,10 @@ CREATE TABLE `invoices` (
 --
 
 CREATE TABLE `jadwal_films` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `tanggal` date NOT NULL,
   `jam_pemutaran` enum('I','II','III','IV') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- --------------------------------------------------------
 
@@ -171,10 +171,10 @@ CREATE TABLE `jadwal_films` (
 --
 
 CREATE TABLE `jenis_studios` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `nama` varchar(45) NOT NULL,
   `deskripsi` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- --------------------------------------------------------
 
@@ -183,9 +183,9 @@ CREATE TABLE `jenis_studios` (
 --
 
 CREATE TABLE `kelompoks` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `nama` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- --------------------------------------------------------
 
@@ -194,16 +194,16 @@ CREATE TABLE `kelompoks` (
 --
 
 CREATE TABLE `konsumens` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `nama` varchar(45) NOT NULL,
   `email` varchar(45) NOT NULL,
   `no_hp` varchar(45) NOT NULL,
   `gender` enum('L','P') NOT NULL,
   `tgl_lahir` date NOT NULL,
-  `saldo` double DEFAULT '0',
+  `saldo` double DEFAULT 0,
   `username` varchar(45) NOT NULL,
   `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 --
 -- Dumping data for table `konsumens`
@@ -223,13 +223,13 @@ INSERT INTO `konsumens` (`id`, `nama`, `email`, `no_hp`, `gender`, `tgl_lahir`, 
 --
 
 CREATE TABLE `pegawais` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `nama` varchar(45) NOT NULL,
   `email` varchar(45) NOT NULL,
   `username` varchar(45) NOT NULL,
   `password` varchar(255) NOT NULL,
   `roles` enum('ADMIN','KASIR','OPERATOR') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 --
 -- Dumping data for table `pegawais`
@@ -249,10 +249,10 @@ INSERT INTO `pegawais` (`id`, `nama`, `email`, `username`, `password`, `roles`) 
 --
 
 CREATE TABLE `sesi_films` (
-  `jadwal_film_id` int NOT NULL,
-  `studios_id` int NOT NULL,
-  `films_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+  `jadwal_film_id` int(11) NOT NULL,
+  `studios_id` int(11) NOT NULL,
+  `films_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- --------------------------------------------------------
 
@@ -261,14 +261,14 @@ CREATE TABLE `sesi_films` (
 --
 
 CREATE TABLE `studios` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `nama` varchar(45) NOT NULL,
-  `kapasitas` int NOT NULL,
-  `jenis_studios_id` int NOT NULL,
-  `cinemas_id` int NOT NULL,
-  `harga_weekday` int NOT NULL,
-  `harga_weekend` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+  `kapasitas` int(11) NOT NULL,
+  `jenis_studios_id` int(11) NOT NULL,
+  `cinemas_id` int(11) NOT NULL,
+  `harga_weekday` int(11) NOT NULL,
+  `harga_weekend` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 -- --------------------------------------------------------
 
@@ -277,15 +277,15 @@ CREATE TABLE `studios` (
 --
 
 CREATE TABLE `tikets` (
-  `invoices_id` int NOT NULL,
+  `invoices_id` int(11) NOT NULL,
   `nomor_kursi` varchar(3) NOT NULL,
-  `status_hadir` tinyint DEFAULT NULL,
-  `operator_id` int NOT NULL,
+  `status_hadir` tinyint(4) DEFAULT NULL,
+  `operator_id` int(11) NOT NULL,
   `harga` double NOT NULL,
-  `jadwal_film_id` int NOT NULL,
-  `studios_id` int NOT NULL,
-  `films_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+  `jadwal_film_id` int(11) NOT NULL,
+  `studios_id` int(11) NOT NULL,
+  `films_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 --
 -- Indexes for dumped tables
@@ -411,67 +411,67 @@ ALTER TABLE `tikets`
 -- AUTO_INCREMENT for table `aktors`
 --
 ALTER TABLE `aktors`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `cinemas`
 --
 ALTER TABLE `cinemas`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `films`
 --
 ALTER TABLE `films`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `genres`
 --
 ALTER TABLE `genres`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `invoices`
 --
 ALTER TABLE `invoices`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `jadwal_films`
 --
 ALTER TABLE `jadwal_films`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `jenis_studios`
 --
 ALTER TABLE `jenis_studios`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `kelompoks`
 --
 ALTER TABLE `kelompoks`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `konsumens`
 --
 ALTER TABLE `konsumens`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `pegawais`
 --
 ALTER TABLE `pegawais`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `studios`
 --
 ALTER TABLE `studios`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables

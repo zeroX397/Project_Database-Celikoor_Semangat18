@@ -82,7 +82,7 @@ namespace Celikoor_Library
                 tampungPosisi.Nama = drHasil.GetValue(8).ToString();*/
 
                 tampung.Nama_Pegawai = drHasil.GetValue(1).ToString();
-                tampung.Email_Pegawai= drHasil.GetValue(2).ToString());
+                tampung.Email_Pegawai= drHasil.GetValue(2).ToString();
                 tampung.Username_Pegawai = drHasil.GetValue(3).ToString();
                 tampung.Password_Pegawai = drHasil.GetValue(4).ToString();
                 tampung.Roles_Pegawai = drHasil.GetValue(5).ToString();

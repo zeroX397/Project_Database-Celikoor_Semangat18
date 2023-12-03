@@ -8,6 +8,8 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Celikoor_Library;
+using Celikoor_Semangat18;
 
 namespace tes
 {
@@ -22,6 +24,21 @@ namespace tes
         {
             WindowState = FormWindowState.Maximized;
             this.IsMdiContainer = true;
+
+            try
+            {
+                string server = connect.Default.dbServer;
+                int port = connect.Default.dbPort;
+                string name = connect.Default.dbName;
+                string uid = connect.Default.dbUsername;
+                string pwd = connect.Default.dbPassword;
+                Koneksi k = new Koneksi(server, port, name, uid, pwd);
+                MessageBox.Show("Koneksi Berhasil");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Koneksi Gagal! error: " + ex.Message);
+            }
         }
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {

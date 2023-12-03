@@ -77,7 +77,7 @@ namespace Celikoor_Library
 
                 tampung.Nama_cabang = drHasil.GetValue(1).ToString();
                 tampung.Alamat = drHasil.GetValue(2).ToString();
-                tampung.Tgl_buka = drHasil.GetValue(3).ToString("yyyy-MM-dd");
+                tampung.Tgl_buka = drHasil.IsDBNull(3) ? DateTime.MinValue : Convert.ToDateTime(drHasil.GetValue(3));
                 tampung.Kota = drHasil.GetValue(4).ToString();
                 listHasil.Add(tampung);
             }

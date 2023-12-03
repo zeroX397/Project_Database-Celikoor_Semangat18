@@ -25,7 +25,7 @@ namespace Celikoor_Semangat18 {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("localhost")]
+        [global::System.Configuration.DefaultSettingValueAttribute("kresnayangasli.my.id")]
         public string dbServer {
             get {
                 return ((string)(this["dbServer"]));
@@ -37,7 +37,7 @@ namespace Celikoor_Semangat18 {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("celikoor_semangat18")]
+        [global::System.Configuration.DefaultSettingValueAttribute("database_celikoor18")]
         public string dbName {
             get {
                 return ((string)(this["dbName"]));
@@ -49,7 +49,7 @@ namespace Celikoor_Semangat18 {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("root")]
+        [global::System.Configuration.DefaultSettingValueAttribute("root_18")]
         public string dbUsername {
             get {
                 return ((string)(this["dbUsername"]));
@@ -61,13 +61,25 @@ namespace Celikoor_Semangat18 {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("mysql")]
+        [global::System.Configuration.DefaultSettingValueAttribute("semangat18")]
         public string dbPassword {
             get {
                 return ((string)(this["dbPassword"]));
             }
             set {
                 this["dbPassword"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("12788")]
+        public int dbPort {
+            get {
+                return ((int)(this["dbPort"]));
+            }
+            set {
+                this["dbPort"] = value;
             }
         }
     }

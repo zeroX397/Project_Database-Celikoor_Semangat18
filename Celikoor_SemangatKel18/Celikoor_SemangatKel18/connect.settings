@@ -3,16 +3,19 @@
   <Profiles />
   <Settings>
     <Setting Name="dbServer" Type="System.String" Scope="User">
-      <Value Profile="(Default)">localhost</Value>
+      <Value Profile="(Default)">kresnayangasli.my.id</Value>
     </Setting>
     <Setting Name="dbName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">celikoor_semangat18</Value>
+      <Value Profile="(Default)">database_celikoor18</Value>
     </Setting>
     <Setting Name="dbUsername" Type="System.String" Scope="User">
-      <Value Profile="(Default)">root</Value>
+      <Value Profile="(Default)">root_18</Value>
     </Setting>
     <Setting Name="dbPassword" Type="System.String" Scope="User">
-      <Value Profile="(Default)">mysql</Value>
+      <Value Profile="(Default)">semangat18</Value>
+    </Setting>
+    <Setting Name="dbPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">12788</Value>
     </Setting>
   </Settings>
 </SettingsFile>
