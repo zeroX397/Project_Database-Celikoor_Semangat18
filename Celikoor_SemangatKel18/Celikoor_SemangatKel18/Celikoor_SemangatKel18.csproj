@@ -47,6 +47,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormHalamanPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHalamanPegawai.Designer.cs">
+      <DependentUpon>FormHalamanPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUntukAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUntukAdmin.Designer.cs">
+      <DependentUpon>FormUntukAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUntukKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUntukKasir.Designer.cs">
+      <DependentUpon>FormUntukKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUntukOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUntukOperator.Designer.cs">
+      <DependentUpon>FormUntukOperator.cs</DependentUpon>
+    </Compile>
     <Compile Include="LOGIN\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +97,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormHalamanPegawai.resx">
+      <DependentUpon>FormHalamanPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUntukAdmin.resx">
+      <DependentUpon>FormUntukAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUntukKasir.resx">
+      <DependentUpon>FormUntukKasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUntukOperator.resx">
+      <DependentUpon>FormUntukOperator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LOGIN\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
