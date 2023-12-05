@@ -15,3 +15,14 @@ C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_Sem
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.dll
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.pdb
+C:\Users\chris\Downloads\Compressed\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\Celikoor_Library.dll
+C:\Users\chris\Downloads\Compressed\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\Celikoor_Library.pdb
+C:\Users\chris\Downloads\Compressed\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\System.Memory.dll
+C:\Users\chris\Downloads\Compressed\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\chris\Downloads\Compressed\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\chris\Downloads\Compressed\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\System.Buffers.dll
+C:\Users\chris\Downloads\Compressed\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.csproj.AssemblyReference.cache
+C:\Users\chris\Downloads\Compressed\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.csproj.CoreCompileInputs.cache
+C:\Users\chris\Downloads\Compressed\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.csproj.CopyComplete
+C:\Users\chris\Downloads\Compressed\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.dll
+C:\Users\chris\Downloads\Compressed\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.pdb

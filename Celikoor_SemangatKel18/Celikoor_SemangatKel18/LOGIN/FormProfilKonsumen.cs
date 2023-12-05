@@ -16,5 +16,17 @@ namespace Celikoor_Semangat18.Konsumen
         {
             InitializeComponent();
         }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void linkLabel_Logout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form form = Application.OpenForms["FormMainMenu"];
+            form.Show();
+            form.BringToFront();
+        }
     }
 }

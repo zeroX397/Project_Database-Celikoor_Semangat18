@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Celikoor_Semangat18</RootNamespace>
     <AssemblyName>Celikoor_Semangat18</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Celikoor_Library">
+      <HintPath>..\Celikoor_Library\bin\Debug\Celikoor_Library.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,6 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="connect.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>connect.settings</DependentUpon>
+    </Compile>
     <Compile Include="FormHalamanPegawai.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,16 +79,16 @@
     <Compile Include="FormUntukOperator.Designer.cs">
       <DependentUpon>FormUntukOperator.cs</DependentUpon>
     </Compile>
-    <Compile Include="LOGIN\FormLogin.cs">
+    <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LOGIN\FormLogin.Designer.cs">
+    <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="LOGIN\FormProfilKonsumen.cs">
+    <Compile Include="Konsumen\FormProfilKonsumen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LOGIN\FormProfilKonsumen.Designer.cs">
+    <Compile Include="Konsumen\FormProfilKonsumen.Designer.cs">
       <DependentUpon>FormProfilKonsumen.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMainMenu.cs">
@@ -89,10 +97,16 @@
     <Compile Include="FormMainMenu.Designer.cs">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="LOGIN\FormRegisterKonsumen.cs">
+    <Compile Include="FormRegisterPegawai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LOGIN\FormRegisterKonsumen.Designer.cs">
+    <Compile Include="FormRegisterPegawai.Designer.cs">
+      <DependentUpon>FormRegisterPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Konsumen\FormRegisterKonsumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Konsumen\FormRegisterKonsumen.Designer.cs">
       <DependentUpon>FormRegisterKonsumen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -109,16 +123,19 @@
     <EmbeddedResource Include="FormUntukOperator.resx">
       <DependentUpon>FormUntukOperator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LOGIN\FormLogin.resx">
+    <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LOGIN\FormProfilKonsumen.resx">
+    <EmbeddedResource Include="Konsumen\FormProfilKonsumen.resx">
       <DependentUpon>FormProfilKonsumen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LOGIN\FormRegisterKonsumen.resx">
+    <EmbeddedResource Include="FormRegisterPegawai.resx">
+      <DependentUpon>FormRegisterPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Konsumen\FormRegisterKonsumen.resx">
       <DependentUpon>FormRegisterKonsumen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -131,6 +148,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="connect.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>connect.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
