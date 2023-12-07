@@ -41,7 +41,7 @@ namespace Celikoor_Library
             string vUID = settingSection.Settings.Get("dbUsername").Value.ValueXml.InnerText;
             string vPWD = settingSection.Settings.Get("dbPassword").Value.ValueXml.InnerText;
 
-            string vConnString = "Server=" + vServer + ";Port" + vPort + ";Database=" + vDb + ";Uid=" + vUID + ";Pwd=" + vPWD + ";";
+            string vConnString = "Server=" + vServer + ";Port=" + vPort + ";Database=" + vDb + ";Uid=" + vUID + ";Pwd=" + vPWD + ";";
 
             DB_Connection = new MySqlConnection();
             DB_Connection.ConnectionString = vConnString;
@@ -63,6 +63,14 @@ namespace Celikoor_Library
 
             MySqlCommand cmd = new MySqlCommand(sql, k.DB_Connection);
             cmd.ExecuteNonQuery();
+        }
+
+        public static MySqlDataReader AmbilData(string sql)
+        {
+            Koneksi k = new Koneksi();
+            MySqlCommand c = new MySqlCommand(sql, k.DB_Connection);
+            MySqlDataReader hasil = c.ExecuteReader();
+            return hasil;
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿
-namespace tes
+namespace Celikoor_Semangat18
 {
     partial class FormRegisterKonsumen
     {

@@ -92,5 +92,37 @@ namespace Celikoor_Library
             return listHasil;
         }
 
+        public static Pegawai Login(string username, string password)
+        {
+            string sql = "SELECT id, nama, email, username, password, roles FROM pegawais ";
+            if (username == "" || password == "")
+            {
+                throw new Exception("Username atau password tidak boleh kosong");
+            }
+            else
+            {
+                sql += " WHERE username='" + username + "' and password='" + password + "';";
+            }
+
+            MySqlDataReader hasil = Koneksi.AmbilData(sql);
+            Console.WriteLine(sql);
+
+            Pegawai pegawaiHasil = new Pegawai();
+            if (hasil.Read() == true)
+            {
+
+                pegawaiHasil.id_Pegawai = hasil.GetInt32(0);
+                pegawaiHasil.nama_Pegawai = hasil.GetValue(1).ToString();
+                pegawaiHasil.email_Pegawai = hasil.GetValue(2).ToString();
+                pegawaiHasil.username_Pegawai = hasil.GetValue(3).ToString();
+                pegawaiHasil.password_Pegawai = hasil.GetValue(4).ToString();
+                pegawaiHasil.roles_Pegawai = hasil.GetValue(5).ToString();
+                Console.WriteLine("Nama Pegawai:" + pegawaiHasil.nama_Pegawai);
+                Console.WriteLine("Email Pegawai:" + pegawaiHasil.email_Pegawai);
+                return pegawaiHasil;
+
+            }
+            return null;
+        }
     }
 }

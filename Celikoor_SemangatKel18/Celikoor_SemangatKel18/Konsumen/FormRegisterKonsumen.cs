@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace tes
+namespace Celikoor_Semangat18
 {
     public partial class FormRegisterKonsumen : Form
     {
-        FormMainMenu frmMainMenu;
+        //FormMainMenu frmMainMenu;
         public FormRegisterKonsumen()
         {
             InitializeComponent();
@@ -21,7 +21,7 @@ namespace tes
 
         private void FormRegisterKonsumen_Load(object sender, EventArgs e)
         {
-            frmMainMenu = (FormMainMenu)Owner;
+            //frmMainMenu = (FormMainMenu)Owner;
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
@@ -38,26 +38,26 @@ namespace tes
 
         private void buttonDaftar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Konsumen tambahData = new Konsumen();
-                tambahData.Nama_Konsumen = textBoxNama.Text;
-                tambahData.Email_Konsumen = textBoxEmail.Text;
-                tambahData.NoHP_Konsumen = textBoxNoHP.Text;
-                tambahData.Gender_Konsumen = radioButtonLaki.Checked ? "L" : "P";
-                tambahData.Ttl_Konsumen = dateTimePickerTglLahir.Value.Date;
-                tambahData.Saldo_Konsumen = 0;
-                tambahData.Username_Konsumen = textBoxUsername.Text;
-                tambahData.Password_Konsumen = textBoxPass.Text;
+            //try
+            //{
+            //    Konsumen tambahData = new Konsumen();
+            //    tambahData.Nama_Konsumen = textBoxNama.Text;
+            //    tambahData.Email_Konsumen = textBoxEmail.Text;
+            //    tambahData.NoHP_Konsumen = textBoxNoHP.Text;
+            //    tambahData.Gender_Konsumen = radioButtonLaki.Checked ? "L" : "P";
+            //    tambahData.Ttl_Konsumen = dateTimePickerTglLahir.Value.Date;
+            //    tambahData.Saldo_Konsumen = 0;
+            //    tambahData.Username_Konsumen = textBoxUsername.Text;
+            //    tambahData.Password_Konsumen = textBoxPass.Text;
 
-                Konsumen.TambahData(tambahData);
-                MessageBox.Show("Pendaftaran Berhasil. Anda bisa masuk sekarang.");
-                this.Close();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Pendaftaran Gagal. Error: " + ex.Message);
-            }
+            //    Konsumen.TambahData(tambahData);
+            //    MessageBox.Show("Pendaftaran Berhasil. Anda bisa masuk sekarang.");
+            //    this.Close();
+            //}
+            //catch(Exception ex)
+            //{
+            //    MessageBox.Show("Pendaftaran Gagal. Error: " + ex.Message);
+            //}
         }
     }
 }

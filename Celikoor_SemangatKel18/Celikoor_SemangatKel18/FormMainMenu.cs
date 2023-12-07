@@ -32,6 +32,7 @@ namespace tes
                 string name = connect.Default.dbName;
                 string uid = connect.Default.dbUsername;
                 string pwd = connect.Default.dbPassword;
+                Console.WriteLine(name);
                 Koneksi k = new Koneksi(server, port, name, uid, pwd);
                 MessageBox.Show("Koneksi Berhasil");
             }
