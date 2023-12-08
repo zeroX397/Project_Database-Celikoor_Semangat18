@@ -28,7 +28,6 @@ namespace Celikoor_Library
         #endregion
 
         #region PROPERTIES
-
         public string Title { get => title; set => title = value; }
         public string Director { get => director; set => director = value; }
         public DateTime ReleaseYear { get => releaseYear; set => releaseYear = value; }

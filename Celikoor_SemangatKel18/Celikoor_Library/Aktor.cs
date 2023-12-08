@@ -27,7 +27,6 @@ namespace Celikoor_Library
 
         #region PROPERTIES
         public string Name { get => name; set => name = value; }
-
         public string Nationality { get => nationality; set => nationality = value; }
         public string Filmography { get => filmography; set => filmography = value; }
         public DateTime Birthdate { get => birthdate; set => birthdate = value; }

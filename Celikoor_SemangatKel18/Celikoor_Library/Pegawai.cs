@@ -93,7 +93,6 @@ namespace Celikoor_Library
             }
             return listHasil;
         }
-<<<<<<< Updated upstream
 
         public static Pegawai Login(string username, string password)
         {
@@ -127,8 +126,6 @@ namespace Celikoor_Library
             }
             return null;
         }
-=======
->>>>>>> Stashed changes
         #endregion
     }
 }
