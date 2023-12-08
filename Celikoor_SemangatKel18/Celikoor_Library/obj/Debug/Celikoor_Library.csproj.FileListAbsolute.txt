@@ -36,3 +36,11 @@ C:\Users\Florencia\OneDrive\Dokumen\GitHub\Project_Database-Celikoor_Semangat18\
 C:\Users\Florencia\OneDrive\Dokumen\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.csproj.CopyComplete
 C:\Users\Florencia\OneDrive\Dokumen\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.dll
 C:\Users\Florencia\OneDrive\Dokumen\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.pdb
+C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\Celikoor_Library.dll
+C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\Celikoor_Library.pdb
+C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\System.Memory.dll
+C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\System.Buffers.dll
+C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\bin\Debug\MySql.Data.xml
+C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.csproj.CopyComplete
