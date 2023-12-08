@@ -44,17 +44,15 @@ namespace Celikoor_Library
             //obj.Posisi.Id --> mengambil ID dari posisi yang dimiliki oleh pegawai
 
             string perintah = "INSERT INTO cinemas " +
-                "(id, nama_cabang, alamat, tgl_buka, kota) VALUES (" +
-                    "'" + obj.Nama_cabang + "', " +
-                    "'" + obj.Alamat + "', " +
-                    "'" + obj.Tgl_buka.ToString("yyyy-MM-dd") + "', " +
-                    "'" + obj.Kota + "');";
+                "(id, nama_cabang, alamat, tgl_dibuka, kota) VALUES " + "('" + obj.Id.ToString() +
+                     "', '" + obj.Nama_cabang + "', '" + obj.Alamat + "', '" + obj.Tgl_buka.ToString("yyyy-MM-dd") + "', '" +
+                    obj.Kota + "');";
 
             Koneksi.JalankanPerintahNonQuery(perintah);
         }
         public static void HapusData(int KodeHapus)
         {
-            string perintah = "DELETE FROM cinema WHERE id = '" + KodeHapus.ToString() + "';";
+            string perintah = "DELETE FROM cinemas WHERE id = '" + KodeHapus.ToString() + "';";
 
             Koneksi.JalankanPerintahNonQuery(perintah);
         }
@@ -62,9 +60,9 @@ namespace Celikoor_Library
         {
             string perintah;
             if (filter == "")
-                perintah = "SELECT * from cinema";
+                perintah = "SELECT * from cinemas";
             else
-                perintah = "SELECT * from cinema " +
+                perintah = "SELECT * from cinemas " +
                     "where " + filter + " like '%" + nilai + "%'";
 
             MySqlDataReader drHasil = Koneksi.JalankanPerintahSelect(perintah);
@@ -74,7 +72,7 @@ namespace Celikoor_Library
             {
                 //pindah isi datareader ke penampung sementara
                 Cinema tampung = new Cinema();
-
+                tampung.Id = int.Parse(drHasil.GetValue(0).ToString());
                 tampung.Nama_cabang = drHasil.GetValue(1).ToString();
                 tampung.Alamat = drHasil.GetValue(2).ToString();
                 tampung.Tgl_buka = drHasil.IsDBNull(3) ? DateTime.MinValue : Convert.ToDateTime(drHasil.GetValue(3));

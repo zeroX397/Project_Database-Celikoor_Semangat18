@@ -61,11 +61,29 @@
     <Compile Include="FormHalamanPegawai.Designer.cs">
       <DependentUpon>FormHalamanPegawai.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormProfilKonsumen.cs">
+    <Compile Include="FormTambahAktor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormProfilKonsumen.Designer.cs">
-      <DependentUpon>FormProfilKonsumen.cs</DependentUpon>
+    <Compile Include="FormTambahAktor.Designer.cs">
+      <DependentUpon>FormTambahAktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahCinema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahCinema.Designer.cs">
+      <DependentUpon>FormTambahCinema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahKelompok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahKelompok.Designer.cs">
+      <DependentUpon>FormTambahKelompok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahPegawai.Designer.cs">
+      <DependentUpon>FormTambahPegawai.cs</DependentUpon>
     </Compile>
     <Compile Include="FormUntukAdmin.cs">
       <SubType>Form</SubType>
@@ -91,19 +109,46 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Konsumen\FormProfilKonsumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Konsumen\FormProfilKonsumen.Designer.cs">
+      <DependentUpon>FormProfilKonsumen.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMainMenu.Designer.cs">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRegisterPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegisterPegawai.Designer.cs">
+      <DependentUpon>FormRegisterPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Konsumen\FormRegisterKonsumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Konsumen\FormRegisterKonsumen.Designer.cs">
+      <DependentUpon>FormRegisterKonsumen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormHalamanPegawai.resx">
       <DependentUpon>FormHalamanPegawai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormProfilKonsumen.resx">
-      <DependentUpon>FormProfilKonsumen.cs</DependentUpon>
+    <EmbeddedResource Include="FormTambahAktor.resx">
+      <DependentUpon>FormTambahAktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahCinema.resx">
+      <DependentUpon>FormTambahCinema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahKelompok.resx">
+      <DependentUpon>FormTambahKelompok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahPegawai.resx">
+      <DependentUpon>FormTambahPegawai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUntukAdmin.resx">
       <DependentUpon>FormUntukAdmin.cs</DependentUpon>
@@ -117,8 +162,17 @@
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Konsumen\FormProfilKonsumen.resx">
+      <DependentUpon>FormProfilKonsumen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegisterPegawai.resx">
+      <DependentUpon>FormRegisterPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Konsumen\FormRegisterKonsumen.resx">
+      <DependentUpon>FormRegisterKonsumen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

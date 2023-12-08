@@ -62,6 +62,7 @@ namespace Celikoor_Semangat18
             this.buttonExit.TabIndex = 23;
             this.buttonExit.Text = "X";
             this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // label1
             // 
