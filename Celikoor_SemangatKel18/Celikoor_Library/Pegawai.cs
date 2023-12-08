@@ -48,6 +48,7 @@ namespace Celikoor_Library
         public string Roles_Pegawai { get => roles_Pegawai; set => roles_Pegawai = value; }
         #endregion
 
+        #region METHODS
         public static void TambahData(Pegawai obj)
         {
             string sql = "INSERT INTO pegawais " + "(id, nama, email, username, password, roles) VALUES " + "('" + 
@@ -125,5 +126,6 @@ namespace Celikoor_Library
             }
             return null;
         }
+        #endregion
     }
 }
