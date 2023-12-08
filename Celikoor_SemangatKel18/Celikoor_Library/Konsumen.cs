@@ -61,6 +61,7 @@ namespace Celikoor_Library
         public string Password_Konsumen { get => password_Konsumen; set => password_Konsumen = value; }
         #endregion
 
+        #region METHODS
         public static void TambahData(Konsumen obj)
         {
             string sql = "INSERT INTO konsumens(nama, email, no_hp, gender, tgl_lahir, saldo, username, password) " + 
@@ -95,6 +96,7 @@ namespace Celikoor_Library
 
             Koneksi.JalankanPerintahNonQuery(perintah);
         }
-        
+        #endregion
+
     }
 }

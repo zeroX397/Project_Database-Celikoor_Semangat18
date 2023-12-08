@@ -8,6 +8,20 @@ namespace Celikoor_Library
 {
     internal class Genre
     {
+        #region DATAMEMBERS
 
+        #endregion
+
+        #region CONSTRUCTORS
+
+        #endregion
+
+        #region PROPERTIES
+
+        #endregion
+
+        #region METHODS
+
+        #endregion
     }
 }

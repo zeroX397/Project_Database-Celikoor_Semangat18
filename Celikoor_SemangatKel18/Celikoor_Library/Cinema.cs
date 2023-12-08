@@ -9,12 +9,15 @@ namespace Celikoor_Library
 {
     public class Cinema
     {
+        #region DATAMEMBERS
         private int id;
         private string nama_cabang;
         private string alamat;
         private DateTime tgl_buka;
         private string kota;
+        #endregion
 
+        #region CONSTRUCTORS
         public Cinema(int id, string nama_cabang, string alamat, DateTime tgl_buka, string kota)
         {
             Id = id;
@@ -31,12 +34,17 @@ namespace Celikoor_Library
             Tgl_buka = DateTime.Now;
             Kota = "";
         }
+        #endregion
+
+        #region PROPERTIES
         public int Id { get => id; set => id = value; }
         public string Nama_cabang { get => nama_cabang; set => nama_cabang = value; }
         public string Alamat { get => alamat; set => alamat = value; }
         public DateTime Tgl_buka { get => tgl_buka; set => tgl_buka = value; }
         public string Kota { get => kota; set => kota = value; }
+        #endregion
 
+        #region METHODS
         public static void TambahData(Cinema obj)
         {
             //something new: 
@@ -83,5 +91,6 @@ namespace Celikoor_Library
             }
             return listHasil;
         }
+        #endregion
     }
 }
