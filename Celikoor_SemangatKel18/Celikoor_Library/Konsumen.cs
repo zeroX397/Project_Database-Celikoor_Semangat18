@@ -47,6 +47,16 @@ namespace Celikoor_Library
             Username_Konsumen = "";
             Password_Konsumen = "";
         }
+
+        public Konsumen(int v1, string v2, string v3, string v4, string v5, object p)
+        {
+            V1 = v1;
+            V2 = v2;
+            V3 = v3;
+            V4 = v4;
+            V5 = v5;
+            P = p;
+        }
         #endregion
 
         #region Properties
@@ -59,6 +69,12 @@ namespace Celikoor_Library
         public double Saldo_Konsumen { get => saldo_Konsumen; set => saldo_Konsumen = value; }
         public string Username_Konsumen { get => username_Konsumen; set => username_Konsumen = value; }
         public string Password_Konsumen { get => password_Konsumen; set => password_Konsumen = value; }
+        public int V1 { get; }
+        public string V2 { get; }
+        public string V3 { get; }
+        public string V4 { get; }
+        public string V5 { get; }
+        public object P { get; }
         #endregion
 
         #region METHODS
@@ -76,11 +92,72 @@ namespace Celikoor_Library
                 "'" + obj.Password_Konsumen + "');";
             Koneksi.JalankanPerintahNonQuery(sql);
         }
-        public static void BacaData(Konsumen obj)
+        public static Admin CekLogin(string username, string password)
         {
+<<<<<<< Updated upstream
             string sql = "SELECT * FROM konsumens;";
 
             Koneksi.JalankanPerintahSelect(sql);
+=======
+            // Password tidak diambil karena tidak perlu menyimpan password pada obyek pembeli untuk alasan keamanan
+            string sql = "SELECT nama, email, no_HP,Gender,Ttl, saldo username" +
+                " FROM konsumens " +
+                " WHERE username='" + username + "' AND password='" + password + "';";
+
+            MySqlDataReader result = Koneksi.JalankanPerintahSelect(sql);
+
+            Konsumen tmp = new Konsumen();
+            //if (result.Read())
+            //{
+            //    userRole tmpRole;
+            //    if (result.GetString("role").CompareTo("PENJUAL") == 0)
+            //    {
+            //        tmpRole = userRole.PEGAWAI;
+            //    }
+            //    else
+            //    {
+            //        tmpRole = userRole.KONSUMEN;
+            //    }
+
+            //    tmp = new Admin(
+            //        result.GetInt32("email"),
+            //        result.GetString("nama"),
+            //        result.GetString("username"),
+            //        "",
+            //        result.GetString("password"),
+            //        tmpRole);
+
+            //    return tmp;
+            //}
+            return null;
+        }
+
+        public static List<Admin> BacaData(string kriteria, string nilaiKriteria)
+        {
+            string sql = "SELECT nama, email, no_HP,Gender,Ttl, saldo username" +
+                " FROM konsumens " 
+            if (kriteria == "")
+            {
+                sql += ";";
+            }
+            else
+            {
+                sql += " WHERE " + kriteria + " LIKE '%" + nilaiKriteria + "%';";
+            }
+            MySqlDataReader result = Koneksi.JalankanPerintahSelect(sql);
+            List<Admin> userList = new List<Admin>();
+            while (result.Read())
+            {
+                Konsumen tmp = new Konsumen(result.GetInt32("id"),
+                    result.GetString("nama"),
+                    result.GetString("username"),
+                    "", result.GetString("alamat"),
+                    //(result.GetString("role") == "KONSUMEN" ? userRole.KONSUMEN : userRole.PEGAWAI));
+
+                //userList.Add(tmp);
+            }
+            return userList;
+>>>>>>> Stashed changes
         }
         public static void UbahData(Konsumen obj)
         {   //password tdk boleh diubah melalui method ini
@@ -99,4 +176,5 @@ namespace Celikoor_Library
         #endregion
 
     }
+}
 }

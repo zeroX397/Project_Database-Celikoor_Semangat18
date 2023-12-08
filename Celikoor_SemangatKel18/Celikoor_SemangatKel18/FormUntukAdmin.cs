@@ -18,6 +18,7 @@ namespace Celikoor_Semangat18
             InitializeComponent();
         }
 
+<<<<<<< Updated upstream
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
@@ -87,6 +88,9 @@ namespace Celikoor_Semangat18
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+=======
+        private void label1_Click(object sender, EventArgs e)
+>>>>>>> Stashed changes
         {
 
         }
