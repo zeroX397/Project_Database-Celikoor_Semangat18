@@ -11,65 +11,50 @@ using System.Windows.Forms;
 using Celikoor_Library;
 using Celikoor_Semangat18;
 
-namespace tes
-{
+namespace Celikoor_Semangat18
+{ 
     public partial class FormMainMenu : Form
     {
-        public FormMainMenu()
-        {
-            InitializeComponent();
-        }
+    public FormMainMenu()
+    {
+        InitializeComponent();
+    }
 
-        private void FormMainMenu_Load(object sender, EventArgs e)
+    private void FormMainMenu_Load(object sender, EventArgs e)
+    {
+        WindowState = FormWindowState.Maximized;
+        this.IsMdiContainer = true;
+        this.WindowState = FormWindowState.Maximized;
+        this.IsMdiContainer = true;//untuk men-set form sebagai mdiParent
+        try
         {
-            WindowState = FormWindowState.Maximized;
-            this.IsMdiContainer = true;
-
-            try
-            {
-                string server = connect.Default.dbServer;
-                int port = connect.Default.dbPort;
-                string name = connect.Default.dbName;
-                string uid = connect.Default.dbUsername;
-                string pwd = connect.Default.dbPassword;
-                Console.WriteLine(name);
-                Koneksi k = new Koneksi(server, port, name, uid, pwd);
-                MessageBox.Show("Koneksi Berhasil");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Koneksi Gagal! error: " + ex.Message);
-            }
+            string server = connect.Default.dbServer;
+            int port = connect.Default.dbPort;
+            string name = connect.Default.dbName;
+            string uid = connect.Default.dbUsername;
+            string pwd = connect.Default.dbPassword;
+            Console.WriteLine(name);
+            Koneksi k = new Koneksi(server, port, name, uid, pwd);
+            MessageBox.Show("Koneksi Berhasil");
+           
         }
-        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        catch (Exception ex)
         {
-            Form frm = Application.OpenForms["FormLogin"];
-            if(frm == null)
-            {
-                FormLoginKonsumen frmlog = new FormLoginKonsumen();
-                Form form = Application.OpenForms["FormLoginKonsumen"];
-                if (form == null)
-                {
-                    FormLoginKonsumen frmlogin = new FormLoginKonsumen();
-                    frmlogin.MdiParent = this;
-                    frmlogin.Show();
-                }
-                else
-                {
-                    form.Show();
-                    form.BringToFront();
-                }
-            }
+            MessageBox.Show("Koneksi Gagal! error: " + ex.Message);
         }
-
-        private void registerToolStripMenuItem_Click(object sender, EventArgs e)
+    }
+    private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Form frm = Application.OpenForms["FormLogin"];
+        if (frm == null)
         {
-            Form form = Application.OpenForms["FormRegisterKonsumen"];
+            FormLoginKonsumen frmlog = new FormLoginKonsumen();
+            Form form = Application.OpenForms["FormLoginKonsumen"];
             if (form == null)
             {
-                FormRegisterKonsumen frmRegisterKonsumen = new FormRegisterKonsumen();
-                frmRegisterKonsumen.MdiParent = this;
-                frmRegisterKonsumen.Show();
+                FormLoginKonsumen frmlogin = new FormLoginKonsumen();
+                frmlogin.MdiParent = this;
+                frmlogin.Show();
             }
             else
             {
@@ -77,5 +62,27 @@ namespace tes
                 form.BringToFront();
             }
         }
+    }
+
+    private void registerToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Form form = Application.OpenForms["FormRegisterKonsumen"];
+        if (form == null)
+        {
+            FormProfilKonsumen frmRegisterKonsumen = new FormProfilKonsumen();
+            frmRegisterKonsumen.MdiParent = this;
+            frmRegisterKonsumen.Show();
+        }
+        else
+        {
+            form.Show();
+            form.BringToFront();
+        }
+    }
+
+    private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+    {
+
+    }
     }
 }

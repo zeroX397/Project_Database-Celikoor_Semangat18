@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Celikoor_Semangat18.Konsumen
+namespace Celikoor_Semangat18
 {
     public partial class FormProfilKonsumen : Form
     {
         public FormProfilKonsumen()
         {
             InitializeComponent();
+        }
+
+        private void FormProfilKonsumen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

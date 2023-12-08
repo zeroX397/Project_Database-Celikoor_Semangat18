@@ -1,5 +1,5 @@
 ﻿
-namespace tes
+namespace Celikoor_Semangat18
 {
     partial class FormMainMenu
     {
@@ -34,7 +34,6 @@ namespace tes
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.masterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -72,14 +71,13 @@ namespace tes
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.masterToolStripMenuItem,
             this.registerToolStripMenuItem,
-            this.loginToolStripMenuItem,
             this.RecordToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(1776, 33);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // masterToolStripMenuItem
             // 
@@ -93,13 +91,6 @@ namespace tes
             this.registerToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
             this.registerToolStripMenuItem.Text = "Register";
             this.registerToolStripMenuItem.Click += new System.EventHandler(this.registerToolStripMenuItem_Click);
-            // 
-            // loginToolStripMenuItem
-            // 
-            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(72, 29);
-            this.loginToolStripMenuItem.Text = "Login";
-            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // RecordToolStripMenuItem
             // 
@@ -123,7 +114,7 @@ namespace tes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1776, 1177);
+            this.ClientSize = new System.Drawing.Size(1776, 1050);
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormMainMenu";
@@ -145,7 +136,6 @@ namespace tes
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem masterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem RecordToolStripMenuItem;
         private System.Windows.Forms.Panel panel;
     }
