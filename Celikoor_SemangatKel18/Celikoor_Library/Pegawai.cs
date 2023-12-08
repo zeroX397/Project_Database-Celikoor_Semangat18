@@ -51,13 +51,13 @@ namespace Celikoor_Library
         #region METHODS
         public static void TambahData(Pegawai obj)
         {
-            string sql = "INSERT INTO pegawais(nama, email, username, password, roles) " +
-                "VALUES(" +
-                "'" + obj.Nama_Pegawai + "'," +
-                "'" + obj.Email_Pegawai + "'," +
-                "'" + obj.Username_Pegawai + "'," +
-                "'" + obj.Password_Pegawai + "'," +
-                "'" + obj.Roles_Pegawai + "');";
+            string sql = "INSERT INTO pegawais " + "(id, nama, email, username, password, roles) VALUES " + "('" + 
+                obj.Id_Pegawai + "', '" +
+                obj.Nama_Pegawai + "', '" +
+                obj.Email_Pegawai + "', '" +
+                obj.Username_Pegawai + "', '" +
+                obj.Password_Pegawai + "', '" +
+                obj.Roles_Pegawai + "');";
             Koneksi.JalankanPerintahNonQuery(sql);
         }
         public static List<Pegawai> BacaData(string filter = "", string nilai = "")
@@ -65,11 +65,12 @@ namespace Celikoor_Library
             string perintah;
             if (filter == "")
             {
-                perintah = "SELECT p.*,j.nama FROM pegawai p inner join jabatan j on p.idjabatan = j.idjabatan";
+                perintah = "SELECT * from pegawais";
             }
             else
             {
-                perintah = "SELECT p.*,j.nama FROM pegawai p inner join jabatan j on p.idjabatan = j.idjabatan where " + filter + " like '%" + nilai + "%'";
+                perintah = "SELECT * from pegawais " +
+                    "where " + filter + " like '%" + nilai + "%'";
             }
             MySqlDataReader drHasil = Koneksi.JalankanPerintahSelect(perintah);
             List<Pegawai> listHasil = new List<Pegawai>();
@@ -81,7 +82,7 @@ namespace Celikoor_Library
 
                 tampungPosisi.Id = drHasil.GetValue(7).ToString();
                 tampungPosisi.Nama = drHasil.GetValue(8).ToString();*/
-
+                tampung.Id_Pegawai = int.Parse(drHasil.GetValue(0).ToString());
                 tampung.Nama_Pegawai = drHasil.GetValue(1).ToString();
                 tampung.Email_Pegawai= drHasil.GetValue(2).ToString();
                 tampung.Username_Pegawai = drHasil.GetValue(3).ToString();

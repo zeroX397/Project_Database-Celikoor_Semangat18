@@ -59,6 +59,7 @@ namespace Celikoor_Semangat18
             this.buttonExit.TabIndex = 23;
             this.buttonExit.Text = "X";
             this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // label1
             // 
@@ -72,14 +73,14 @@ namespace Celikoor_Semangat18
             this.label1.TabIndex = 19;
             this.label1.Text = "Halaman Kasir";
             // 
-            // FormHalamanKasir
+            // FormUntukKasir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(699, 450);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormHalamanKasir";
+            this.Name = "FormUntukKasir";
             this.Text = "FormHalamanKasir";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

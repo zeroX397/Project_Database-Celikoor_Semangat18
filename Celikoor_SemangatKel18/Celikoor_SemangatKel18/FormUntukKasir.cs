@@ -16,5 +16,10 @@ namespace Celikoor_Semangat18
         {
             InitializeComponent();
         }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

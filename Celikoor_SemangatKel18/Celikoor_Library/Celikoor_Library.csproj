@@ -50,6 +50,7 @@
     <Compile Include="Aktor.cs" />
     <Compile Include="Cinema.cs" />
     <Compile Include="Genre.cs" />
+    <Compile Include="JenisStudio.cs" />
     <Compile Include="Koneksi.cs" />
     <Compile Include="Pegawai.cs" />
     <Compile Include="Konsumen.cs" />
