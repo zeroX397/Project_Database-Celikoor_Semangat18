@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,34 +10,51 @@ namespace Celikoor_Library
     public class Genre
     {
         #region DATAMEMBERS
-        private string title;
-        private string director;
-        private DateTime releaseYear;
-        private string category;
-        private int runtime;//durasi
+        private int id_genre;
+        private string nama_genre;
+        private string deskripsi_genre;
         #endregion
 
         #region CONSTRUCTORS
-        public Genre(string title, string director, DateTime releaseYear, string category, int runtime)
+        public Genre()
         {
-            this.Title = title;
-            this.Director = director;
-            this.ReleaseYear = releaseYear;
-            this.Category = category;
-            this.Runtime = runtime;
+            Id_genre = 0;
+            Nama_genre = "";
+            Deskripsi_genre = "";
         }
         #endregion
 
         #region PROPERTIES
-        public string Title { get => title; set => title = value; }
-        public string Director { get => director; set => director = value; }
-        public DateTime ReleaseYear { get => releaseYear; set => releaseYear = value; }
-        public string Category { get => category; set => category = value; }
-        public int Runtime { get => runtime; set => runtime = value; }
+        public int Id_genre { get => id_genre; set => id_genre = value; }
+        public string Nama_genre { get => nama_genre; set => nama_genre = value; }
+        public string Deskripsi_genre { get => deskripsi_genre; set => deskripsi_genre = value; }
         #endregion
 
         #region METHODS
-
+        public static List<Genre> BacaData(string filter = "", string nilai = "")
+        {
+            string perintah;
+            if (filter == "")
+            {
+                perintah = "SELECT * from genres";
+            }
+            else
+            {
+                perintah = "SELECT * from genres " +
+                    "where " + filter + " like '%" + nilai + "%'";
+            }
+            MySqlDataReader drHasil = Koneksi.JalankanPerintahSelect(perintah);
+            List<Genre> listHasil = new List<Genre>();
+            while (drHasil.Read() == true)//selama data reader masih ada isinya lakukan baca
+            {
+                Genre tampung = new Genre();
+                tampung.Id_genre = int.Parse(drHasil.GetValue(0).ToString());
+                tampung.Nama_genre = drHasil.GetValue(1).ToString();
+                tampung.Deskripsi_genre = drHasil.GetValue(2).ToString();
+                listHasil.Add(tampung);
+            }
+            return listHasil;
+        }
         #endregion
     }
 }

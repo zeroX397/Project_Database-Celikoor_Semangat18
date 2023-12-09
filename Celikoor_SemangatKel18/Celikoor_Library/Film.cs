@@ -1,12 +1,11 @@
 ﻿using System;
+using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using MySql.Data.MySqlClient;
-
-namespace Celikoor_Semangat18
+namespace Celikoor_Library
 {
     class Film
     {
@@ -47,7 +46,7 @@ namespace Celikoor_Semangat18
                 sql += " AND " + kriteria + " LIKE '%" + nilaiKriteria + "%'";
             }
 
-            MySqlDataReader result = Koneksi.JalankanQuery(sql);
+            MySqlDataReader result = Koneksi.JalankanPerintahSelect(sql);
 
             List<Film> filmList = new List<Film>();
 

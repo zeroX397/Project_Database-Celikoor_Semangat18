@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Celikoor_Library;
-using Celikoor_Semangat18;
+using Celikoor_Semangat18.KONSUMEN;
 
 namespace Celikoor_Semangat18
 { 
@@ -36,7 +36,10 @@ namespace Celikoor_Semangat18
             Console.WriteLine(name);
             Koneksi k = new Koneksi(server, port, name, uid, pwd);
             MessageBox.Show("Koneksi Berhasil");
-           
+
+            FormLogin form = new FormLogin();
+            form.MdiParent = this;
+            form.Show();
         }
         catch (Exception ex)
         {
@@ -48,11 +51,11 @@ namespace Celikoor_Semangat18
         Form frm = Application.OpenForms["FormLogin"];
         if (frm == null)
         {
-            FormLoginKonsumen frmlog = new FormLoginKonsumen();
+            FormLogin frmlog = new FormLogin();
             Form form = Application.OpenForms["FormLoginKonsumen"];
             if (form == null)
             {
-                FormLoginKonsumen frmlogin = new FormLoginKonsumen();
+                FormLogin frmlogin = new FormLogin();
                 frmlogin.MdiParent = this;
                 frmlogin.Show();
             }
@@ -69,7 +72,7 @@ namespace Celikoor_Semangat18
         Form form = Application.OpenForms["FormRegisterKonsumen"];
         if (form == null)
         {
-            FormProfilKonsumen frmRegisterKonsumen = new FormProfilKonsumen();
+            FormRegisterKonsumen frmRegisterKonsumen = new FormRegisterKonsumen();
             frmRegisterKonsumen.MdiParent = this;
             frmRegisterKonsumen.Show();
         }

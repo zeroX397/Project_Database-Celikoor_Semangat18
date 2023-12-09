@@ -11,9 +11,9 @@ using Celikoor_Library;
 
 namespace Celikoor_Semangat18
 {
-    public partial class FormLoginKonsumen : Form
+    public partial class FormLogin: Form
     {
-        public FormLoginKonsumen()
+        public FormLogin()
         {
             InitializeComponent();
         }
@@ -31,7 +31,6 @@ namespace Celikoor_Semangat18
         {
             try
             {
-<<<<<<< Updated upstream
                 // Pengecekan username dan password tidak boleh kosong
                 if (textBoxUsername.Text == "")
                 {
@@ -79,23 +78,7 @@ namespace Celikoor_Semangat18
                 MessageBox.Show(x.Message, "Terjadi Kesalahan");
             }
         }
-=======
-                Pengguna tmpUser = Pengguna.CekLogin(textBoxUsername.Text, textBoxPassword.Text);
-                if (tmpUser != null)
-                {
-                    this.DialogResult = DialogResult.OK;
-                    FormMainMenu frm = (FormMainMenua)this.Owner;
-                    frm.user = tmpUser;
-                    frm.Show();
-                    frm.WindowState = FormWindowState.Maximized;
-                    this.Close();
-                }
-                else
-                {
-                    throw new Exception("Kombinasi username dan password tidak ditemukan");
-                }
-            }
->>>>>>> Stashed changes
+
         private void buttonExit_Click(object sender, EventArgs e)
         {
             this.Close();

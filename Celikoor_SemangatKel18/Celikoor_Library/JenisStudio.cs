@@ -3,34 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
-namespace Celikoor_Library
+namespace Celikoor_Semangat18
 {
     public class JenisStudio
     {
-        #region DATAMEMBERS
-        private int id;
+
+
+        private int iD;
         private string nama;
-        private string deskripsi;
-        #endregion
+        private int kapasitas;
 
-        #region CONSTRUCTORS
-        public JenisStudio()
-        {
-            Id = 0;
-            Nama = "";
-            Deskripsi = "";
-        }
-        #endregion
-
-        #region PROPERTIES
-        public int Id { get => id; set => id = value; }
+        public int ID { get => iD; set => iD = value; }
         public string Nama { get => nama; set => nama = value; }
-        public string Deskripsi { get => deskripsi; set => deskripsi = value; }
-        #endregion
+        public int Kapasitas { get => kapasitas; set => kapasitas = value; }
 
-        #region METHODS
+        public JenisStudio(int iD, string nama, int kapasitas)
+        {
+            ID = iD;
+            Nama = nama;
+            Kapasitas = kapasitas;
+        }
 
-        #endregion
+
     }
 }

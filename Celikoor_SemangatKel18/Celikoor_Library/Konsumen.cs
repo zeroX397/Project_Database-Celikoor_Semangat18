@@ -15,7 +15,7 @@ namespace Celikoor_Library
         private string email_Konsumen;
         private string noHP_Konsumen;
         private string gender_Konsumen;
-        private DateTime ttl_Konsumen;
+        private string ttl_Konsumen;
         private double saldo_Konsumen;
         private string username_Konsumen;
         private string password_Konsumen;
@@ -23,7 +23,7 @@ namespace Celikoor_Library
 
         #region Constructors
         public Konsumen(int id_Konsumen, string nama_Konsumen, string email_Konsumen, string noHP_Konsumen, string gender_Konsumen, 
-            DateTime ttl_Konsumen, double saldo_Konsumen, string username_Konsumen, string password_Konsumen)
+            string ttl_Konsumen, double saldo_Konsumen, string username_Konsumen, string password_Konsumen)
         {
             Id_Konsumen = id_Konsumen;
             Nama_Konsumen = nama_Konsumen;
@@ -42,7 +42,7 @@ namespace Celikoor_Library
             Email_Konsumen = "";
             NoHP_Konsumen = "";
             Gender_Konsumen = "";
-            Ttl_Konsumen = DateTime.Now;
+            Ttl_Konsumen = "";
             Saldo_Konsumen = 0;
             Username_Konsumen = "";
             Password_Konsumen = "";
@@ -65,7 +65,7 @@ namespace Celikoor_Library
         public string Email_Konsumen { get => email_Konsumen; set => email_Konsumen = value; }
         public string NoHP_Konsumen { get => noHP_Konsumen; set => noHP_Konsumen = value; }
         public string Gender_Konsumen { get => gender_Konsumen; set => gender_Konsumen = value; }
-        public DateTime Ttl_Konsumen { get => ttl_Konsumen; set => ttl_Konsumen = value; }
+        public string Ttl_Konsumen { get => ttl_Konsumen; set => ttl_Konsumen = value; }
         public double Saldo_Konsumen { get => saldo_Konsumen; set => saldo_Konsumen = value; }
         public string Username_Konsumen { get => username_Konsumen; set => username_Konsumen = value; }
         public string Password_Konsumen { get => password_Konsumen; set => password_Konsumen = value; }
@@ -86,56 +86,17 @@ namespace Celikoor_Library
                 "'" + obj.Email_Konsumen + "'," +
                 "'" + obj.NoHP_Konsumen+ "'," +
                 "'" + obj.Gender_Konsumen + "'," +
-                "'" + obj.Ttl_Konsumen.ToString("yyyy-MM-dd") + "'," +
+                "'" + obj.Ttl_Konsumen + "'," +
                 "'" + obj.Saldo_Konsumen + "'," +
                 "'" + obj.Username_Konsumen + "'," +
                 "'" + obj.Password_Konsumen + "');";
             Koneksi.JalankanPerintahNonQuery(sql);
         }
-        public static Admin CekLogin(string username, string password)
+
+        public static List<Konsumen> BacaData(string kriteria, string nilaiKriteria)
         {
-<<<<<<< Updated upstream
-            string sql = "SELECT * FROM konsumens;";
-
-            Koneksi.JalankanPerintahSelect(sql);
-=======
-            // Password tidak diambil karena tidak perlu menyimpan password pada obyek pembeli untuk alasan keamanan
-            string sql = "SELECT nama, email, no_HP,Gender,Ttl, saldo username" +
-                " FROM konsumens " +
-                " WHERE username='" + username + "' AND password='" + password + "';";
-
-            MySqlDataReader result = Koneksi.JalankanPerintahSelect(sql);
-
-            Konsumen tmp = new Konsumen();
-            //if (result.Read())
-            //{
-            //    userRole tmpRole;
-            //    if (result.GetString("role").CompareTo("PENJUAL") == 0)
-            //    {
-            //        tmpRole = userRole.PEGAWAI;
-            //    }
-            //    else
-            //    {
-            //        tmpRole = userRole.KONSUMEN;
-            //    }
-
-            //    tmp = new Admin(
-            //        result.GetInt32("email"),
-            //        result.GetString("nama"),
-            //        result.GetString("username"),
-            //        "",
-            //        result.GetString("password"),
-            //        tmpRole);
-
-            //    return tmp;
-            //}
-            return null;
-        }
-
-        public static List<Admin> BacaData(string kriteria, string nilaiKriteria)
-        {
-            string sql = "SELECT nama, email, no_HP,Gender,Ttl, saldo username" +
-                " FROM konsumens " 
+            string sql = "SELECT id, nama, email, no_hp,gender,tgl_lahir, saldo, username, password" +
+                " FROM konsumens ";
             if (kriteria == "")
             {
                 sql += ";";
@@ -145,19 +106,22 @@ namespace Celikoor_Library
                 sql += " WHERE " + kriteria + " LIKE '%" + nilaiKriteria + "%';";
             }
             MySqlDataReader result = Koneksi.JalankanPerintahSelect(sql);
-            List<Admin> userList = new List<Admin>();
+            List<Konsumen> userList = new List<Konsumen>();
             while (result.Read())
             {
-                Konsumen tmp = new Konsumen(result.GetInt32("id"),
-                    result.GetString("nama"),
-                    result.GetString("username"),
-                    "", result.GetString("alamat"),
-                    //(result.GetString("role") == "KONSUMEN" ? userRole.KONSUMEN : userRole.PEGAWAI));
-
-                //userList.Add(tmp);
+                Konsumen tmp = new Konsumen();
+                tmp.id_Konsumen = int.Parse(result.GetValue(0).ToString());
+                tmp.nama_Konsumen = result.GetValue(1).ToString();
+                tmp.email_Konsumen = result.GetValue(2).ToString();
+                tmp.NoHP_Konsumen = result.GetValue(3).ToString();
+                tmp.gender_Konsumen = result.GetValue(4).ToString();
+                tmp.Ttl_Konsumen = result.GetValue(5).ToString();
+                tmp.saldo_Konsumen = int.Parse(result.GetValue(6).ToString());
+                tmp.username_Konsumen = result.GetValue(7).ToString();
+                tmp.password_Konsumen = result.GetValue(8).ToString();
+                userList.Add(tmp);
             }
             return userList;
->>>>>>> Stashed changes
         }
         public static void UbahData(Konsumen obj)
         {   //password tdk boleh diubah melalui method ini
@@ -176,5 +140,4 @@ namespace Celikoor_Library
         #endregion
 
     }
-}
 }

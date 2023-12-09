@@ -1,7 +1,7 @@
 ﻿
 namespace Celikoor_Semangat18
 {
-    partial class FormLoginKonsumen
+    partial class FormLogin
     {
         /// <summary>
         /// Required designer variable.

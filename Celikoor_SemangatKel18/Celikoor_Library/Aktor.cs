@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,31 +10,89 @@ namespace Celikoor_Library
     public class Aktor
     {
         #region DATAMEMBERS
-        private string name;
-        private DateTime birthdate;
-        private string nationality;
+        private int id_Aktor;
+        private string nama_Aktor;
+        private string tgl_lahir_Aktor;
+        private string gender_Aktor;
+        private string negara_asal_Aktor;
         private string filmography;//histori aktor main di film apa
+
+
+
         #endregion
 
         #region CONSTRUCTOR
-        public Aktor(string name, DateTime birthDate, string nationality, string filmography)
+        public Aktor(int id_Aktor, string nama_Aktor, string tgl_lahir_Aktor, string gender_Aktor, string negara_asal_Aktor, string filmography)
         {
-            Name = name;
-            Birthdate = birthDate;
-            Nationality = nationality;
-            Filmography = filmography;
+            this.id_Aktor = id_Aktor;
+            this.nama_Aktor = nama_Aktor;
+            this.tgl_lahir_Aktor = tgl_lahir_Aktor;
+            this.gender_Aktor = gender_Aktor;
+            this.negara_asal_Aktor = negara_asal_Aktor;
+            this.filmography = filmography;
         }
+
+        public Aktor()
+        {
+            this.id_Aktor = 0;
+            this.nama_Aktor = "";
+            this.tgl_lahir_Aktor = "";
+            this.gender_Aktor = "";
+            this.negara_asal_Aktor = "";
+            this.filmography = "";
+
+        }
+
         #endregion
 
         #region PROPERTIES
-        public string Name { get => name; set => name = value; }
-        public string Nationality { get => nationality; set => nationality = value; }
+        public int Id_Aktor { get => id_Aktor; set => id_Aktor = value; }
+        public string Nama_Aktor { get => nama_Aktor; set => nama_Aktor = value; }
+        public string Tgl_lahir_Aktor { get => tgl_lahir_Aktor; set => tgl_lahir_Aktor = value; }
+        public string Gender_Aktor { get => gender_Aktor; set => gender_Aktor = value; }
+        public string Negara_asal_Aktor { get => negara_asal_Aktor; set => negara_asal_Aktor = value; }
         public string Filmography { get => filmography; set => filmography = value; }
-        public DateTime Birthdate { get => birthdate; set => birthdate = value; }
         #endregion
 
         #region METHODS
+        public static void TambahData(Aktor obj)
+        {
+            string sql = "INSERT INTO aktors " + "(id, nama, tgl_lahir, gender, negara_asal) VALUES " + "('" +
+                obj.id_Aktor + "', '" +
+                obj.nama_Aktor + "', '" +
+                obj.tgl_lahir_Aktor + "', '" +
+                obj.gender_Aktor + "', '" +
+                obj.negara_asal_Aktor + "');";
+            Koneksi.JalankanPerintahNonQuery(sql);
+        }
 
+        public static List<Aktor> BacaData(string filter = "", string nilai = "")
+        {
+            string perintah;
+            if (filter == "")
+            {
+                perintah = "SELECT * from aktors";
+            }
+            else
+            {
+                perintah = "SELECT * from aktors " +
+                    "where " + filter + " like '%" + nilai + "%'";
+            }
+            MySqlDataReader drHasil = Koneksi.JalankanPerintahSelect(perintah);
+            List<Aktor> listHasil = new List<Aktor>();
+            while (drHasil.Read() == true)//selama data reader masih ada isinya lakukan baca
+            {
+                Aktor tampung = new Aktor();
+
+                tampung.id_Aktor = int.Parse(drHasil.GetValue(0).ToString());
+                tampung.nama_Aktor = drHasil.GetValue(1).ToString();
+                tampung.tgl_lahir_Aktor = drHasil.GetValue(2).ToString();
+                tampung.gender_Aktor = drHasil.GetValue(3).ToString();
+                tampung.Negara_asal_Aktor = drHasil.GetValue(4).ToString();
+                listHasil.Add(tampung);
+            }
+            return listHasil;
+        }
         #endregion
     }
 }
