@@ -18,77 +18,72 @@ namespace Celikoor_Semangat18
             InitializeComponent();
         }
 
+
         private void buttonExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void radioButtonCinema_CheckedChanged(object sender, EventArgs e)
         {
-
+            List<Cinema> listHasil = Cinema.BacaData();
+            dataGridView1.DataSource = listHasil;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void radioButtonPegawai_CheckedChanged(object sender, EventArgs e)
         {
-
+            List<Pegawai> listHasil = Pegawai.BacaData();
+            dataGridView1.DataSource = listHasil;
         }
 
-        private void buttonTambah_Click_1(object sender, EventArgs e)
+        private void radioButtonAktor_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButtonCinema.Checked)
+            List<Aktor> listHasil = Aktor.BacaData();
+            dataGridView1.DataSource = listHasil;
+        }
+
+        private void radioButtonKelompok_CheckedChanged(object sender, EventArgs e)
+        {
+            List<Kelompok> listHasil = Kelompok.BacaData();
+            dataGridView1.DataSource = listHasil;
+        }
+
+        private void radioButtonGenre_CheckedChanged(object sender, EventArgs e)
+        {
+            List<Genre> listHasil = Genre.BacaData();
+            dataGridView1.DataSource = listHasil;
+        }
+
+        private void buttonTambah_Click(object sender, EventArgs e)
+        {
+            if(radioButtonCinema.Checked)
             {
                 FormTambahCinema frm = new FormTambahCinema();
                 frm.Owner = this;
                 frm.ShowDialog();
-                radioButtonCinema_CheckedChanged_1(this, e);
+                radioButtonCinema_CheckedChanged(this, e);
             }
             else if (radioButtonPegawai.Checked)
             {
                 FormTambahPegawai frm = new FormTambahPegawai();
                 frm.Owner = this;
                 frm.ShowDialog();
-                radioButtonPegawai_CheckedChanged_1(this, e);
+                radioButtonPegawai_CheckedChanged(this, e);
             }
-        }
-
-        private void buttonUbah_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButtonCinema_CheckedChanged_1(object sender, EventArgs e)
-        {
-            List<Cinema> listHasil = Cinema.BacaData();
-            Console.WriteLine("listHasil" + listHasil);
-            dataGridView1.DataSource = listHasil;
-        }
-
-        private void radioButtonKonsumen_CheckedChanged(object sender, EventArgs e)
-        {
-
-            //List<Konsumen> listHasil = Konsumen.BacaData();
-            //Console.WriteLine("listHasil" + listHasil);
-            //dataGridView1.DataSource = listHasil;
-
-        }
-
-        private void radioButtonStudio_CheckedChanged(object sender, EventArgs e)
-        {
-            //List<JenisStudio> listHasil = JenisStudio.BacaData();
-            //Console.WriteLine("listHasil" + listHasil);
-            //dataGridView1.DataSource = listHasil;
-        }
-
-        private void radioButtonPegawai_CheckedChanged_1(object sender, EventArgs e)
-        {
-            //List<Pegawai> listHasil = Pegawai.BacaData();
-            //Console.WriteLine("listHasil" + listHasil);
-            //dataGridView1.DataSource = listHasil;
-        }
-
-        private void radioButtonJenisStudio_CheckedChanged(object sender, EventArgs e)
-        {
-
+            else if (radioButtonAktor.Checked)
+            {
+                FormTambahAktor frm = new FormTambahAktor();
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonAktor_CheckedChanged(this, e);
+            }
+            else if (radioButtonKelompok.Checked)
+            {
+                FormTambahKelompok frm = new FormTambahKelompok();
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonKelompok_CheckedChanged(this, e);
+            }
         }
     }
 }
