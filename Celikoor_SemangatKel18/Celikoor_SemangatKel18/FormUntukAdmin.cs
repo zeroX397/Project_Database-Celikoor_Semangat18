@@ -120,6 +120,120 @@ namespace Celikoor_Semangat18
                     }
                 }
             }
+            else if (radioButtonKelompok.Checked)
+            {
+                string kode = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
+                DialogResult dr = MessageBox.Show("Hapus data " + kode + "?", "HAPUS", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes) //jika user setuju hapus data
+                {
+                    try
+                    {
+                        //hapus data dari database
+                        Kelompok.HapusData(kode);
+                        //refresh form master
+                        radioButtonKelompok_CheckedChanged(this, e);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Hapus data gagal! error: " + ex.Message);
+                    }
+                }
+            }
+            else if (radioButtonGenre.Checked)
+            {
+                string kode = dataGridView1.CurrentRow.Cells["Id_genre"].Value.ToString();
+                DialogResult dr = MessageBox.Show("Hapus data " + kode + "?", "HAPUS", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes) //jika user setuju hapus data
+                {
+                    try
+                    {
+                        //hapus data dari database
+                        Genre.HapusData(kode);
+                        //refresh form master
+                        radioButtonGenre_CheckedChanged(this, e);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Hapus data gagal! error: " + ex.Message);
+                    }
+                }
+            }
+            else if (radioButtonAktor.Checked)
+            {
+                string kode = dataGridView1.CurrentRow.Cells["Id_aktor"].Value.ToString();
+                DialogResult dr = MessageBox.Show("Hapus data " + kode + "?", "HAPUS", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes) //jika user setuju hapus data
+                {
+                    try
+                    {
+                        //hapus data dari database
+                        Aktor.HapusData(kode);
+                        //refresh form master
+                        radioButtonAktor_CheckedChanged(this, e);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Hapus data gagal! error: " + ex.Message);
+                    }
+                }
+            }
+            else if (radioButtonPegawai.Checked)
+            {
+                string kode = dataGridView1.CurrentRow.Cells["Id_pegawai"].Value.ToString();
+                DialogResult dr = MessageBox.Show("Hapus data " + kode + "?", "HAPUS", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes) //jika user setuju hapus data
+                {
+                    try
+                    {
+                        //hapus data dari database
+                        Pegawai.HapusData(kode);
+                        //refresh form master
+                        radioButtonPegawai_CheckedChanged(this, e);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Hapus data gagal! error: " + ex.Message);
+                    }
+                }
+            }
+            else if (radioButtonJenisStudio.Checked)
+            {
+                string kode = dataGridView1.CurrentRow.Cells["ID"].Value.ToString();
+                DialogResult dr = MessageBox.Show("Hapus data " + kode + "?", "HAPUS", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes) //jika user setuju hapus data
+                {
+                    try
+                    {
+                        //hapus data dari database
+                        JenisStudio.HapusData(kode);
+                        //refresh form master
+                        radioButtonJenisStudio_CheckedChanged(this, e);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Hapus data gagal! error: " + ex.Message);
+                    }
+                }
+            }
+            //else if (radioButtonKonsumen.Checked)
+            //{
+            //    string kode = dataGridView1.CurrentRow.Cells["Id_konsumen"].Value.ToString();
+            //    DialogResult dr = MessageBox.Show("Hapus data " + kode + "?", "HAPUS", MessageBoxButtons.YesNo);
+            //    if (dr == DialogResult.Yes) //jika user setuju hapus data
+            //    {
+            //        try
+            //        {
+            //            //hapus data dari database
+            //            Konsumen.HapusData(kode);
+            //            //refresh form master
+            //            radioButtonKonsumen_CheckedChanged(this, e);
+            //        }
+            //        catch (Exception ex)
+            //        {
+            //            MessageBox.Show("Hapus data gagal! error: " + ex.Message);
+            //        }
+            //    }
+            //}
         }
     }
 }

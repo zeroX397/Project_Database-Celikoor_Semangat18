@@ -17,8 +17,6 @@ namespace Celikoor_Library
         private string negara_asal_Aktor;
         private string filmography;//histori aktor main di film apa
 
-
-
         #endregion
 
         #region CONSTRUCTOR
@@ -93,6 +91,14 @@ namespace Celikoor_Library
             }
             return listHasil;
         }
+
+        public static void HapusData(string KodeHapus)
+        {   //susun perintah query
+            string perintah = "delete from aktors where id='" + KodeHapus + "';";
+
+            Koneksi.JalankanPerintahNonQuery(perintah); //kirim ke command
+        }
+
         #endregion
     }
 }

@@ -49,5 +49,11 @@ namespace Celikoor_Semangat18
             }
             return listHasil;
         }
+        public static void HapusData(string KodeHapus)
+        {   //susun perintah query
+            string perintah = "delete from jenis_studios where id='" + KodeHapus + "';";
+
+            Koneksi.JalankanPerintahNonQuery(perintah); //kirim ke command
+        }
     }
 }
