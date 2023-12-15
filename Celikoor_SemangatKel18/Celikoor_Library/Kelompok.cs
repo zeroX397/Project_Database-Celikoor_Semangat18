@@ -41,7 +41,7 @@ namespace Celikoor_Library
                 obj.nama + "');";
             Koneksi.JalankanPerintahNonQuery(sql);
         }
-        public static List<Kelompok> BacaData(string filter, string nilai)
+        public static List<Kelompok> BacaData(string filter = "", string nilai = "")
         {
             string perintah;
             if (filter == "")

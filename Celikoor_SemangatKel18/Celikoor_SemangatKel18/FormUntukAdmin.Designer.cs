@@ -175,6 +175,7 @@ namespace Celikoor_Semangat18
             this.radioButtonJenisStudio.TabStop = true;
             this.radioButtonJenisStudio.Text = "Jenis Studio";
             this.radioButtonJenisStudio.UseVisualStyleBackColor = true;
+            this.radioButtonJenisStudio.CheckedChanged += new System.EventHandler(this.radioButtonJenisStudio_CheckedChanged);
             // 
             // radioButtonPegawai
             // 

@@ -84,6 +84,19 @@ namespace Celikoor_Semangat18
                 frm.ShowDialog();
                 radioButtonKelompok_CheckedChanged(this, e);
             }
+            else if (radioButtonGenre.Checked)
+            {
+                FormTambahGenre frm = new FormTambahGenre();
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonGenre_CheckedChanged(this, e);
+            }
+        }
+
+        private void radioButtonJenisStudio_CheckedChanged(object sender, EventArgs e)
+        {
+            List<JenisStudio> listHasil = JenisStudio.BacaData();
+            dataGridView1.DataSource = listHasil;
         }
     }
 }

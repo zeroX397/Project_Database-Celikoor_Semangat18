@@ -3,29 +3,51 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Celikoor_Library;
 using MySql.Data.MySqlClient;
 
 namespace Celikoor_Semangat18
 {
     public class JenisStudio
     {
-
-
-        private int iD;
+        private int id;
         private string nama;
-        private int kapasitas;
+        private string deskripsi;
 
-        public int ID { get => iD; set => iD = value; }
+        public int ID { get => id; set => id = value; }
         public string Nama { get => nama; set => nama = value; }
-        public int Kapasitas { get => kapasitas; set => kapasitas = value; }
+        public string Deskripsi { get => deskripsi; set => deskripsi = value; }
 
-        public JenisStudio(int iD, string nama, int kapasitas)
+        public JenisStudio()
         {
-            ID = iD;
-            Nama = nama;
-            Kapasitas = kapasitas;
+            ID = 0;
+            Nama = "";
+            Deskripsi = "";
         }
 
-
+        public static List<JenisStudio> BacaData(string filter = "", string nilai = "")
+        {
+            string perintah;
+            if (filter == "")
+            {
+                perintah = "SELECT * from jenis_studios";
+            }
+            else
+            {
+                perintah = "SELECT * from jenis_studios " +
+                    "where " + filter + " like '%" + nilai + "%'";
+            }
+            MySqlDataReader drHasil = Koneksi.JalankanPerintahSelect(perintah);
+            List<JenisStudio> listHasil = new List<JenisStudio>();
+            while (drHasil.Read() == true)//selama data reader masih ada isinya lakukan baca
+            {
+                JenisStudio tampung = new JenisStudio();
+                tampung.ID = int.Parse(drHasil.GetValue(0).ToString());
+                tampung.Nama = drHasil.GetValue(1).ToString();
+                tampung.Deskripsi = drHasil.GetValue(2).ToString();
+                listHasil.Add(tampung);
+            }
+            return listHasil;
+        }
     }
 }
