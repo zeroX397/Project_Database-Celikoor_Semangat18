@@ -32,7 +32,7 @@ namespace Celikoor_Semangat18
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonHapus = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.buttonTambah = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -87,17 +87,18 @@ namespace Celikoor_Semangat18
             this.label1.TabIndex = 19;
             this.label1.Text = "Halaman Admin";
             // 
-            // button2
+            // buttonHapus
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.button2.Location = new System.Drawing.Point(676, 399);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 49);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "Hapus";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonHapus.BackColor = System.Drawing.Color.Transparent;
+            this.buttonHapus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHapus.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.buttonHapus.Location = new System.Drawing.Point(676, 399);
+            this.buttonHapus.Name = "buttonHapus";
+            this.buttonHapus.Size = new System.Drawing.Size(137, 49);
+            this.buttonHapus.TabIndex = 22;
+            this.buttonHapus.Text = "Hapus";
+            this.buttonHapus.UseVisualStyleBackColor = false;
+            this.buttonHapus.Click += new System.EventHandler(this.buttonHapus_Click);
             // 
             // button3
             // 
@@ -273,7 +274,7 @@ namespace Celikoor_Semangat18
             this.Controls.Add(this.button6);
             this.Controls.Add(this.buttonTambah);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonHapus);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUntukAdmin";
@@ -291,7 +292,7 @@ namespace Celikoor_Semangat18
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonHapus;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button buttonTambah;
         private System.Windows.Forms.Button button6;

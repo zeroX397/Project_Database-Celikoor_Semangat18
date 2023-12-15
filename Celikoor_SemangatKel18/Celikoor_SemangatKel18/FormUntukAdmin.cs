@@ -98,5 +98,28 @@ namespace Celikoor_Semangat18
             List<JenisStudio> listHasil = JenisStudio.BacaData();
             dataGridView1.DataSource = listHasil;
         }
+
+        private void buttonHapus_Click(object sender, EventArgs e)
+        {
+            if (radioButtonCinema.Checked)
+            {
+                string kode = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
+                DialogResult dr = MessageBox.Show("Hapus data " + kode + "?", "HAPUS", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes) //jika user setuju hapus data
+                {
+                    try
+                    {
+                        //hapus data dari database
+                        Cinema.HapusData(kode);
+                        //refresh form master
+                        radioButtonCinema_CheckedChanged(this, e);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Hapus data gagal! error: " + ex.Message);
+                    }
+                }
+            }
+        }
     }
 }
