@@ -79,6 +79,12 @@
     <Compile Include="FormTambahGenre.Designer.cs">
       <DependentUpon>FormTambahGenre.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTambahJenisStudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahJenisStudio.Designer.cs">
+      <DependentUpon>FormTambahJenisStudio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTambahKelompok.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTambahGenre.resx">
       <DependentUpon>FormTambahGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahJenisStudio.resx">
+      <DependentUpon>FormTambahJenisStudio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTambahKelompok.resx">
       <DependentUpon>FormTambahKelompok.cs</DependentUpon>

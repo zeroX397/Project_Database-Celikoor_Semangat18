@@ -54,6 +54,18 @@ namespace Celikoor_Semangat18
             dataGridView1.DataSource = listHasil;
         }
 
+        private void radioButtonJenisStudio_CheckedChanged(object sender, EventArgs e)
+        {
+            List<JenisStudio> listHasil = JenisStudio.BacaData();
+            dataGridView1.DataSource = listHasil;
+        }
+
+        private void radioButtonStudio_CheckedChanged(object sender, EventArgs e)
+        {
+            List<Studio> listHasil = Studio.BacaData();
+            dataGridView1.DataSource = listHasil;
+        }
+
         private void buttonTambah_Click(object sender, EventArgs e)
         {
             if(radioButtonCinema.Checked)
@@ -91,12 +103,13 @@ namespace Celikoor_Semangat18
                 frm.ShowDialog();
                 radioButtonGenre_CheckedChanged(this, e);
             }
-        }
-
-        private void radioButtonJenisStudio_CheckedChanged(object sender, EventArgs e)
-        {
-            List<JenisStudio> listHasil = JenisStudio.BacaData();
-            dataGridView1.DataSource = listHasil;
+            else if (radioButtonJenisStudio.Checked)
+            {
+                FormTambahJenisStudio frm = new FormTambahJenisStudio();
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonJenisStudio_CheckedChanged(this, e);
+            }
         }
 
         private void buttonHapus_Click(object sender, EventArgs e)
@@ -235,5 +248,7 @@ namespace Celikoor_Semangat18
             //    }
             //}
         }
+
+        
     }
 }

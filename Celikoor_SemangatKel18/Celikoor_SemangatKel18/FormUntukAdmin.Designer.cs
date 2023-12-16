@@ -163,6 +163,7 @@ namespace Celikoor_Semangat18
             this.radioButtonStudio.TabStop = true;
             this.radioButtonStudio.Text = "Studio";
             this.radioButtonStudio.UseVisualStyleBackColor = true;
+            this.radioButtonStudio.CheckedChanged += new System.EventHandler(this.radioButtonStudio_CheckedChanged);
             // 
             // radioButtonJenisStudio
             // 

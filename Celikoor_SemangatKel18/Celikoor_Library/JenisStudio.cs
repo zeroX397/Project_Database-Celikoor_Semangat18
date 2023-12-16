@@ -25,6 +25,13 @@ namespace Celikoor_Semangat18
             Deskripsi = "";
         }
 
+        public JenisStudio(int id, string nama, string deskripsi)
+        {
+            this.id = id;
+            this.nama = nama;
+            this.deskripsi = deskripsi;
+        }
+
         public static List<JenisStudio> BacaData(string filter = "", string nilai = "")
         {
             string perintah;
@@ -41,14 +48,31 @@ namespace Celikoor_Semangat18
             List<JenisStudio> listHasil = new List<JenisStudio>();
             while (drHasil.Read() == true)//selama data reader masih ada isinya lakukan baca
             {
-                JenisStudio tampung = new JenisStudio();
-                tampung.ID = int.Parse(drHasil.GetValue(0).ToString());
-                tampung.Nama = drHasil.GetValue(1).ToString();
-                tampung.Deskripsi = drHasil.GetValue(2).ToString();
+                //JenisStudio tampung = new JenisStudio();
+                int tampungId = int.Parse(drHasil.GetValue(0).ToString());
+                string tampungNama = drHasil.GetValue(1).ToString();
+                string tampungdesc = drHasil.GetValue(2).ToString();
+                JenisStudio tampung = new JenisStudio(tampungId, tampungNama, tampungdesc);
                 listHasil.Add(tampung);
             }
             return listHasil;
         }
+
+        public static void TambahData(JenisStudio jenstud)
+        {
+            string perintah;
+            if (jenstud.Deskripsi != null)
+            {
+                perintah = "INSERT INTO jenis_studios" + "(id, nama, deskripsi) VALUES " + "('" + jenstud.ID + "', '" + jenstud.Nama + "', '" + jenstud.Deskripsi + "');";
+            }
+            else
+            {
+                perintah = "INSERT INTO jenis_studios" + "(id, nama) VALUES " + "('" + jenstud.ID + "', '" + jenstud.Nama + "');";
+            }
+
+            Koneksi.JalankanPerintahNonQuery(perintah);
+        }
+
         public static void HapusData(string KodeHapus)
         {   //susun perintah query
             string perintah = "delete from jenis_studios where id='" + KodeHapus + "';";

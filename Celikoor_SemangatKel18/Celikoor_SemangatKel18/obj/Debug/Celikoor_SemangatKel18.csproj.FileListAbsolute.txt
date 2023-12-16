@@ -120,3 +120,4 @@ C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_Sem
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.KONSUMEN.FormProfileKonsumen.resources
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.KONSUMEN.FormRegisterKonsumen.resources
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormTambahGenre.resources
+C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormTambahJenisStudio.resources
