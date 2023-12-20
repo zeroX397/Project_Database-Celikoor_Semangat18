@@ -52,8 +52,8 @@ namespace Celikoor_Library
             //obj.Posisi.Id --> mengambil ID dari posisi yang dimiliki oleh pegawai
 
             string perintah = "INSERT INTO cinemas " +
-                "(id, nama_cabang, alamat, tgl_dibuka, kota) VALUES " + "('" + obj.Id.ToString() +
-                     "', '" + obj.Nama_cabang + "', '" + obj.Alamat + "', '" + obj.Tgl_buka.ToString("yyyy-MM-dd") + "', '" +
+                "(nama_cabang, alamat, tgl_dibuka, kota) VALUES " + "('" 
+                   + obj.Nama_cabang + "', '" + obj.Alamat + "', '" + obj.Tgl_buka.ToString("yyyy-MM-dd") + "', '" +
                     obj.Kota + "');";
 
             Koneksi.JalankanPerintahNonQuery(perintah);

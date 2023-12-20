@@ -52,6 +52,7 @@ namespace Celikoor_Semangat18
             this.radioButtonKelompok = new System.Windows.Forms.RadioButton();
             this.radioButtonAktor = new System.Windows.Forms.RadioButton();
             this.buttonTambah = new System.Windows.Forms.Button();
+            this.radioButtonAktor2 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -262,7 +263,7 @@ namespace Celikoor_Semangat18
             // 
             // radioButtonPegawai
             // 
-            this.radioButtonPegawai.Location = new System.Drawing.Point(668, 138);
+            this.radioButtonPegawai.Location = new System.Drawing.Point(731, 138);
             this.radioButtonPegawai.Name = "radioButtonPegawai";
             this.radioButtonPegawai.Size = new System.Drawing.Size(104, 24);
             this.radioButtonPegawai.TabIndex = 35;
@@ -271,7 +272,7 @@ namespace Celikoor_Semangat18
             // 
             // radioButtonKonsumen
             // 
-            this.radioButtonKonsumen.Location = new System.Drawing.Point(269, 133);
+            this.radioButtonKonsumen.Location = new System.Drawing.Point(155, 138);
             this.radioButtonKonsumen.Name = "radioButtonKonsumen";
             this.radioButtonKonsumen.Size = new System.Drawing.Size(115, 29);
             this.radioButtonKonsumen.TabIndex = 34;
@@ -281,7 +282,7 @@ namespace Celikoor_Semangat18
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 184);
+            this.dataGridView1.Location = new System.Drawing.Point(24, 193);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -342,11 +343,21 @@ namespace Celikoor_Semangat18
             this.buttonTambah.UseVisualStyleBackColor = false;
             this.buttonTambah.Click += new System.EventHandler(this.buttonTambah_Click_1);
             // 
+            // radioButtonAktor2
+            // 
+            this.radioButtonAktor2.Location = new System.Drawing.Point(301, 136);
+            this.radioButtonAktor2.Name = "radioButtonAktor2";
+            this.radioButtonAktor2.Size = new System.Drawing.Size(115, 29);
+            this.radioButtonAktor2.TabIndex = 40;
+            this.radioButtonAktor2.Text = "Aktor";
+            this.radioButtonAktor2.CheckedChanged += new System.EventHandler(this.radioButtonAktor2_CheckedChanged);
+            // 
             // FormUntukAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1198, 708);
+            this.Controls.Add(this.radioButtonAktor2);
             this.Controls.Add(this.buttonTambah);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.radioButtonKonsumen);
@@ -394,5 +405,6 @@ namespace Celikoor_Semangat18
         private System.Windows.Forms.RadioButton radioButtonKelompok;
         private System.Windows.Forms.RadioButton radioButtonAktor;
         private System.Windows.Forms.Button buttonTambah;
+        private System.Windows.Forms.RadioButton radioButtonAktor2;
     }
 }

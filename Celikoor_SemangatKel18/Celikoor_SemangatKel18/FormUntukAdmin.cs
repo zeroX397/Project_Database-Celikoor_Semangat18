@@ -49,6 +49,34 @@ namespace Celikoor_Semangat18
                 frm.ShowDialog();
                 radioButtonPegawai_CheckedChanged_1(this, e);
             }
+            else if (radioButtonKonsumen.Checked)
+            {
+                FormTambahKonsumen frm = new FormTambahKonsumen();
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonKonsumen_CheckedChanged(this, e);
+            }
+            else if (radioButtonAktor2.Checked)
+            {
+                FormTambahAktor frm = new FormTambahAktor();
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonAktor2_CheckedChanged(this, e);
+            }
+            else if (radioButtonJenisStudio.Checked)
+            {
+                FormTambahJenisStudio frm = new FormTambahJenisStudio();
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonJenisStudio_CheckedChanged(this, e);
+            }
+            else if (radioButtonStudio.Checked)
+            {
+                FormTambahStudio frm = new FormTambahStudio();
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonStudio_CheckedChanged(this, e);
+            }
         }
 
         private void buttonUbah_Click(object sender, EventArgs e)
@@ -65,30 +93,40 @@ namespace Celikoor_Semangat18
 
         private void radioButtonKonsumen_CheckedChanged(object sender, EventArgs e)
         {
-
-            //List<Konsumen> listHasil = Konsumen.BacaData();
-            //Console.WriteLine("listHasil" + listHasil);
-            //dataGridView1.DataSource = listHasil;
+            List<Konsumen> listHasil = Konsumen.BacaData();
+            Console.WriteLine("listHasil" + listHasil);
+            dataGridView1.DataSource = listHasil;
 
         }
 
         private void radioButtonStudio_CheckedChanged(object sender, EventArgs e)
         {
-            //List<JenisStudio> listHasil = JenisStudio.BacaData();
-            //Console.WriteLine("listHasil" + listHasil);
-            //dataGridView1.DataSource = listHasil;
+            List<Studio> listHasil = Studio.BacaData();
+            Console.WriteLine("listHasil" + listHasil);
+            dataGridView1.DataSource = listHasil;
         }
 
         private void radioButtonPegawai_CheckedChanged_1(object sender, EventArgs e)
         {
-            //List<Pegawai> listHasil = Pegawai.BacaData();
-            //Console.WriteLine("listHasil" + listHasil);
-            //dataGridView1.DataSource = listHasil;
+            List<Pegawai> listHasil = Pegawai.BacaData();
+            Console.WriteLine("listHasil" + listHasil);
+            dataGridView1.DataSource = listHasil;
         }
 
         private void radioButtonJenisStudio_CheckedChanged(object sender, EventArgs e)
         {
+            List<JenisStudio> listHasil = JenisStudio.BacaData();
+            Console.WriteLine("listHasil" + listHasil);
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = listHasil;
 
+        }
+
+        private void radioButtonAktor2_CheckedChanged(object sender, EventArgs e)
+        {
+            List<Aktor> listAktor = Aktor.BacaData();
+            Console.WriteLine("listHasil" + listAktor);
+            dataGridView1.DataSource = listAktor;
         }
     }
 }

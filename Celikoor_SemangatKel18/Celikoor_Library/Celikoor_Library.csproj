@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aktor.cs" />
+    <Compile Include="Studio.cs" />
     <Compile Include="Cinema.cs" />
     <Compile Include="Film.cs" />
     <Compile Include="Genre.cs" />

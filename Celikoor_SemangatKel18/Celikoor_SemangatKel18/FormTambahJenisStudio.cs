@@ -11,9 +11,9 @@ using Celikoor_Library;
 
 namespace Celikoor_Semangat18
 {
-    public partial class FormTambahKelompok : Form
+    public partial class FormTambahJenisStudio : Form
     {
-        public FormTambahKelompok()
+        public FormTambahJenisStudio()
         {
             InitializeComponent();
         }
@@ -23,12 +23,14 @@ namespace Celikoor_Semangat18
             try
             {
                 //buat objek penampung 
-                Kelompok p = new Kelompok();
+                JenisStudio p = new JenisStudio();
+              
+                p.Nama= textBoxNama.Text;
+                p.Deskripsi = textBoxDeskripsi.Text;
                 
-                p.Nama = textBoxNama.Text;
 
                 //tambahkan ke database:
-                Kelompok.TambahData(p);
+                JenisStudio.TambahData(p);
 
                 MessageBox.Show("Tambah Data berhasil");
                 this.Close();
@@ -45,3 +47,4 @@ namespace Celikoor_Semangat18
         }
     }
 }
+

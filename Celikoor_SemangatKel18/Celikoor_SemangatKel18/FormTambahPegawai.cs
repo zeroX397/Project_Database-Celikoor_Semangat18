@@ -24,7 +24,7 @@ namespace Celikoor_Semangat18
             {
                 //buat objek penampung 
                 Pegawai p = new Pegawai();
-                p.Id_Pegawai = int.Parse(textBoxId.Text);
+           
                 p.Nama_Pegawai = textBoxNama.Text;
                 p.Email_Pegawai = textBoxEmail.Text;
                 p.Username_Pegawai = textBoxUsername.Text;
@@ -41,6 +41,81 @@ namespace Celikoor_Semangat18
             {
                 MessageBox.Show("Tambah Data gagal. Error : " + ex.Message);
             }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelPass_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxNama_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonBatal_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -36,8 +36,8 @@ namespace Celikoor_Library
         public static void TambahData(Kelompok obj)
         {
         
-            string sql = "INSERT INTO kelompoks " + "(id, nama) VALUES " + "('" +
-                obj.id + "', '" +
+            string sql = "INSERT INTO kelompoks " + "(nama) VALUES " + "('"
+               +
                 obj.nama + "');";
             Koneksi.JalankanPerintahNonQuery(sql);
         }

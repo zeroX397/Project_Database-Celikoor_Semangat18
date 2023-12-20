@@ -57,8 +57,7 @@ namespace Celikoor_Library
         #region METHODS
         public static void TambahData(Aktor obj)
         {
-            string sql = "INSERT INTO aktors " + "(id, nama, tgl_lahir, gender, negara_asal) VALUES " + "('" +
-                obj.id_Aktor + "', '" +
+            string sql = "INSERT INTO aktors " + "( nama, tgl_lahir, gender, negara_asal) VALUES " + "('" +
                 obj.nama_Aktor + "', '" +
                 obj.tgl_lahir_Aktor + "', '" +
                 obj.gender_Aktor + "', '" +

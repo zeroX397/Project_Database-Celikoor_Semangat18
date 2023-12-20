@@ -8,12 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Celikoor_Library;
-
 namespace Celikoor_Semangat18
 {
-    public partial class FormTambahKelompok : Form
+    public partial class FormTambahKonsumen : Form
     {
-        public FormTambahKelompok()
+        public FormTambahKonsumen()
         {
             InitializeComponent();
         }
@@ -23,12 +22,19 @@ namespace Celikoor_Semangat18
             try
             {
                 //buat objek penampung 
-                Kelompok p = new Kelompok();
-                
-                p.Nama = textBoxNama.Text;
+                Konsumen k = new Konsumen();
+               
+                k.Nama_Konsumen = textBoxNama.Text;
+                k.NoHP_Konsumen = textBoxNoHP.Text;
+                k.Email_Konsumen = textBoxEmail.Text;
+                k.Ttl_Konsumen = dateTimePicker1.Value;
+                k.Gender_Konsumen = textBoxGender.Text.ToUpper();
+                k.Username_Konsumen = textBoxUsername.Text;
+                k.Password_Konsumen = textBoxPass.Text;
+               
 
                 //tambahkan ke database:
-                Kelompok.TambahData(p);
+                Konsumen.TambahData(k);
 
                 MessageBox.Show("Tambah Data berhasil");
                 this.Close();
@@ -37,6 +43,11 @@ namespace Celikoor_Semangat18
             {
                 MessageBox.Show("Tambah Data gagal. Error : " + ex.Message);
             }
+        }
+
+        private void textBoxId_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void buttonBatal_Click(object sender, EventArgs e)

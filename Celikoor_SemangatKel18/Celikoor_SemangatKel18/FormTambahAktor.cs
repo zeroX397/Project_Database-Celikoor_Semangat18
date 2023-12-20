@@ -24,7 +24,7 @@ namespace Celikoor_Semangat18
             {
                 //buat objek penampung 
                 Aktor p = new Aktor();
-                p.Id_Aktor = int.Parse(textBoxId.Text);
+                
                 p.Nama_Aktor = textBoxNama.Text;
                 p.Tgl_lahir_Aktor= dateTimePickerTglLahir.Value.ToString("yyyy-MM-dd");
                 p.Gender_Aktor = comboBox1.Text;
@@ -40,6 +40,11 @@ namespace Celikoor_Semangat18
             {
                 MessageBox.Show("Tambah Data gagal. Error : " + ex.Message);
             }
+        }
+
+        private void buttonBatal_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

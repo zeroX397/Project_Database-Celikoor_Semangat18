@@ -73,17 +73,35 @@
     <Compile Include="FormTambahCinema.Designer.cs">
       <DependentUpon>FormTambahCinema.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTambahJenisStudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahJenisStudio.Designer.cs">
+      <DependentUpon>FormTambahJenisStudio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTambahKelompok.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormTambahKelompok.Designer.cs">
       <DependentUpon>FormTambahKelompok.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTambahKonsumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahKonsumen.Designer.cs">
+      <DependentUpon>FormTambahKonsumen.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTambahPegawai.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormTambahPegawai.Designer.cs">
       <DependentUpon>FormTambahPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahStudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahStudio.Designer.cs">
+      <DependentUpon>FormTambahStudio.cs</DependentUpon>
     </Compile>
     <Compile Include="FormUntukAdmin.cs">
       <SubType>Form</SubType>
@@ -138,11 +156,20 @@
     <EmbeddedResource Include="FormTambahCinema.resx">
       <DependentUpon>FormTambahCinema.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahJenisStudio.resx">
+      <DependentUpon>FormTambahJenisStudio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTambahKelompok.resx">
       <DependentUpon>FormTambahKelompok.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahKonsumen.resx">
+      <DependentUpon>FormTambahKonsumen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTambahPegawai.resx">
       <DependentUpon>FormTambahPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahStudio.resx">
+      <DependentUpon>FormTambahStudio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUntukAdmin.resx">
       <DependentUpon>FormUntukAdmin.cs</DependentUpon>

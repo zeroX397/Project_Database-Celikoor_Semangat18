@@ -15,7 +15,7 @@ namespace Celikoor_Library
         private string email_Konsumen;
         private string noHP_Konsumen;
         private string gender_Konsumen;
-        private string ttl_Konsumen;
+        private DateTime ttl_Konsumen;
         private double saldo_Konsumen;
         private string username_Konsumen;
         private string password_Konsumen;
@@ -23,7 +23,7 @@ namespace Celikoor_Library
 
         #region Constructors
         public Konsumen(int id_Konsumen, string nama_Konsumen, string email_Konsumen, string noHP_Konsumen, string gender_Konsumen, 
-            string ttl_Konsumen, double saldo_Konsumen, string username_Konsumen, string password_Konsumen)
+            DateTime ttl_Konsumen, double saldo_Konsumen, string username_Konsumen, string password_Konsumen)
         {
             Id_Konsumen = id_Konsumen;
             Nama_Konsumen = nama_Konsumen;
@@ -42,20 +42,10 @@ namespace Celikoor_Library
             Email_Konsumen = "";
             NoHP_Konsumen = "";
             Gender_Konsumen = "";
-            Ttl_Konsumen = "";
+            Ttl_Konsumen = new DateTime();
             Saldo_Konsumen = 0;
             Username_Konsumen = "";
             Password_Konsumen = "";
-        }
-
-        public Konsumen(int v1, string v2, string v3, string v4, string v5, object p)
-        {
-            V1 = v1;
-            V2 = v2;
-            V3 = v3;
-            V4 = v4;
-            V5 = v5;
-            P = p;
         }
         #endregion
 
@@ -65,16 +55,10 @@ namespace Celikoor_Library
         public string Email_Konsumen { get => email_Konsumen; set => email_Konsumen = value; }
         public string NoHP_Konsumen { get => noHP_Konsumen; set => noHP_Konsumen = value; }
         public string Gender_Konsumen { get => gender_Konsumen; set => gender_Konsumen = value; }
-        public string Ttl_Konsumen { get => ttl_Konsumen; set => ttl_Konsumen = value; }
+        public DateTime Ttl_Konsumen { get => ttl_Konsumen; set => ttl_Konsumen = value; }
         public double Saldo_Konsumen { get => saldo_Konsumen; set => saldo_Konsumen = value; }
         public string Username_Konsumen { get => username_Konsumen; set => username_Konsumen = value; }
         public string Password_Konsumen { get => password_Konsumen; set => password_Konsumen = value; }
-        public int V1 { get; }
-        public string V2 { get; }
-        public string V3 { get; }
-        public string V4 { get; }
-        public string V5 { get; }
-        public object P { get; }
         #endregion
 
         #region METHODS
@@ -86,25 +70,25 @@ namespace Celikoor_Library
                 "'" + obj.Email_Konsumen + "'," +
                 "'" + obj.NoHP_Konsumen+ "'," +
                 "'" + obj.Gender_Konsumen + "'," +
-                "'" + obj.Ttl_Konsumen + "'," +
+                "'" + obj.Ttl_Konsumen.ToString("yyyy-MM-dd") + "'," +
                 "'" + obj.Saldo_Konsumen + "'," +
                 "'" + obj.Username_Konsumen + "'," +
                 "'" + obj.Password_Konsumen + "');";
             Koneksi.JalankanPerintahNonQuery(sql);
         }
 
-        public static List<Konsumen> BacaData(string kriteria, string nilaiKriteria)
+        public static List<Konsumen> BacaData()
         {
             string sql = "SELECT id, nama, email, no_hp,gender,tgl_lahir, saldo, username, password" +
                 " FROM konsumens ";
-            if (kriteria == "")
-            {
-                sql += ";";
-            }
-            else
-            {
-                sql += " WHERE " + kriteria + " LIKE '%" + nilaiKriteria + "%';";
-            }
+            //if (kriteria == "")
+            //{
+            //    sql += ";";
+            //}
+            //else
+            //{
+            //    sql += " WHERE " + kriteria + " LIKE '%" + nilaiKriteria + "%';";
+            //}
             MySqlDataReader result = Koneksi.JalankanPerintahSelect(sql);
             List<Konsumen> userList = new List<Konsumen>();
             while (result.Read())
@@ -115,7 +99,7 @@ namespace Celikoor_Library
                 tmp.email_Konsumen = result.GetValue(2).ToString();
                 tmp.NoHP_Konsumen = result.GetValue(3).ToString();
                 tmp.gender_Konsumen = result.GetValue(4).ToString();
-                tmp.Ttl_Konsumen = result.GetValue(5).ToString();
+                tmp.Ttl_Konsumen = (DateTime)result.GetValue(5);
                 tmp.saldo_Konsumen = int.Parse(result.GetValue(6).ToString());
                 tmp.username_Konsumen = result.GetValue(7).ToString();
                 tmp.password_Konsumen = result.GetValue(8).ToString();
