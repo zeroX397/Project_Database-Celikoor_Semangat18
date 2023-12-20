@@ -48,15 +48,15 @@ namespace Celikoor_Library
             Password_Konsumen = "";
         }
 
-        public Konsumen(int v1, string v2, string v3, string v4, string v5, object p)
-        {
-            V1 = v1;
-            V2 = v2;
-            V3 = v3;
-            V4 = v4;
-            V5 = v5;
-            P = p;
-        }
+        //public Konsumen(int v1, string v2, string v3, string v4, string v5, object p)
+        //{
+        //    V1 = v1;
+        //    V2 = v2;
+        //    V3 = v3;
+        //    V4 = v4;
+        //    V5 = v5;
+        //    P = p;
+        //}
         #endregion
 
         #region Properties
@@ -93,32 +93,32 @@ namespace Celikoor_Library
             Koneksi.JalankanPerintahNonQuery(sql);
         }
 
-        public static List<Konsumen> BacaData(string kriteria, string nilaiKriteria)
+        public static List<Konsumen> BacaData(string kriteria = "", string nilaiKriteria = "")
         {
-            string sql = "SELECT id, nama, email, no_hp,gender,tgl_lahir, saldo, username, password" +
-                " FROM konsumens ";
+            string sql;
             if (kriteria == "")
             {
-                sql += ";";
+                sql = "SELECT * from konsumens";
             }
             else
             {
-                sql += " WHERE " + kriteria + " LIKE '%" + nilaiKriteria + "%';";
+                sql = "SELECT * from konsumens" + "WHERE " + kriteria + " LIKE '%" + nilaiKriteria + "%'";
             }
             MySqlDataReader result = Koneksi.JalankanPerintahSelect(sql);
             List<Konsumen> userList = new List<Konsumen>();
-            while (result.Read())
+
+            while (result.Read() == true)
             {
                 Konsumen tmp = new Konsumen();
-                tmp.id_Konsumen = int.Parse(result.GetValue(0).ToString());
-                tmp.nama_Konsumen = result.GetValue(1).ToString();
-                tmp.email_Konsumen = result.GetValue(2).ToString();
+                tmp.Id_Konsumen = int.Parse(result.GetValue(0).ToString());
+                tmp.Nama_Konsumen = result.GetValue(1).ToString();
+                tmp.Email_Konsumen = result.GetValue(2).ToString();
                 tmp.NoHP_Konsumen = result.GetValue(3).ToString();
-                tmp.gender_Konsumen = result.GetValue(4).ToString();
+                tmp.Gender_Konsumen = result.GetValue(4).ToString();
                 tmp.Ttl_Konsumen = result.GetValue(5).ToString();
-                tmp.saldo_Konsumen = int.Parse(result.GetValue(6).ToString());
-                tmp.username_Konsumen = result.GetValue(7).ToString();
-                tmp.password_Konsumen = result.GetValue(8).ToString();
+                tmp.Saldo_Konsumen = int.Parse(result.GetValue(6).ToString());
+                tmp.Username_Konsumen = result.GetValue(7).ToString();
+                tmp.Password_Konsumen = result.GetValue(8).ToString();
                 userList.Add(tmp);
             }
             return userList;

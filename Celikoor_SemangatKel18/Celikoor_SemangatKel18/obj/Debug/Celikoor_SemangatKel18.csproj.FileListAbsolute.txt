@@ -78,7 +78,6 @@ C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_Sem
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\MySql.Data.dll
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\Celikoor_Library.pdb
-C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\MySql.Data.xml
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormHalamanPegawai.resources
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormUntukAdmin.resources
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormUntukKasir.resources
@@ -121,3 +120,4 @@ C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_Sem
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.KONSUMEN.FormRegisterKonsumen.resources
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormTambahGenre.resources
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormTambahJenisStudio.resources
+C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormUpdateAktor.resources

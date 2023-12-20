@@ -40,6 +40,13 @@ namespace Celikoor_Semangat18
         {
             List<Aktor> listHasil = Aktor.BacaData();
             dataGridView1.DataSource = listHasil;
+
+            List<Aktor> liscbo = new List<Aktor>();
+            //comboBoxCari.DisplayMember = "Id_Aktor";
+            //comboBoxCari.DisplayMember = "Nama_Aktor";
+            //comboBoxCari.DisplayMember = "Tgl_lahir_Aktor";
+            //comboBoxCari.DisplayMember = "Negara_asal_Aktor";
+            //comboBoxCari.DataSource = listHasil;
         }
 
         private void radioButtonKelompok_CheckedChanged(object sender, EventArgs e)
@@ -58,6 +65,12 @@ namespace Celikoor_Semangat18
         {
             List<JenisStudio> listHasil = JenisStudio.BacaData();
             dataGridView1.DataSource = listHasil;
+        }
+
+        private void radioButtonKonsumen_CheckedChanged(object sender, EventArgs e)
+        {
+            List<Konsumen> userList = Konsumen.BacaData();
+            dataGridView1.DataSource = userList;
         }
 
         private void radioButtonStudio_CheckedChanged(object sender, EventArgs e)
@@ -249,6 +262,32 @@ namespace Celikoor_Semangat18
             //}
         }
 
-        
+        private void buttonUbah_Click(object sender, EventArgs e)
+        {
+            if (radioButtonAktor.Checked)
+            {
+                FormUpdateAktor frm = new FormUpdateAktor();
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonAktor_CheckedChanged(this, e);
+            }
+        }
+
+        private void buttonCari_Click(object sender, EventArgs e)
+        {
+            if (radioButtonAktor.Checked)
+            {
+                string filter;
+                if (comboBoxCari.SelectedIndex == 0)
+                    filter = "id";
+                else
+                    filter = "nama";
+
+                string nilai = textBoxCari.Text;
+
+                List<Aktor> ListData = Aktor.BacaData(filter, nilai);
+                dataGridView1.DataSource = ListData;
+            }
+        }
     }
 }
