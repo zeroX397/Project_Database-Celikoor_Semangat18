@@ -15,9 +15,7 @@ namespace Celikoor_Library
         private string tgl_lahir_Aktor;
         private string gender_Aktor;
         private string negara_asal_Aktor;
-        private string filmography;//histori aktor main di film apa
-
-
+        //private string filmography;//histori aktor main di film apa
 
         #endregion
 
@@ -29,7 +27,7 @@ namespace Celikoor_Library
             this.tgl_lahir_Aktor = tgl_lahir_Aktor;
             this.gender_Aktor = gender_Aktor;
             this.negara_asal_Aktor = negara_asal_Aktor;
-            this.filmography = filmography;
+            //this.filmography = filmography;
         }
 
         public Aktor()
@@ -39,7 +37,7 @@ namespace Celikoor_Library
             this.tgl_lahir_Aktor = "";
             this.gender_Aktor = "";
             this.negara_asal_Aktor = "";
-            this.filmography = "";
+            //this.filmography = "";
 
         }
 
@@ -51,7 +49,7 @@ namespace Celikoor_Library
         public string Tgl_lahir_Aktor { get => tgl_lahir_Aktor; set => tgl_lahir_Aktor = value; }
         public string Gender_Aktor { get => gender_Aktor; set => gender_Aktor = value; }
         public string Negara_asal_Aktor { get => negara_asal_Aktor; set => negara_asal_Aktor = value; }
-        public string Filmography { get => filmography; set => filmography = value; }
+        //public string Filmography { get => filmography; set => filmography = value; }
         #endregion
 
         #region METHODS
@@ -92,6 +90,21 @@ namespace Celikoor_Library
             }
             return listHasil;
         }
+
+        public static void HapusData(string KodeHapus)
+        {   //susun perintah query
+            string perintah = "delete from aktors where id='" + KodeHapus + "';";
+
+            Koneksi.JalankanPerintahNonQuery(perintah); //kirim ke command
+        }
+
+        public static void UbahData(Aktor ak)
+        {   //susun perintah query
+            string perintah = "UPDATE aktors SET nama='" + ak.Nama_Aktor + "', tgl_lahir= '" + ak.Tgl_lahir_Aktor + "', negara_asal='" + ak.Negara_asal_Aktor + "' WHERE id='" + ak.Id_Aktor + "';";
+
+            Koneksi.JalankanPerintahNonQuery(perintah); //kirim ke command
+        }
+
         #endregion
     }
 }

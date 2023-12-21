@@ -55,6 +55,28 @@ namespace Celikoor_Library
             }
             return listHasil;
         }
+
+        public static void TambahData(Genre g)
+        {
+            string perintah;
+            if (g.Deskripsi_genre != null)
+            {
+                perintah = "INSERT INTO genres" + "(id, nama, deskripsi) VALUES " + "('" + g.Id_genre + "', '" + g.Nama_genre + "', '" + g.Deskripsi_genre + "');";
+            }
+            else 
+            {
+                perintah = "INSERT INTO genres" + "(id, nama) VALUES " + "('" + g.Id_genre + "', '" + g.Nama_genre + "');";
+            }
+            
+            Koneksi.JalankanPerintahNonQuery(perintah);
+        }
+
+        public static void HapusData(string KodeHapus)
+        {   //susun perintah query
+            string perintah = "delete from genres where id='" + KodeHapus + "';";
+
+            Koneksi.JalankanPerintahNonQuery(perintah); //kirim ke command
+        }
         #endregion
     }
 }

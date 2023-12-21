@@ -41,7 +41,7 @@ namespace Celikoor_Library
                 obj.nama + "');";
             Koneksi.JalankanPerintahNonQuery(sql);
         }
-        public static List<Kelompok> BacaData(string filter, string nilai)
+        public static List<Kelompok> BacaData(string filter = "", string nilai = "")
         {
             string perintah;
             if (filter == "")
@@ -63,6 +63,13 @@ namespace Celikoor_Library
                 listHasil.Add(tampung);
             }
             return listHasil;
+        }
+
+        public static void HapusData(string KodeHapus)
+        {   //susun perintah query
+            string perintah = "delete from kelompoks where id='" + KodeHapus + "';";
+
+            Koneksi.JalankanPerintahNonQuery(perintah); //kirim ke command
         }
         #endregion
     }

@@ -47,6 +47,19 @@ namespace Celikoor_Library
             Username_Konsumen = "";
             Password_Konsumen = "";
         }
+<<<<<<< HEAD
+=======
+
+        //public Konsumen(int v1, string v2, string v3, string v4, string v5, object p)
+        //{
+        //    V1 = v1;
+        //    V2 = v2;
+        //    V3 = v3;
+        //    V4 = v4;
+        //    V5 = v5;
+        //    P = p;
+        //}
+>>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
         #endregion
 
         #region Properties
@@ -77,6 +90,7 @@ namespace Celikoor_Library
             Koneksi.JalankanPerintahNonQuery(sql);
         }
 
+<<<<<<< HEAD
         public static List<Konsumen> BacaData()
         {
             string sql = "SELECT id, nama, email, no_hp,gender,tgl_lahir, saldo, username, password" +
@@ -89,20 +103,42 @@ namespace Celikoor_Library
             //{
             //    sql += " WHERE " + kriteria + " LIKE '%" + nilaiKriteria + "%';";
             //}
+=======
+        public static List<Konsumen> BacaData(string kriteria = "", string nilaiKriteria = "")
+        {
+            string sql;
+            if (kriteria == "")
+            {
+                sql = "SELECT * from konsumens";
+            }
+            else
+            {
+                sql = "SELECT * from konsumens" + "WHERE " + kriteria + " LIKE '%" + nilaiKriteria + "%'";
+            }
+>>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
             MySqlDataReader result = Koneksi.JalankanPerintahSelect(sql);
             List<Konsumen> userList = new List<Konsumen>();
-            while (result.Read())
+
+            while (result.Read() == true)
             {
                 Konsumen tmp = new Konsumen();
-                tmp.id_Konsumen = int.Parse(result.GetValue(0).ToString());
-                tmp.nama_Konsumen = result.GetValue(1).ToString();
-                tmp.email_Konsumen = result.GetValue(2).ToString();
+                tmp.Id_Konsumen = int.Parse(result.GetValue(0).ToString());
+                tmp.Nama_Konsumen = result.GetValue(1).ToString();
+                tmp.Email_Konsumen = result.GetValue(2).ToString();
                 tmp.NoHP_Konsumen = result.GetValue(3).ToString();
+<<<<<<< HEAD
                 tmp.gender_Konsumen = result.GetValue(4).ToString();
                 tmp.Ttl_Konsumen = (DateTime)result.GetValue(5);
                 tmp.saldo_Konsumen = int.Parse(result.GetValue(6).ToString());
                 tmp.username_Konsumen = result.GetValue(7).ToString();
                 tmp.password_Konsumen = result.GetValue(8).ToString();
+=======
+                tmp.Gender_Konsumen = result.GetValue(4).ToString();
+                tmp.Ttl_Konsumen = result.GetValue(5).ToString();
+                tmp.Saldo_Konsumen = int.Parse(result.GetValue(6).ToString());
+                tmp.Username_Konsumen = result.GetValue(7).ToString();
+                tmp.Password_Konsumen = result.GetValue(8).ToString();
+>>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
                 userList.Add(tmp);
             }
             return userList;
@@ -121,6 +157,14 @@ namespace Celikoor_Library
 
             Koneksi.JalankanPerintahNonQuery(perintah);
         }
+
+        //public static void HapusData(string KodeHapus)
+        //{   //susun perintah query
+        //    string perintah = "delete from konsumens where id='" + KodeHapus + "';";
+
+        //    Koneksi.JalankanPerintahNonQuery(perintah); //kirim ke command
+        //}
+
         #endregion
 
     }

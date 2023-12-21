@@ -89,6 +89,13 @@ namespace Celikoor_Library
             }
             return listHasil;
         }
+
+        public static void HapusData(string KodeHapus)
+        {   //susun perintah query
+            string perintah = "delete from cinemas where id='" + KodeHapus + "';";
+
+            Koneksi.JalankanPerintahNonQuery(perintah); //kirim ke command
+        }
         #endregion
     }
 }
