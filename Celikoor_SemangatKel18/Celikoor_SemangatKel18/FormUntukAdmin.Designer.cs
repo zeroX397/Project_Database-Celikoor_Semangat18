@@ -45,14 +45,10 @@ namespace Celikoor_Semangat18
             this.radioButtonGenre = new System.Windows.Forms.RadioButton();
             this.radioButtonKelompok = new System.Windows.Forms.RadioButton();
             this.radioButtonAktor = new System.Windows.Forms.RadioButton();
-<<<<<<< HEAD
-            this.buttonTambah = new System.Windows.Forms.Button();
             this.radioButtonAktor2 = new System.Windows.Forms.RadioButton();
-=======
             this.textBoxCari = new System.Windows.Forms.TextBox();
             this.comboBoxCari = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
->>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -191,14 +187,11 @@ namespace Celikoor_Semangat18
             // 
             // radioButtonPegawai
             // 
-<<<<<<< HEAD
             this.radioButtonPegawai.Location = new System.Drawing.Point(731, 138);
-=======
             this.radioButtonPegawai.AutoSize = true;
             this.radioButtonPegawai.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonPegawai.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.radioButtonPegawai.Location = new System.Drawing.Point(32, 394);
->>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
             this.radioButtonPegawai.Name = "radioButtonPegawai";
             this.radioButtonPegawai.Size = new System.Drawing.Size(134, 32);
             this.radioButtonPegawai.TabIndex = 30;
@@ -209,14 +202,10 @@ namespace Celikoor_Semangat18
             // 
             // radioButtonKonsumen
             // 
-<<<<<<< HEAD
-            this.radioButtonKonsumen.Location = new System.Drawing.Point(155, 138);
-=======
             this.radioButtonKonsumen.AutoSize = true;
             this.radioButtonKonsumen.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonKonsumen.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.radioButtonKonsumen.Location = new System.Drawing.Point(217, 394);
->>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
             this.radioButtonKonsumen.Name = "radioButtonKonsumen";
             this.radioButtonKonsumen.Size = new System.Drawing.Size(154, 32);
             this.radioButtonKonsumen.TabIndex = 31;
@@ -228,12 +217,7 @@ namespace Celikoor_Semangat18
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-<<<<<<< HEAD
-            this.dataGridView1.Location = new System.Drawing.Point(24, 193);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-=======
             this.dataGridView1.Location = new System.Drawing.Point(447, 150);
->>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -326,11 +310,6 @@ namespace Celikoor_Semangat18
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1198, 708);
-            this.Controls.Add(this.radioButtonAktor2);
-            this.Controls.Add(this.buttonTambah);
-=======
             this.ClientSize = new System.Drawing.Size(1154, 561);
             this.Controls.Add(this.textBoxCari);
             this.Controls.Add(this.comboBoxCari);
@@ -338,7 +317,6 @@ namespace Celikoor_Semangat18
             this.Controls.Add(this.radioButtonAktor);
             this.Controls.Add(this.radioButtonKelompok);
             this.Controls.Add(this.radioButtonGenre);
->>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.radioButtonKonsumen);
             this.Controls.Add(this.radioButtonPegawai);
@@ -379,13 +357,9 @@ namespace Celikoor_Semangat18
         private System.Windows.Forms.RadioButton radioButtonGenre;
         private System.Windows.Forms.RadioButton radioButtonKelompok;
         private System.Windows.Forms.RadioButton radioButtonAktor;
-<<<<<<< HEAD
-        private System.Windows.Forms.Button buttonTambah;
         private System.Windows.Forms.RadioButton radioButtonAktor2;
-=======
         private System.Windows.Forms.TextBox textBoxCari;
         private System.Windows.Forms.ComboBox comboBoxCari;
         private System.Windows.Forms.Label label2;
->>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
     }
 }

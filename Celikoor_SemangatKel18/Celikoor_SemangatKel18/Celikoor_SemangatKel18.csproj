@@ -73,15 +73,12 @@
     <Compile Include="FormTambahCinema.Designer.cs">
       <DependentUpon>FormTambahCinema.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-=======
     <Compile Include="FormTambahGenre.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormTambahGenre.Designer.cs">
       <DependentUpon>FormTambahGenre.cs</DependentUpon>
     </Compile>
->>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
     <Compile Include="FormTambahJenisStudio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,12 +168,9 @@
     <EmbeddedResource Include="FormTambahCinema.resx">
       <DependentUpon>FormTambahCinema.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-=======
     <EmbeddedResource Include="FormTambahGenre.resx">
       <DependentUpon>FormTambahGenre.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
     <EmbeddedResource Include="FormTambahJenisStudio.resx">
       <DependentUpon>FormTambahJenisStudio.cs</DependentUpon>
     </EmbeddedResource>

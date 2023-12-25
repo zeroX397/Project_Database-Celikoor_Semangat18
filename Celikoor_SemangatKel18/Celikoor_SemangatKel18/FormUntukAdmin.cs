@@ -95,25 +95,11 @@ namespace Celikoor_Semangat18
                 frm.ShowDialog();
                 radioButtonPegawai_CheckedChanged(this, e);
             }
-<<<<<<< HEAD
-            else if (radioButtonKonsumen.Checked)
-            {
-                FormTambahKonsumen frm = new FormTambahKonsumen();
-                frm.Owner = this;
-                frm.ShowDialog();
-                radioButtonKonsumen_CheckedChanged(this, e);
-            }
-            else if (radioButtonAktor2.Checked)
-=======
             else if (radioButtonAktor.Checked)
->>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
             {
                 FormTambahAktor frm = new FormTambahAktor();
                 frm.Owner = this;
                 frm.ShowDialog();
-<<<<<<< HEAD
-                radioButtonAktor2_CheckedChanged(this, e);
-=======
                 radioButtonAktor_CheckedChanged(this, e);
             }
             else if (radioButtonKelompok.Checked)
@@ -129,7 +115,6 @@ namespace Celikoor_Semangat18
                 frm.Owner = this;
                 frm.ShowDialog();
                 radioButtonGenre_CheckedChanged(this, e);
->>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
             }
             else if (radioButtonJenisStudio.Checked)
             {
@@ -138,15 +123,6 @@ namespace Celikoor_Semangat18
                 frm.ShowDialog();
                 radioButtonJenisStudio_CheckedChanged(this, e);
             }
-<<<<<<< HEAD
-            else if (radioButtonStudio.Checked)
-            {
-                FormTambahStudio frm = new FormTambahStudio();
-                frm.Owner = this;
-                frm.ShowDialog();
-                radioButtonStudio_CheckedChanged(this, e);
-            }
-=======
         }
 
         private void buttonHapus_Click(object sender, EventArgs e)
@@ -284,7 +260,6 @@ namespace Celikoor_Semangat18
             //        }
             //    }
             //}
->>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
         }
 
         private void buttonUbah_Click(object sender, EventArgs e)
@@ -308,38 +283,7 @@ namespace Celikoor_Semangat18
                 else
                     filter = "nama";
 
-<<<<<<< HEAD
-        private void radioButtonKonsumen_CheckedChanged(object sender, EventArgs e)
-        {
-            List<Konsumen> listHasil = Konsumen.BacaData();
-            Console.WriteLine("listHasil" + listHasil);
-            dataGridView1.DataSource = listHasil;
-
-        }
-
-        private void radioButtonStudio_CheckedChanged(object sender, EventArgs e)
-        {
-            List<Studio> listHasil = Studio.BacaData();
-            Console.WriteLine("listHasil" + listHasil);
-            dataGridView1.DataSource = listHasil;
-        }
-
-        private void radioButtonPegawai_CheckedChanged_1(object sender, EventArgs e)
-        {
-            List<Pegawai> listHasil = Pegawai.BacaData();
-            Console.WriteLine("listHasil" + listHasil);
-            dataGridView1.DataSource = listHasil;
-        }
-
-        private void radioButtonJenisStudio_CheckedChanged(object sender, EventArgs e)
-        {
-            List<JenisStudio> listHasil = JenisStudio.BacaData();
-            Console.WriteLine("listHasil" + listHasil);
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource = listHasil;
-=======
                 string nilai = textBoxCari.Text;
->>>>>>> f7001c78a3f210d37bcf9a968a260f743c38d351
 
                 List<Aktor> ListData = Aktor.BacaData(filter, nilai);
                 dataGridView1.DataSource = ListData;
