@@ -74,16 +74,16 @@ namespace Celikoor_Semangat18
             this.RecordToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1776, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(833, 33);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // masterToolStripMenuItem
             // 
             this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
             this.masterToolStripMenuItem.Size = new System.Drawing.Size(82, 29);
             this.masterToolStripMenuItem.Text = "Master";
+            this.masterToolStripMenuItem.Click += new System.EventHandler(this.masterToolStripMenuItem_Click);
             // 
             // registerToolStripMenuItem
             // 
@@ -97,6 +97,7 @@ namespace Celikoor_Semangat18
             this.RecordToolStripMenuItem.Name = "RecordToolStripMenuItem";
             this.RecordToolStripMenuItem.Size = new System.Drawing.Size(83, 29);
             this.RecordToolStripMenuItem.Text = "Record";
+            this.RecordToolStripMenuItem.Click += new System.EventHandler(this.RecordToolStripMenuItem_Click);
             // 
             // panel
             // 
@@ -107,14 +108,14 @@ namespace Celikoor_Semangat18
             this.panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel.Location = new System.Drawing.Point(0, 0);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1776, 163);
+            this.panel.Size = new System.Drawing.Size(833, 163);
             this.panel.TabIndex = 14;
             // 
             // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1776, 1050);
+            this.ClientSize = new System.Drawing.Size(833, 643);
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormMainMenu";

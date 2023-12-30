@@ -83,9 +83,14 @@ namespace Celikoor_Semangat18
         }
     }
 
-    private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-    {
+        private void RecordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
-    }
+        }
+
+        private void masterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

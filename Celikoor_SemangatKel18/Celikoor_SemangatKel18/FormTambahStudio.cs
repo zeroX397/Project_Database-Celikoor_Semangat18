@@ -47,11 +47,11 @@ namespace Celikoor_Semangat18
                 Studio p = new Studio();
                 
                 p.Nama = textBoxNama.Text;
-                p.Cinema_id = int.Parse(comboBoxCinema.SelectedValue.ToString());
+                p.Cinema.Id = int.Parse(comboBoxCinema.SelectedValue.ToString());
                 p.Kapasitas = int.Parse(textBoxKapasitas.Text);
-                p.Jenis_studio_id = int.Parse(comboBoxJenisStudio.SelectedValue.ToString());
-                p.Harga_weekday = int.Parse(textBoxHargaWeekday.Text);
-                p.Harga_weekend = int.Parse(textBoxHargaWeekend.Text);
+                p.Jenisstud.ID = int.Parse(comboBoxJenisStudio.SelectedValue.ToString());
+                p.HargaWeekday = int.Parse(textBoxHargaWeekday.Text);
+                p.HargaWeekend = int.Parse(textBoxHargaWeekend.Text);
 
 
 
