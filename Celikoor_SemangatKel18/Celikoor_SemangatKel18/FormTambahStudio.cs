@@ -50,6 +50,9 @@ namespace Celikoor_Semangat18
                 p.Cinema.Id = int.Parse(comboBoxCinema.SelectedValue.ToString());
                 p.Kapasitas = int.Parse(textBoxKapasitas.Text);
                 p.Jenisstud.ID = int.Parse(comboBoxJenisStudio.SelectedValue.ToString());
+                p.Cinema = (Cinema)Enum.Parse(typeof(Cinema), comboBoxCinema.SelectedValue.ToString());
+                p.Kapasitas = int.Parse(textBoxKapasitas.Text);
+                p.Jenisstud = (JenisStudio)Enum.Parse(typeof(JenisStudio), comboBoxJenisStudio.SelectedValue.ToString());
                 p.HargaWeekday = int.Parse(textBoxHargaWeekday.Text);
                 p.HargaWeekend = int.Parse(textBoxHargaWeekend.Text);
 
@@ -57,7 +60,7 @@ namespace Celikoor_Semangat18
 
 
                 //tambahkan ke database:
-                Studio.TambahData(p);
+                //Studio.TambahData(p);
 
                 MessageBox.Show("Tambah Data berhasil");
                 this.Close();
