@@ -26,19 +26,11 @@ namespace Celikoor_Semangat18
                 JenisStudio p = new JenisStudio();
               
                 p.Nama= textBoxNama.Text;
-                p.Deskripsi = textBoxDesc.Text;
+                p.Deskripsi = textBoxDeskripsi.Text;
                 
 
                 //tambahkan ke database:
                 JenisStudio.TambahData(p);
-
-                JenisStudio js = new JenisStudio();
-                js.ID = int.Parse(textBoxId.Text);
-                js.Nama = textBoxNama.Text;
-                js.Deskripsi = textBoxDesc.Text;
-
-                //tambahkan ke database:
-                JenisStudio.TambahData(js);
 
                 MessageBox.Show("Tambah Data berhasil");
                 this.Close();
@@ -48,21 +40,9 @@ namespace Celikoor_Semangat18
                 MessageBox.Show("Tambah Data gagal. Error : " + ex.Message);
             }
         }
-
-
         private void buttonBatal_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void FormTambahJenisStudio_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
-
-
-    }
-}
-
