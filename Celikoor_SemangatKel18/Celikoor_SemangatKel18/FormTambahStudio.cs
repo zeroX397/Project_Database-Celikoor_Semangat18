@@ -47,7 +47,7 @@ namespace Celikoor_Semangat18
                 Studio p = new Studio();
                 
                 p.Nama = textBoxNama.Text;
-                p.Cinema_id = int.Parse(comboBoxCinema.SelectedValue.ToString());
+                //p.Cinema_id = int.Parse(comboBoxCinema.SelectedValue.ToString());
                 p.Kapasitas = int.Parse(textBoxKapasitas.Text);
                 p.Jenisstud.ID = int.Parse(comboBoxJenisStudio.SelectedValue.ToString());
                 p.Cinema = (Cinema)Enum.Parse(typeof(Cinema), comboBoxCinema.SelectedValue.ToString());
