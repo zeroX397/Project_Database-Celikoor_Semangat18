@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Celikoor_Library;
-using Celikoor_Semangat18.KONSUMEN;
 
 namespace Celikoor_Semangat18
 { 
@@ -72,7 +71,7 @@ namespace Celikoor_Semangat18
         Form form = Application.OpenForms["FormRegisterKonsumen"];
         if (form == null)
         {
-            FormRegisterKonsumen frmRegisterKonsumen = new FormRegisterKonsumen();
+            FormTambahKonsumen frmRegisterKonsumen = new FormTambahKonsumen();
             frmRegisterKonsumen.MdiParent = this;
             frmRegisterKonsumen.Show();
         }
