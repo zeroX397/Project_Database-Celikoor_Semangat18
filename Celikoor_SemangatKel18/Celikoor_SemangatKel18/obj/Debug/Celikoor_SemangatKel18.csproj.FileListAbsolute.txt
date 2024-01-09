@@ -31,3 +31,4 @@ C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_Se
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.exe
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.pdb
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\MySql.Data.xml
+C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormPesanTiket.resources

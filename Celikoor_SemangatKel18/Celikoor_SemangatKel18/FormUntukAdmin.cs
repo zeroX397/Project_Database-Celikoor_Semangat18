@@ -123,6 +123,20 @@ namespace Celikoor_Semangat18
                 frm.ShowDialog();
                 radioButtonJenisStudio_CheckedChanged(this, e);
             }
+            else if (radioButtonKonsumen.Checked)
+            {
+                FormTambahKonsumen frm = new FormTambahKonsumen();
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonKonsumen_CheckedChanged(this, e);
+            }
+            else if (radioButtonStudio.Checked)
+            {
+                FormTambahStudio frm = new FormTambahStudio();
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonStudio_CheckedChanged(this, e);
+            }
         }
 
         private void buttonHapus_Click(object sender, EventArgs e)
