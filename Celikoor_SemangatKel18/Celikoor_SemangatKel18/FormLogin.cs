@@ -29,54 +29,66 @@ namespace Celikoor_Semangat18
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // Pengecekan username dan password tidak boleh kosong
-                if (textBoxUsername.Text == "")
-                {
-                    throw new Exception("Username tidak boleh kosong");
-                }
-                if (textBoxPassword.Text == "")
-                {
-                    throw new Exception("Password tidak boleh kosong");
-                }
-
-                Pegawai hasil = Pegawai.Login(textBoxUsername.Text, textBoxPassword.Text);
-                if (hasil == null)
-                {
-                    throw new Exception("Data Pegawai tidak ditemukan");
-                }
-
-                Console.WriteLine(hasil.Roles_Pegawai);
-                if (hasil.Roles_Pegawai == "ADMIN")
-                {
-                    this.DialogResult = DialogResult.OK;
-                    FormUntukAdmin form = new FormUntukAdmin();
-                    form.MdiParent = this.MdiParent;
-                    form.Show();
-                    this.Close();
-                }
-                if (hasil.Roles_Pegawai == "OPERATOR")
-                {
-                    this.DialogResult = DialogResult.OK;
-                    FormUntukOperator form = new FormUntukOperator();
-                    form.MdiParent = this.MdiParent;
-                    form.Show();
-                    this.Close();
-                }
-                if (hasil.Roles_Pegawai == "KASIR")
-                {
-                    this.DialogResult = DialogResult.OK;
-                    FormUntukKasir form = new FormUntukKasir();
-                    form.MdiParent = this.MdiParent;
-                    form.Show();
-                    this.Close();
-                }
+            FormMainMenu frm = (FormMainMenu)this.Owner;
+            
+            if (radioButtonEmployee.Checked)
+            {  
+                string uid = textBoxUsername.Text;
+                string pwd = textBoxPassword.Text;
+                frm.userLogin = Pegawai.Login(uid, pwd);
             }
-            catch(Exception x)
+            else if (radioButtonConsumen.Checked)
             {
-                MessageBox.Show(x.Message, "Terjadi Kesalahan");
+                
+                string uid = textBoxUsername.Text;
+                string pwd = textBoxPassword.Text;
+                frm.konsumLogin = Konsumen.Login(uid, pwd);
             }
+            
+            if (frm.userLogin != null || frm.konsumLogin != null)
+            {
+                frm.Visible = true;
+                this.Close();
+            }
+            else
+            {
+                Application.Exit();
+            }
+            
+
+            //    Pegawai hasil = Pegawai.Login(textBoxUsername.Text, textBoxPassword.Text);
+            //    if (hasil == null)
+            //    {
+            //        throw new Exception("Data Pegawai tidak ditemukan");
+            //    }
+
+            //    Console.WriteLine(hasil.Roles_Pegawai);
+            //    if (hasil.Roles_Pegawai == "ADMIN")
+            //    {
+            //        this.DialogResult = DialogResult.OK;
+            //        FormUntukAdmin form = new FormUntukAdmin();
+            //        form.MdiParent = this.MdiParent;
+            //        form.Show();
+            //        this.Close();
+            //    }
+            //    if (hasil.Roles_Pegawai == "OPERATOR")
+            //    {
+            //        this.DialogResult = DialogResult.OK;
+            //        FormUntukOperator form = new FormUntukOperator();
+            //        form.MdiParent = this.MdiParent;
+            //        form.Show();
+            //        this.Close();
+            //    }
+            //    if (hasil.Roles_Pegawai == "KASIR")
+            //    {
+            //        this.DialogResult = DialogResult.OK;
+            //        FormUntukKasir form = new FormUntukKasir();
+            //        form.MdiParent = this.MdiParent;
+            //        form.Show();
+            //        this.Close();
+            //    }
+            //}
+            
         }
 
         private void buttonExit_Click(object sender, EventArgs e)

@@ -14,77 +14,130 @@ namespace Celikoor_Semangat18
 { 
     public partial class FormMainMenu : Form
     {
-    public FormMainMenu()
-    {
-        InitializeComponent();
-    }
-
-    private void FormMainMenu_Load(object sender, EventArgs e)
-    {
-        WindowState = FormWindowState.Maximized;
-        this.IsMdiContainer = true;
-        this.WindowState = FormWindowState.Maximized;
-        this.IsMdiContainer = true;//untuk men-set form sebagai mdiParent
-        try
+        public Pegawai userLogin;
+        public Konsumen konsumLogin;
+        public FormMainMenu()
         {
-            string server = connect.Default.dbServer;
-            int port = connect.Default.dbPort;
-            string name = connect.Default.dbName;
-            string uid = connect.Default.dbUsername;
-            string pwd = connect.Default.dbPassword;
-            Console.WriteLine(name);
-            Koneksi k = new Koneksi(server, port, name, uid, pwd);
-            MessageBox.Show("Koneksi Berhasil");
-
-            FormLogin form = new FormLogin();
-            form.MdiParent = this;
-            form.Show();
+            InitializeComponent();
         }
-        catch (Exception ex)
+
+        private void FormMainMenu_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Koneksi Gagal! error: " + ex.Message);
-        }
-    }
-    private void loginToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Form frm = Application.OpenForms["FormLogin"];
-        if (frm == null)
-        {
-            FormLogin frmlog = new FormLogin();
-            Form form = Application.OpenForms["FormLoginKonsumen"];
-            if (form == null)
+            //WindowState = FormWindowState.Maximized;
+            this.IsMdiContainer = true;
+            this.Visible = false;
+            //this.WindowState = FormWindowState.Maximized;
+            //this.IsMdiContainer = true;//untuk men-set form sebagai mdiParent
+            try
             {
-                FormLogin frmlogin = new FormLogin();
-                frmlogin.MdiParent = this;
-                frmlogin.Show();
+                string server = connect.Default.dbServer;
+                int port = connect.Default.dbPort;
+                string name = connect.Default.dbName;
+                string uid = connect.Default.dbUsername;
+                string pwd = connect.Default.dbPassword;
+                Console.WriteLine(name);
+                Koneksi k = new Koneksi(server, port, name, uid, pwd);
+                MessageBox.Show("Koneksi Berhasil");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Koneksi Gagal! error: " + ex.Message);
+            }
+                FormLogin form = new FormLogin();
+                form.Owner = this;
+                this.Visible = false;
+                form.ShowDialog();
+            AturMenu(userLogin.Roles_Pegawai);
+        }
+
+        private void AturMenu(string roles)
+        {
+            if (roles == "ADMIN")
+            {
+                masterToolStripMenuItem.Visible = true;
+                recordToolStripMenuItem.Visible = true;
+                invoiceToolStripMenuItem.Visible = false;
+                barcodeToolStripMenuItem.Visible = false;
+                ticketToolStripMenuItem.Visible = false;
+            }
+            else if (roles == "OPERATOR")
+            {
+                masterToolStripMenuItem.Visible = false;
+                recordToolStripMenuItem.Visible = false;
+                invoiceToolStripMenuItem.Visible = false;
+                barcodeToolStripMenuItem.Visible = true;
+                ticketToolStripMenuItem.Visible = false;
+            }
+            else if (roles == "KASIR")
+            {
+                masterToolStripMenuItem.Visible = false;
+                recordToolStripMenuItem.Visible = false;
+                invoiceToolStripMenuItem.Visible = true;
+                barcodeToolStripMenuItem.Visible = false;
+                ticketToolStripMenuItem.Visible = false;
             }
             else
             {
-                form.Show();
-                form.BringToFront();
+                masterToolStripMenuItem.Visible = false;
+                recordToolStripMenuItem.Visible = false;
+                invoiceToolStripMenuItem.Visible = false;
+                barcodeToolStripMenuItem.Visible = false;
+                ticketToolStripMenuItem.Visible = true;
             }
         }
-    }
+        
 
-    private void registerToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Form form = Application.OpenForms["FormRegisterKonsumen"];
-        if (form == null)
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            FormTambahKonsumen frmRegisterKonsumen = new FormTambahKonsumen();
-            frmRegisterKonsumen.MdiParent = this;
-            frmRegisterKonsumen.Show();
+
         }
-        else
+
+        private void HumanResourcesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            form.Show();
-            form.BringToFront();
+            Form frm = Application.OpenForms["FormAdminHR"];
+            if (frm == null)
+            {
+                FormAdminHR frmMaster = new FormAdminHR();
+                frmMaster.MdiParent = this;
+                frmMaster.Show();
+            }
+            else
+            {
+                frm.Show();
+                frm.BringToFront();
+            }
         }
-    }
 
-    private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-    {
+        private void cinemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = Application.OpenForms["FormAdminCinema"];
+            if (frm == null)
+            {
+                FormAdminCinema frmMaster = new FormAdminCinema();
+                frmMaster.MdiParent = this;
+                frmMaster.Show();
+            }
+            else
+            {
+                frm.Show();
+                frm.BringToFront();
+            }
+        }
 
-    }
+        private void movieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = Application.OpenForms["FormAdminMovie"];
+            if (frm == null)
+            {
+                FormAdminMovie frmMaster = new FormAdminMovie();
+                frmMaster.MdiParent = this;
+                frmMaster.Show();
+            }
+            else
+            {
+                frm.Show();
+                frm.BringToFront();
+            }
+        }
     }
 }

@@ -27,17 +27,14 @@ namespace Celikoor_Semangat18
             comboBoxJenisStudio.DisplayMember = "nama";
             comboBoxJenisStudio.ValueMember = "id";
 
-
         }
         private void loadComboBoxCinema()
         {
-
             List<Cinema> cinema = Cinema.BacaData();
             comboBoxCinema.DataSource = cinema;
             comboBoxCinema.SelectedIndex = 0;
             comboBoxCinema.DisplayMember = "nama_cabang";
             comboBoxCinema.ValueMember = "id";
-
         }
         private void buttonSimpan_Click(object sender, EventArgs e)
         {
@@ -55,8 +52,6 @@ namespace Celikoor_Semangat18
                 p.Jenisstud = (JenisStudio)Enum.Parse(typeof(JenisStudio), comboBoxJenisStudio.SelectedValue.ToString());
                 p.HargaWeekday = int.Parse(textBoxHargaWeekday.Text);
                 p.HargaWeekend = int.Parse(textBoxHargaWeekend.Text);
-
-
 
 
                 //tambahkan ke database:

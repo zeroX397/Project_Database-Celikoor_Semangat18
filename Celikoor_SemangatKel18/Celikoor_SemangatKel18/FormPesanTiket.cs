@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Celikoor_Library;
 
 namespace Celikoor_Semangat18
 {
@@ -53,6 +54,11 @@ namespace Celikoor_Semangat18
             {
                 MessageBox.Show($"Kursi {checkBox.Text} telah dipesan");
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

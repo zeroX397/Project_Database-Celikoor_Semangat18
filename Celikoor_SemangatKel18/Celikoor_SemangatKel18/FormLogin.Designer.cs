@@ -46,6 +46,8 @@ namespace Celikoor_Semangat18
             this.label6 = new System.Windows.Forms.Label();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.linkLabelRegister = new System.Windows.Forms.LinkLabel();
+            this.radioButtonConsumen = new System.Windows.Forms.RadioButton();
+            this.radioButtonEmployee = new System.Windows.Forms.RadioButton();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -64,9 +66,9 @@ namespace Celikoor_Semangat18
             this.panel.Controls.Add(this.pictureBox2);
             this.panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel.Location = new System.Drawing.Point(0, 0);
-            this.panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(200, 419);
+            this.panel.Size = new System.Drawing.Size(267, 516);
             this.panel.TabIndex = 0;
             // 
             // label4
@@ -74,10 +76,9 @@ namespace Celikoor_Semangat18
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(56, 383);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(75, 471);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 16);
+            this.label4.Size = new System.Drawing.Size(97, 19);
             this.label4.TabIndex = 4;
             this.label4.Text = "Kelompok 18";
             // 
@@ -86,10 +87,9 @@ namespace Celikoor_Semangat18
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(62, 370);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(83, 455);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 16);
+            this.label3.Size = new System.Drawing.Size(89, 19);
             this.label3.TabIndex = 3;
             this.label3.Text = "Develop by";
             // 
@@ -98,10 +98,9 @@ namespace Celikoor_Semangat18
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(51, 215);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(68, 265);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 22);
+            this.label2.Size = new System.Drawing.Size(112, 30);
             this.label2.TabIndex = 3;
             this.label2.Text = "Celikoor";
             // 
@@ -110,10 +109,9 @@ namespace Celikoor_Semangat18
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(18, 183);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(24, 225);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 22);
+            this.label1.Size = new System.Drawing.Size(214, 30);
             this.label1.TabIndex = 2;
             this.label1.Text = "Welcome to the ";
             // 
@@ -122,10 +120,10 @@ namespace Celikoor_Semangat18
             this.pictureBox2.BackgroundImage = global::Celikoor_Semangat18.Properties.Resources.CELIKOOR_removebg_preview;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(55, 34);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(73, 42);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 78);
+            this.pictureBox2.Size = new System.Drawing.Size(107, 96);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -134,10 +132,10 @@ namespace Celikoor_Semangat18
             this.buttonExit.FlatAppearance.BorderSize = 0;
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExit.Location = new System.Drawing.Point(556, 26);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonExit.Location = new System.Drawing.Point(741, 32);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(27, 26);
+            this.buttonExit.Size = new System.Drawing.Size(36, 32);
             this.buttonExit.TabIndex = 5;
             this.buttonExit.Text = "X";
             this.buttonExit.UseVisualStyleBackColor = true;
@@ -147,12 +145,11 @@ namespace Celikoor_Semangat18
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.Control;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label5.Location = new System.Drawing.Point(297, 110);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(344, 120);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 21);
+            this.label5.Size = new System.Drawing.Size(224, 23);
             this.label5.TabIndex = 5;
             this.label5.Text = "Login to your account";
             // 
@@ -160,18 +157,18 @@ namespace Celikoor_Semangat18
             // 
             this.panel1.Controls.Add(this.textBoxUsername);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(274, 144);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(341, 162);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(293, 37);
+            this.panel1.Size = new System.Drawing.Size(419, 46);
             this.panel1.TabIndex = 6;
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.Location = new System.Drawing.Point(39, 12);
-            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxUsername.Location = new System.Drawing.Point(52, 15);
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(250, 20);
+            this.textBoxUsername.Size = new System.Drawing.Size(355, 22);
             this.textBoxUsername.TabIndex = 1;
             // 
             // pictureBox1
@@ -179,10 +176,10 @@ namespace Celikoor_Semangat18
             this.pictureBox1.BackgroundImage = global::Celikoor_Semangat18.Properties.Resources.icons8_username_64;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 21);
+            this.pictureBox1.Size = new System.Drawing.Size(28, 26);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -190,18 +187,18 @@ namespace Celikoor_Semangat18
             // 
             this.panel2.Controls.Add(this.textBoxPassword);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(274, 177);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(341, 203);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(293, 37);
+            this.panel2.Size = new System.Drawing.Size(419, 46);
             this.panel2.TabIndex = 7;
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(39, 12);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPassword.Location = new System.Drawing.Point(52, 15);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(250, 20);
+            this.textBoxPassword.Size = new System.Drawing.Size(355, 22);
             this.textBoxPassword.TabIndex = 2;
             // 
             // pictureBox3
@@ -209,10 +206,10 @@ namespace Celikoor_Semangat18
             this.pictureBox3.BackgroundImage = global::Celikoor_Semangat18.Properties.Resources.icons8_password_64;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(14, 8);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(19, 10);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(21, 21);
+            this.pictureBox3.Size = new System.Drawing.Size(28, 26);
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
             // 
@@ -221,21 +218,21 @@ namespace Celikoor_Semangat18
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label6.Location = new System.Drawing.Point(285, 312);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(361, 400);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(219, 16);
+            this.label6.Size = new System.Drawing.Size(278, 19);
             this.label6.TabIndex = 5;
             this.label6.Text = "Dont have an account for consumen? ";
             // 
             // buttonLogin
             // 
             this.buttonLogin.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.buttonLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonLogin.Location = new System.Drawing.Point(477, 224);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonLogin.Location = new System.Drawing.Point(618, 308);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(85, 24);
+            this.buttonLogin.Size = new System.Drawing.Size(130, 48);
             this.buttonLogin.TabIndex = 3;
             this.buttonLogin.Text = "LOGIN";
             this.buttonLogin.UseVisualStyleBackColor = false;
@@ -244,22 +241,49 @@ namespace Celikoor_Semangat18
             // linkLabelRegister
             // 
             this.linkLabelRegister.AutoSize = true;
-            this.linkLabelRegister.Location = new System.Drawing.Point(285, 328);
-            this.linkLabelRegister.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.linkLabelRegister.Location = new System.Drawing.Point(361, 420);
             this.linkLabelRegister.Name = "linkLabelRegister";
-            this.linkLabelRegister.Size = new System.Drawing.Size(121, 13);
+            this.linkLabelRegister.Size = new System.Drawing.Size(164, 17);
             this.linkLabelRegister.TabIndex = 4;
             this.linkLabelRegister.TabStop = true;
             this.linkLabelRegister.Text = "Consumen register here ";
             this.linkLabelRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelRegister_LinkClicked);
             // 
-            // FormLoginKonsumen
+            // radioButtonConsumen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.radioButtonConsumen.AutoSize = true;
+            this.radioButtonConsumen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonConsumen.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.radioButtonConsumen.Location = new System.Drawing.Point(357, 265);
+            this.radioButtonConsumen.Name = "radioButtonConsumen";
+            this.radioButtonConsumen.Size = new System.Drawing.Size(136, 27);
+            this.radioButtonConsumen.TabIndex = 8;
+            this.radioButtonConsumen.TabStop = true;
+            this.radioButtonConsumen.Text = "Consumen";
+            this.radioButtonConsumen.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonEmployee
+            // 
+            this.radioButtonEmployee.AutoSize = true;
+            this.radioButtonEmployee.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonEmployee.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.radioButtonEmployee.Location = new System.Drawing.Point(618, 265);
+            this.radioButtonEmployee.Name = "radioButtonEmployee";
+            this.radioButtonEmployee.Size = new System.Drawing.Size(130, 27);
+            this.radioButtonEmployee.TabIndex = 9;
+            this.radioButtonEmployee.TabStop = true;
+            this.radioButtonEmployee.Text = "Employee";
+            this.radioButtonEmployee.UseVisualStyleBackColor = true;
+            // 
+            // FormLogin
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(609, 419);
+            this.ClientSize = new System.Drawing.Size(812, 516);
             this.ControlBox = false;
+            this.Controls.Add(this.radioButtonEmployee);
+            this.Controls.Add(this.radioButtonConsumen);
             this.Controls.Add(this.linkLabelRegister);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.label6);
@@ -269,8 +293,8 @@ namespace Celikoor_Semangat18
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "FormLoginKonsumen";
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormLogin_Load);
             this.panel.ResumeLayout(false);
@@ -306,6 +330,8 @@ namespace Celikoor_Semangat18
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.LinkLabel linkLabelRegister;
+        private System.Windows.Forms.RadioButton radioButtonConsumen;
+        private System.Windows.Forms.RadioButton radioButtonEmployee;
     }
 }
 

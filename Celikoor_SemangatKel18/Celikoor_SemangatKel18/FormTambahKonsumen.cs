@@ -25,7 +25,7 @@ namespace Celikoor_Semangat18
                 Konsumen k = new Konsumen();
                
                 k.Nama_Konsumen = textBoxNama.Text;
-                k.NoHP_Konsumen = textBoxNoHP.Text;
+                k.NoHP_Konsumen = int.Parse(textBoxNoHP.Text);
                 k.Email_Konsumen = textBoxEmail.Text;
                 k.Ttl_Konsumen = dateTimePicker1.Value;
                 k.Gender_Konsumen = textBoxGender.Text.ToUpper();

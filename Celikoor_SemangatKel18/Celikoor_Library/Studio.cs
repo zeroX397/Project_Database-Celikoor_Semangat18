@@ -63,14 +63,14 @@ namespace Celikoor_Library
 
                 JenisStudio js = new JenisStudio();
                 js.ID = int.Parse(drHasil.GetValue(3).ToString());
-                js.Nama = drHasil.GetValue(4).ToString();
+                //js.Nama = drHasil.GetValue(4).ToString();
 
                 Cinema c = new Cinema();
-                c.Id = int.Parse(drHasil.GetValue(5).ToString());
-                c.Nama_cabang = drHasil.GetValue(6).ToString();
+                c.Id = int.Parse(drHasil.GetValue(4).ToString());
+                //c.Nama_cabang = drHasil.GetValue(6).ToString();
 
-                tampung.HargaWeekday = int.Parse(drHasil.GetValue(7).ToString());
-                tampung.HargaWeekend = int.Parse(drHasil.GetValue(8).ToString());
+                tampung.HargaWeekday = int.Parse(drHasil.GetValue(5).ToString());
+                tampung.HargaWeekend = int.Parse(drHasil.GetValue(6).ToString());
 
                 tampung.Jenisstud = js;
                 tampung.Cinema = c;

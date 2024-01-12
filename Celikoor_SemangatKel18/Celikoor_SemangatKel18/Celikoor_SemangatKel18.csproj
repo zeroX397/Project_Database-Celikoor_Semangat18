@@ -55,6 +55,18 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>connect.settings</DependentUpon>
     </Compile>
+    <Compile Include="FormAdminCinema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminCinema.Designer.cs">
+      <DependentUpon>FormAdminCinema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminMovie.Designer.cs">
+      <DependentUpon>FormAdminMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHalamanPegawai.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +165,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdminCinema.resx">
+      <DependentUpon>FormAdminCinema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminMovie.resx">
+      <DependentUpon>FormAdminMovie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHalamanPegawai.resx">
       <DependentUpon>FormHalamanPegawai.cs</DependentUpon>
     </EmbeddedResource>
