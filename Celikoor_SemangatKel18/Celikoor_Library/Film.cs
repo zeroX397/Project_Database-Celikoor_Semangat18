@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Celikoor_Library
 {
-    class Film
+    public class Film
     {
         private int id;
         private string judul;
@@ -31,7 +31,7 @@ namespace Celikoor_Library
             Harga = harga;
         }
 
-        public static List<Film> BacaData(string kriteria, string nilaiKriteria)
+        public static List<Film> BacaData(string kriteria = "", string nilaiKriteria = "")
         {
             string sql = "SELECT id, judul_film, status, harga " +
                 " FROM films " +
@@ -60,6 +60,16 @@ namespace Celikoor_Library
             }
 
             return filmList;
+        }
+
+        public static void TambahData(Film f)
+        {
+            string perintah;
+            //perintah = "INSERT INTO films " +
+            //    "(judul, sinopsis, tahun, durasi, kelompoks_id, bahasa, is_sub_indo) VALUES " + "('"
+            //       + f.Judul + "', '" + f.Sinopsis + "', '" + f.Tahun.ToString + "', '" +
+            //        f.Durasi + "', '" + f.Kelompok_id + "', '" + f.Bahasa + "', '" + f.SubIndo + "');";
+            //Koneksi.JalankanPerintahNonQuery(perintah);
         }
 
         public override string ToString()

@@ -107,6 +107,7 @@ namespace Celikoor_Semangat18
             this.radioButtonFilm.TabStop = true;
             this.radioButtonFilm.Text = "Film";
             this.radioButtonFilm.UseVisualStyleBackColor = true;
+            this.radioButtonFilm.CheckedChanged += new System.EventHandler(this.radioButtonFilm_CheckedChanged);
             // 
             // buttonExit
             // 

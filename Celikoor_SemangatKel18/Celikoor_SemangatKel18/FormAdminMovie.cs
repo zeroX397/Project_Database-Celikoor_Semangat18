@@ -155,5 +155,11 @@ namespace Celikoor_Semangat18
                 dataGridView1.DataSource = ListData;
             }
         }
+
+        private void radioButtonFilm_CheckedChanged(object sender, EventArgs e)
+        {
+            List<Film> listHasil = Film.BacaData();
+            dataGridView1.DataSource = listHasil;
+        }
     }
 }
