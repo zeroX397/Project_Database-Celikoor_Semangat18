@@ -58,9 +58,10 @@ namespace Celikoor_Semangat18
             this.radioButtonAktor.AutoSize = true;
             this.radioButtonAktor.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonAktor.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.radioButtonAktor.Location = new System.Drawing.Point(31, 197);
+            this.radioButtonAktor.Location = new System.Drawing.Point(23, 160);
+            this.radioButtonAktor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonAktor.Name = "radioButtonAktor";
-            this.radioButtonAktor.Size = new System.Drawing.Size(95, 32);
+            this.radioButtonAktor.Size = new System.Drawing.Size(77, 27);
             this.radioButtonAktor.TabIndex = 54;
             this.radioButtonAktor.TabStop = true;
             this.radioButtonAktor.Text = "Aktor";
@@ -72,9 +73,10 @@ namespace Celikoor_Semangat18
             this.radioButtonKelompok.AutoSize = true;
             this.radioButtonKelompok.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonKelompok.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.radioButtonKelompok.Location = new System.Drawing.Point(31, 113);
+            this.radioButtonKelompok.Location = new System.Drawing.Point(23, 92);
+            this.radioButtonKelompok.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonKelompok.Name = "radioButtonKelompok";
-            this.radioButtonKelompok.Size = new System.Drawing.Size(152, 32);
+            this.radioButtonKelompok.Size = new System.Drawing.Size(123, 27);
             this.radioButtonKelompok.TabIndex = 53;
             this.radioButtonKelompok.TabStop = true;
             this.radioButtonKelompok.Text = "Kelompok";
@@ -86,9 +88,10 @@ namespace Celikoor_Semangat18
             this.radioButtonGenre.AutoSize = true;
             this.radioButtonGenre.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonGenre.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.radioButtonGenre.Location = new System.Drawing.Point(231, 113);
+            this.radioButtonGenre.Location = new System.Drawing.Point(173, 92);
+            this.radioButtonGenre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonGenre.Name = "radioButtonGenre";
-            this.radioButtonGenre.Size = new System.Drawing.Size(105, 32);
+            this.radioButtonGenre.Size = new System.Drawing.Size(85, 27);
             this.radioButtonGenre.TabIndex = 52;
             this.radioButtonGenre.TabStop = true;
             this.radioButtonGenre.Text = "Genre";
@@ -100,9 +103,10 @@ namespace Celikoor_Semangat18
             this.radioButtonFilm.AutoSize = true;
             this.radioButtonFilm.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonFilm.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.radioButtonFilm.Location = new System.Drawing.Point(231, 197);
+            this.radioButtonFilm.Location = new System.Drawing.Point(173, 160);
+            this.radioButtonFilm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonFilm.Name = "radioButtonFilm";
-            this.radioButtonFilm.Size = new System.Drawing.Size(80, 32);
+            this.radioButtonFilm.Size = new System.Drawing.Size(65, 27);
             this.radioButtonFilm.TabIndex = 50;
             this.radioButtonFilm.TabStop = true;
             this.radioButtonFilm.Text = "Film";
@@ -116,10 +120,10 @@ namespace Celikoor_Semangat18
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.ForeColor = System.Drawing.Color.White;
-            this.buttonExit.Location = new System.Drawing.Point(1103, 18);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonExit.Location = new System.Drawing.Point(827, 15);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(36, 32);
+            this.buttonExit.Size = new System.Drawing.Size(27, 26);
             this.buttonExit.TabIndex = 23;
             this.buttonExit.Text = "X";
             this.buttonExit.UseVisualStyleBackColor = false;
@@ -130,9 +134,10 @@ namespace Celikoor_Semangat18
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(25, 18);
+            this.label1.Location = new System.Drawing.Point(19, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(235, 34);
+            this.label1.Size = new System.Drawing.Size(187, 26);
             this.label1.TabIndex = 19;
             this.label1.Text = "Halaman Admin";
             // 
@@ -141,28 +146,27 @@ namespace Celikoor_Semangat18
             this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel1.Controls.Add(this.buttonExit);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(15, 13);
+            this.panel1.Location = new System.Drawing.Point(11, 11);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1152, 70);
+            this.panel1.Size = new System.Drawing.Size(864, 57);
             this.panel1.TabIndex = 41;
             // 
             // textBoxCari
             // 
             this.textBoxCari.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCari.Location = new System.Drawing.Point(700, 118);
-            this.textBoxCari.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCari.Location = new System.Drawing.Point(525, 96);
             this.textBoxCari.Name = "textBoxCari";
-            this.textBoxCari.Size = new System.Drawing.Size(284, 30);
+            this.textBoxCari.Size = new System.Drawing.Size(214, 26);
             this.textBoxCari.TabIndex = 65;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(442, 120);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(332, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 25);
+            this.label2.Size = new System.Drawing.Size(49, 20);
             this.label2.TabIndex = 63;
             this.label2.Text = "Cari : ";
             // 
@@ -171,20 +175,20 @@ namespace Celikoor_Semangat18
             this.comboBoxCari.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCari.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCari.FormattingEnabled = true;
-            this.comboBoxCari.Location = new System.Drawing.Point(514, 115);
-            this.comboBoxCari.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxCari.Location = new System.Drawing.Point(386, 93);
             this.comboBoxCari.Name = "comboBoxCari";
-            this.comboBoxCari.Size = new System.Drawing.Size(160, 33);
+            this.comboBoxCari.Size = new System.Drawing.Size(121, 28);
             this.comboBoxCari.TabIndex = 64;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(457, 182);
+            this.dataGridView1.Location = new System.Drawing.Point(343, 148);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(645, 313);
+            this.dataGridView1.Size = new System.Drawing.Size(484, 254);
             this.dataGridView1.TabIndex = 62;
             // 
             // buttonUbah
@@ -192,9 +196,10 @@ namespace Celikoor_Semangat18
             this.buttonUbah.BackColor = System.Drawing.Color.Transparent;
             this.buttonUbah.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUbah.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.buttonUbah.Location = new System.Drawing.Point(514, 521);
+            this.buttonUbah.Location = new System.Drawing.Point(386, 423);
+            this.buttonUbah.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonUbah.Name = "buttonUbah";
-            this.buttonUbah.Size = new System.Drawing.Size(137, 49);
+            this.buttonUbah.Size = new System.Drawing.Size(103, 40);
             this.buttonUbah.TabIndex = 61;
             this.buttonUbah.Text = "Ubah";
             this.buttonUbah.UseVisualStyleBackColor = false;
@@ -205,9 +210,10 @@ namespace Celikoor_Semangat18
             this.buttonTambah.BackColor = System.Drawing.Color.Transparent;
             this.buttonTambah.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTambah.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.buttonTambah.Location = new System.Drawing.Point(31, 533);
+            this.buttonTambah.Location = new System.Drawing.Point(23, 433);
+            this.buttonTambah.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonTambah.Name = "buttonTambah";
-            this.buttonTambah.Size = new System.Drawing.Size(137, 50);
+            this.buttonTambah.Size = new System.Drawing.Size(103, 41);
             this.buttonTambah.TabIndex = 60;
             this.buttonTambah.Text = "Tambah";
             this.buttonTambah.UseVisualStyleBackColor = false;
@@ -218,9 +224,10 @@ namespace Celikoor_Semangat18
             this.buttonCari.BackColor = System.Drawing.Color.Transparent;
             this.buttonCari.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCari.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.buttonCari.Location = new System.Drawing.Point(1011, 106);
+            this.buttonCari.Location = new System.Drawing.Point(758, 86);
+            this.buttonCari.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonCari.Name = "buttonCari";
-            this.buttonCari.Size = new System.Drawing.Size(91, 49);
+            this.buttonCari.Size = new System.Drawing.Size(68, 40);
             this.buttonCari.TabIndex = 59;
             this.buttonCari.Text = "Cari";
             this.buttonCari.UseVisualStyleBackColor = false;
@@ -231,9 +238,10 @@ namespace Celikoor_Semangat18
             this.buttonHapus.BackColor = System.Drawing.Color.Transparent;
             this.buttonHapus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHapus.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.buttonHapus.Location = new System.Drawing.Point(965, 521);
+            this.buttonHapus.Location = new System.Drawing.Point(724, 423);
+            this.buttonHapus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonHapus.Name = "buttonHapus";
-            this.buttonHapus.Size = new System.Drawing.Size(137, 49);
+            this.buttonHapus.Size = new System.Drawing.Size(103, 40);
             this.buttonHapus.TabIndex = 58;
             this.buttonHapus.Text = "Hapus";
             this.buttonHapus.UseVisualStyleBackColor = false;
@@ -244,71 +252,81 @@ namespace Celikoor_Semangat18
             this.radioButtonJadwalFilm.AutoSize = true;
             this.radioButtonJadwalFilm.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonJadwalFilm.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.radioButtonJadwalFilm.Location = new System.Drawing.Point(231, 283);
+            this.radioButtonJadwalFilm.Location = new System.Drawing.Point(173, 230);
+            this.radioButtonJadwalFilm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonJadwalFilm.Name = "radioButtonJadwalFilm";
-            this.radioButtonJadwalFilm.Size = new System.Drawing.Size(172, 32);
+            this.radioButtonJadwalFilm.Size = new System.Drawing.Size(138, 27);
             this.radioButtonJadwalFilm.TabIndex = 67;
             this.radioButtonJadwalFilm.TabStop = true;
             this.radioButtonJadwalFilm.Text = "Jadwal Film";
             this.radioButtonJadwalFilm.UseVisualStyleBackColor = true;
+            this.radioButtonJadwalFilm.CheckedChanged += new System.EventHandler(this.radioButtonJadwalFilm_CheckedChanged);
             // 
             // radioButtonActorFilm
             // 
             this.radioButtonActorFilm.AutoSize = true;
             this.radioButtonActorFilm.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonActorFilm.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.radioButtonActorFilm.Location = new System.Drawing.Point(29, 283);
+            this.radioButtonActorFilm.Location = new System.Drawing.Point(22, 230);
+            this.radioButtonActorFilm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonActorFilm.Name = "radioButtonActorFilm";
-            this.radioButtonActorFilm.Size = new System.Drawing.Size(150, 32);
+            this.radioButtonActorFilm.Size = new System.Drawing.Size(120, 27);
             this.radioButtonActorFilm.TabIndex = 66;
             this.radioButtonActorFilm.TabStop = true;
             this.radioButtonActorFilm.Text = "Actor Film";
             this.radioButtonActorFilm.UseVisualStyleBackColor = true;
+            this.radioButtonActorFilm.CheckedChanged += new System.EventHandler(this.radioButtonActorFilm_CheckedChanged);
             // 
             // radioButtonFilmStudio
             // 
             this.radioButtonFilmStudio.AutoSize = true;
             this.radioButtonFilmStudio.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonFilmStudio.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.radioButtonFilmStudio.Location = new System.Drawing.Point(31, 378);
+            this.radioButtonFilmStudio.Location = new System.Drawing.Point(23, 307);
+            this.radioButtonFilmStudio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonFilmStudio.Name = "radioButtonFilmStudio";
-            this.radioButtonFilmStudio.Size = new System.Drawing.Size(157, 32);
+            this.radioButtonFilmStudio.Size = new System.Drawing.Size(127, 27);
             this.radioButtonFilmStudio.TabIndex = 68;
             this.radioButtonFilmStudio.TabStop = true;
             this.radioButtonFilmStudio.Text = "Film Studio";
             this.radioButtonFilmStudio.UseVisualStyleBackColor = true;
+            this.radioButtonFilmStudio.CheckedChanged += new System.EventHandler(this.radioButtonFilmStudio_CheckedChanged);
             // 
             // radioButtonSesiFilm
             // 
             this.radioButtonSesiFilm.AutoSize = true;
             this.radioButtonSesiFilm.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonSesiFilm.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.radioButtonSesiFilm.Location = new System.Drawing.Point(231, 378);
+            this.radioButtonSesiFilm.Location = new System.Drawing.Point(173, 307);
+            this.radioButtonSesiFilm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonSesiFilm.Name = "radioButtonSesiFilm";
-            this.radioButtonSesiFilm.Size = new System.Drawing.Size(131, 32);
+            this.radioButtonSesiFilm.Size = new System.Drawing.Size(105, 27);
             this.radioButtonSesiFilm.TabIndex = 69;
             this.radioButtonSesiFilm.TabStop = true;
             this.radioButtonSesiFilm.Text = "Sesi Film";
             this.radioButtonSesiFilm.UseVisualStyleBackColor = true;
+            this.radioButtonSesiFilm.CheckedChanged += new System.EventHandler(this.radioButtonSesiFilm_CheckedChanged);
             // 
             // radioButtonGenreFilm
             // 
             this.radioButtonGenreFilm.AutoSize = true;
             this.radioButtonGenreFilm.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonGenreFilm.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.radioButtonGenreFilm.Location = new System.Drawing.Point(29, 463);
+            this.radioButtonGenreFilm.Location = new System.Drawing.Point(22, 376);
+            this.radioButtonGenreFilm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonGenreFilm.Name = "radioButtonGenreFilm";
-            this.radioButtonGenreFilm.Size = new System.Drawing.Size(159, 32);
+            this.radioButtonGenreFilm.Size = new System.Drawing.Size(127, 27);
             this.radioButtonGenreFilm.TabIndex = 70;
             this.radioButtonGenreFilm.TabStop = true;
             this.radioButtonGenreFilm.Text = "Genre Film";
             this.radioButtonGenreFilm.UseVisualStyleBackColor = true;
+            this.radioButtonGenreFilm.CheckedChanged += new System.EventHandler(this.radioButtonGenreFilm_CheckedChanged);
             // 
             // FormAdminMovie
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1180, 621);
+            this.ClientSize = new System.Drawing.Size(885, 505);
             this.Controls.Add(this.radioButtonGenreFilm);
             this.Controls.Add(this.radioButtonSesiFilm);
             this.Controls.Add(this.radioButtonFilmStudio);
@@ -327,6 +345,7 @@ namespace Celikoor_Semangat18
             this.Controls.Add(this.radioButtonGenre);
             this.Controls.Add(this.radioButtonFilm);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormAdminMovie";
             this.Text = "FormAdminMovie";
             this.panel1.ResumeLayout(false);

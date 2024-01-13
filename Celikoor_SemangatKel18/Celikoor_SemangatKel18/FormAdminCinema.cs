@@ -28,16 +28,6 @@ namespace Celikoor_Semangat18
             comboBoxCari.SelectedIndex = 0;
         }
 
-        private void radioButtonKelompok_CheckedChanged(object sender, EventArgs e)
-        {
-            List<Kelompok> listHasil = Kelompok.BacaData();
-            dataGridView1.DataSource = listHasil;
-
-            List<string> columnList = new List<string> { "id", "nama" };
-            comboBoxCari.DataSource = columnList;
-            comboBoxCari.SelectedIndex = 0;
-        }
-
         private void radioButtonJenisStudio_CheckedChanged(object sender, EventArgs e)
         {
             List<JenisStudio> listHasil = JenisStudio.BacaData();
@@ -68,13 +58,6 @@ namespace Celikoor_Semangat18
                 frm.Owner = this;
                 frm.ShowDialog();
                 radioButtonCinema_CheckedChanged(this, e);
-            }
-            else if (radioButtonKelompok.Checked)
-            {
-                FormTambahKelompok frm = new FormTambahKelompok();
-                frm.Owner = this;
-                frm.ShowDialog();
-                radioButtonKelompok_CheckedChanged(this, e);
             }
             else if (radioButtonJenisStudio.Checked)
             {
@@ -132,25 +115,6 @@ namespace Celikoor_Semangat18
                     }
                 }
             }
-            else if (radioButtonKelompok.Checked)
-            {
-                string kode = dataGridView1.CurrentRow.Cells["ID"].Value.ToString();
-                DialogResult dr = MessageBox.Show("Ingin hapus data id " + kode + "?", "HAPUS", MessageBoxButtons.YesNo);
-                if (dr == DialogResult.Yes) //jika user setuju hapus data
-                {
-                    try
-                    {
-                        //hapus data dari database
-                        Kelompok.HapusData(kode);
-                        //refresh form master
-                        radioButtonKelompok_CheckedChanged(this, e);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Hapus data gagal! error: " + ex.Message);
-                    }
-                }
-            }
             else if (radioButtonCinema.Checked)
             {
                 string kode = dataGridView1.CurrentRow.Cells["ID"].Value.ToString();
@@ -181,11 +145,6 @@ namespace Celikoor_Semangat18
                 List<Cinema> ListData = Cinema.BacaData(selectedKey, searchText);
                 dataGridView1.DataSource = ListData;
             }
-            else if (radioButtonKelompok.Checked)
-            {
-                List<Kelompok> ListData = Kelompok.BacaData(selectedKey, searchText);
-                dataGridView1.DataSource = ListData;
-            }
             else if (radioButtonJenisStudio.Checked)
             {
                 List<JenisStudio> ListData = JenisStudio.BacaData(selectedKey, searchText);
@@ -214,17 +173,6 @@ namespace Celikoor_Semangat18
                 frm.Owner = this;
                 frm.ShowDialog();
                 radioButtonCinema_CheckedChanged(this, e);
-            }
-            else if (radioButtonKelompok.Checked)
-            {
-                Kelompok kelompok = new Kelompok();
-                kelompok.Id = Int32.Parse(dataGridView1.CurrentRow.Cells["Id"].Value.ToString());
-                kelompok.Nama = dataGridView1.CurrentRow.Cells["Nama"].Value.ToString();
-
-                FormTambahKelompok frm = new FormTambahKelompok(kelompok);
-                frm.Owner = this;
-                frm.ShowDialog();
-                radioButtonKelompok_CheckedChanged(this, e);
             }
             else if (radioButtonJenisStudio.Checked)
             {

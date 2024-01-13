@@ -61,14 +61,24 @@ namespace Celikoor_Library
             string perintah;
             if (g.Deskripsi_genre != null)
             {
-                perintah = "INSERT INTO genres" + "(id, nama, deskripsi) VALUES " + "('" + g.Id_genre + "', '" + g.Nama_genre + "', '" + g.Deskripsi_genre + "');";
+                perintah = "INSERT INTO genres" + "(nama, deskripsi) VALUES " + "('" + g.Nama_genre + "', '" + g.Deskripsi_genre + "');";
             }
             else 
             {
-                perintah = "INSERT INTO genres" + "(id, nama) VALUES " + "('" + g.Id_genre + "', '" + g.Nama_genre + "');";
+                perintah = "INSERT INTO genres" + "(nama) VALUES " + "('" + g.Nama_genre + "');";
             }
             
             Koneksi.JalankanPerintahNonQuery(perintah);
+        }
+        
+        public static void UbahData(int id_genre, Genre obj)
+        {
+            string sql = "UPDATE genres " +
+                $"SET nama = '{obj.nama_genre}', " +
+                $"deskripsi = '{obj.deskripsi_genre}' " +
+                $"WHERE id = '{id_genre}';";
+            Console.WriteLine(sql);
+            Koneksi.JalankanPerintahNonQuery(sql);
         }
 
         public static void HapusData(string KodeHapus)

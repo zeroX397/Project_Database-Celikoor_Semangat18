@@ -31,16 +31,12 @@ namespace Celikoor_Semangat18
 
             // load jenis studio
             int selectedJenisStudioIndex = jenisStudio.FindIndex(item => item.ID == studioUpdate.JenisStudioId);
-            Console.WriteLine("studioUpdate.JenisStudioId" + studioUpdate.JenisStudioId);
-            Console.WriteLine("selectedJenisStudioIndex" + selectedJenisStudioIndex);
             if (selectedJenisStudioIndex != -1) comboBoxJenisStudio.SelectedIndex = selectedJenisStudioIndex;
             else  comboBoxJenisStudio.SelectedIndex = 0;
 
 
             // load cinemas
             int selectedCinemasIndex = cinemas.FindIndex(item => item.Id == studioUpdate.CinemaId);
-            Console.WriteLine("studioUpdate.CinemaId" + studioUpdate.CinemaId);
-            Console.WriteLine("selectedCinemasIndex" + selectedCinemasIndex);
             if (selectedCinemasIndex != -1) comboBoxCinema.SelectedIndex = selectedCinemasIndex;
             else  comboBoxCinema.SelectedIndex = 0;
 

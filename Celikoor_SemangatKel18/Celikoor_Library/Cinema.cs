@@ -69,12 +69,6 @@ namespace Celikoor_Library
             Console.WriteLine(sql);
             Koneksi.JalankanPerintahNonQuery(sql);
         }
-        public static void HapusData(int KodeHapus)
-        {
-            string perintah = "DELETE FROM cinemas WHERE id = '" + KodeHapus.ToString() + "';";
-
-            Koneksi.JalankanPerintahNonQuery(perintah);
-        }
         public static List<Cinema> BacaData(string filter = "", string nilai = "")
         {
             string perintah;
