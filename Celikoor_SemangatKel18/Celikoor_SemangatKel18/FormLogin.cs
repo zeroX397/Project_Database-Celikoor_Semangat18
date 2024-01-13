@@ -35,24 +35,33 @@ namespace Celikoor_Semangat18
             {  
                 string uid = textBoxUsername.Text;
                 string pwd = textBoxPassword.Text;
-                frm.userLogin = Pegawai.Login(uid, pwd);
+                try
+                {
+                    frm.userLogin = Pegawai.Login(uid, pwd);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
             else if (radioButtonConsumen.Checked)
             {
                 
                 string uid = textBoxUsername.Text;
                 string pwd = textBoxPassword.Text;
-                frm.konsumLogin = Konsumen.Login(uid, pwd);
+                try
+                {
+                    frm.konsumLogin = Konsumen.Login(uid, pwd);
+                } catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
             
             if (frm.userLogin != null || frm.konsumLogin != null)
             {
                 frm.Visible = true;
                 this.Close();
-            }
-            else
-            {
-                Application.Exit();
             }
             
 

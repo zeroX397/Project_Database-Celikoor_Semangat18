@@ -13,9 +13,28 @@ namespace Celikoor_Semangat18
 {
     public partial class FormTambahPegawai : Form
     {
+        private bool isTambah = true;
+        private Pegawai pegawaiUpdate;
         public FormTambahPegawai()
         {
             InitializeComponent();
+        }
+        public FormTambahPegawai(Pegawai pegawaiUpdate)
+        {
+            InitializeComponent();
+            isTambah = false;
+            this.pegawaiUpdate = pegawaiUpdate;
+
+            textBoxNama.Text = pegawaiUpdate.Nama_Pegawai;
+            textBoxEmail.Text = pegawaiUpdate.Email_Pegawai;
+            textBoxUsername.Text = pegawaiUpdate.Username_Pegawai;
+            textBoxPassword.Text = pegawaiUpdate.Password_Pegawai;
+            if (pegawaiUpdate.Roles_Pegawai == "ADMIN")
+                comboBox1.SelectedIndex = 0;
+            else if (pegawaiUpdate.Roles_Pegawai == "OPERATOR")
+                comboBox1.SelectedIndex = 1;
+            else if (pegawaiUpdate.Roles_Pegawai == "KASIR")
+                comboBox1.SelectedIndex = 2;
         }
 
         private void buttonSimpan_Click(object sender, EventArgs e)
@@ -32,14 +51,21 @@ namespace Celikoor_Semangat18
                 p.Roles_Pegawai = comboBox1.Text;
 
                 //tambahkan ke database:
-                Pegawai.TambahData(p);
+                if (isTambah)
+                {
+                    Pegawai.TambahData(p);
+                    MessageBox.Show("Tambah Data berhasil");
+                } else
+                {
+                    Pegawai.UbahData(pegawaiUpdate.Id_Pegawai, p);
+                    MessageBox.Show("Ubah Data berhasil");
+                }
 
-                MessageBox.Show("Tambah Data berhasil");
                 this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Tambah Data gagal. Error : " + ex.Message);
+                MessageBox.Show("Tambah/Ubah Data gagal. Error : " + ex.Message);
             }
         }
 

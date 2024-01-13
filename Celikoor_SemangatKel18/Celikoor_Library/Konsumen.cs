@@ -86,6 +86,22 @@ namespace Celikoor_Library
                 "'" + obj.Password_Konsumen + "');";
             Koneksi.JalankanPerintahNonQuery(sql);
         }
+        public static void UbahData(int id_konsumen, Konsumen obj)
+        {
+            string sql = "UPDATE konsumens " +
+                $"SET nama = '{obj.Nama_Konsumen}', " +
+                $"email = '{obj.Email_Konsumen}', " +
+                $"no_hp = '{obj.NoHP_Konsumen}', " +
+                $"gender = '{obj.Gender_Konsumen}', " +
+                $"tgl_lahir = '{obj.Ttl_Konsumen.ToString("yyyy-MM-dd")}', " +
+                $"saldo = '{obj.Saldo_Konsumen}', " +
+                $"username = '{obj.Username_Konsumen}', " +
+                $"password = '{obj.Password_Konsumen}' " +
+                $"WHERE id = '{id_konsumen}';";
+            Console.WriteLine(sql);
+            Koneksi.JalankanPerintahNonQuery(sql);
+        }
+
 
         public static List<Konsumen> BacaData(string kriteria = "", string nilaiKriteria = "")
         {
@@ -116,20 +132,6 @@ namespace Celikoor_Library
                 userList.Add(tmp);
             }
             return userList;
-        }
-        public static void UbahData(Konsumen obj)
-        {   //password tdk boleh diubah melalui method ini
-            string perintah = "UPDATE konsumens SET " +
-                    "Nama='" + obj.Nama_Konsumen + "', " +
-                    "email='" + obj.Email_Konsumen + "', " +
-                    "no_hp='" + obj.NoHP_Konsumen + "', " +
-                    "gender='" + obj.Gender_Konsumen + "', " +
-                    "tgl_lahir='" + obj.Ttl_Konsumen + "', " +
-                    "saldo='" + obj.Saldo_Konsumen + "' " +
-                    "username='" + obj.Username_Konsumen + "' " +
-                    "password='" + obj.Password_Konsumen + "')";
-
-            Koneksi.JalankanPerintahNonQuery(perintah);
         }
 
         public static void HapusData(string KodeHapus)

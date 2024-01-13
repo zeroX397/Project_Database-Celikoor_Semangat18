@@ -12,9 +12,25 @@ namespace Celikoor_Semangat18
 {
     public partial class FormTambahKonsumen : Form
     {
+        private bool isTambah = true;
+        private Konsumen konsumenUpdate;
         public FormTambahKonsumen()
         {
             InitializeComponent();
+        }
+        public FormTambahKonsumen(Konsumen konsumenUpdate)
+        {
+            InitializeComponent();
+            isTambah = false;
+            this.konsumenUpdate = konsumenUpdate;
+
+            textBoxNama.Text = konsumenUpdate.Nama_Konsumen;
+            textBoxNoHP.Text = konsumenUpdate.NoHP_Konsumen;
+            textBoxEmail.Text = konsumenUpdate.Email_Konsumen;
+            dateTimePicker1.Value = konsumenUpdate.Ttl_Konsumen;
+            textBoxGender.Text = konsumenUpdate.Gender_Konsumen.ToUpper();
+            textBoxUsername.Text = konsumenUpdate.Username_Konsumen;
+            textBoxPass.Text = konsumenUpdate.Password_Konsumen;
         }
 
         private void buttonSimpan_Click(object sender, EventArgs e)
@@ -34,14 +50,21 @@ namespace Celikoor_Semangat18
                
 
                 //tambahkan ke database:
-                Konsumen.TambahData(k);
+                if (isTambah)
+                {
+                    Konsumen.TambahData(k);
+                    MessageBox.Show("Tambah Data berhasil");
+                } else
+                {
+                    Konsumen.UbahData(konsumenUpdate.Id_Konsumen, k);
+                    MessageBox.Show("Ubah Data berhasil");
+                }
 
-                MessageBox.Show("Tambah Data berhasil");
                 this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Tambah Data gagal. Error : " + ex.Message);
+                MessageBox.Show("Tambah/Ubah Data gagal. Error : " + ex.Message);
             }
         }
 

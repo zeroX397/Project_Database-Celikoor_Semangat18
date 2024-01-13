@@ -60,6 +60,19 @@ namespace Celikoor_Library
                 obj.Roles_Pegawai + "');";
             Koneksi.JalankanPerintahNonQuery(sql);
         }
+        public static void UbahData(int id_pegawai, Pegawai obj)
+        {
+            string sql = "UPDATE pegawais " +
+                $"SET nama = '{obj.nama_Pegawai}', " +
+                $"email = '{obj.email_Pegawai}', " +
+                $"username = '{obj.username_Pegawai}', " +
+                $"password = '{obj.password_Pegawai}', " +
+                $"roles = '{obj.roles_Pegawai}' " +
+                $"WHERE id = '{id_pegawai}';";
+            Console.WriteLine(sql);
+            Koneksi.JalankanPerintahNonQuery(sql);
+        }
+
         public static List<Pegawai> BacaData(string filter = "", string nilai = "")
         {
             string perintah;
