@@ -24,7 +24,9 @@ namespace Celikoor_Semangat18
 
         private void linkLabelRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            FormTambahKonsumen frm = new FormTambahKonsumen();
+            frm.Owner = this;
+            frm.ShowDialog();
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
