@@ -55,7 +55,10 @@ namespace Celikoor_Semangat18
             }
             else if (radioButtonFilm.Checked)
             {
-                
+                FormTambahFilm frm = new FormTambahFilm();
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonFilm_CheckedChanged(this, e);
             }
             else if (radioButtonJadwalFilm.Checked)
             {
@@ -140,7 +143,22 @@ namespace Celikoor_Semangat18
             }
             else if (radioButtonFilm.Checked)
             {
-                
+                string kode = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
+                DialogResult dr = MessageBox.Show("Ingin hapus data id " + kode + "?", "HAPUS", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes) //jika user setuju hapus data
+                {
+                    try
+                    {
+                        //hapus data dari database
+                        Film.HapusData(kode);
+                        //refresh form master
+                        radioButtonAktor_CheckedChanged(this, e);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Hapus data gagal! error: " + ex.Message);
+                    }
+                }
             }
             else if (radioButtonJadwalFilm.Checked)
             {
@@ -205,7 +223,23 @@ namespace Celikoor_Semangat18
             }
             else if (radioButtonFilm.Checked)
             {
-                
+                Film film = new Film();
+                film.Id = Int32.Parse(dataGridView1.CurrentRow.Cells["Id"].Value.ToString());
+                film.Judul = dataGridView1.CurrentRow.Cells["Judul"].Value.ToString();
+                film.Sinopsis = dataGridView1.CurrentRow.Cells["Sinopsis"].Value.ToString();
+                film.Tahun = Int32.Parse(dataGridView1.CurrentRow.Cells["Tahun"].Value.ToString());
+                film.Durasi = Int32.Parse(dataGridView1.CurrentRow.Cells["Durasi"].Value.ToString());
+                film.Kelompoks_id = Int32.Parse(dataGridView1.CurrentRow.Cells["Kelompoks_id"].Value.ToString());
+                film.Kelompoks_Nama = dataGridView1.CurrentRow.Cells["Kelompoks_Nama"].Value.ToString();
+                film.Bahasa = dataGridView1.CurrentRow.Cells["Bahasa"].Value.ToString();
+                film.Is_sub_indo = Int32.Parse(dataGridView1.CurrentRow.Cells["Is_sub_indo"].Value.ToString());
+                film.Cover_image = dataGridView1.CurrentRow.Cells["Cover_image"].Value.ToString();
+                film.Diskon_nominal = Int32.Parse(dataGridView1.CurrentRow.Cells["Diskon_nominal"].Value.ToString());
+
+                FormTambahFilm frm = new FormTambahFilm(film);
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonFilm_CheckedChanged(this, e);
             }
             else if (radioButtonJadwalFilm.Checked)
             {
@@ -250,7 +284,8 @@ namespace Celikoor_Semangat18
             }
             else if (radioButtonFilm.Checked)
             {
-                
+                List<Film> ListData = Film.BacaData(selectedKey, searchText);
+                dataGridView1.DataSource = ListData;
             }
             else if (radioButtonJadwalFilm.Checked)
             {
@@ -296,6 +331,11 @@ namespace Celikoor_Semangat18
         {
             List<Film> listHasil = Film.BacaData();
             dataGridView1.DataSource = listHasil;
+            dataGridView1.Columns["kelompoks_id"].Visible = false;
+
+            List<string> columnList = new List<string> { "id", "judul", "sinopsis", "tahun", "durasi", "kelompoks_id", "bahasa", "is_sub_indo", "cover_image", "diskon_nominal"};
+            comboBoxCari.DataSource = columnList;
+            comboBoxCari.SelectedIndex = 0;
         }
 
         private void radioButtonActorFilm_CheckedChanged(object sender, EventArgs e)
