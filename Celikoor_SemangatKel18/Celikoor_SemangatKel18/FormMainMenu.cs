@@ -47,7 +47,15 @@ namespace Celikoor_Semangat18
                 form.Owner = this;
                 this.Visible = false;
                 form.ShowDialog();
-            AturMenu(userLogin.Roles_Pegawai);
+            if (userLogin != null)
+            {
+                AturMenu(userLogin.Roles_Pegawai);
+            }
+            else
+            {
+                KonsumAturMenu();
+            }
+            
         }
 
         private void AturMenu(string roles)
@@ -76,14 +84,16 @@ namespace Celikoor_Semangat18
                 barcodeToolStripMenuItem.Visible = false;
                 ticketToolStripMenuItem.Visible = false;
             }
-            else
-            {
-                masterToolStripMenuItem.Visible = false;
-                recordToolStripMenuItem.Visible = false;
-                invoiceToolStripMenuItem.Visible = false;
-                barcodeToolStripMenuItem.Visible = false;
-                ticketToolStripMenuItem.Visible = true;
-            }
+            
+        }
+
+        private void KonsumAturMenu()
+        {
+            masterToolStripMenuItem.Visible = false;
+            recordToolStripMenuItem.Visible = false;
+            invoiceToolStripMenuItem.Visible = false;
+            barcodeToolStripMenuItem.Visible = false;
+            ticketToolStripMenuItem.Visible = true;
         }
         
 

@@ -13,7 +13,7 @@ namespace Celikoor_Library
         private int id_Konsumen;
         private string nama_Konsumen;
         private string email_Konsumen;
-        private int noHP_Konsumen;
+        private string noHP_Konsumen;
         private string gender_Konsumen;
         private DateTime ttl_Konsumen;
         private double saldo_Konsumen;
@@ -22,7 +22,7 @@ namespace Celikoor_Library
         #endregion
 
         #region Constructors
-        public Konsumen(int id_Konsumen, string nama_Konsumen, string email_Konsumen, int noHP_Konsumen, string gender_Konsumen, 
+        public Konsumen(int id_Konsumen, string nama_Konsumen, string email_Konsumen, string noHP_Konsumen, string gender_Konsumen, 
             DateTime ttl_Konsumen, double saldo_Konsumen, string username_Konsumen, string password_Konsumen)
         {
             Id_Konsumen = id_Konsumen;
@@ -40,7 +40,7 @@ namespace Celikoor_Library
             Id_Konsumen = 0;
             Nama_Konsumen = "";
             Email_Konsumen = "";
-            NoHP_Konsumen = 0;
+            NoHP_Konsumen = "";
             Gender_Konsumen = "";
             Ttl_Konsumen = new DateTime();
             Saldo_Konsumen = 0;
@@ -63,7 +63,7 @@ namespace Celikoor_Library
         public int Id_Konsumen { get => id_Konsumen; set => id_Konsumen = value; }
         public string Nama_Konsumen { get => nama_Konsumen; set => nama_Konsumen = value; }
         public string Email_Konsumen { get => email_Konsumen; set => email_Konsumen = value; }
-        public int NoHP_Konsumen { get => noHP_Konsumen; set => noHP_Konsumen = value; }
+        public string NoHP_Konsumen { get => noHP_Konsumen; set => noHP_Konsumen = value; }
         public string Gender_Konsumen { get => gender_Konsumen; set => gender_Konsumen = value; }
         public DateTime Ttl_Konsumen { get => ttl_Konsumen; set => ttl_Konsumen = value; }
         public double Saldo_Konsumen { get => saldo_Konsumen; set => saldo_Konsumen = value; }
@@ -107,7 +107,7 @@ namespace Celikoor_Library
                 tmp.Id_Konsumen = int.Parse(result.GetValue(0).ToString());
                 tmp.Nama_Konsumen = result.GetValue(1).ToString();
                 tmp.Email_Konsumen = result.GetValue(2).ToString();
-                tmp.NoHP_Konsumen = int.Parse(result.GetValue(3).ToString());
+                tmp.NoHP_Konsumen = result.GetValue(3).ToString();
                 tmp.Gender_Konsumen = result.GetValue(4).ToString();
                 tmp.Ttl_Konsumen = DateTime.Parse(result.GetValue(5).ToString());
                 tmp.Saldo_Konsumen = int.Parse(result.GetValue(6).ToString());
@@ -161,12 +161,14 @@ namespace Celikoor_Library
                 konsumenHasil.Id_Konsumen = hasil.GetInt32(0);
                 konsumenHasil.Nama_Konsumen = hasil.GetValue(1).ToString();
                 konsumenHasil.Email_Konsumen = hasil.GetValue(2).ToString();
-                konsumenHasil.NoHP_Konsumen = int.Parse(hasil.GetValue(3).ToString());
+                konsumenHasil.NoHP_Konsumen = hasil.GetValue(3).ToString();
                 konsumenHasil.Gender_Konsumen = hasil.GetValue(4).ToString();
                 konsumenHasil.Ttl_Konsumen = DateTime.Parse(hasil.GetValue(5).ToString());
                 konsumenHasil.Saldo_Konsumen = int.Parse(hasil.GetValue(6).ToString());
                 konsumenHasil.Username_Konsumen = hasil.GetValue(7).ToString();
                 konsumenHasil.Password_Konsumen = hasil.GetValue(8).ToString();
+                Console.WriteLine("Nama Konsumen:" + konsumenHasil.nama_Konsumen);
+                Console.WriteLine("Email Konsumen:" + konsumenHasil.email_Konsumen);
                 return konsumenHasil;
 
             }
