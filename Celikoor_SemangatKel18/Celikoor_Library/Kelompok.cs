@@ -35,7 +35,6 @@ namespace Celikoor_Library
         #region METHODS
         public static void TambahData(Kelompok obj)
         {
-        
             string sql = "INSERT INTO kelompoks " + "(nama) VALUES " + "('"
                +
                 obj.nama + "');";
@@ -63,6 +62,15 @@ namespace Celikoor_Library
                 listHasil.Add(tampung);
             }
             return listHasil;
+        }
+
+        public static void UbahData(int id_kelompok, Kelompok obj)
+        {
+            string sql = "UPDATE kelompoks " +
+                $"SET nama = '{obj.nama}' " +
+                $"WHERE id = '{id_kelompok}';";
+            Console.WriteLine(sql);
+            Koneksi.JalankanPerintahNonQuery(sql);
         }
 
         public static void HapusData(string KodeHapus)

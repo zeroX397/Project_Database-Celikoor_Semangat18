@@ -13,10 +13,22 @@ namespace Celikoor_Semangat18
 {
     public partial class FormTambahKelompok : Form
     {
+        private bool isTambah = true;
+        private Kelompok kelompokUpdate;
         public FormTambahKelompok()
         {
             InitializeComponent();
         }
+        public FormTambahKelompok(Kelompok kelompokUpdate)
+        {
+            InitializeComponent();
+            isTambah = false;
+            this.kelompokUpdate = kelompokUpdate;
+
+            textBoxId.Text = kelompokUpdate.Id.ToString();
+            textBoxNama.Text = kelompokUpdate.Nama;
+        }
+
 
         private void buttonSimpan_Click(object sender, EventArgs e)
         {
@@ -28,14 +40,20 @@ namespace Celikoor_Semangat18
                 p.Nama = textBoxNama.Text;
 
                 //tambahkan ke database:
-                Kelompok.TambahData(p);
-
-                MessageBox.Show("Tambah Data berhasil");
+                if (isTambah)
+                {
+                    Kelompok.TambahData(p);
+                    MessageBox.Show("Tambah Data berhasil");
+                } else
+                {
+                    Kelompok.UbahData(kelompokUpdate.Id, p);
+                    MessageBox.Show("Ubah Data berhasil");
+                }
                 this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Tambah Data gagal. Error : " + ex.Message);
+                MessageBox.Show("Tambah/Ubah Data gagal. Error : " + ex.Message);
             }
         }
 

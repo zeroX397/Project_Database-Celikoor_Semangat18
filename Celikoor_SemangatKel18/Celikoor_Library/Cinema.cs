@@ -58,6 +58,17 @@ namespace Celikoor_Library
 
             Koneksi.JalankanPerintahNonQuery(perintah);
         }
+        public static void UbahData(int id_cinema, Cinema obj)
+        {
+            string sql = "UPDATE cinemas " +
+                $"SET nama_cabang = '{obj.nama_cabang}', " +
+                $"alamat = '{obj.alamat}', " +
+                $"tgl_dibuka = '{obj.Tgl_buka.ToString("yyyy-MM-dd")}', " +
+                $"kota = '{obj.Kota}' " +
+                $"WHERE id = '{id_cinema}';";
+            Console.WriteLine(sql);
+            Koneksi.JalankanPerintahNonQuery(sql);
+        }
         public static void HapusData(int KodeHapus)
         {
             string perintah = "DELETE FROM cinemas WHERE id = '" + KodeHapus.ToString() + "';";

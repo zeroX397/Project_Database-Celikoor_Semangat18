@@ -13,28 +13,60 @@ namespace Celikoor_Semangat18
 {
     public partial class FormTambahStudio : Form
     {
+        private bool isTambah = true;
+        private Studio studioUpdate;
         public FormTambahStudio()
         {
             InitializeComponent();
             loadComboBoxJenisStudio();
             loadComboBoxCinema();
         }
-        private void loadComboBoxJenisStudio()
+        public FormTambahStudio(Studio studioUpdate)
+        {
+            InitializeComponent();
+            List<JenisStudio> jenisStudio = loadComboBoxJenisStudio();
+            List<Cinema> cinemas = loadComboBoxCinema();
+            isTambah = false;
+            this.studioUpdate = studioUpdate;
+
+            // load jenis studio
+            int selectedJenisStudioIndex = jenisStudio.FindIndex(item => item.ID == studioUpdate.JenisStudioId);
+            Console.WriteLine("studioUpdate.JenisStudioId" + studioUpdate.JenisStudioId);
+            Console.WriteLine("selectedJenisStudioIndex" + selectedJenisStudioIndex);
+            if (selectedJenisStudioIndex != -1) comboBoxJenisStudio.SelectedIndex = selectedJenisStudioIndex;
+            else  comboBoxJenisStudio.SelectedIndex = 0;
+
+
+            // load cinemas
+            int selectedCinemasIndex = cinemas.FindIndex(item => item.Id == studioUpdate.CinemaId);
+            Console.WriteLine("studioUpdate.CinemaId" + studioUpdate.CinemaId);
+            Console.WriteLine("selectedCinemasIndex" + selectedCinemasIndex);
+            if (selectedCinemasIndex != -1) comboBoxCinema.SelectedIndex = selectedCinemasIndex;
+            else  comboBoxCinema.SelectedIndex = 0;
+
+            textBoxId.Text = studioUpdate.Id.ToString();
+            textBoxNama.Text = studioUpdate.Nama;
+            textBoxKapasitas.Text = studioUpdate.Kapasitas.ToString();
+            textBoxHargaWeekday.Text = studioUpdate.HargaWeekday.ToString();
+            textBoxHargaWeekend.Text = studioUpdate.HargaWeekend.ToString();
+        }
+        private List<JenisStudio> loadComboBoxJenisStudio()
         {
             List<JenisStudio> jenisStudio = JenisStudio.BacaData();
             comboBoxJenisStudio.DataSource = jenisStudio;
             comboBoxJenisStudio.SelectedIndex = 0;
             comboBoxJenisStudio.DisplayMember = "nama";
             comboBoxJenisStudio.ValueMember = "id";
-
+            return jenisStudio;
         }
-        private void loadComboBoxCinema()
+        private List<Cinema> loadComboBoxCinema()
         {
             List<Cinema> cinema = Cinema.BacaData();
             comboBoxCinema.DataSource = cinema;
             comboBoxCinema.SelectedIndex = 0;
             comboBoxCinema.DisplayMember = "nama_cabang";
             comboBoxCinema.ValueMember = "id";
+            return cinema;
         }
         private void buttonSimpan_Click(object sender, EventArgs e)
         {
@@ -44,25 +76,28 @@ namespace Celikoor_Semangat18
                 Studio p = new Studio();
                 
                 p.Nama = textBoxNama.Text;
-                //p.Cinema_id = int.Parse(comboBoxCinema.SelectedValue.ToString());
+                p.JenisStudioId = int.Parse(comboBoxJenisStudio.SelectedValue.ToString());
+                p.CinemaId = int.Parse(comboBoxCinema.SelectedValue.ToString());
                 p.Kapasitas = int.Parse(textBoxKapasitas.Text);
-                p.Jenisstud.ID = int.Parse(comboBoxJenisStudio.SelectedValue.ToString());
-                p.Cinema = (Cinema)Enum.Parse(typeof(Cinema), comboBoxCinema.SelectedValue.ToString());
-                p.Kapasitas = int.Parse(textBoxKapasitas.Text);
-                p.Jenisstud = (JenisStudio)Enum.Parse(typeof(JenisStudio), comboBoxJenisStudio.SelectedValue.ToString());
                 p.HargaWeekday = int.Parse(textBoxHargaWeekday.Text);
                 p.HargaWeekend = int.Parse(textBoxHargaWeekend.Text);
 
-
                 //tambahkan ke database:
-                //Studio.TambahData(p);
+                if (isTambah)
+                {
+                    Studio.TambahData(p);
+                    MessageBox.Show("Tambah Data berhasil");
+                } else
+                {
+                    Studio.UbahData(studioUpdate.Id, p);
+                    MessageBox.Show("Ubah Data berhasil");
+                }
 
-                MessageBox.Show("Tambah Data berhasil");
                 this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Tambah Data gagal. Error : " + ex.Message);
+                MessageBox.Show("Tambah/ubah Data gagal. Error : " + ex.Message);
             }
         }
 

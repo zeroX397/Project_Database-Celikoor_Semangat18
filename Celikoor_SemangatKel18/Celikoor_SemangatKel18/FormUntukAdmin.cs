@@ -158,7 +158,7 @@ namespace Celikoor_Semangat18
                 radioButtonKonsumen_CheckedChanged(this, e);
             }
             else {
-                MessageBox.Show("Pilih pegawai/konsumen terelih dahulu");
+                MessageBox.Show("Pilih radio button terlebih dahulu");
             }
         }
     }

@@ -73,6 +73,16 @@ namespace Celikoor_Library
             Koneksi.JalankanPerintahNonQuery(perintah);
         }
 
+        public static void UbahData(int id_jenisStudio, JenisStudio obj)
+        {
+            string sql = "UPDATE jenis_studios " +
+                $"SET nama = '{obj.nama}', " +
+                $"deskripsi = '{obj.deskripsi}' " +
+                $"WHERE id = '{id_jenisStudio}';";
+            Console.WriteLine(sql);
+            Koneksi.JalankanPerintahNonQuery(sql);
+        }
+
         public static void HapusData(string KodeHapus)
         {   //susun perintah query
             string perintah = "delete from jenis_studios where id='" + KodeHapus + "';";

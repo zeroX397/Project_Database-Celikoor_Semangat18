@@ -13,9 +13,21 @@ namespace Celikoor_Semangat18
 {
     public partial class FormTambahJenisStudio : Form
     {
+        private bool isTambah = true;
+        private JenisStudio jenisStudioUpdate;
         public FormTambahJenisStudio()
         {
             InitializeComponent();
+        }
+        public FormTambahJenisStudio(JenisStudio jenisStudioUpdate)
+        {
+            InitializeComponent();
+            isTambah = false;
+            this.jenisStudioUpdate = jenisStudioUpdate;
+
+            textBoxId.Text = jenisStudioUpdate.ID.ToString();
+            textBoxNama.Text = jenisStudioUpdate.Nama;
+            textBoxDeskripsi.Text = jenisStudioUpdate.Deskripsi;
         }
 
         private void buttonSimpan_Click(object sender, EventArgs e)
@@ -24,20 +36,26 @@ namespace Celikoor_Semangat18
             {
                 //buat objek penampung 
                 JenisStudio p = new JenisStudio();
-              
+
                 p.Nama= textBoxNama.Text;
                 p.Deskripsi = textBoxDeskripsi.Text;
                 
 
                 //tambahkan ke database:
-                JenisStudio.TambahData(p);
-
-                MessageBox.Show("Tambah Data berhasil");
+                if (isTambah)
+                {
+                    JenisStudio.TambahData(p);;
+                    MessageBox.Show("Tambah Data berhasil");
+                } else
+                {
+                    JenisStudio.UbahData(jenisStudioUpdate.ID, p);
+                    MessageBox.Show("Ubah Data berhasil");
+                }
                 this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Tambah Data gagal. Error : " + ex.Message);
+                MessageBox.Show("Tambah/Ubah Data gagal. Error : " + ex.Message);
             }
         }
         private void buttonBatal_Click(object sender, EventArgs e)
