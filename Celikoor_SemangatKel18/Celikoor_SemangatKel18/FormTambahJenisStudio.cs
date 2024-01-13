@@ -25,6 +25,7 @@ namespace Celikoor_Semangat18
             isTambah = false;
             this.jenisStudioUpdate = jenisStudioUpdate;
 
+            label2.Text = "UBAH JENIS STUDIO";
             textBoxId.Text = jenisStudioUpdate.ID.ToString();
             textBoxNama.Text = jenisStudioUpdate.Nama;
             textBoxDeskripsi.Text = jenisStudioUpdate.Deskripsi;

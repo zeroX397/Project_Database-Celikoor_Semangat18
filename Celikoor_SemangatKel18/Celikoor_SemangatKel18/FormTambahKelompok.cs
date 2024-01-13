@@ -25,6 +25,7 @@ namespace Celikoor_Semangat18
             isTambah = false;
             this.kelompokUpdate = kelompokUpdate;
 
+            label2.Text = "U B A H  K E L O M P O K";
             textBoxId.Text = kelompokUpdate.Id.ToString();
             textBoxNama.Text = kelompokUpdate.Nama;
         }

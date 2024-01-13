@@ -23,7 +23,8 @@ namespace Celikoor_Semangat18
             InitializeComponent();
             isTambah = false;
             this.konsumenUpdate = konsumenUpdate;
-
+            
+            label2.Text = "UBAH KONSUMEN";
             textBoxNama.Text = konsumenUpdate.Nama_Konsumen;
             textBoxNoHP.Text = konsumenUpdate.NoHP_Konsumen;
             textBoxEmail.Text = konsumenUpdate.Email_Konsumen;

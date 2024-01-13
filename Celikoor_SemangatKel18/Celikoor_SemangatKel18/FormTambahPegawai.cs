@@ -25,6 +25,7 @@ namespace Celikoor_Semangat18
             isTambah = false;
             this.pegawaiUpdate = pegawaiUpdate;
 
+            label2.Text = "UBAH  P E G A W A I";
             textBoxNama.Text = pegawaiUpdate.Nama_Pegawai;
             textBoxEmail.Text = pegawaiUpdate.Email_Pegawai;
             textBoxUsername.Text = pegawaiUpdate.Username_Pegawai;

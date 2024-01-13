@@ -27,6 +27,7 @@ namespace Celikoor_Semangat18
             isTambah = false;
             this.filmUpdate = filmUpdate;
 
+            label2.Text = "U B A H  F I L M";
             textBoxId.Text = filmUpdate.Id.ToString();
             textBoxJudul.Text = filmUpdate.Judul;
             textBoxSinopsis.Text = filmUpdate.Sinopsis;

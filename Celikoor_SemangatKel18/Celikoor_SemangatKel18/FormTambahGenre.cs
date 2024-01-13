@@ -25,6 +25,7 @@ namespace Celikoor_Semangat18
             isTambah = false;
             this.genreUpdate = genreUpdate;
 
+            label2.Text = "U B A H  G E N R E";
             textBoxId.Text = genreUpdate.Id_genre.ToString();
             textBoxNama.Text = genreUpdate.Nama_genre;
             textBoxDesc.Text = genreUpdate.Deskripsi_genre;

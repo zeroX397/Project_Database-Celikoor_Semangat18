@@ -25,6 +25,7 @@ namespace Celikoor_Semangat18
             isTambah = false;
             this.cinemaUpdate = cinemaUpdate;
 
+            label2.Text = "U B A H  C I N E M A";
             textBoxId.Text = cinemaUpdate.Id.ToString();
             textBoxNama.Text = cinemaUpdate.Nama_cabang;
             textBoxAlamat.Text = cinemaUpdate.Alamat;

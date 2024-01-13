@@ -25,6 +25,7 @@ namespace Celikoor_Semangat18
             isTambah = false;
             this.aktorUpdate = aktorUpdate;
 
+            label2.Text = "U B A H  A K T O R";
             textBoxId.Text = aktorUpdate.Id_Aktor.ToString();
             textBoxNama.Text = aktorUpdate.Nama_Aktor;
             dateTimePickerTglLahir.Value = aktorUpdate.Tgl_lahir_Aktor;

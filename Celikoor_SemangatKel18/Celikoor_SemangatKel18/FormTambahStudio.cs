@@ -29,6 +29,7 @@ namespace Celikoor_Semangat18
             isTambah = false;
             this.studioUpdate = studioUpdate;
 
+            label2.Text = "U B A H  S T U D I O";
             // load jenis studio
             int selectedJenisStudioIndex = jenisStudio.FindIndex(item => item.ID == studioUpdate.JenisStudioId);
             if (selectedJenisStudioIndex != -1) comboBoxJenisStudio.SelectedIndex = selectedJenisStudioIndex;
