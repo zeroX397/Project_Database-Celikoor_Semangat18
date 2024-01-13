@@ -267,15 +267,18 @@ namespace Celikoor_Semangat18
             }
             else if (radioButtonActorFilm.Checked)
             {
-                
+                List<AktorFilm> ListData = AktorFilm.BacaData(selectedKey, searchText);
+                dataGridView1.DataSource = ListData;
             }
             else if (radioButtonFilmStudio.Checked)
             {
-                
+                List<FilmStudio> ListData = FilmStudio.BacaData(selectedKey, searchText);
+                dataGridView1.DataSource = ListData;
             }
             else if (radioButtonGenreFilm.Checked)
             {
-                
+                List<GenreFilm> ListData = GenreFilm.BacaData(selectedKey, searchText);
+                dataGridView1.DataSource = ListData;
             }
             else if (radioButtonGenre.Checked)
             {
@@ -289,11 +292,13 @@ namespace Celikoor_Semangat18
             }
             else if (radioButtonJadwalFilm.Checked)
             {
-                
+                List<JadwalFilm> ListData = JadwalFilm.BacaData(selectedKey, searchText);
+                dataGridView1.DataSource = ListData;
             }
             else if (radioButtonSesiFilm.Checked)
             {
-                
+                List<SesiFilm> ListData = SesiFilm.BacaData(selectedKey, searchText);
+                dataGridView1.DataSource = ListData;
             }
         }
 
@@ -340,27 +345,67 @@ namespace Celikoor_Semangat18
 
         private void radioButtonActorFilm_CheckedChanged(object sender, EventArgs e)
         {
+            List<AktorFilm> listHasil = AktorFilm.BacaData();
+            dataGridView1.DataSource = listHasil;
+            dataGridView1.Columns["aktors_id"].Visible = false;
+            dataGridView1.Columns["films_id"].Visible = false;
 
+            List<string> columnList = new List<string> { "nama", "judul", "peran" };
+            comboBoxCari.DataSource = columnList;
+            comboBoxCari.SelectedIndex = 0;
         }
 
         private void radioButtonFilmStudio_CheckedChanged(object sender, EventArgs e)
         {
+            List<FilmStudio> listHasil = FilmStudio.BacaData();
+            dataGridView1.DataSource = listHasil;
+            dataGridView1.Columns["studios_id"].Visible = false;
+            dataGridView1.Columns["films_id"].Visible = false;
 
+            List<string> columnList = new List<string> { "nama", "judul" };
+            comboBoxCari.DataSource = columnList;
+            comboBoxCari.SelectedIndex = 0;
         }
 
         private void radioButtonGenreFilm_CheckedChanged(object sender, EventArgs e)
         {
+            List<GenreFilm> listHasil = GenreFilm.BacaData();
+            dataGridView1.DataSource = listHasil;
+            dataGridView1.Columns["genres_id"].Visible = false;
+            dataGridView1.Columns["films_id"].Visible = false;
 
+            List<string> columnList = new List<string> { "nama", "judul" };
+            comboBoxCari.DataSource = columnList;
+            comboBoxCari.SelectedIndex = 0;
         }
 
         private void radioButtonJadwalFilm_CheckedChanged(object sender, EventArgs e)
         {
+            List<JadwalFilm> listHasil = JadwalFilm.BacaData();
+            dataGridView1.DataSource = listHasil;
 
+            List<string> columnList = new List<string> { "id", "tanggal", "jam_pemutaran" };
+            comboBoxCari.DataSource = columnList;
+            comboBoxCari.SelectedIndex = 0;
         }
 
         private void radioButtonSesiFilm_CheckedChanged(object sender, EventArgs e)
         {
+            List<SesiFilm> listHasil = SesiFilm.BacaData();
+            if (listHasil != null && listHasil.Count > 0){
+                dataGridView1.DataSource = listHasil;
+                dataGridView1.Columns["jadwal_film_id"].Visible = false;
+                dataGridView1.Columns["studios_id"].Visible = false;
+                dataGridView1.Columns["films_id"].Visible = false;
 
+                List<string> columnList = new List<string> { "id", "tanggal", "jam_pemutaran", "nama", "judul" };
+                comboBoxCari.DataSource = columnList;
+                comboBoxCari.SelectedIndex = 0;
+            }
+            else
+            {
+                MessageBox.Show("No data available.");
+            }
         }
     }
 }
