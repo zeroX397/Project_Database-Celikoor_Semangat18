@@ -77,5 +77,10 @@ namespace Celikoor_Semangat18
         {
             this.Close();
         }
+
+        private void FormTambahKonsumen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

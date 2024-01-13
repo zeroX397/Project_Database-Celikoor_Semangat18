@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Celikoor_Library
 {
-    class Film
+    public class Film
     {
         private int id;
         private string judul;
