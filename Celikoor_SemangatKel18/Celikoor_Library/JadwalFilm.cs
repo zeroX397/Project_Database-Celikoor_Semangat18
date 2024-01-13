@@ -61,19 +61,30 @@ namespace Celikoor_Library
             return listHasil;
         }
 
-        public static void TambahData(JadwalFilm g)
+        public static void TambahData(JadwalFilm obj)
         {
-
+            string sql = "INSERT INTO jadwal_films " + "(tanggal, jam_pemutaran) VALUES " + "('" +
+                obj.tanggal.ToString("yyyy-MM-dd") + "', '" +
+                obj.jam_pemutaran + "');";
+            Koneksi.JalankanPerintahNonQuery(sql);
         }
         
         public static void UbahData(int id_jadwal_film, JadwalFilm obj)
         {
-        
+            string sql = "UPDATE jadwal_films " +
+                $"SET tanggal = '{obj.tanggal.ToString("yyyy-MM-dd")}', " +
+                $"jam_pemutaran = '{obj.jam_pemutaran}' " +
+                $"WHERE id = '{id_jadwal_film}';";
+            Console.WriteLine(sql);
+            Koneksi.JalankanPerintahNonQuery(sql);
         }
 
-        public static void HapusData(int kode_hapus)
-        {  
-            
+        public static void HapusData(string KodeHapus)
+        {    
+            //susun perintah query
+            string perintah = "delete from jadwal_films where id='" + KodeHapus + "';";
+
+            Koneksi.JalankanPerintahNonQuery(perintah); //kirim ke command
         }
         #endregion
     }

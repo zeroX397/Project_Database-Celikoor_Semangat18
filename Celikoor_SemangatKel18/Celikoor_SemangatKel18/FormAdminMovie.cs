@@ -62,7 +62,10 @@ namespace Celikoor_Semangat18
             }
             else if (radioButtonJadwalFilm.Checked)
             {
-                
+                FormTambahJadwalFilm frm = new FormTambahJadwalFilm();
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonJadwalFilm_CheckedChanged(this, e);
             }
             else if (radioButtonSesiFilm.Checked)
             {
@@ -152,7 +155,7 @@ namespace Celikoor_Semangat18
                         //hapus data dari database
                         Film.HapusData(kode);
                         //refresh form master
-                        radioButtonAktor_CheckedChanged(this, e);
+                        radioButtonFilm_CheckedChanged(this, e);
                     }
                     catch (Exception ex)
                     {
@@ -162,7 +165,22 @@ namespace Celikoor_Semangat18
             }
             else if (radioButtonJadwalFilm.Checked)
             {
-                
+                string kode = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
+                DialogResult dr = MessageBox.Show("Ingin hapus data id " + kode + "?", "HAPUS", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes) //jika user setuju hapus data
+                {
+                    try
+                    {
+                        //hapus data dari database
+                        JadwalFilm.HapusData(kode);
+                        //refresh form master
+                        radioButtonJadwalFilm_CheckedChanged(this, e);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Hapus data gagal! error: " + ex.Message);
+                    }
+                }
             }
             else if (radioButtonSesiFilm.Checked)
             {
@@ -243,11 +261,19 @@ namespace Celikoor_Semangat18
             }
             else if (radioButtonJadwalFilm.Checked)
             {
-                
+                JadwalFilm jadwalFilm = new JadwalFilm();
+                jadwalFilm.Id = Int32.Parse(dataGridView1.CurrentRow.Cells["Id"].Value.ToString());
+                jadwalFilm.Tanggal = DateTime.Parse(dataGridView1.CurrentRow.Cells["Tanggal"].Value.ToString());
+                jadwalFilm.Jam_pemutaran = dataGridView1.CurrentRow.Cells["Jam_pemutaran"].Value.ToString();
+
+                FormTambahJadwalFilm frm = new FormTambahJadwalFilm(jadwalFilm);
+                frm.Owner = this;
+                frm.ShowDialog();
+                radioButtonJadwalFilm_CheckedChanged(this, e);
             }
             else if (radioButtonSesiFilm.Checked)
             {
-                
+
             }
         }
 
