@@ -149,5 +149,10 @@ namespace Celikoor_Semangat18
                 frm.BringToFront();
             }
         }
+
+        private void lblExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -106,6 +106,10 @@ namespace Celikoor_Semangat18
         {
             this.Close();
         }
-                
+
+        private void radioButtonEmployee_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

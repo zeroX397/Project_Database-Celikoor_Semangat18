@@ -34,7 +34,6 @@
             this.buttonClose = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -73,8 +72,8 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.checkBox36 = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -84,6 +83,7 @@
             this.panel3.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel7
@@ -120,10 +120,11 @@
             // 
             // buttonClose
             // 
+            this.buttonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonClose.BackColor = System.Drawing.Color.Black;
             this.buttonClose.Font = new System.Drawing.Font("Century", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClose.ForeColor = System.Drawing.Color.White;
-            this.buttonClose.Location = new System.Drawing.Point(1927, 1);
+            this.buttonClose.Location = new System.Drawing.Point(1942, 8);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(71, 45);
@@ -153,15 +154,6 @@
             this.label10.Size = new System.Drawing.Size(230, 27);
             this.label10.TabIndex = 21;
             this.label10.Text = "RESERVE TICKET";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(388, 391);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
@@ -609,6 +601,15 @@
             this.panel1.TabIndex = 20;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(388, 391);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormPesanTiket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -627,7 +628,6 @@
             this.Load += new System.EventHandler(this.FormPesanTiket_Load);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -645,6 +645,7 @@
             this.panel10.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -266,7 +266,7 @@ namespace Celikoor_Semangat18
                 jadwalFilm.Tanggal = DateTime.Parse(dataGridView1.CurrentRow.Cells["Tanggal"].Value.ToString());
                 jadwalFilm.Jam_pemutaran = dataGridView1.CurrentRow.Cells["Jam_pemutaran"].Value.ToString();
 
-                FormTambahJadwalFilm frm = new FormTambahJadwalFilm(jadwalFilm);
+                FormTambahJadwalFilm frm = new FormTambahJadwalFilm();
                 frm.Owner = this;
                 frm.ShowDialog();
                 radioButtonJadwalFilm_CheckedChanged(this, e);

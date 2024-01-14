@@ -16,5 +16,17 @@ namespace Celikoor_Semangat18
         {
             InitializeComponent();
         }
+        FormLogin frmLogin;
+        private void FormHalamanPegawai_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonDaftar_Click(object sender, EventArgs e)
+        {
+            FormMainMenu frm = new FormMainMenu();
+            frm.Owner = this.Owner;
+            frm.ShowDialog();
+        }
     }
 }
