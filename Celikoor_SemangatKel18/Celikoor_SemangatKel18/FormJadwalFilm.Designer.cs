@@ -37,42 +37,41 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textSinopsis = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textKelompok = new System.Windows.Forms.Label();
+            this.textGenre = new System.Windows.Forms.Label();
+            this.textAktor = new System.Windows.Forms.Label();
+            this.textDurasi = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.comboBoxStudio = new System.Windows.Forms.ComboBox();
             this.comboBoxCinema = new System.Windows.Forms.ComboBox();
-            this.comboBoxTanggal = new System.Windows.Forms.ComboBox();
-            this.buttonCancel = new System.Windows.Forms.Button();
-            this.buttonConfirm = new System.Windows.Forms.Button();
             this.comboBoxJudul = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dateTimePickerTanggal = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.buttonTambah = new System.Windows.Forms.Button();
+            this.rbJamIV = new System.Windows.Forms.RadioButton();
+            this.rbJamII = new System.Windows.Forms.RadioButton();
+            this.rbJamIII = new System.Windows.Forms.RadioButton();
+            this.rbJamI = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textHargaWeekend = new System.Windows.Forms.Label();
+            this.textHargaWeekday = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.labelWeekday = new System.Windows.Forms.Label();
+            this.textKapasitas = new System.Windows.Forms.Label();
+            this.textJenisStudio = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textDurasi = new System.Windows.Forms.Label();
-            this.textAktor = new System.Windows.Forms.Label();
-            this.textGenre = new System.Windows.Forms.Label();
-            this.textKelompok = new System.Windows.Forms.Label();
-            this.textJenisStudio = new System.Windows.Forms.Label();
-            this.textJumlahKursi = new System.Windows.Forms.Label();
-            this.labelWeekday = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textHargaWeekday = new System.Windows.Forms.Label();
-            this.textHargaWeekend = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.rbJamI = new System.Windows.Forms.RadioButton();
-            this.rbJamIII = new System.Windows.Forms.RadioButton();
-            this.rbJamII = new System.Windows.Forms.RadioButton();
-            this.rbJamIV = new System.Windows.Forms.RadioButton();
-            this.buttonTambah = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonClose
@@ -192,6 +191,54 @@
             this.panel2.Size = new System.Drawing.Size(528, 315);
             this.panel2.TabIndex = 3;
             // 
+            // textKelompok
+            // 
+            this.textKelompok.AutoSize = true;
+            this.textKelompok.Font = new System.Drawing.Font("Century", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textKelompok.ForeColor = System.Drawing.Color.White;
+            this.textKelompok.Location = new System.Drawing.Point(104, 273);
+            this.textKelompok.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.textKelompok.Name = "textKelompok";
+            this.textKelompok.Size = new System.Drawing.Size(14, 17);
+            this.textKelompok.TabIndex = 9;
+            this.textKelompok.Text = "-";
+            // 
+            // textGenre
+            // 
+            this.textGenre.AutoSize = true;
+            this.textGenre.Font = new System.Drawing.Font("Century", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textGenre.ForeColor = System.Drawing.Color.White;
+            this.textGenre.Location = new System.Drawing.Point(77, 245);
+            this.textGenre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.textGenre.Name = "textGenre";
+            this.textGenre.Size = new System.Drawing.Size(14, 17);
+            this.textGenre.TabIndex = 8;
+            this.textGenre.Text = "-";
+            // 
+            // textAktor
+            // 
+            this.textAktor.AutoSize = true;
+            this.textAktor.Font = new System.Drawing.Font("Century", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textAktor.ForeColor = System.Drawing.Color.White;
+            this.textAktor.Location = new System.Drawing.Point(127, 210);
+            this.textAktor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.textAktor.Name = "textAktor";
+            this.textAktor.Size = new System.Drawing.Size(14, 17);
+            this.textAktor.TabIndex = 7;
+            this.textAktor.Text = "-";
+            // 
+            // textDurasi
+            // 
+            this.textDurasi.AutoSize = true;
+            this.textDurasi.Font = new System.Drawing.Font("Century", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textDurasi.ForeColor = System.Drawing.Color.White;
+            this.textDurasi.Location = new System.Drawing.Point(82, 177);
+            this.textDurasi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.textDurasi.Name = "textDurasi";
+            this.textDurasi.Size = new System.Drawing.Size(14, 17);
+            this.textDurasi.TabIndex = 6;
+            this.textDurasi.Text = "-";
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -253,6 +300,7 @@
             this.comboBoxStudio.Name = "comboBoxStudio";
             this.comboBoxStudio.Size = new System.Drawing.Size(67, 21);
             this.comboBoxStudio.TabIndex = 8;
+            this.comboBoxStudio.SelectedIndexChanged += new System.EventHandler(this.comboBoxStudio_SelectedIndexChanged);
             // 
             // comboBoxCinema
             // 
@@ -262,43 +310,7 @@
             this.comboBoxCinema.Name = "comboBoxCinema";
             this.comboBoxCinema.Size = new System.Drawing.Size(218, 21);
             this.comboBoxCinema.TabIndex = 7;
-            // 
-            // comboBoxTanggal
-            // 
-            this.comboBoxTanggal.FormattingEnabled = true;
-            this.comboBoxTanggal.Location = new System.Drawing.Point(354, 121);
-            this.comboBoxTanggal.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.comboBoxTanggal.Name = "comboBoxTanggal";
-            this.comboBoxTanggal.Size = new System.Drawing.Size(182, 21);
-            this.comboBoxTanggal.TabIndex = 6;
-            // 
-            // buttonCancel
-            // 
-            this.buttonCancel.BackColor = System.Drawing.Color.Black;
-            this.buttonCancel.Font = new System.Drawing.Font("Century", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancel.ForeColor = System.Drawing.Color.White;
-            this.buttonCancel.Location = new System.Drawing.Point(355, 528);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(186, 42);
-            this.buttonCancel.TabIndex = 21;
-            this.buttonCancel.Text = "Keluar";
-            this.buttonCancel.UseVisualStyleBackColor = false;
-            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
-            // 
-            // buttonConfirm
-            // 
-            this.buttonConfirm.BackColor = System.Drawing.Color.Black;
-            this.buttonConfirm.Font = new System.Drawing.Font("Century", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonConfirm.ForeColor = System.Drawing.Color.White;
-            this.buttonConfirm.Location = new System.Drawing.Point(574, 528);
-            this.buttonConfirm.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.buttonConfirm.Name = "buttonConfirm";
-            this.buttonConfirm.Size = new System.Drawing.Size(186, 42);
-            this.buttonConfirm.TabIndex = 20;
-            this.buttonConfirm.Text = "Simpan";
-            this.buttonConfirm.UseVisualStyleBackColor = false;
-            this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
+            this.comboBoxCinema.SelectionChangeCommitted += new System.EventHandler(this.comboBoxCinema_SelectionChangeCommitted);
             // 
             // comboBoxJudul
             // 
@@ -308,11 +320,13 @@
             this.comboBoxJudul.Name = "comboBoxJudul";
             this.comboBoxJudul.Size = new System.Drawing.Size(358, 21);
             this.comboBoxJudul.TabIndex = 5;
+            this.comboBoxJudul.SelectionChangeCommitted += new System.EventHandler(this.comboBoxJudul_SelectionChangeCommitted);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.SlateBlue;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.dateTimePickerTanggal);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.buttonTambah);
             this.panel3.Controls.Add(this.rbJamIV);
@@ -324,7 +338,7 @@
             this.panel3.Controls.Add(this.textHargaWeekday);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.labelWeekday);
-            this.panel3.Controls.Add(this.textJumlahKursi);
+            this.panel3.Controls.Add(this.textKapasitas);
             this.panel3.Controls.Add(this.textJenisStudio);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.label14);
@@ -332,16 +346,195 @@
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.buttonCancel);
             this.panel3.Controls.Add(this.comboBoxStudio);
-            this.panel3.Controls.Add(this.comboBoxTanggal);
             this.panel3.Controls.Add(this.comboBoxJudul);
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.buttonConfirm);
             this.panel3.Location = new System.Drawing.Point(545, 10);
             this.panel3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(772, 581);
             this.panel3.TabIndex = 4;
+            // 
+            // dateTimePickerTanggal
+            // 
+            this.dateTimePickerTanggal.Location = new System.Drawing.Point(353, 122);
+            this.dateTimePickerTanggal.Name = "dateTimePickerTanggal";
+            this.dateTimePickerTanggal.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerTanggal.TabIndex = 66;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(19, 13);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(248, 25);
+            this.label8.TabIndex = 65;
+            this.label8.Text = "Form Tambah Jadwal";
+            // 
+            // buttonTambah
+            // 
+            this.buttonTambah.BackColor = System.Drawing.Color.Black;
+            this.buttonTambah.Font = new System.Drawing.Font("Century", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTambah.ForeColor = System.Drawing.Color.White;
+            this.buttonTambah.Location = new System.Drawing.Point(350, 196);
+            this.buttonTambah.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.buttonTambah.Name = "buttonTambah";
+            this.buttonTambah.Size = new System.Drawing.Size(186, 42);
+            this.buttonTambah.TabIndex = 64;
+            this.buttonTambah.Text = "Tambah";
+            this.buttonTambah.UseVisualStyleBackColor = false;
+            this.buttonTambah.Click += new System.EventHandler(this.buttonTambah_Click);
+            // 
+            // rbJamIV
+            // 
+            this.rbJamIV.AutoSize = true;
+            this.rbJamIV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbJamIV.ForeColor = System.Drawing.Color.White;
+            this.rbJamIV.Location = new System.Drawing.Point(539, 161);
+            this.rbJamIV.Name = "rbJamIV";
+            this.rbJamIV.Size = new System.Drawing.Size(40, 22);
+            this.rbJamIV.TabIndex = 63;
+            this.rbJamIV.TabStop = true;
+            this.rbJamIV.Text = "IV";
+            this.rbJamIV.UseVisualStyleBackColor = true;
+            // 
+            // rbJamII
+            // 
+            this.rbJamII.AutoSize = true;
+            this.rbJamII.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbJamII.ForeColor = System.Drawing.Color.White;
+            this.rbJamII.Location = new System.Drawing.Point(453, 161);
+            this.rbJamII.Name = "rbJamII";
+            this.rbJamII.Size = new System.Drawing.Size(34, 22);
+            this.rbJamII.TabIndex = 62;
+            this.rbJamII.TabStop = true;
+            this.rbJamII.Text = "II";
+            this.rbJamII.UseVisualStyleBackColor = true;
+            // 
+            // rbJamIII
+            // 
+            this.rbJamIII.AutoSize = true;
+            this.rbJamIII.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbJamIII.ForeColor = System.Drawing.Color.White;
+            this.rbJamIII.Location = new System.Drawing.Point(498, 161);
+            this.rbJamIII.Name = "rbJamIII";
+            this.rbJamIII.Size = new System.Drawing.Size(38, 22);
+            this.rbJamIII.TabIndex = 61;
+            this.rbJamIII.TabStop = true;
+            this.rbJamIII.Text = "III";
+            this.rbJamIII.UseVisualStyleBackColor = true;
+            // 
+            // rbJamI
+            // 
+            this.rbJamI.AutoSize = true;
+            this.rbJamI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbJamI.ForeColor = System.Drawing.Color.White;
+            this.rbJamI.Location = new System.Drawing.Point(411, 161);
+            this.rbJamI.Name = "rbJamI";
+            this.rbJamI.Size = new System.Drawing.Size(30, 22);
+            this.rbJamI.TabIndex = 60;
+            this.rbJamI.TabStop = true;
+            this.rbJamI.Text = "I";
+            this.rbJamI.UseVisualStyleBackColor = true;
+            this.rbJamI.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(352, 161);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 18);
+            this.label6.TabIndex = 59;
+            this.label6.Text = "Jam:";
+            // 
+            // textHargaWeekend
+            // 
+            this.textHargaWeekend.AutoSize = true;
+            this.textHargaWeekend.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textHargaWeekend.ForeColor = System.Drawing.Color.White;
+            this.textHargaWeekend.Location = new System.Drawing.Point(141, 220);
+            this.textHargaWeekend.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.textHargaWeekend.Name = "textHargaWeekend";
+            this.textHargaWeekend.Size = new System.Drawing.Size(14, 18);
+            this.textHargaWeekend.TabIndex = 58;
+            this.textHargaWeekend.Text = "-";
+            // 
+            // textHargaWeekday
+            // 
+            this.textHargaWeekday.AutoSize = true;
+            this.textHargaWeekday.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textHargaWeekday.ForeColor = System.Drawing.Color.White;
+            this.textHargaWeekday.Location = new System.Drawing.Point(141, 189);
+            this.textHargaWeekday.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.textHargaWeekday.Name = "textHargaWeekday";
+            this.textHargaWeekday.Size = new System.Drawing.Size(14, 18);
+            this.textHargaWeekday.TabIndex = 57;
+            this.textHargaWeekday.Text = "-";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(21, 220);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 18);
+            this.label7.TabIndex = 56;
+            this.label7.Text = "Weekend:";
+            // 
+            // labelWeekday
+            // 
+            this.labelWeekday.AutoSize = true;
+            this.labelWeekday.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWeekday.ForeColor = System.Drawing.Color.White;
+            this.labelWeekday.Location = new System.Drawing.Point(21, 189);
+            this.labelWeekday.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelWeekday.Name = "labelWeekday";
+            this.labelWeekday.Size = new System.Drawing.Size(85, 18);
+            this.labelWeekday.TabIndex = 55;
+            this.labelWeekday.Text = "Weekday:";
+            // 
+            // textKapasitas
+            // 
+            this.textKapasitas.AutoSize = true;
+            this.textKapasitas.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textKapasitas.ForeColor = System.Drawing.Color.White;
+            this.textKapasitas.Location = new System.Drawing.Point(141, 162);
+            this.textKapasitas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.textKapasitas.Name = "textKapasitas";
+            this.textKapasitas.Size = new System.Drawing.Size(14, 18);
+            this.textKapasitas.TabIndex = 54;
+            this.textKapasitas.Text = "-";
+            // 
+            // textJenisStudio
+            // 
+            this.textJenisStudio.AutoSize = true;
+            this.textJenisStudio.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textJenisStudio.ForeColor = System.Drawing.Color.White;
+            this.textJenisStudio.Location = new System.Drawing.Point(21, 162);
+            this.textJenisStudio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.textJenisStudio.Name = "textJenisStudio";
+            this.textJenisStudio.Size = new System.Drawing.Size(14, 18);
+            this.textJenisStudio.TabIndex = 53;
+            this.textJenisStudio.Text = "-";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(16, 265);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(744, 260);
+            this.dataGridView1.TabIndex = 52;
             // 
             // panel1
             // 
@@ -365,226 +558,19 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // dataGridView1
+            // buttonCancel
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 265);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(744, 260);
-            this.dataGridView1.TabIndex = 52;
-            // 
-            // textDurasi
-            // 
-            this.textDurasi.AutoSize = true;
-            this.textDurasi.Font = new System.Drawing.Font("Century", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textDurasi.ForeColor = System.Drawing.Color.White;
-            this.textDurasi.Location = new System.Drawing.Point(82, 177);
-            this.textDurasi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.textDurasi.Name = "textDurasi";
-            this.textDurasi.Size = new System.Drawing.Size(14, 17);
-            this.textDurasi.TabIndex = 6;
-            this.textDurasi.Text = "-";
-            // 
-            // textAktor
-            // 
-            this.textAktor.AutoSize = true;
-            this.textAktor.Font = new System.Drawing.Font("Century", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textAktor.ForeColor = System.Drawing.Color.White;
-            this.textAktor.Location = new System.Drawing.Point(127, 210);
-            this.textAktor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.textAktor.Name = "textAktor";
-            this.textAktor.Size = new System.Drawing.Size(14, 17);
-            this.textAktor.TabIndex = 7;
-            this.textAktor.Text = "-";
-            // 
-            // textGenre
-            // 
-            this.textGenre.AutoSize = true;
-            this.textGenre.Font = new System.Drawing.Font("Century", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textGenre.ForeColor = System.Drawing.Color.White;
-            this.textGenre.Location = new System.Drawing.Point(77, 245);
-            this.textGenre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.textGenre.Name = "textGenre";
-            this.textGenre.Size = new System.Drawing.Size(14, 17);
-            this.textGenre.TabIndex = 8;
-            this.textGenre.Text = "-";
-            // 
-            // textKelompok
-            // 
-            this.textKelompok.AutoSize = true;
-            this.textKelompok.Font = new System.Drawing.Font("Century", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textKelompok.ForeColor = System.Drawing.Color.White;
-            this.textKelompok.Location = new System.Drawing.Point(104, 273);
-            this.textKelompok.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.textKelompok.Name = "textKelompok";
-            this.textKelompok.Size = new System.Drawing.Size(14, 17);
-            this.textKelompok.TabIndex = 9;
-            this.textKelompok.Text = "-";
-            // 
-            // textJenisStudio
-            // 
-            this.textJenisStudio.AutoSize = true;
-            this.textJenisStudio.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textJenisStudio.ForeColor = System.Drawing.Color.White;
-            this.textJenisStudio.Location = new System.Drawing.Point(21, 162);
-            this.textJenisStudio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.textJenisStudio.Name = "textJenisStudio";
-            this.textJenisStudio.Size = new System.Drawing.Size(14, 18);
-            this.textJenisStudio.TabIndex = 53;
-            this.textJenisStudio.Text = "-";
-            // 
-            // textJumlahKursi
-            // 
-            this.textJumlahKursi.AutoSize = true;
-            this.textJumlahKursi.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textJumlahKursi.ForeColor = System.Drawing.Color.White;
-            this.textJumlahKursi.Location = new System.Drawing.Point(141, 162);
-            this.textJumlahKursi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.textJumlahKursi.Name = "textJumlahKursi";
-            this.textJumlahKursi.Size = new System.Drawing.Size(14, 18);
-            this.textJumlahKursi.TabIndex = 54;
-            this.textJumlahKursi.Text = "-";
-            // 
-            // labelWeekday
-            // 
-            this.labelWeekday.AutoSize = true;
-            this.labelWeekday.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWeekday.ForeColor = System.Drawing.Color.White;
-            this.labelWeekday.Location = new System.Drawing.Point(21, 189);
-            this.labelWeekday.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelWeekday.Name = "labelWeekday";
-            this.labelWeekday.Size = new System.Drawing.Size(85, 18);
-            this.labelWeekday.TabIndex = 55;
-            this.labelWeekday.Text = "Weekday:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(21, 220);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 18);
-            this.label7.TabIndex = 56;
-            this.label7.Text = "Weekend:";
-            // 
-            // textHargaWeekday
-            // 
-            this.textHargaWeekday.AutoSize = true;
-            this.textHargaWeekday.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textHargaWeekday.ForeColor = System.Drawing.Color.White;
-            this.textHargaWeekday.Location = new System.Drawing.Point(141, 189);
-            this.textHargaWeekday.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.textHargaWeekday.Name = "textHargaWeekday";
-            this.textHargaWeekday.Size = new System.Drawing.Size(14, 18);
-            this.textHargaWeekday.TabIndex = 57;
-            this.textHargaWeekday.Text = "-";
-            // 
-            // textHargaWeekend
-            // 
-            this.textHargaWeekend.AutoSize = true;
-            this.textHargaWeekend.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textHargaWeekend.ForeColor = System.Drawing.Color.White;
-            this.textHargaWeekend.Location = new System.Drawing.Point(141, 220);
-            this.textHargaWeekend.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.textHargaWeekend.Name = "textHargaWeekend";
-            this.textHargaWeekend.Size = new System.Drawing.Size(14, 18);
-            this.textHargaWeekend.TabIndex = 58;
-            this.textHargaWeekend.Text = "-";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(352, 161);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 18);
-            this.label6.TabIndex = 59;
-            this.label6.Text = "Jam:";
-            // 
-            // rbJamI
-            // 
-            this.rbJamI.AutoSize = true;
-            this.rbJamI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbJamI.ForeColor = System.Drawing.Color.White;
-            this.rbJamI.Location = new System.Drawing.Point(411, 161);
-            this.rbJamI.Name = "rbJamI";
-            this.rbJamI.Size = new System.Drawing.Size(30, 22);
-            this.rbJamI.TabIndex = 60;
-            this.rbJamI.TabStop = true;
-            this.rbJamI.Text = "I";
-            this.rbJamI.UseVisualStyleBackColor = true;
-            this.rbJamI.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // rbJamIII
-            // 
-            this.rbJamIII.AutoSize = true;
-            this.rbJamIII.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbJamIII.ForeColor = System.Drawing.Color.White;
-            this.rbJamIII.Location = new System.Drawing.Point(498, 161);
-            this.rbJamIII.Name = "rbJamIII";
-            this.rbJamIII.Size = new System.Drawing.Size(38, 22);
-            this.rbJamIII.TabIndex = 61;
-            this.rbJamIII.TabStop = true;
-            this.rbJamIII.Text = "III";
-            this.rbJamIII.UseVisualStyleBackColor = true;
-            // 
-            // rbJamII
-            // 
-            this.rbJamII.AutoSize = true;
-            this.rbJamII.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbJamII.ForeColor = System.Drawing.Color.White;
-            this.rbJamII.Location = new System.Drawing.Point(453, 161);
-            this.rbJamII.Name = "rbJamII";
-            this.rbJamII.Size = new System.Drawing.Size(34, 22);
-            this.rbJamII.TabIndex = 62;
-            this.rbJamII.TabStop = true;
-            this.rbJamII.Text = "II";
-            this.rbJamII.UseVisualStyleBackColor = true;
-            // 
-            // rbJamIV
-            // 
-            this.rbJamIV.AutoSize = true;
-            this.rbJamIV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbJamIV.ForeColor = System.Drawing.Color.White;
-            this.rbJamIV.Location = new System.Drawing.Point(539, 161);
-            this.rbJamIV.Name = "rbJamIV";
-            this.rbJamIV.Size = new System.Drawing.Size(40, 22);
-            this.rbJamIV.TabIndex = 63;
-            this.rbJamIV.TabStop = true;
-            this.rbJamIV.Text = "IV";
-            this.rbJamIV.UseVisualStyleBackColor = true;
-            // 
-            // buttonTambah
-            // 
-            this.buttonTambah.BackColor = System.Drawing.Color.Black;
-            this.buttonTambah.Font = new System.Drawing.Font("Century", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTambah.ForeColor = System.Drawing.Color.White;
-            this.buttonTambah.Location = new System.Drawing.Point(350, 196);
-            this.buttonTambah.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.buttonTambah.Name = "buttonTambah";
-            this.buttonTambah.Size = new System.Drawing.Size(186, 42);
-            this.buttonTambah.TabIndex = 64;
-            this.buttonTambah.Text = "Tambah";
-            this.buttonTambah.UseVisualStyleBackColor = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(19, 13);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(248, 25);
-            this.label8.TabIndex = 65;
-            this.label8.Text = "Form Tambah Jadwal";
+            this.buttonCancel.BackColor = System.Drawing.Color.Black;
+            this.buttonCancel.Font = new System.Drawing.Font("Century", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.ForeColor = System.Drawing.Color.White;
+            this.buttonCancel.Location = new System.Drawing.Point(574, 530);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(186, 42);
+            this.buttonCancel.TabIndex = 21;
+            this.buttonCancel.Text = "Keluar";
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // FormJadwalFilm
             // 
@@ -603,9 +589,9 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -628,9 +614,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox comboBoxStudio;
         private System.Windows.Forms.ComboBox comboBoxCinema;
-        private System.Windows.Forms.ComboBox comboBoxTanggal;
-        private System.Windows.Forms.Button buttonCancel;
-        private System.Windows.Forms.Button buttonConfirm;
         private System.Windows.Forms.ComboBox comboBoxJudul;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
@@ -643,7 +626,7 @@
         private System.Windows.Forms.Label textHargaWeekday;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label labelWeekday;
-        private System.Windows.Forms.Label textJumlahKursi;
+        private System.Windows.Forms.Label textKapasitas;
         private System.Windows.Forms.Label textJenisStudio;
         private System.Windows.Forms.RadioButton rbJamI;
         private System.Windows.Forms.Label label6;
@@ -652,5 +635,7 @@
         private System.Windows.Forms.RadioButton rbJamIII;
         private System.Windows.Forms.Button buttonTambah;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker dateTimePickerTanggal;
+        private System.Windows.Forms.Button buttonCancel;
     }
 }

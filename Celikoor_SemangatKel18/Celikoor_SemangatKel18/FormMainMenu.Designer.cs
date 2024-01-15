@@ -40,6 +40,7 @@ namespace Celikoor_Semangat18
             this.panel = new System.Windows.Forms.Panel();
             this.lblExit = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.jadwalFilmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -63,7 +64,8 @@ namespace Celikoor_Semangat18
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.masterToolStripMenuItem,
             this.invoiceToolStripMenuItem,
-            this.barcodeToolStripMenuItem});
+            this.barcodeToolStripMenuItem,
+            this.jadwalFilmToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
@@ -157,6 +159,13 @@ namespace Celikoor_Semangat18
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
+            // jadwalFilmToolStripMenuItem
+            // 
+            this.jadwalFilmToolStripMenuItem.Name = "jadwalFilmToolStripMenuItem";
+            this.jadwalFilmToolStripMenuItem.Size = new System.Drawing.Size(80, 22);
+            this.jadwalFilmToolStripMenuItem.Text = "Jadwal Film";
+            this.jadwalFilmToolStripMenuItem.Click += new System.EventHandler(this.jadwalFilmToolStripMenuItem_Click);
+            // 
             // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,5 +200,6 @@ namespace Celikoor_Semangat18
         private System.Windows.Forms.ToolStripMenuItem invoiceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem barcodeToolStripMenuItem;
         private System.Windows.Forms.Label lblExit;
+        private System.Windows.Forms.ToolStripMenuItem jadwalFilmToolStripMenuItem;
     }
 }

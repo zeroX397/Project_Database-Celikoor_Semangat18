@@ -55,6 +55,7 @@
     <Compile Include="Genre.cs" />
     <Compile Include="GenreFilm.cs" />
     <Compile Include="JadwalFilm.cs" />
+    <Compile Include="JadwalPemutaranFilm.cs" />
     <Compile Include="JenisStudio.cs" />
     <Compile Include="Koneksi.cs" />
     <Compile Include="Pegawai.cs" />

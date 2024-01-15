@@ -67,11 +67,11 @@
     <Compile Include="FormAdminMovie.Designer.cs">
       <DependentUpon>FormAdminMovie.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormHalamanPegawai.cs">
+    <Compile Include="FormJadwalFilm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormHalamanPegawai.Designer.cs">
-      <DependentUpon>FormHalamanPegawai.cs</DependentUpon>
+    <Compile Include="FormJadwalFilm.Designer.cs">
+      <DependentUpon>FormJadwalFilm.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPesanTiket.cs">
       <SubType>Form</SubType>
@@ -165,8 +165,8 @@
     <EmbeddedResource Include="FormAdminMovie.resx">
       <DependentUpon>FormAdminMovie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormHalamanPegawai.resx">
-      <DependentUpon>FormHalamanPegawai.cs</DependentUpon>
+    <EmbeddedResource Include="FormJadwalFilm.resx">
+      <DependentUpon>FormJadwalFilm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPesanTiket.resx">
       <DependentUpon>FormPesanTiket.cs</DependentUpon>

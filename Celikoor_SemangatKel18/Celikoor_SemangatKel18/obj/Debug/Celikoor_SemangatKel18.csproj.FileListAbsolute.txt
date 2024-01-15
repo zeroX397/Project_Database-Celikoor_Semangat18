@@ -98,7 +98,6 @@ C:\Users\Ryan Subagia\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celi
 C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.AssemblyReference.cache
 C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormAdminCinema.resources
 C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormAdminMovie.resources
-C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormHalamanPegawai.resources
 C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormPesanTiket.resources
 C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormTambahAktor.resources
 C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormTambahCinema.resources
@@ -129,3 +128,4 @@ C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoo
 C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.CopyComplete
 C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.exe
 C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.pdb
+C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormJadwalFilm.resources

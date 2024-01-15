@@ -152,5 +152,22 @@ namespace Celikoor_Semangat18
         {
             this.Close();
         }
+
+        private void jadwalFilmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Form frm = Application.OpenForms["FormJadwalFilm"];
+            if (frm == null)
+            {
+                FormJadwalFilm frmMaster = new FormJadwalFilm();
+                frmMaster.MdiParent = this;
+                frmMaster.Show();
+            }
+            else
+            {
+                frm.Show();
+                frm.BringToFront();
+            }
+        }
     }
 }
