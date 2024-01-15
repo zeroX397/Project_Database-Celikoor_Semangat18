@@ -49,7 +49,7 @@ namespace Celikoor_Semangat18
                 form.ShowDialog();
             if (userLogin != null)
             {
-                AturMenu(userLogin.Roles_Pegawai);
+                AturMenu(userLogin.Roles_Pegawai, userLogin.Username_Pegawai);
             }
             else
             {
@@ -58,31 +58,31 @@ namespace Celikoor_Semangat18
             
         }
 
-        private void AturMenu(string roles)
+        private void AturMenu(string roles, string username)
         {
             if (roles == "ADMIN")
             {
                 masterToolStripMenuItem.Visible = true;
-                recordToolStripMenuItem.Visible = true;
                 invoiceToolStripMenuItem.Visible = true;
                 barcodeToolStripMenuItem.Visible = true;
-                ticketToolStripMenuItem.Visible = true;
+
+                label1.Text = $"Welcome to the Celikoor Cinema Apps, {username} (ADMIN)";
             }
             else if (roles == "OPERATOR")
             {
                 masterToolStripMenuItem.Visible = false;
-                recordToolStripMenuItem.Visible = false;
                 invoiceToolStripMenuItem.Visible = false;
                 barcodeToolStripMenuItem.Visible = true;
-                ticketToolStripMenuItem.Visible = false;
+
+                label1.Text = $"Welcome to the Celikoor Cinema Apps, {username} (OPERATOR)";
             }
             else if (roles == "KASIR")
             {
                 masterToolStripMenuItem.Visible = false;
-                recordToolStripMenuItem.Visible = false;
                 invoiceToolStripMenuItem.Visible = true;
                 barcodeToolStripMenuItem.Visible = false;
-                ticketToolStripMenuItem.Visible = false;
+
+                label1.Text = $"Welcome to the Celikoor Cinema Apps, {username} (KASIR)";
             }
             
         }
@@ -90,10 +90,8 @@ namespace Celikoor_Semangat18
         private void KonsumAturMenu()
         {
             masterToolStripMenuItem.Visible = false;
-            recordToolStripMenuItem.Visible = false;
             invoiceToolStripMenuItem.Visible = false;
             barcodeToolStripMenuItem.Visible = false;
-            ticketToolStripMenuItem.Visible = true;
         }
         
 

@@ -37,8 +37,6 @@ namespace Celikoor_Semangat18
             this.movieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.invoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barcodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ticketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel = new System.Windows.Forms.Panel();
             this.lblExit = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -52,26 +50,24 @@ namespace Celikoor_Semangat18
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(98, 82);
+            this.label1.Location = new System.Drawing.Point(65, 53);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(551, 34);
+            this.label1.Size = new System.Drawing.Size(363, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "Welcome to the Celikoor Cinema Apps";
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.masterToolStripMenuItem,
             this.invoiceToolStripMenuItem,
-            this.barcodeToolStripMenuItem,
-            this.recordToolStripMenuItem,
-            this.ticketToolStripMenuItem});
+            this.barcodeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1776, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(924, 24);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -83,53 +79,41 @@ namespace Celikoor_Semangat18
             this.cinemaToolStripMenuItem,
             this.movieToolStripMenuItem});
             this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
-            this.masterToolStripMenuItem.Size = new System.Drawing.Size(82, 29);
+            this.masterToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
             this.masterToolStripMenuItem.Text = "Master";
             // 
             // HumanResourcesToolStripMenuItem
             // 
             this.HumanResourcesToolStripMenuItem.Name = "HumanResourcesToolStripMenuItem";
-            this.HumanResourcesToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
+            this.HumanResourcesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.HumanResourcesToolStripMenuItem.Text = "Human Resources";
             this.HumanResourcesToolStripMenuItem.Click += new System.EventHandler(this.HumanResourcesToolStripMenuItem_Click);
             // 
             // cinemaToolStripMenuItem
             // 
             this.cinemaToolStripMenuItem.Name = "cinemaToolStripMenuItem";
-            this.cinemaToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
+            this.cinemaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cinemaToolStripMenuItem.Text = "Cinema";
             this.cinemaToolStripMenuItem.Click += new System.EventHandler(this.cinemaToolStripMenuItem_Click);
             // 
             // movieToolStripMenuItem
             // 
             this.movieToolStripMenuItem.Name = "movieToolStripMenuItem";
-            this.movieToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
+            this.movieToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.movieToolStripMenuItem.Text = "Movie";
             this.movieToolStripMenuItem.Click += new System.EventHandler(this.movieToolStripMenuItem_Click);
             // 
             // invoiceToolStripMenuItem
             // 
             this.invoiceToolStripMenuItem.Name = "invoiceToolStripMenuItem";
-            this.invoiceToolStripMenuItem.Size = new System.Drawing.Size(84, 29);
+            this.invoiceToolStripMenuItem.Size = new System.Drawing.Size(57, 22);
             this.invoiceToolStripMenuItem.Text = "Invoice";
             // 
             // barcodeToolStripMenuItem
             // 
             this.barcodeToolStripMenuItem.Name = "barcodeToolStripMenuItem";
-            this.barcodeToolStripMenuItem.Size = new System.Drawing.Size(92, 29);
+            this.barcodeToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
             this.barcodeToolStripMenuItem.Text = "Barcode";
-            // 
-            // recordToolStripMenuItem
-            // 
-            this.recordToolStripMenuItem.Name = "recordToolStripMenuItem";
-            this.recordToolStripMenuItem.Size = new System.Drawing.Size(83, 29);
-            this.recordToolStripMenuItem.Text = "Record";
-            // 
-            // ticketToolStripMenuItem
-            // 
-            this.ticketToolStripMenuItem.Name = "ticketToolStripMenuItem";
-            this.ticketToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
-            this.ticketToolStripMenuItem.Text = "Ticket";
             // 
             // panel
             // 
@@ -140,9 +124,9 @@ namespace Celikoor_Semangat18
             this.panel.Controls.Add(this.menuStrip1);
             this.panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel.Location = new System.Drawing.Point(0, 0);
-            this.panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1776, 152);
+            this.panel.Size = new System.Drawing.Size(924, 99);
             this.panel.TabIndex = 14;
             // 
             // lblExit
@@ -152,9 +136,10 @@ namespace Celikoor_Semangat18
             this.lblExit.BackColor = System.Drawing.Color.White;
             this.lblExit.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.lblExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblExit.Location = new System.Drawing.Point(1744, -1);
+            this.lblExit.Location = new System.Drawing.Point(903, -1);
+            this.lblExit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblExit.Name = "lblExit";
-            this.lblExit.Size = new System.Drawing.Size(32, 34);
+            this.lblExit.Size = new System.Drawing.Size(22, 22);
             this.lblExit.TabIndex = 18;
             this.lblExit.Text = "X";
             this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
@@ -165,21 +150,21 @@ namespace Celikoor_Semangat18
             this.pictureBox2.BackgroundImage = global::Celikoor_Semangat18.Properties.Resources.CELIKOOR_removebg_preview;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 60);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(11, 39);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(75, 78);
+            this.pictureBox2.Size = new System.Drawing.Size(50, 51);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // FormMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1776, 1050);
+            this.ClientSize = new System.Drawing.Size(924, 512);
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMainMenu";
@@ -199,14 +184,12 @@ namespace Celikoor_Semangat18
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem masterToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem recordToolStripMenuItem;
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.ToolStripMenuItem HumanResourcesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cinemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem movieToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem invoiceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem barcodeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ticketToolStripMenuItem;
         private System.Windows.Forms.Label lblExit;
     }
 }
