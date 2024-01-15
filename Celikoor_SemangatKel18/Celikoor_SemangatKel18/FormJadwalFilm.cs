@@ -95,8 +95,8 @@ namespace Celikoor_Semangat18
         {
             textJenisStudio.Text = studio.JenisStudioNama;
             textKapasitas.Text = studio.Kapasitas.ToString() + " Kursi";
-            textHargaWeekday.Text = studio.HargaWeekday.ToString();
-            textHargaWeekend.Text = studio.HargaWeekend.ToString();
+            textHargaWeekday.Text = "Rp " + studio.HargaWeekday.ToString();
+            textHargaWeekend.Text = "Rp " + studio.HargaWeekend.ToString();
         }
 
         private void comboBoxStudio_SelectedIndexChanged(object sender, EventArgs e)

@@ -64,6 +64,14 @@ namespace Celikoor_Semangat18
             if (frm.userLogin != null || frm.konsumLogin != null)
             {
                 frm.Visible = true;
+                if (frm.userLogin != null)
+                {
+                    frm.AturMenu(frm.userLogin.Roles_Pegawai, frm.userLogin.Username_Pegawai);
+                }
+                if (frm.konsumLogin != null)
+                {
+                    frm.KonsumAturMenu(frm.konsumLogin.Username_Konsumen);
+                }
                 this.Close();
             }
         }
@@ -74,6 +82,11 @@ namespace Celikoor_Semangat18
         }
 
         private void radioButtonEmployee_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButtonConsumen_CheckedChanged(object sender, EventArgs e)
         {
 
         }

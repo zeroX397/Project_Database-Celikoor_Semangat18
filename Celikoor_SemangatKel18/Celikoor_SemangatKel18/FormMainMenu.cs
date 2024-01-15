@@ -43,28 +43,22 @@ namespace Celikoor_Semangat18
             {
                 MessageBox.Show("Koneksi Gagal! error: " + ex.Message);
             }
-                FormLogin form = new FormLogin();
-                form.Owner = this;
-                this.Visible = false;
-                form.ShowDialog();
-            if (userLogin != null)
-            {
-                AturMenu(userLogin.Roles_Pegawai, userLogin.Username_Pegawai);
-            }
-            else
-            {
-                KonsumAturMenu();
-            }
-            
+
+            FormLogin form = new FormLogin();
+            form.Owner = this;
+            this.Visible = false;
+            form.ShowDialog();
         }
 
-        private void AturMenu(string roles, string username)
+        public void AturMenu(string roles, string username)
         {
             if (roles == "ADMIN")
             {
                 masterToolStripMenuItem.Visible = true;
                 invoiceToolStripMenuItem.Visible = true;
                 barcodeToolStripMenuItem.Visible = true;
+                pesanTiketToolStripMenuItem.Visible = true;
+                profilToolStripMenuItem.Visible = false;
 
                 label1.Text = $"Welcome to the Celikoor Cinema Apps, {username} (ADMIN)";
             }
@@ -73,6 +67,8 @@ namespace Celikoor_Semangat18
                 masterToolStripMenuItem.Visible = false;
                 invoiceToolStripMenuItem.Visible = false;
                 barcodeToolStripMenuItem.Visible = true;
+                pesanTiketToolStripMenuItem.Visible = false;
+                profilToolStripMenuItem.Visible = false;
 
                 label1.Text = $"Welcome to the Celikoor Cinema Apps, {username} (OPERATOR)";
             }
@@ -81,17 +77,23 @@ namespace Celikoor_Semangat18
                 masterToolStripMenuItem.Visible = false;
                 invoiceToolStripMenuItem.Visible = true;
                 barcodeToolStripMenuItem.Visible = false;
+                pesanTiketToolStripMenuItem.Visible = false;
+                profilToolStripMenuItem.Visible = false;
 
                 label1.Text = $"Welcome to the Celikoor Cinema Apps, {username} (KASIR)";
             }
             
         }
 
-        private void KonsumAturMenu()
+        public void KonsumAturMenu(string username)
         {
             masterToolStripMenuItem.Visible = false;
             invoiceToolStripMenuItem.Visible = false;
             barcodeToolStripMenuItem.Visible = false;
+            pesanTiketToolStripMenuItem.Visible = true;
+            profilToolStripMenuItem.Visible = true;
+
+            label1.Text = $"Welcome to the Celikoor Cinema Apps, {username} (KONSUMEN)";
         }
         
 
@@ -155,7 +157,6 @@ namespace Celikoor_Semangat18
 
         private void jadwalFilmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             Form frm = Application.OpenForms["FormJadwalFilm"];
             if (frm == null)
             {
@@ -168,6 +169,23 @@ namespace Celikoor_Semangat18
                 frm.Show();
                 frm.BringToFront();
             }
+        }
+
+        private void pesanTiketToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = Application.OpenForms["FormPesanTiket"];
+            if (frm == null)
+            {
+                FormPesanTiket frmMaster = new FormPesanTiket();
+                frmMaster.MdiParent = this;
+                frmMaster.Show();
+            }
+            else
+            {
+                frm.Show();
+                frm.BringToFront();
+            }
+
         }
     }
 }

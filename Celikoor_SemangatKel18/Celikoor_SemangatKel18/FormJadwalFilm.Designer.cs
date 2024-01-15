@@ -35,7 +35,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textSinopsis = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textKelompok = new System.Windows.Forms.Label();
             this.textGenre = new System.Windows.Forms.Label();
@@ -67,6 +66,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.textSinopsis = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -161,20 +161,9 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Sinopsis";
             // 
-            // textSinopsis
-            // 
-            this.textSinopsis.AutoSize = true;
-            this.textSinopsis.Font = new System.Drawing.Font("Century", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSinopsis.ForeColor = System.Drawing.Color.White;
-            this.textSinopsis.Location = new System.Drawing.Point(11, 35);
-            this.textSinopsis.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.textSinopsis.Name = "textSinopsis";
-            this.textSinopsis.Size = new System.Drawing.Size(69, 17);
-            this.textSinopsis.TabIndex = 2;
-            this.textSinopsis.Text = "Sinopsis";
-            // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.textSinopsis);
             this.panel2.Controls.Add(this.textKelompok);
             this.panel2.Controls.Add(this.textGenre);
             this.panel2.Controls.Add(this.textAktor);
@@ -184,7 +173,6 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.textSinopsis);
             this.panel2.Location = new System.Drawing.Point(2, 276);
             this.panel2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel2.Name = "panel2";
@@ -572,6 +560,17 @@
             this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
+            // textSinopsis
+            // 
+            this.textSinopsis.Font = new System.Drawing.Font("Century", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSinopsis.ForeColor = System.Drawing.Color.White;
+            this.textSinopsis.Location = new System.Drawing.Point(11, 34);
+            this.textSinopsis.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.textSinopsis.Name = "textSinopsis";
+            this.textSinopsis.Size = new System.Drawing.Size(503, 131);
+            this.textSinopsis.TabIndex = 11;
+            this.textSinopsis.Text = "-";
+            // 
             // FormJadwalFilm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -606,7 +605,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label textSinopsis;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
@@ -637,5 +635,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateTimePickerTanggal;
         private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Label textSinopsis;
     }
 }

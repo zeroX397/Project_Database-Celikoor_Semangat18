@@ -37,10 +37,12 @@ namespace Celikoor_Semangat18
             this.movieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.invoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barcodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jadwalFilmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel = new System.Windows.Forms.Panel();
             this.lblExit = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.jadwalFilmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pesanTiketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -65,7 +67,9 @@ namespace Celikoor_Semangat18
             this.masterToolStripMenuItem,
             this.invoiceToolStripMenuItem,
             this.barcodeToolStripMenuItem,
-            this.jadwalFilmToolStripMenuItem});
+            this.jadwalFilmToolStripMenuItem,
+            this.pesanTiketToolStripMenuItem,
+            this.profilToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
@@ -87,21 +91,21 @@ namespace Celikoor_Semangat18
             // HumanResourcesToolStripMenuItem
             // 
             this.HumanResourcesToolStripMenuItem.Name = "HumanResourcesToolStripMenuItem";
-            this.HumanResourcesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.HumanResourcesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.HumanResourcesToolStripMenuItem.Text = "Human Resources";
             this.HumanResourcesToolStripMenuItem.Click += new System.EventHandler(this.HumanResourcesToolStripMenuItem_Click);
             // 
             // cinemaToolStripMenuItem
             // 
             this.cinemaToolStripMenuItem.Name = "cinemaToolStripMenuItem";
-            this.cinemaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cinemaToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.cinemaToolStripMenuItem.Text = "Cinema";
             this.cinemaToolStripMenuItem.Click += new System.EventHandler(this.cinemaToolStripMenuItem_Click);
             // 
             // movieToolStripMenuItem
             // 
             this.movieToolStripMenuItem.Name = "movieToolStripMenuItem";
-            this.movieToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.movieToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.movieToolStripMenuItem.Text = "Movie";
             this.movieToolStripMenuItem.Click += new System.EventHandler(this.movieToolStripMenuItem_Click);
             // 
@@ -116,6 +120,13 @@ namespace Celikoor_Semangat18
             this.barcodeToolStripMenuItem.Name = "barcodeToolStripMenuItem";
             this.barcodeToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
             this.barcodeToolStripMenuItem.Text = "Barcode";
+            // 
+            // jadwalFilmToolStripMenuItem
+            // 
+            this.jadwalFilmToolStripMenuItem.Name = "jadwalFilmToolStripMenuItem";
+            this.jadwalFilmToolStripMenuItem.Size = new System.Drawing.Size(80, 22);
+            this.jadwalFilmToolStripMenuItem.Text = "Jadwal Film";
+            this.jadwalFilmToolStripMenuItem.Click += new System.EventHandler(this.jadwalFilmToolStripMenuItem_Click);
             // 
             // panel
             // 
@@ -159,12 +170,18 @@ namespace Celikoor_Semangat18
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // jadwalFilmToolStripMenuItem
+            // pesanTiketToolStripMenuItem
             // 
-            this.jadwalFilmToolStripMenuItem.Name = "jadwalFilmToolStripMenuItem";
-            this.jadwalFilmToolStripMenuItem.Size = new System.Drawing.Size(80, 22);
-            this.jadwalFilmToolStripMenuItem.Text = "Jadwal Film";
-            this.jadwalFilmToolStripMenuItem.Click += new System.EventHandler(this.jadwalFilmToolStripMenuItem_Click);
+            this.pesanTiketToolStripMenuItem.Name = "pesanTiketToolStripMenuItem";
+            this.pesanTiketToolStripMenuItem.Size = new System.Drawing.Size(78, 22);
+            this.pesanTiketToolStripMenuItem.Text = "Pesan Tiket";
+            this.pesanTiketToolStripMenuItem.Click += new System.EventHandler(this.pesanTiketToolStripMenuItem_Click);
+            // 
+            // profilToolStripMenuItem
+            // 
+            this.profilToolStripMenuItem.Name = "profilToolStripMenuItem";
+            this.profilToolStripMenuItem.Size = new System.Drawing.Size(47, 22);
+            this.profilToolStripMenuItem.Text = "Profil";
             // 
             // FormMainMenu
             // 
@@ -201,5 +218,7 @@ namespace Celikoor_Semangat18
         private System.Windows.Forms.ToolStripMenuItem barcodeToolStripMenuItem;
         private System.Windows.Forms.Label lblExit;
         private System.Windows.Forms.ToolStripMenuItem jadwalFilmToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pesanTiketToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem profilToolStripMenuItem;
     }
 }
