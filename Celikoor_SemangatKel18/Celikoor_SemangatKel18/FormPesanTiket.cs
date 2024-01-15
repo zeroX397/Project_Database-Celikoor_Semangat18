@@ -144,7 +144,7 @@ namespace Celikoor_Semangat18
                         checkBox.Text = $"{listHuruf[i]}{seatNumber}";
                         checkBox.BackColor = Color.SlateBlue;
                         checkBox.ForeColor = Color.White;
-                        checkBox.Size = new Size(50, 12);
+                        checkBox.Size = new Size(50, 20);
                         checkBox.Checked = false;
                         checkBox.Location = new Point(315 + (k * 50) + (i * 250), 220 + (j * 25));
                         checkBox.CheckedChanged += checkBox_CheckedChanged;
