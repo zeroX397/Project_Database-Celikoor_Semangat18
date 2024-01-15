@@ -64,9 +64,9 @@ namespace Celikoor_Semangat18
             {
                 masterToolStripMenuItem.Visible = true;
                 recordToolStripMenuItem.Visible = true;
-                invoiceToolStripMenuItem.Visible = false;
-                barcodeToolStripMenuItem.Visible = false;
-                ticketToolStripMenuItem.Visible = false;
+                invoiceToolStripMenuItem.Visible = true;
+                barcodeToolStripMenuItem.Visible = true;
+                ticketToolStripMenuItem.Visible = true;
             }
             else if (roles == "OPERATOR")
             {

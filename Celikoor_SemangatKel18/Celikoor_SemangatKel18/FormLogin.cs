@@ -66,41 +66,6 @@ namespace Celikoor_Semangat18
                 frm.Visible = true;
                 this.Close();
             }
-            
-
-            //    Pegawai hasil = Pegawai.Login(textBoxUsername.Text, textBoxPassword.Text);
-            //    if (hasil == null)
-            //    {
-            //        throw new Exception("Data Pegawai tidak ditemukan");
-            //    }
-
-            //    Console.WriteLine(hasil.Roles_Pegawai);
-            //    if (hasil.Roles_Pegawai == "ADMIN")
-            //    {
-            //        this.DialogResult = DialogResult.OK;
-            //        FormUntukAdmin form = new FormUntukAdmin();
-            //        form.MdiParent = this.MdiParent;
-            //        form.Show();
-            //        this.Close();
-            //    }
-            //    if (hasil.Roles_Pegawai == "OPERATOR")
-            //    {
-            //        this.DialogResult = DialogResult.OK;
-            //        FormUntukOperator form = new FormUntukOperator();
-            //        form.MdiParent = this.MdiParent;
-            //        form.Show();
-            //        this.Close();
-            //    }
-            //    if (hasil.Roles_Pegawai == "KASIR")
-            //    {
-            //        this.DialogResult = DialogResult.OK;
-            //        FormUntukKasir form = new FormUntukKasir();
-            //        form.MdiParent = this.MdiParent;
-            //        form.Show();
-            //        this.Close();
-            //    }
-            //}
-            
         }
 
         private void buttonExit_Click(object sender, EventArgs e)

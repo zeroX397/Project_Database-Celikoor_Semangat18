@@ -145,18 +145,6 @@
     <Compile Include="FormUntukAdmin.Designer.cs">
       <DependentUpon>FormUntukAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormUntukKasir.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormUntukKasir.Designer.cs">
-      <DependentUpon>FormUntukKasir.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormUntukOperator.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormUntukOperator.Designer.cs">
-      <DependentUpon>FormUntukOperator.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,12 +203,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormUntukAdmin.resx">
       <DependentUpon>FormUntukAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormUntukKasir.resx">
-      <DependentUpon>FormUntukKasir.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormUntukOperator.resx">
-      <DependentUpon>FormUntukOperator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
