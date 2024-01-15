@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Celikoor_Library;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 namespace Celikoor_Semangat18
 {
     public partial class FormTambahKonsumen : Form
@@ -17,6 +18,11 @@ namespace Celikoor_Semangat18
         public FormTambahKonsumen()
         {
             InitializeComponent();
+        }
+        public void UbahJudulRegister()
+        {
+            label2.Text = "REGISTER KONSUMEN";
+            comboBoxGender.SelectedIndex = 0;
         }
         public FormTambahKonsumen(Konsumen konsumenUpdate)
         {
@@ -29,7 +35,10 @@ namespace Celikoor_Semangat18
             textBoxNoHP.Text = konsumenUpdate.NoHP_Konsumen;
             textBoxEmail.Text = konsumenUpdate.Email_Konsumen;
             dateTimePicker1.Value = konsumenUpdate.Ttl_Konsumen;
-            textBoxGender.Text = konsumenUpdate.Gender_Konsumen.ToUpper();
+            if (konsumenUpdate.Gender_Konsumen.ToUpper() == "L")
+                comboBoxGender.SelectedIndex = 0;
+            else
+                comboBoxGender.SelectedIndex = 1;
             textBoxUsername.Text = konsumenUpdate.Username_Konsumen;
             textBoxPass.Text = konsumenUpdate.Password_Konsumen;
         }
@@ -45,7 +54,7 @@ namespace Celikoor_Semangat18
                 k.NoHP_Konsumen = textBoxNoHP.Text;
                 k.Email_Konsumen = textBoxEmail.Text;
                 k.Ttl_Konsumen = dateTimePicker1.Value;
-                k.Gender_Konsumen = textBoxGender.Text.ToUpper();
+                k.Gender_Konsumen = comboBoxGender.Text;
                 k.Username_Konsumen = textBoxUsername.Text;
                 k.Password_Konsumen = textBoxPass.Text;
                
