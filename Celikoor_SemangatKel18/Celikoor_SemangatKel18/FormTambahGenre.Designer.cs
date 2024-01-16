@@ -71,7 +71,7 @@ namespace Celikoor_Semangat18
             this.labelDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDesc.Location = new System.Drawing.Point(26, 89);
             this.labelDesc.Name = "labelDesc";
-            this.labelDesc.Size = new System.Drawing.Size(82, 20);
+            this.labelDesc.Size = new System.Drawing.Size(126, 29);
             this.labelDesc.TabIndex = 20;
             this.labelDesc.Text = "Deskripsi :";
             // 
@@ -80,7 +80,7 @@ namespace Celikoor_Semangat18
             this.textBoxNama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNama.Location = new System.Drawing.Point(176, 49);
             this.textBoxNama.Name = "textBoxNama";
-            this.textBoxNama.Size = new System.Drawing.Size(198, 26);
+            this.textBoxNama.Size = new System.Drawing.Size(198, 35);
             this.textBoxNama.TabIndex = 4;
             // 
             // labelNama
@@ -89,7 +89,7 @@ namespace Celikoor_Semangat18
             this.labelNama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNama.Location = new System.Drawing.Point(26, 53);
             this.labelNama.Name = "labelNama";
-            this.labelNama.Size = new System.Drawing.Size(108, 20);
+            this.labelNama.Size = new System.Drawing.Size(162, 29);
             this.labelNama.TabIndex = 3;
             this.labelNama.Text = "Nama Genre :";
             // 
@@ -99,7 +99,7 @@ namespace Celikoor_Semangat18
             this.textBoxId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxId.Location = new System.Drawing.Point(176, 16);
             this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(198, 26);
+            this.textBoxId.Size = new System.Drawing.Size(198, 35);
             this.textBoxId.TabIndex = 2;
             // 
             // labelId
@@ -108,7 +108,7 @@ namespace Celikoor_Semangat18
             this.labelId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelId.Location = new System.Drawing.Point(26, 19);
             this.labelId.Name = "labelId";
-            this.labelId.Size = new System.Drawing.Size(31, 20);
+            this.labelId.Size = new System.Drawing.Size(45, 29);
             this.labelId.TabIndex = 0;
             this.labelId.Text = "Id :";
             // 
@@ -143,10 +143,10 @@ namespace Celikoor_Semangat18
             this.buttonSimpan.BackColor = System.Drawing.Color.Transparent;
             this.buttonSimpan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSimpan.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.buttonSimpan.Location = new System.Drawing.Point(326, 298);
+            this.buttonSimpan.Location = new System.Drawing.Point(312, 298);
             this.buttonSimpan.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSimpan.Name = "buttonSimpan";
-            this.buttonSimpan.Size = new System.Drawing.Size(103, 40);
+            this.buttonSimpan.Size = new System.Drawing.Size(117, 40);
             this.buttonSimpan.TabIndex = 34;
             this.buttonSimpan.Text = "Simpan";
             this.buttonSimpan.UseVisualStyleBackColor = false;

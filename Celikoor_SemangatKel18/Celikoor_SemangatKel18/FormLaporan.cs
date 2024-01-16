@@ -23,5 +23,10 @@ namespace Celikoor_Semangat18
             List<Laporan> listHasil = Laporan.BacaData();
             dataGridView1.DataSource = listHasil;
         }
+
+        private void FormLaporan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

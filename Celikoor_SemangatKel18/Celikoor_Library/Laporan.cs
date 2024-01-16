@@ -9,12 +9,15 @@ namespace Celikoor_Library
 {
     public class Laporan
     {
+        #region Data Member
         private Cinema cinema;
         private Studio studio;
         private FilmStudio film_studio;
         private SesiFilm sesi_film;
         private Tiket tiket;
+        #endregion
 
+        #region Constructor
         public Laporan()
         {
             Cinema = new Cinema();
@@ -23,13 +26,17 @@ namespace Celikoor_Library
             Sesi_film = new SesiFilm();
             Tiket = new Tiket();
         }
+        #endregion
 
+        #region Properties
         public Cinema Cinema { get => cinema; set => cinema = value; }
         public Studio Studio { get => studio; set => studio = value; }
         public FilmStudio Film_studio { get => film_studio; set => film_studio = value; }
         public SesiFilm Sesi_film { get => sesi_film; set => sesi_film = value; }
         internal Tiket Tiket { get => tiket; set => tiket = value; }
+        #endregion
 
+        #region Method
         public static List<Laporan> BacaData(string filter = "", string nilai = "")
         {
             string perintah;
@@ -60,6 +67,6 @@ namespace Celikoor_Library
             }
             return listHasil;
         }
-
+        #endregion
     }
 }

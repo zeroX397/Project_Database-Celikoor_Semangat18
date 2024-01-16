@@ -57,5 +57,10 @@ namespace Celikoor_Semangat18
                 MessageBox.Show("Terjadi kesalah mencatat Kedatangan, "+ex.Message);
             }
         }
+
+        private void FormPencatatanKedatangan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -56,9 +56,10 @@ namespace Celikoor_Semangat18
             this.buttonSimpan.BackColor = System.Drawing.Color.Transparent;
             this.buttonSimpan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSimpan.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.buttonSimpan.Location = new System.Drawing.Point(404, 460);
+            this.buttonSimpan.Location = new System.Drawing.Point(360, 374);
+            this.buttonSimpan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSimpan.Name = "buttonSimpan";
-            this.buttonSimpan.Size = new System.Drawing.Size(137, 49);
+            this.buttonSimpan.Size = new System.Drawing.Size(138, 40);
             this.buttonSimpan.TabIndex = 30;
             this.buttonSimpan.Text = "Simpan";
             this.buttonSimpan.UseVisualStyleBackColor = false;
@@ -80,49 +81,44 @@ namespace Celikoor_Semangat18
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.textBoxId);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 78);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(9, 63);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(528, 351);
+            this.groupBox1.Size = new System.Drawing.Size(489, 297);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             // 
             // comboBoxCinema
             // 
             this.comboBoxCinema.FormattingEnabled = true;
-            this.comboBoxCinema.Location = new System.Drawing.Point(235, 197);
-            this.comboBoxCinema.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxCinema.Location = new System.Drawing.Point(234, 160);
+            this.comboBoxCinema.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxCinema.Name = "comboBoxCinema";
-            this.comboBoxCinema.Size = new System.Drawing.Size(263, 24);
+            this.comboBoxCinema.Size = new System.Drawing.Size(198, 21);
             this.comboBoxCinema.TabIndex = 34;
             // 
             // textBoxHargaWeekend
             // 
             this.textBoxHargaWeekend.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxHargaWeekend.Location = new System.Drawing.Point(235, 279);
-            this.textBoxHargaWeekend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxHargaWeekend.Location = new System.Drawing.Point(234, 229);
             this.textBoxHargaWeekend.Name = "textBoxHargaWeekend";
-            this.textBoxHargaWeekend.Size = new System.Drawing.Size(263, 30);
+            this.textBoxHargaWeekend.Size = new System.Drawing.Size(198, 35);
             this.textBoxHargaWeekend.TabIndex = 33;
             // 
             // textBoxHargaWeekday
             // 
             this.textBoxHargaWeekday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxHargaWeekday.Location = new System.Drawing.Point(235, 240);
-            this.textBoxHargaWeekday.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxHargaWeekday.Location = new System.Drawing.Point(234, 189);
             this.textBoxHargaWeekday.Name = "textBoxHargaWeekday";
-            this.textBoxHargaWeekday.Size = new System.Drawing.Size(263, 30);
+            this.textBoxHargaWeekday.Size = new System.Drawing.Size(198, 35);
             this.textBoxHargaWeekday.TabIndex = 32;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(35, 282);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(26, 229);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(171, 25);
+            this.label8.Size = new System.Drawing.Size(205, 29);
             this.label8.TabIndex = 31;
             this.label8.Text = "Harga Weekend : ";
             // 
@@ -130,30 +126,28 @@ namespace Celikoor_Semangat18
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(35, 240);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(26, 195);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(170, 25);
+            this.label7.Size = new System.Drawing.Size(202, 29);
             this.label7.TabIndex = 23;
             this.label7.Text = "Harga Weekday : ";
             // 
             // comboBoxJenisStudio
             // 
             this.comboBoxJenisStudio.FormattingEnabled = true;
-            this.comboBoxJenisStudio.Location = new System.Drawing.Point(235, 152);
-            this.comboBoxJenisStudio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxJenisStudio.Location = new System.Drawing.Point(234, 124);
+            this.comboBoxJenisStudio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxJenisStudio.Name = "comboBoxJenisStudio";
-            this.comboBoxJenisStudio.Size = new System.Drawing.Size(263, 24);
+            this.comboBoxJenisStudio.Size = new System.Drawing.Size(198, 21);
             this.comboBoxJenisStudio.TabIndex = 22;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(35, 197);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(26, 160);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 25);
+            this.label6.Size = new System.Drawing.Size(108, 29);
             this.label6.TabIndex = 20;
             this.label6.Text = "Cinema :";
             // 
@@ -161,71 +155,64 @@ namespace Celikoor_Semangat18
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(35, 152);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(26, 124);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(136, 25);
+            this.label5.Size = new System.Drawing.Size(163, 29);
             this.label5.TabIndex = 7;
             this.label5.Text = "Jenis Studio  :";
             // 
             // textBoxKapasitas
             // 
             this.textBoxKapasitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxKapasitas.Location = new System.Drawing.Point(235, 109);
-            this.textBoxKapasitas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxKapasitas.Location = new System.Drawing.Point(234, 83);
             this.textBoxKapasitas.Name = "textBoxKapasitas";
-            this.textBoxKapasitas.Size = new System.Drawing.Size(263, 30);
+            this.textBoxKapasitas.Size = new System.Drawing.Size(198, 35);
             this.textBoxKapasitas.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(35, 109);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(26, 89);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 25);
+            this.label4.Size = new System.Drawing.Size(130, 29);
             this.label4.TabIndex = 5;
             this.label4.Text = "Kapasitas :";
             // 
             // textBoxNama
             // 
             this.textBoxNama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNama.Location = new System.Drawing.Point(235, 60);
-            this.textBoxNama.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNama.Location = new System.Drawing.Point(234, 42);
             this.textBoxNama.Name = "textBoxNama";
-            this.textBoxNama.Size = new System.Drawing.Size(263, 30);
+            this.textBoxNama.Size = new System.Drawing.Size(198, 35);
             this.textBoxNama.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(35, 65);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(26, 53);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 25);
+            this.label3.Size = new System.Drawing.Size(101, 29);
             this.label3.TabIndex = 3;
             this.label3.Text = "Nama  : ";
             // 
             // textBoxId
             // 
             this.textBoxId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxId.Location = new System.Drawing.Point(235, 20);
-            this.textBoxId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxId.Location = new System.Drawing.Point(234, 1);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.ReadOnly = true;
-            this.textBoxId.Size = new System.Drawing.Size(263, 30);
+            this.textBoxId.Size = new System.Drawing.Size(198, 35);
             this.textBoxId.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(35, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(26, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 25);
+            this.label1.Size = new System.Drawing.Size(45, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Id :";
             // 
@@ -234,9 +221,10 @@ namespace Celikoor_Semangat18
             this.buttonBatal.BackColor = System.Drawing.Color.Transparent;
             this.buttonBatal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBatal.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.buttonBatal.Location = new System.Drawing.Point(12, 359);
+            this.buttonBatal.Location = new System.Drawing.Point(9, 292);
+            this.buttonBatal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonBatal.Name = "buttonBatal";
-            this.buttonBatal.Size = new System.Drawing.Size(137, 49);
+            this.buttonBatal.Size = new System.Drawing.Size(103, 40);
             this.buttonBatal.TabIndex = 31;
             this.buttonBatal.Text = "Batal";
             this.buttonBatal.UseVisualStyleBackColor = false;
@@ -246,10 +234,9 @@ namespace Celikoor_Semangat18
             this.label2.BackColor = System.Drawing.Color.DarkBlue;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(13, 16);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(33, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(527, 47);
+            this.label2.Size = new System.Drawing.Size(465, 38);
             this.label2.TabIndex = 29;
             this.label2.Text = "T A M B A H  S T U D I O";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -259,9 +246,10 @@ namespace Celikoor_Semangat18
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.button1.Location = new System.Drawing.Point(25, 460);
+            this.button1.Location = new System.Drawing.Point(33, 374);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 49);
+            this.button1.Size = new System.Drawing.Size(103, 40);
             this.button1.TabIndex = 32;
             this.button1.Text = "Batal";
             this.button1.UseVisualStyleBackColor = false;
@@ -269,15 +257,15 @@ namespace Celikoor_Semangat18
             // 
             // FormTambahStudio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 541);
+            this.ClientSize = new System.Drawing.Size(536, 445);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonBatal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonSimpan);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormTambahStudio";
             this.Text = "FormTambahStudio";
             this.Load += new System.EventHandler(this.FormTambahStudio_Load);

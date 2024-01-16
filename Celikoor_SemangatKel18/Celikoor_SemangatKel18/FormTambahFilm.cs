@@ -97,5 +97,10 @@ namespace Celikoor_Semangat18
                 MessageBox.Show("Tambah/Ubah Data gagal. Error : " + ex.Message);
             }
         }
+
+        private void textBoxDiskonNominal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
