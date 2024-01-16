@@ -58,6 +58,7 @@
     <Compile Include="JadwalPemutaranFilm.cs" />
     <Compile Include="JenisStudio.cs" />
     <Compile Include="Koneksi.cs" />
+    <Compile Include="Laporan.cs" />
     <Compile Include="Pegawai.cs" />
     <Compile Include="Konsumen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
