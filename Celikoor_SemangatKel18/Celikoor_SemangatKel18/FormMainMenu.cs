@@ -213,5 +213,21 @@ namespace Celikoor_Semangat18
                 frm.BringToFront();
             }
         }
+        
+        private void laporanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = Application.OpenForms["FormLaporan"];
+            if (frm == null)
+            {
+                FormLaporan frmMaster = new FormLaporan();
+                frmMaster.MdiParent = this;
+                frmMaster.Show();
+            }
+            else
+            {
+                frm.Show();
+                frm.BringToFront();
+            }
+        }
     }
 }

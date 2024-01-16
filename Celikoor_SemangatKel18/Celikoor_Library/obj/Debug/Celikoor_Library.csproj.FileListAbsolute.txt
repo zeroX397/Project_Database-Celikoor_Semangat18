@@ -11,7 +11,6 @@ C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_Se
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.csproj.CopyComplete
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.dll
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.pdb
-C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.csproj.AssemblyReference.cache
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.dll
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_Library\obj\Debug\Celikoor_Library.pdb
