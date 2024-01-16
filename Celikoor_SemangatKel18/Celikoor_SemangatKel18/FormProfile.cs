@@ -8,14 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Celikoor_Library;
+
 
 namespace Celikoor_Semangat18
 {
     public partial class FormProfile : Form
     {
+       
         public FormProfile(Konsumen konsumenLogin)
-        {
-            InitializeComponent();
+        {   InitializeComponent(); 
             textIdKnonsumen.Text = konsumenLogin.Id_Konsumen.ToString();
             textNama.Text = konsumenLogin.Nama_Konsumen;
             textEmail.Text = konsumenLogin.Email_Konsumen;

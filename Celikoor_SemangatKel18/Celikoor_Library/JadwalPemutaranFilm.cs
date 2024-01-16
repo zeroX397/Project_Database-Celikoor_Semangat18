@@ -17,6 +17,7 @@ namespace Celikoor_Library
         private string jam_pemutaran;
         #endregion
 
+        #region Constructors
         public JadwalPemutaranFilm()
         {
 
@@ -30,14 +31,16 @@ namespace Celikoor_Library
             this.Tanggal = tanggal;
             this.Jam_pemutaran = jam_pemutaran;
         }
+        #endregion
 
+        #region properties
         public string Judul_film { get => judul_film; set => judul_film = value; }
         public string Cinema { get => cinema; set => cinema = value; }
         public string Studio { get => studio; set => studio = value; }
         public DateTime Tanggal { get => tanggal; set => tanggal = value; }
         public string Jam_pemutaran { get => jam_pemutaran; set => jam_pemutaran = value; }
+        #endregion
 
-        
         #region METHODS
         public static List<JadwalPemutaranFilm> BacaData()
         {
