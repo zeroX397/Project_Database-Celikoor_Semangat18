@@ -16,14 +16,14 @@ namespace Celikoor_Library
         private string noHP_Konsumen;
         private string gender_Konsumen;
         private DateTime ttl_Konsumen;
-        private double saldo_Konsumen;
+        private int saldo_Konsumen;
         private string username_Konsumen;
         private string password_Konsumen;
         #endregion
 
         #region Constructors
         public Konsumen(int id_Konsumen, string nama_Konsumen, string email_Konsumen, string noHP_Konsumen, string gender_Konsumen, 
-            DateTime ttl_Konsumen, double saldo_Konsumen, string username_Konsumen, string password_Konsumen)
+            DateTime ttl_Konsumen, int saldo_Konsumen, string username_Konsumen, string password_Konsumen)
         {
             Id_Konsumen = id_Konsumen;
             Nama_Konsumen = nama_Konsumen;
@@ -66,7 +66,7 @@ namespace Celikoor_Library
         public string NoHP_Konsumen { get => noHP_Konsumen; set => noHP_Konsumen = value; }
         public string Gender_Konsumen { get => gender_Konsumen; set => gender_Konsumen = value; }
         public DateTime Ttl_Konsumen { get => ttl_Konsumen; set => ttl_Konsumen = value; }
-        public double Saldo_Konsumen { get => saldo_Konsumen; set => saldo_Konsumen = value; }
+        public int Saldo_Konsumen { get => saldo_Konsumen; set => saldo_Konsumen = value; }
         public string Username_Konsumen { get => username_Konsumen; set => username_Konsumen = value; }
         public string Password_Konsumen { get => password_Konsumen; set => password_Konsumen = value; }
         #endregion

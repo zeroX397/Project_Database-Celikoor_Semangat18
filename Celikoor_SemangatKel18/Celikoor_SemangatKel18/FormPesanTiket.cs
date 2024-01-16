@@ -21,10 +21,36 @@ namespace Celikoor_Semangat18
         List<Kelompok> kelompoks = new List<Kelompok>();
         List<GenreFilm> genreFilms = new List<GenreFilm>();
         List<AktorFilm> aktorFilms = new List<AktorFilm>();
-        public FormPesanTiket()
+        List<SesiFilm> sesiFilms = new List<SesiFilm>();
+        List<SesiFilm> selectedSesiFilms = new List<SesiFilm>();
+        List<Tiket> kursiTerpesan = new List<Tiket>();
+        Konsumen konsumenLogin;
+        Pegawai adminLogin;
+
+        int hargaTiketSatuan = 0;
+        List<string> kursiDiambil = new List<string>();
+        int totalHarga = 0;
+        int diskon = 0;
+        int saldo = 0;
+        int totalAkhir = 0;
+
+        bool finishLoad = false;
+
+        public FormPesanTiket(Konsumen konsumenLogin)
         {
             InitializeComponent();
+            this.konsumenLogin = konsumenLogin;
+            this.saldo = konsumenLogin.Saldo_Konsumen;
             loadAllData();
+            setInvoiceDetail();
+        }
+        public FormPesanTiket(Pegawai adminLogin)
+        {
+            InitializeComponent();
+            this.adminLogin = adminLogin;
+            this.saldo = 0;
+            loadAllData();
+            setInvoiceDetail();
         }
 
         private void loadAllData()
@@ -35,35 +61,63 @@ namespace Celikoor_Semangat18
             kelompoks = Kelompok.BacaData();
             genreFilms = GenreFilm.BacaData();
             aktorFilms = AktorFilm.BacaData();
+            sesiFilms = SesiFilm.BacaData();
 
             comboBoxJudul.DataSource = films;
             comboBoxJudul.DisplayMember = "judul";
             comboBoxJudul.ValueMember = "id";
-            comboBoxJudul.SelectedIndex = 0;
-
-            comboBoxCinema.DataSource = cinemas;
-            comboBoxCinema.DisplayMember = "nama_cabang";
-            comboBoxCinema.ValueMember = "id";
-            comboBoxJudul.SelectedIndex = 0;
-        }
-
-        private void checkBox_CheckedChanged(object sender, EventArgs e)
-        {
-            CheckBox checkBox = (CheckBox)sender;
-            if (checkBox.Checked)
-            {
-                MessageBox.Show($"Kursi {checkBox.Text} telah dipesan");
-            }
+            comboBoxJudul.ResetText();
+            comboBoxJudul.SelectedIndex = -1;
+            finishLoad = true;
         }
 
         private void comboBoxJudul_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            if (comboBoxJudul.SelectedIndex != -1)
+            if (finishLoad && comboBoxJudul.SelectedIndex != -1)
             {
                 Film selectedFilm = (Film)comboBoxJudul.SelectedItem;
                 setDeskripsiFilm(selectedFilm);
+
+                // find available Cinema by Film
+                List<Cinema> selectedCinemas = findAvailableCinema(selectedFilm);
+                if (selectedCinemas.Count == 0) {
+                    MessageBox.Show("Film tidak diputar dimana-mana");
+                    return;
+                }
+
+                comboBoxCinema.DataSource = selectedCinemas;
+                comboBoxCinema.DisplayMember = "nama_cabang";
+                comboBoxCinema.ValueMember = "id";
+                comboBoxCinema.SelectedIndex = 0;
             }
+        }
+
+        private List<Cinema> findAvailableCinema(Film selectedFilm) 
+        {
+            List<Cinema> selectedCinema = new List<Cinema>();
+            selectedSesiFilms = new List<SesiFilm>();
+            foreach (SesiFilm sesiFilm in sesiFilms)
+            {
+                if (sesiFilm.Films_id == selectedFilm.Id) 
+                {
+                    selectedSesiFilms.Add(sesiFilm);
+                    foreach (Studio studio in studios)
+                    {
+                        if (studio.Id == sesiFilm.Studios_id)
+                        {
+                            foreach (Cinema cinema in cinemas)
+                            {
+                                if (cinema.Id == studio.CinemaId) {
+                                    selectedCinema.Add(cinema);
+                                    break;
+                                }
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+            return selectedCinema;
         }
 
         private void setDeskripsiFilm(Film film)
@@ -78,20 +132,22 @@ namespace Celikoor_Semangat18
             textAkotorUtama.Text = setAktorFilm(film.Id.ToString());
             textGenre.Text = setGenreFilm(film.Id.ToString());
             textKelompok.Text = setKelompokFilm(film.Id.ToString());
+            diskon = film.Diskon_nominal;
         }
 
 
         private void comboBoxCinema_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            if (comboBoxCinema.SelectedIndex != -1)
+            if (finishLoad &&  comboBoxJudul.SelectedIndex != -1 && comboBoxCinema.SelectedIndex != -1)
             {
                 Cinema selectedCinema = (Cinema)comboBoxCinema.SelectedItem;
 
                 List<Studio> selectedStudio = new List<Studio>();
                 foreach (Studio studio in studios)
                 {
-                    if (studio.CinemaId == selectedCinema.Id)
+                    // Studio milik cinema terpilih dan Studio memutar film
+                    if (studio.CinemaId == selectedCinema.Id && 
+                        selectedSesiFilms.FindIndex(item => item.Studios_id == studio.Id) != -1)
                     {
                         selectedStudio.Add(studio);
                     }
@@ -107,7 +163,18 @@ namespace Celikoor_Semangat18
                 comboBoxStudio.DisplayMember = "nama";
                 comboBoxStudio.ValueMember = "id";
                 comboBoxStudio.SelectedIndex = 0;
-                setDeskripsiStudio(selectedStudio[0]);
+            }
+        }
+
+        private void comboBoxStudio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (finishLoad && comboBoxJudul.SelectedIndex != -1 && 
+                comboBoxCinema.SelectedIndex != -1 && comboBoxStudio.SelectedIndex != -1 
+            ) {
+                Studio selectedStudio = (Studio)comboBoxStudio.SelectedItem;
+                setDeskripsiStudio(selectedStudio);
+                generateKursi(selectedStudio.Kapasitas);
+                kursiTerpesan = getKursiTerpesan();
             }
         }
 
@@ -115,45 +182,98 @@ namespace Celikoor_Semangat18
         {
             textJenisStudio.Text = studio.JenisStudioNama;
             textKursi.Text = studio.Kapasitas.ToString() + " Kursi";
-            textSisaKursi.Text = "(sisa " + studio.Kapasitas.ToString() + " kursi)";
+            List<Tiket> tiketTerpesan = getKursiTerpesan();
+            textSisaKursi.Text = "(sisa " + (studio.Kapasitas - tiketTerpesan.Count) + " kursi)";
             textHarga.Text = "Rp " + studio.HargaWeekday.ToString();
+            hargaTiketSatuan = studio.HargaWeekday;
         }
 
-        private void comboBoxStudio_SelectedIndexChanged(object sender, EventArgs e)
+        private List<Tiket> getKursiTerpesan()
         {
-            if (comboBoxStudio.SelectedIndex != -1 && comboBoxJudul.SelectedIndex != -1)
-            {
-                Studio selectedStudio = (Studio)comboBoxStudio.SelectedItem;
-                setDeskripsiStudio(selectedStudio);
-                generateKursi(selectedStudio.Kapasitas);
-            }
+            Studio selectedStudio = (Studio)comboBoxStudio.SelectedItem;
+            Film selectedFilm = (Film)comboBoxJudul.SelectedItem;
+            List<Tiket> tikets = Tiket.BacaData(
+                $"films_id='{selectedFilm.Id}' AND " + 
+                $"studios_id='{selectedStudio.Id}'"
+            );
+
+            return tikets;
         }
+
         private void generateKursi(int jumlahKursi)
         {
             List<string> listHuruf = new List<string>() { "A", "B", "C" };
-
+            int ctrGenerated = 0;
             for (int i = 0; i < listHuruf.Count; i++)
             {
                 for (int j = 0; j < jumlahKursi / 12; j++)
                 {
                     for (int k = 0; k < 4; k++)
                     {
+                        if (ctrGenerated >= jumlahKursi) break;
                         CheckBox checkBox = new CheckBox();
                         int seatNumber = (k + 1) + (j * 4);
-                        checkBox.Name = $"checkBox{listHuruf[i]}{seatNumber}";
-                        checkBox.Text = $"{listHuruf[i]}{seatNumber}";
+                        string seatName = $"{listHuruf[i]}{seatNumber}";
+                        checkBox.Name = seatName;
+                        checkBox.Text = seatName;
                         checkBox.BackColor = Color.SlateBlue;
                         checkBox.ForeColor = Color.White;
                         checkBox.Size = new Size(50, 20);
                         checkBox.Checked = false;
                         checkBox.Location = new Point(315 + (k * 50) + (i * 250), 220 + (j * 25));
                         checkBox.CheckedChanged += checkBox_CheckedChanged;
+                        if (kursiTerpesan.FindIndex(item => item.Nomor_kursi == seatName) == -1) {
+                            checkBox.Checked = false;
+                            checkBox.Enabled = true;
+                        } else {
+                            checkBox.Checked = true;
+                            checkBox.Enabled = false;
+                        }
                         this.Controls.Add(checkBox);
                         checkBox.BringToFront();
+
+                        ctrGenerated += 1;
                     }
 
                 }
             }
+        }
+
+        private void checkBox_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox checkBox = (CheckBox)sender;
+            if (checkBox.Checked && checkBox.Enabled == false)
+            {
+                MessageBox.Show($"Kursi {checkBox.Text} telah dipesan");
+                return;
+            }
+
+            bool checkboxKursiDiambil = kursiTerpesan.FindIndex(item => item.Nomor_kursi == checkBox.Name) != -1;
+            if (checkBox.Enabled == true && !checkboxKursiDiambil){
+                if (checkBox.Checked) {
+                    kursiDiambil.Add(checkBox.Name);
+                    totalHarga += hargaTiketSatuan;
+                } else {
+                    kursiDiambil.Remove(checkBox.Name);
+                    totalHarga -= hargaTiketSatuan;
+                }
+                totalAkhir = totalHarga - diskon;
+                setInvoiceDetail();
+            }
+        }
+
+        private void setInvoiceDetail()
+        {
+            string tmp = "";
+            foreach (string kursi in kursiDiambil)
+            {
+                tmp += kursi + ", ";
+            }
+            textKursiAmbil.Text = tmp == "" ? "-" : tmp.Substring(0, tmp.Length - 2);;
+            textTotalHarga.Text = $"Rp {totalHarga},-";
+            textDiskon.Text = $"Rp {diskon},-";
+            textTotalAkhir.Text = $"Rp {totalAkhir},-";
+            textSaldo.Text = $"Rp {saldo},-";
         }
 
         private string setAktorFilm(string film_id)
@@ -210,17 +330,73 @@ namespace Celikoor_Semangat18
             return "";
         }
 
+        private void buttonConfirm_Click(object sender, EventArgs e)
+        {
+            if (comboBoxJudul.SelectedIndex == -1 || comboBoxCinema.SelectedIndex == -1 ||
+                comboBoxStudio.SelectedIndex == -1 || kursiDiambil.Count == 0
+            ) {
+                MessageBox.Show("Mohon isi data terlebih dahulu");
+                return;
+            }
+
+            if (totalAkhir > saldo)
+            {
+                MessageBox.Show("Saldo anda tidak cukup");
+                return;
+            }
+
+            try {
+                Film selectedFilm = (Film)comboBoxJudul.SelectedItem;
+                DateTime tanggal = dateTimePicker1.Value;
+                Cinema selectedCinema = (Cinema)comboBoxCinema.SelectedItem;
+                Studio selectedStudio = (Studio)comboBoxStudio.SelectedItem;
+
+                Invoices invoice = new Invoices();
+                invoice.Tanggal = tanggal;
+                invoice.Grand_total = totalAkhir;
+                invoice.Diskon_nominal = diskon;
+                invoice.Konsumens_id = konsumenLogin.Id_Konsumen;
+                invoice.Status = "PENDING";
+                Invoices.TambahData(invoice);
+                MessageBox.Show("Berhasil menambah Invoice");
+
+                List<Invoices> invoices = Invoices.BacaData();
+                Invoices latestInvoices = invoices[invoices.Count - 1];
+
+                SesiFilm selectedSesiFilm = selectedSesiFilms.Find(
+                    item => item.Studios_id == selectedStudio.Id && item.Films_id == selectedFilm.Id
+                );
+                foreach (string kursi in kursiDiambil)
+                {
+                    Tiket tiket = new Tiket();
+                    tiket.Invoices_id = latestInvoices.Id;
+                    tiket.Nomor_kursi = kursi;
+                    tiket.Status_hadir = "0";
+                    tiket.Harga = hargaTiketSatuan;
+                    tiket.Jawdal_film_id = selectedSesiFilm.Jadwal_films_id;
+                    tiket.Studios_id = selectedStudio.Id;
+                    tiket.Films_id = selectedFilm.Id;
+                    Tiket.TambahData(tiket);
+                }
+
+                saldo -= totalAkhir;
+                konsumenLogin.Saldo_Konsumen = saldo;
+                Konsumen.UbahData(konsumenLogin.Id_Konsumen, konsumenLogin);
+
+                MessageBox.Show("Berhasil memesan tiket");
+                this.Close();
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Ada masalah memesan tiket, " + ex.Message);
+            }
+        }
+
         private void panel10_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
         private void checkBox36_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonConfirm_Click(object sender, EventArgs e)
         {
 
         }

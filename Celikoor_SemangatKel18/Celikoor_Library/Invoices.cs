@@ -52,7 +52,7 @@ namespace Celikoor_Library
 
             string perintah = "INSERT INTO invoices " +
                 "(tanggal, grand_total, diskon_nominal, konsumens_id, status) VALUES " + 
-                $"('{obj.tanggal}', '{obj.Grand_total}', '{obj.diskon_nominal}', '{obj.konsumens_id}', 'PENDING');";
+                $"('{obj.tanggal.ToString("yyyy-MM-dd")}', '{obj.Grand_total}', '{obj.diskon_nominal}', '{obj.konsumens_id}', '{obj.status}');";
 
             Koneksi.JalankanPerintahNonQuery(perintah);
         }
@@ -83,7 +83,7 @@ namespace Celikoor_Library
                 tampung.Grand_total = int.Parse(drHasil.GetValue(2).ToString());
                 tampung.diskon_nominal = int.Parse(drHasil.GetValue(3).ToString());
                 tampung.konsumens_id = int.Parse(drHasil.GetValue(4).ToString());
-                tampung.kasir_id = drHasil.IsDBNull(3) ? -1 : int.Parse(drHasil.GetValue(5).ToString());
+                tampung.kasir_id = drHasil.IsDBNull(5) ? -1 : int.Parse(drHasil.GetValue(5).ToString());
                 tampung.status = drHasil.GetValue(6).ToString();
                 listHasil.Add(tampung);
             }

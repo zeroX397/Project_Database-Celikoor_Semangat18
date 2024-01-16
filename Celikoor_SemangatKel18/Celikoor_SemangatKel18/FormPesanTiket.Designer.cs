@@ -30,9 +30,7 @@
         {
             this.panel7 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.labelJumlahSaldo = new System.Windows.Forms.Label();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -74,7 +72,6 @@
             this.textTotalAkhir = new System.Windows.Forms.Label();
             this.textDiskon = new System.Windows.Forms.Label();
             this.textTotalHarga = new System.Windows.Forms.Label();
-            this.textKursiAmbil = new System.Windows.Forms.Label();
             this.panelDetail = new System.Windows.Forms.Panel();
             this.comboBoxJudul = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -82,6 +79,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textKursiAmbil = new System.Windows.Forms.Label();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -116,25 +114,13 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "C";
             // 
-            // labelJumlahSaldo
-            // 
-            this.labelJumlahSaldo.AutoSize = true;
-            this.labelJumlahSaldo.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJumlahSaldo.ForeColor = System.Drawing.Color.White;
-            this.labelJumlahSaldo.Location = new System.Drawing.Point(1035, 5);
-            this.labelJumlahSaldo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelJumlahSaldo.Name = "labelJumlahSaldo";
-            this.labelJumlahSaldo.Size = new System.Drawing.Size(123, 20);
-            this.labelJumlahSaldo.TabIndex = 23;
-            this.labelJumlahSaldo.Text = "nominalSaldo";
-            // 
             // buttonClose
             // 
             this.buttonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonClose.BackColor = System.Drawing.Color.Black;
             this.buttonClose.Font = new System.Drawing.Font("Century", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClose.ForeColor = System.Drawing.Color.White;
-            this.buttonClose.Location = new System.Drawing.Point(1712, 5);
+            this.buttonClose.Location = new System.Drawing.Point(1730, 5);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(47, 29);
@@ -143,24 +129,12 @@
             this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(967, 5);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(65, 20);
-            this.label19.TabIndex = 22;
-            this.label19.Text = "Saldo :";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(459, 5);
+            this.label10.Location = new System.Drawing.Point(571, 9);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(161, 18);
@@ -295,7 +269,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(2, 276);
+            this.panel2.Location = new System.Drawing.Point(8, 276);
             this.panel2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(257, 268);
@@ -319,7 +293,7 @@
             this.textKelompok.Location = new System.Drawing.Point(104, 247);
             this.textKelompok.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.textKelompok.Name = "textKelompok";
-            this.textKelompok.Size = new System.Drawing.Size(73, 17);
+            this.textKelompok.Size = new System.Drawing.Size(140, 17);
             this.textKelompok.TabIndex = 9;
             this.textKelompok.Text = "-";
             // 
@@ -330,7 +304,7 @@
             this.textAkotorUtama.Location = new System.Drawing.Point(127, 201);
             this.textAkotorUtama.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.textAkotorUtama.Name = "textAkotorUtama";
-            this.textAkotorUtama.Size = new System.Drawing.Size(73, 17);
+            this.textAkotorUtama.Size = new System.Drawing.Size(117, 17);
             this.textAkotorUtama.TabIndex = 8;
             this.textAkotorUtama.Text = "-";
             this.textAkotorUtama.Click += new System.EventHandler(this.label21_Click_1);
@@ -342,7 +316,7 @@
             this.textGenre.Location = new System.Drawing.Point(77, 225);
             this.textGenre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.textGenre.Name = "textGenre";
-            this.textGenre.Size = new System.Drawing.Size(73, 17);
+            this.textGenre.Size = new System.Drawing.Size(167, 17);
             this.textGenre.TabIndex = 7;
             this.textGenre.Text = "-";
             // 
@@ -353,7 +327,7 @@
             this.textDurasi.Location = new System.Drawing.Point(82, 177);
             this.textDurasi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.textDurasi.Name = "textDurasi";
-            this.textDurasi.Size = new System.Drawing.Size(73, 17);
+            this.textDurasi.Size = new System.Drawing.Size(162, 17);
             this.textDurasi.TabIndex = 6;
             this.textDurasi.Text = "-";
             // 
@@ -418,11 +392,6 @@
             // comboBoxStudio
             // 
             this.comboBoxStudio.FormattingEnabled = true;
-            this.comboBoxStudio.Items.AddRange(new object[] {
-            "I",
-            "II",
-            "III",
-            "IV"});
             this.comboBoxStudio.Location = new System.Drawing.Point(941, 30);
             this.comboBoxStudio.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.comboBoxStudio.Name = "comboBoxStudio";
@@ -469,7 +438,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(54, 19);
+            this.label20.Location = new System.Drawing.Point(13, 10);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(70, 20);
@@ -517,7 +486,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Brown;
-            this.label18.Location = new System.Drawing.Point(6, 129);
+            this.label18.Location = new System.Drawing.Point(8, 152);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(116, 20);
@@ -529,7 +498,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(25, 94);
+            this.label17.Location = new System.Drawing.Point(27, 117);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(97, 20);
@@ -542,7 +511,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(54, 61);
+            this.label16.Location = new System.Drawing.Point(56, 84);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(68, 20);
@@ -580,12 +549,12 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.SlateBlue;
+            this.panel11.Controls.Add(this.textKursiAmbil);
             this.panel11.Controls.Add(this.textSaldo);
             this.panel11.Controls.Add(this.label22);
             this.panel11.Controls.Add(this.textTotalAkhir);
             this.panel11.Controls.Add(this.textDiskon);
             this.panel11.Controls.Add(this.textTotalHarga);
-            this.panel11.Controls.Add(this.textKursiAmbil);
             this.panel11.Controls.Add(this.label18);
             this.panel11.Controls.Add(this.label17);
             this.panel11.Controls.Add(this.label16);
@@ -601,7 +570,7 @@
             this.textSaldo.AutoSize = true;
             this.textSaldo.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSaldo.ForeColor = System.Drawing.Color.Chartreuse;
-            this.textSaldo.Location = new System.Drawing.Point(128, 161);
+            this.textSaldo.Location = new System.Drawing.Point(130, 184);
             this.textSaldo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.textSaldo.Name = "textSaldo";
             this.textSaldo.Size = new System.Drawing.Size(15, 20);
@@ -613,7 +582,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Chartreuse;
-            this.label22.Location = new System.Drawing.Point(54, 161);
+            this.label22.Location = new System.Drawing.Point(56, 184);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(65, 20);
@@ -625,7 +594,7 @@
             this.textTotalAkhir.AutoSize = true;
             this.textTotalAkhir.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textTotalAkhir.ForeColor = System.Drawing.Color.Brown;
-            this.textTotalAkhir.Location = new System.Drawing.Point(128, 129);
+            this.textTotalAkhir.Location = new System.Drawing.Point(130, 152);
             this.textTotalAkhir.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.textTotalAkhir.Name = "textTotalAkhir";
             this.textTotalAkhir.Size = new System.Drawing.Size(15, 20);
@@ -637,7 +606,7 @@
             this.textDiskon.AutoSize = true;
             this.textDiskon.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDiskon.ForeColor = System.Drawing.Color.White;
-            this.textDiskon.Location = new System.Drawing.Point(128, 94);
+            this.textDiskon.Location = new System.Drawing.Point(130, 117);
             this.textDiskon.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.textDiskon.Name = "textDiskon";
             this.textDiskon.Size = new System.Drawing.Size(15, 20);
@@ -649,25 +618,13 @@
             this.textTotalHarga.AutoSize = true;
             this.textTotalHarga.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textTotalHarga.ForeColor = System.Drawing.Color.White;
-            this.textTotalHarga.Location = new System.Drawing.Point(128, 61);
+            this.textTotalHarga.Location = new System.Drawing.Point(130, 84);
             this.textTotalHarga.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.textTotalHarga.Name = "textTotalHarga";
             this.textTotalHarga.Size = new System.Drawing.Size(15, 20);
             this.textTotalHarga.TabIndex = 18;
             this.textTotalHarga.Text = "-";
             this.textTotalHarga.Click += new System.EventHandler(this.label21_Click);
-            // 
-            // textKursiAmbil
-            // 
-            this.textKursiAmbil.AutoSize = true;
-            this.textKursiAmbil.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textKursiAmbil.ForeColor = System.Drawing.Color.White;
-            this.textKursiAmbil.Location = new System.Drawing.Point(128, 19);
-            this.textKursiAmbil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.textKursiAmbil.Name = "textKursiAmbil";
-            this.textKursiAmbil.Size = new System.Drawing.Size(15, 20);
-            this.textKursiAmbil.TabIndex = 17;
-            this.textKursiAmbil.Text = "-";
             // 
             // panelDetail
             // 
@@ -710,7 +667,7 @@
             // 
             // panel10
             // 
-            this.panel10.Location = new System.Drawing.Point(9, 120);
+            this.panel10.Location = new System.Drawing.Point(9, 119);
             this.panel10.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(705, 350);
@@ -751,22 +708,31 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(8, 10);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(259, 254);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // textKursiAmbil
+            // 
+            this.textKursiAmbil.Font = new System.Drawing.Font("Century", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textKursiAmbil.ForeColor = System.Drawing.Color.White;
+            this.textKursiAmbil.Location = new System.Drawing.Point(87, 10);
+            this.textKursiAmbil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.textKursiAmbil.Name = "textKursiAmbil";
+            this.textKursiAmbil.Size = new System.Drawing.Size(201, 65);
+            this.textKursiAmbil.TabIndex = 23;
+            this.textKursiAmbil.Text = "-";
+            // 
             // FormPesanTiket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1341, 597);
-            this.Controls.Add(this.labelJumlahSaldo);
+            this.ClientSize = new System.Drawing.Size(1359, 604);
             this.Controls.Add(this.buttonClose);
-            this.Controls.Add(this.label19);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -800,9 +766,7 @@
 
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label labelJumlahSaldo;
         private System.Windows.Forms.Button buttonClose;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
@@ -841,7 +805,6 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label textTotalHarga;
-        private System.Windows.Forms.Label textKursiAmbil;
         private System.Windows.Forms.Label textDiskon;
         private System.Windows.Forms.Label textTotalAkhir;
         private System.Windows.Forms.Label textSaldo;
@@ -852,5 +815,6 @@
         private System.Windows.Forms.Label textKelompok;
         private System.Windows.Forms.Label textSinopsis;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label textKursiAmbil;
     }
 }

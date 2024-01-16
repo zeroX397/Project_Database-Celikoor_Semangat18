@@ -286,7 +286,7 @@ namespace Celikoor_Semangat18
                 loadJadwalFilm();
             } catch (Exception ex)
             {
-                MessageBox.Show("Ada masalah menambahkan data, ", ex.Message);
+                MessageBox.Show("Ada masalah menambahkan data, " + ex.Message);
             }
         }
     }

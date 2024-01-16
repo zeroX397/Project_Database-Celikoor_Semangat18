@@ -73,6 +73,12 @@
     <Compile Include="FormJadwalFilm.Designer.cs">
       <DependentUpon>FormJadwalFilm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPencatatanKedatangan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPencatatanKedatangan.Designer.cs">
+      <DependentUpon>FormPencatatanKedatangan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPesanTiket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormJadwalFilm.resx">
       <DependentUpon>FormJadwalFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPencatatanKedatangan.resx">
+      <DependentUpon>FormPencatatanKedatangan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPesanTiket.resx">
       <DependentUpon>FormPesanTiket.cs</DependentUpon>

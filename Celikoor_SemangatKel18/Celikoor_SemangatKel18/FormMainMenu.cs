@@ -57,6 +57,7 @@ namespace Celikoor_Semangat18
                 masterToolStripMenuItem.Visible = true;
                 invoiceToolStripMenuItem.Visible = true;
                 barcodeToolStripMenuItem.Visible = true;
+                jadwalFilmToolStripMenuItem.Visible = true;
                 pesanTiketToolStripMenuItem.Visible = true;
                 profilToolStripMenuItem.Visible = false;
 
@@ -67,6 +68,7 @@ namespace Celikoor_Semangat18
                 masterToolStripMenuItem.Visible = false;
                 invoiceToolStripMenuItem.Visible = false;
                 barcodeToolStripMenuItem.Visible = true;
+                jadwalFilmToolStripMenuItem.Visible = false;
                 pesanTiketToolStripMenuItem.Visible = false;
                 profilToolStripMenuItem.Visible = false;
 
@@ -77,6 +79,7 @@ namespace Celikoor_Semangat18
                 masterToolStripMenuItem.Visible = false;
                 invoiceToolStripMenuItem.Visible = true;
                 barcodeToolStripMenuItem.Visible = false;
+                jadwalFilmToolStripMenuItem.Visible = false;
                 pesanTiketToolStripMenuItem.Visible = false;
                 profilToolStripMenuItem.Visible = false;
 
@@ -90,6 +93,7 @@ namespace Celikoor_Semangat18
             masterToolStripMenuItem.Visible = false;
             invoiceToolStripMenuItem.Visible = false;
             barcodeToolStripMenuItem.Visible = false;
+            jadwalFilmToolStripMenuItem.Visible = false;
             pesanTiketToolStripMenuItem.Visible = true;
             profilToolStripMenuItem.Visible = true;
 
@@ -176,7 +180,30 @@ namespace Celikoor_Semangat18
             Form frm = Application.OpenForms["FormPesanTiket"];
             if (frm == null)
             {
-                FormPesanTiket frmMaster = new FormPesanTiket();
+                if (konsumLogin != null){
+                    FormPesanTiket frmMaster = new FormPesanTiket(konsumLogin);
+                    frmMaster.MdiParent = this;
+                    frmMaster.Show();
+                } else {
+                    FormPesanTiket frmMaster = new FormPesanTiket(userLogin);
+                    frmMaster.MdiParent = this;
+                    frmMaster.Show();
+                }
+            }
+            else
+            {
+                frm.Show();
+                frm.BringToFront();
+            }
+
+        }
+
+        private void barcodeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = Application.OpenForms["FormPencatatanKedatangan"];
+            if (frm == null)
+            {
+                FormPencatatanKedatangan frmMaster = new FormPencatatanKedatangan(userLogin.Id_Pegawai);
                 frmMaster.MdiParent = this;
                 frmMaster.Show();
             }
@@ -185,7 +212,6 @@ namespace Celikoor_Semangat18
                 frm.Show();
                 frm.BringToFront();
             }
-
         }
     }
 }
