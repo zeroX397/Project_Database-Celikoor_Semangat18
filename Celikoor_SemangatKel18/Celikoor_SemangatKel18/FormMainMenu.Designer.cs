@@ -40,10 +40,10 @@ namespace Celikoor_Semangat18
             this.jadwalFilmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pesanTiketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel = new System.Windows.Forms.Panel();
             this.lblExit = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -54,9 +54,10 @@ namespace Celikoor_Semangat18
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(87, 65);
+            this.label1.Location = new System.Drawing.Point(65, 53);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(483, 30);
+            this.label1.Size = new System.Drawing.Size(363, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "Welcome to the Celikoor Cinema Apps";
             // 
@@ -73,8 +74,8 @@ namespace Celikoor_Semangat18
             this.laporanToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1232, 26);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(924, 24);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -86,34 +87,34 @@ namespace Celikoor_Semangat18
             this.cinemaToolStripMenuItem,
             this.movieToolStripMenuItem});
             this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
-            this.masterToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.masterToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
             this.masterToolStripMenuItem.Text = "Master";
             // 
             // HumanResourcesToolStripMenuItem
             // 
             this.HumanResourcesToolStripMenuItem.Name = "HumanResourcesToolStripMenuItem";
-            this.HumanResourcesToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.HumanResourcesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.HumanResourcesToolStripMenuItem.Text = "Human Resources";
             this.HumanResourcesToolStripMenuItem.Click += new System.EventHandler(this.HumanResourcesToolStripMenuItem_Click);
             // 
             // cinemaToolStripMenuItem
             // 
             this.cinemaToolStripMenuItem.Name = "cinemaToolStripMenuItem";
-            this.cinemaToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.cinemaToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.cinemaToolStripMenuItem.Text = "Cinema";
             this.cinemaToolStripMenuItem.Click += new System.EventHandler(this.cinemaToolStripMenuItem_Click);
             // 
             // movieToolStripMenuItem
             // 
             this.movieToolStripMenuItem.Name = "movieToolStripMenuItem";
-            this.movieToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.movieToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.movieToolStripMenuItem.Text = "Movie";
             this.movieToolStripMenuItem.Click += new System.EventHandler(this.movieToolStripMenuItem_Click);
             // 
             // invoiceToolStripMenuItem
             // 
             this.invoiceToolStripMenuItem.Name = "invoiceToolStripMenuItem";
-            this.invoiceToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.invoiceToolStripMenuItem.Size = new System.Drawing.Size(57, 22);
             this.invoiceToolStripMenuItem.Text = "Invoice";
             // 
             // barcodeToolStripMenuItem
@@ -126,7 +127,7 @@ namespace Celikoor_Semangat18
             // jadwalFilmToolStripMenuItem
             // 
             this.jadwalFilmToolStripMenuItem.Name = "jadwalFilmToolStripMenuItem";
-            this.jadwalFilmToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
+            this.jadwalFilmToolStripMenuItem.Size = new System.Drawing.Size(80, 22);
             this.jadwalFilmToolStripMenuItem.Text = "Jadwal Film";
             this.jadwalFilmToolStripMenuItem.Click += new System.EventHandler(this.jadwalFilmToolStripMenuItem_Click);
             // 
@@ -142,6 +143,14 @@ namespace Celikoor_Semangat18
             this.profilToolStripMenuItem.Name = "profilToolStripMenuItem";
             this.profilToolStripMenuItem.Size = new System.Drawing.Size(47, 22);
             this.profilToolStripMenuItem.Text = "Profil";
+            this.profilToolStripMenuItem.Click += new System.EventHandler(this.profilToolStripMenuItem_Click);
+            // 
+            // laporanToolStripMenuItem
+            // 
+            this.laporanToolStripMenuItem.Name = "laporanToolStripMenuItem";
+            this.laporanToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
+            this.laporanToolStripMenuItem.Text = "Laporan";
+            this.laporanToolStripMenuItem.Click += new System.EventHandler(this.laporanToolStripMenuItem_Click);
             // 
             // panel
             // 
@@ -152,9 +161,9 @@ namespace Celikoor_Semangat18
             this.panel.Controls.Add(this.menuStrip1);
             this.panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel.Location = new System.Drawing.Point(0, 0);
-            this.panel.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.panel.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1232, 122);
+            this.panel.Size = new System.Drawing.Size(924, 99);
             this.panel.TabIndex = 14;
             // 
             // lblExit
@@ -164,9 +173,10 @@ namespace Celikoor_Semangat18
             this.lblExit.BackColor = System.Drawing.Color.White;
             this.lblExit.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.lblExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblExit.Location = new System.Drawing.Point(1204, -1);
+            this.lblExit.Location = new System.Drawing.Point(903, -1);
+            this.lblExit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblExit.Name = "lblExit";
-            this.lblExit.Size = new System.Drawing.Size(28, 30);
+            this.lblExit.Size = new System.Drawing.Size(22, 22);
             this.lblExit.TabIndex = 18;
             this.lblExit.Text = "X";
             this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
@@ -177,28 +187,21 @@ namespace Celikoor_Semangat18
             this.pictureBox2.BackgroundImage = global::Celikoor_Semangat18.Properties.Resources.CELIKOOR_removebg_preview;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(15, 48);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.pictureBox2.Location = new System.Drawing.Point(11, 39);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(67, 63);
+            this.pictureBox2.Size = new System.Drawing.Size(50, 51);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // laporanToolStripMenuItem
-            // 
-            this.laporanToolStripMenuItem.Name = "laporanToolStripMenuItem";
-            this.laporanToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
-            this.laporanToolStripMenuItem.Text = "Laporan";
-            this.laporanToolStripMenuItem.Click += new System.EventHandler(this.laporanToolStripMenuItem_Click);
-            // 
             // FormMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1232, 630);
+            this.ClientSize = new System.Drawing.Size(924, 512);
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMainMenu";

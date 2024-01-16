@@ -229,5 +229,21 @@ namespace Celikoor_Semangat18
                 frm.BringToFront();
             }
         }
+
+        private void profilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = Application.OpenForms["FormProifle"];
+            if (frm == null)
+            {
+                FormProfile frmMaster = new FormProfile(konsumLogin);
+                frmMaster.MdiParent = this;
+                frmMaster.Show();
+            }
+            else
+            {
+                frm.Show();
+                frm.BringToFront();
+            }
+        }
     }
 }
