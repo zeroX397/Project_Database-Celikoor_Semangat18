@@ -103,12 +103,6 @@
     <Compile Include="FormTambahGenre.Designer.cs">
       <DependentUpon>FormTambahGenre.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTambahJadwalFilm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormTambahJadwalFilm.Designer.cs">
-      <DependentUpon>FormTambahJadwalFilm.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormTambahJenisStudio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,9 +176,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTambahGenre.resx">
       <DependentUpon>FormTambahGenre.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormTambahJadwalFilm.resx">
-      <DependentUpon>FormTambahJadwalFilm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTambahJenisStudio.resx">
       <DependentUpon>FormTambahJenisStudio.cs</DependentUpon>
