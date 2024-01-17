@@ -50,6 +50,7 @@
     <Compile Include="Aktor.cs" />
     <Compile Include="AktorFilm.cs" />
     <Compile Include="Cinema.cs" />
+    <Compile Include="LaporanFilmDgnKetidakhadiran.cs" />
     <Compile Include="Film.cs" />
     <Compile Include="FilmStudio.cs" />
     <Compile Include="Genre.cs" />
@@ -59,7 +60,7 @@
     <Compile Include="JadwalPemutaranFilm.cs" />
     <Compile Include="JenisStudio.cs" />
     <Compile Include="Koneksi.cs" />
-    <Compile Include="Laporan.cs" />
+    <Compile Include="LaporanPeringkatCabang.cs" />
     <Compile Include="Pegawai.cs" />
     <Compile Include="Konsumen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

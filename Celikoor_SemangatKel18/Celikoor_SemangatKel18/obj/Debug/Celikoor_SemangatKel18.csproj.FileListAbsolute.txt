@@ -37,9 +37,7 @@ C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_Sem
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\Celikoor_Semangat18.pdb
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\Celikoor_Library.dll
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\MySql.Data.dll
-C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\Celikoor_Library.pdb
-C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.AssemblyReference.cache
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormPesanTiket.resources
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormTambahAktor.resources
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormTambahCinema.resources
@@ -95,10 +93,6 @@ C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_Sem
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormTambahFilm.resources
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormLaporan.resources
 C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormPencatatanKedatangan.resources
-C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\System.Memory.dll
-C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\System.Buffers.dll
-C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormProfile.resources
 C:\Users\Florencia\OneDrive\Dokumen\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormAdminCinema.resources
 C:\Users\Florencia\OneDrive\Dokumen\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormAdminMovie.resources
 C:\Users\Florencia\OneDrive\Dokumen\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormJadwalFilm.resources
@@ -121,3 +115,4 @@ C:\Users\Florencia\OneDrive\Dokumen\GitHub\Project_Database-Celikoor_Semangat18\
 C:\Users\Florencia\OneDrive\Dokumen\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.GenerateResource.cache
 C:\Users\Florencia\OneDrive\Dokumen\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.CoreCompileInputs.cache
 C:\Users\Florencia\OneDrive\Dokumen\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_SemangatKel18.csproj.AssemblyReference.cache

@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace Celikoor_Library
 {
-    public class Laporan
+    public class LaporanPeringkatCabang
     {
         #region Data Member
         private Cinema cinema;
@@ -18,7 +18,7 @@ namespace Celikoor_Library
         #endregion
 
         #region Constructor
-        public Laporan()
+        public LaporanPeringkatCabang()
         {
             Cinema = new Cinema();
             Studio = new Studio();
@@ -37,7 +37,7 @@ namespace Celikoor_Library
         #endregion
 
         #region Method
-        public static List<Laporan> BacaData(string filter = "", string nilai = "")
+        public static List<LaporanPeringkatCabang> BacaData(string filter = "", string nilai = "")
         {
             string perintah;
             if (filter == "")
@@ -53,16 +53,16 @@ namespace Celikoor_Library
 
             MySqlDataReader drHasil = Koneksi.JalankanPerintahSelect(perintah);
 
-            List<Laporan> listHasil = new List<Laporan>();
+            List<LaporanPeringkatCabang> listHasil = new List<LaporanPeringkatCabang>();
             while (drHasil.Read() == true)
             {
-                Laporan tampung = new Laporan();
+                LaporanPeringkatCabang tampung = new LaporanPeringkatCabang();
 
-                tampung.Cinema = Cinema.BacaData("id", drHasil.GetValue(0).ToString())[0];
-                tampung.Studio = Studio.BacaData("id", drHasil.GetValue(1).ToString())[0];
-                tampung.Film_studio = FilmStudio.BacaData("studios_id", drHasil.GetValue(2).ToString())[0];
-                tampung.Sesi_film = SesiFilm.BacaData("jadwal_film_id", drHasil.GetValue(3).ToString())[0];
-                tampung.Tiket = Tiket.BacaData($"invoices_id='{drHasil.GetValue(4)}'")[0];
+                tampung.Cinema = Cinema.BacaData(drHasil.GetValue(0).ToString())[0];
+                tampung.Studio = Studio.BacaData(drHasil.GetValue(1).ToString())[0];
+                tampung.Film_studio = FilmStudio.BacaData(drHasil.GetValue(2).ToString())[0];
+                tampung.Sesi_film = SesiFilm.BacaData(drHasil.GetValue(3).ToString())[0];
+                tampung.Tiket = Tiket.BacaData(drHasil.GetValue(4).ToString())[0];
                 listHasil.Add(tampung);
             }
             return listHasil;

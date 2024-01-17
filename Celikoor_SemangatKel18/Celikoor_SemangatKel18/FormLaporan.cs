@@ -20,13 +20,19 @@ namespace Celikoor_Semangat18
 
         private void buttonPeringkat_Click(object sender, EventArgs e)
         {
-            List<Laporan> listHasil = Laporan.BacaData();
+            List<LaporanPeringkatCabang> listHasil = LaporanPeringkatCabang.BacaData();
             dataGridView1.DataSource = listHasil;
         }
 
         private void FormLaporan_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonFilmPenontonTdkHadir_Click(object sender, EventArgs e)
+        {
+            List<LaporanFilmDgnKetidakhadiran> listHasil = LaporanFilmDgnKetidakhadiran.BacaData();
+            dataGridView1.DataSource = listHasil;
         }
     }
 }
