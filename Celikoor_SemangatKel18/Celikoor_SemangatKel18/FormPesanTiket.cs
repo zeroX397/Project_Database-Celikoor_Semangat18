@@ -408,10 +408,44 @@ namespace Celikoor_Semangat18
 
         private void FormPesanTiket_Load(object sender, EventArgs e)
         {
-            //List<Film> listFilm = Film.BacaData();
+
 
         }
-
+        private void GenerateCheckBoxes(string columnName, Panel panel)
+        {
+            Studio s = (Studio)comboBoxStudio.SelectedItem;
+            int kapastitas = s.Kapasitas;
+            int rows = (int)Math.Ceiling((decimal)kapastitas / 12);
+            int limit = 4;
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < limit; j++)
+                {
+                    int seatNumber = i * limit + j + 1;
+                    CheckBox cb = new CheckBox();
+                    cb.Text = seatNumber.ToString();
+                    cb.AutoSize = true;
+                    cb.Location = new Point(10 + j 45, 30 + i 30);
+                    cb.Name = columnName + seatNumber.ToString();
+                    panel.Controls.Add(cb);
+                }
+                CheckCheckBoxes(panel);
+            }
+        }
+        private void CheckCheckBoxes(Panel panel)
+        {
+            Studio s = (Studio)comboBoxStudio.SelectedItem;
+            List<string> listKursi = new List<string>();
+            listKursi = Tiket.GetNomorKursi(s, dataFilm);
+            foreach (CheckBox checkBox in panel.Controls)
+            {
+                if (listkursi.Contains(checkBox.Name))
+                {
+                    checkBox.Enabled = false;
+                    checkBox.Checked = true;
+                }
+            } 
+        }
         private void label21_Click(object sender, EventArgs e)
         {
 

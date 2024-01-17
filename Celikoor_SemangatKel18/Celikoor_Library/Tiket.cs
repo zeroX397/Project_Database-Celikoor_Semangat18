@@ -120,5 +120,25 @@ namespace Celikoor_Library
             Console.WriteLine(sql);
             Koneksi.JalankanPerintahNonQuery(sql);
         }
+        public static List<string> GetNomerkursi(Studio studios, Film films)
+        {
+            string sql = "SELECT tikets.nomor kursi, studios.id, films.judul FROM tikets " +
+                "INNER JOIN sesi_films on sesi_films.films.id = tikets.films_id and sesi_films.jadwal_film_id = tikets.jadwal_film_id and sesi_films.studios_id tikets_studios.id " +
+                "INNER JOIN film.studio on film studio files_id sesi films films id and film studio.studios_id sesi films.studios_id" +
+                "INNER JOIN films on films.id = film_studio.films_id " +
+                "INNER JOIN studios on film_studio.studios_id = studios.id" +
+                "WHERE films.id '" + films.Id.ToString() + "and studios.id = '" + studios.Id.ToString();
+            MySqlDataReader hasil = Koneksi.JalankanPerintahSelect(sql);
+            List<string> Listkursi = new List<string>();
+            while (hasil.Read())
+            {
+                Listkursi.Add(hasil.GetValue(0).ToString());
+                return Listkursi;
+
+            }
+            
+
+        }
+
     }
 }
