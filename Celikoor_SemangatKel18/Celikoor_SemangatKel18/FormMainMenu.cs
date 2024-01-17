@@ -245,5 +245,21 @@ namespace Celikoor_Semangat18
                 frm.BringToFront();
             }
         }
+
+        private void invoiceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = Application.OpenForms["FormInvoice"];
+            if (frm == null)
+            {
+                FormInvoice frmMaster = new FormInvoice();
+                frmMaster.MdiParent = this;
+                frmMaster.Show();
+            }
+            else
+            {
+                frm.Show();
+                frm.BringToFront();
+            }
+        }
     }
 }
