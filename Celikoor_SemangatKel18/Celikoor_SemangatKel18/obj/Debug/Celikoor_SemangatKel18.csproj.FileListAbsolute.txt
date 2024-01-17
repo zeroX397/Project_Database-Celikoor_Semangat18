@@ -157,3 +157,4 @@ C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoo
 C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\System.Buffers.dll
 C:\Users\Lawrence Patrick\Downloads\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\Celikoor_Library.pdb
+C:\Users\Florencia\OneDrive\Dokumen\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormProfile.resources
