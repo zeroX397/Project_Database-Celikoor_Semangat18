@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 using Celikoor_Library;
 
 namespace Celikoor_Semangat18
@@ -39,12 +40,11 @@ namespace Celikoor_Semangat18
             if (selectedKelompoksIndex != -1) comboBoxKelompok.SelectedIndex = selectedKelompoksIndex;
             else comboBoxKelompok.SelectedIndex = 0;
 
-            List<string> bahasas = new List<string>(){ "CHN", "EN", "ID", "JPN", "KOR", "OTH" };
+            List<string> bahasas = new List<string>() { "CHN", "EN", "ID", "JPN", "KOR", "OTH" };
             int selectedBahasaIndex = bahasas.FindIndex(item => item == filmUpdate.Bahasa);
             if (selectedBahasaIndex != -1) comboBoxBahasa.SelectedIndex = selectedKelompoksIndex;
             else comboBoxBahasa.SelectedIndex = 0;
             textBoxIsSubIndo.Text = filmUpdate.Is_sub_indo.ToString();
-            textBoxCoverImage.Text = filmUpdate.Cover_image;
             textBoxDiskonNominal.Text = filmUpdate.Diskon_nominal.ToString();
         }
 
@@ -76,7 +76,6 @@ namespace Celikoor_Semangat18
                 p.Kelompoks_id = int.Parse(comboBoxKelompok.SelectedValue.ToString());
                 p.Bahasa = comboBoxBahasa.SelectedItem.ToString();
                 p.Is_sub_indo = int.Parse(textBoxIsSubIndo.Text);
-                p.Cover_image = textBoxCoverImage.Text;
                 p.Diskon_nominal = int.Parse(textBoxDiskonNominal.Text);
 
                 //tambahkan ke database:
@@ -107,5 +106,40 @@ namespace Celikoor_Semangat18
         {
             Close();
         }
-    }
+
+        private void buttonBrowseCoverImg_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "Image Files (.png;.jpg;.jpeg;.gif;.bmp)|.png;.jpg;.jpeg;.gif;.bmp|All files (.)|.";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string imagePath = openFileDialog.FileName;
+
+                    pictureBoxCover.ImageLocation = imagePath;
+
+/*                    SaveImageToResource(imagePath);*/           
+                }
+            }
+        }
+
+        private void pictureBoxCover_Click(object sender, EventArgs e)
+        {
+                pictureBoxCover.Image = Properties.Resources.icons8_username_64;
+        }
+        /*private void SaveImageToResource(string imagePath)
+{
+   string resourceFolder = @"..\..\Resources\";
+
+   // Mendapatkan nama file dari path
+   string fileName = Path.GetFileName(imagePath);
+
+   // Menggabungkan path tujuan untuk menyimpan gambar
+   string destinationPath = Path.Combine(resourceFolder, fileName);
+
+   // Menyalin file gambar ke folder resource
+   File.Copy(imagePath, destinationPath, true);
+}*/
+    } 
 }

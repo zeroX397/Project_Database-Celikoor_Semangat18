@@ -33,7 +33,6 @@
             this.comboBoxKelompok = new System.Windows.Forms.ComboBox();
             this.textBoxDiskonNominal = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBoxCoverImage = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxIsSubIndo = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -53,7 +52,10 @@
             this.buttonSimpan = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.pictureBoxCover = new System.Windows.Forms.PictureBox();
+            this.buttonBrowseCoverImg = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCover)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -62,8 +64,6 @@
             this.groupBox1.Controls.Add(this.comboBoxKelompok);
             this.groupBox1.Controls.Add(this.textBoxDiskonNominal);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBoxCoverImage);
-            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textBoxIsSubIndo);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label7);
@@ -80,7 +80,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(21, 64);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(434, 369);
+            this.groupBox1.Size = new System.Drawing.Size(409, 321);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             // 
@@ -119,7 +119,7 @@
             // textBoxDiskonNominal
             // 
             this.textBoxDiskonNominal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDiskonNominal.Location = new System.Drawing.Point(198, 314);
+            this.textBoxDiskonNominal.Location = new System.Drawing.Point(198, 280);
             this.textBoxDiskonNominal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxDiskonNominal.Name = "textBoxDiskonNominal";
             this.textBoxDiskonNominal.Size = new System.Drawing.Size(198, 26);
@@ -130,26 +130,17 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(-5, 312);
+            this.label11.Location = new System.Drawing.Point(29, 283);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(127, 20);
             this.label11.TabIndex = 19;
             this.label11.Text = "Diskon Nominal :";
             // 
-            // textBoxCoverImage
-            // 
-            this.textBoxCoverImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCoverImage.Location = new System.Drawing.Point(198, 277);
-            this.textBoxCoverImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBoxCoverImage.Name = "textBoxCoverImage";
-            this.textBoxCoverImage.Size = new System.Drawing.Size(198, 26);
-            this.textBoxCoverImage.TabIndex = 18;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(26, 283);
+            this.label9.Location = new System.Drawing.Point(461, 64);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(107, 20);
             this.label9.TabIndex = 17;
@@ -291,7 +282,7 @@
             this.buttonBatal.BackColor = System.Drawing.Color.Transparent;
             this.buttonBatal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBatal.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.buttonBatal.Location = new System.Drawing.Point(29, 439);
+            this.buttonBatal.Location = new System.Drawing.Point(27, 391);
             this.buttonBatal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonBatal.Name = "buttonBatal";
             this.buttonBatal.Size = new System.Drawing.Size(103, 40);
@@ -305,7 +296,7 @@
             this.buttonSimpan.BackColor = System.Drawing.Color.Transparent;
             this.buttonSimpan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSimpan.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.buttonSimpan.Location = new System.Drawing.Point(303, 439);
+            this.buttonSimpan.Location = new System.Drawing.Point(303, 391);
             this.buttonSimpan.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonSimpan.Name = "buttonSimpan";
             this.buttonSimpan.Size = new System.Drawing.Size(114, 40);
@@ -321,7 +312,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(22, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(395, 38);
+            this.label2.Size = new System.Drawing.Size(752, 38);
             this.label2.TabIndex = 33;
             this.label2.Text = "TAMBAH FILM";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -333,24 +324,50 @@
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.ForeColor = System.Drawing.Color.Black;
-            this.buttonExit.Location = new System.Drawing.Point(428, 21);
+            this.buttonExit.Location = new System.Drawing.Point(741, 11);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(27, 26);
+            this.buttonExit.Size = new System.Drawing.Size(34, 42);
             this.buttonExit.TabIndex = 36;
             this.buttonExit.Text = "X";
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
+            // pictureBoxCover
+            // 
+            this.pictureBoxCover.Location = new System.Drawing.Point(436, 93);
+            this.pictureBoxCover.Name = "pictureBoxCover";
+            this.pictureBoxCover.Size = new System.Drawing.Size(314, 338);
+            this.pictureBoxCover.TabIndex = 37;
+            this.pictureBoxCover.TabStop = false;
+            this.pictureBoxCover.Click += new System.EventHandler(this.pictureBoxCover_Click);
+            // 
+            // buttonBrowseCoverImg
+            // 
+            this.buttonBrowseCoverImg.BackColor = System.Drawing.Color.Transparent;
+            this.buttonBrowseCoverImg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBrowseCoverImg.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.buttonBrowseCoverImg.Location = new System.Drawing.Point(583, 59);
+            this.buttonBrowseCoverImg.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonBrowseCoverImg.Name = "buttonBrowseCoverImg";
+            this.buttonBrowseCoverImg.Size = new System.Drawing.Size(110, 28);
+            this.buttonBrowseCoverImg.TabIndex = 38;
+            this.buttonBrowseCoverImg.Text = "Browse";
+            this.buttonBrowseCoverImg.UseVisualStyleBackColor = false;
+            this.buttonBrowseCoverImg.Click += new System.EventHandler(this.buttonBrowseCoverImg_Click);
+            // 
             // FormTambahFilm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 533);
+            this.ClientSize = new System.Drawing.Size(784, 458);
+            this.Controls.Add(this.buttonBrowseCoverImg);
+            this.Controls.Add(this.pictureBoxCover);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonBatal);
             this.Controls.Add(this.buttonSimpan);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTambahFilm";
@@ -358,7 +375,9 @@
             this.Text = "FormTambahFilm";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCover)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -367,7 +386,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBoxDiskonNominal;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBoxCoverImage;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBoxIsSubIndo;
         private System.Windows.Forms.Label label10;
@@ -389,5 +407,7 @@
         private System.Windows.Forms.ComboBox comboBoxKelompok;
         private System.Windows.Forms.ComboBox comboBoxBahasa;
         private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.PictureBox pictureBoxCover;
+        private System.Windows.Forms.Button buttonBrowseCoverImg;
     }
 }

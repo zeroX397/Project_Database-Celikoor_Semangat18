@@ -285,5 +285,9 @@
   <ItemGroup>
     <None Include="Resources\icons8-phone-64.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Cover Moana.jpeg" />
+    <Content Include="Resources\Cover TheMarvels.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

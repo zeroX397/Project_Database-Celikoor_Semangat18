@@ -479,5 +479,26 @@ namespace Celikoor_Semangat18
         {
             Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (comboBoxJudul.SelectedIndex == 1 && comboBoxJudul.Items.Count >= 2)
+            {
+                pictureBox1.Image = Properties.Resources.icons8_username_64;
+            }
+            else if (comboBoxJudul.SelectedIndex == 2 && comboBoxJudul.Items.Count >= 3)
+            {
+                pictureBox1.Image = Properties.Resources.CELIKOOR_removebg_preview;
+            }
+            else
+            {
+                // Handle the case where the selected index is out of range or unexpected
+                // You might want to show an error message or set a default image.
+                // For example:
+                // pictureBox1.Image = Properties.Resources.DefaultImage;
+            }
+
+
+        }
     }
 }
