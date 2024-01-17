@@ -51,5 +51,10 @@ namespace Celikoor_Semangat18
                 }
             }
         }
+
+        private void buttonCari_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
