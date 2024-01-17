@@ -58,11 +58,11 @@ namespace Celikoor_Library
         }
         public static void UbahData(int id_invoice, Invoices obj)
         {
-            //string sql = "UPDATE invoices " +
-            //    $"SET kasir_id= '{obj.nama_cabang}' " +
-            //    $"WHERE id='{id_invoice}';";
-            //Console.WriteLine(sql);
-            //Koneksi.JalankanPerintahNonQuery(sql);
+            string sql = "UPDATE invoices " +
+                $"SET status= '{"VALIDASI"}' " +
+                $"WHERE id='{id_invoice}';";
+            Console.WriteLine(sql);
+            Koneksi.JalankanPerintahNonQuery(sql);
         }
         public static List<Invoices> BacaData(string filter = "", string nilai = "")
         {
@@ -83,7 +83,7 @@ namespace Celikoor_Library
                 tampung.Grand_total = int.Parse(drHasil.GetValue(2).ToString());
                 tampung.diskon_nominal = int.Parse(drHasil.GetValue(3).ToString());
                 tampung.konsumens_id = int.Parse(drHasil.GetValue(4).ToString());
-                tampung.kasir_id = drHasil.IsDBNull(5) ? -1 : int.Parse(drHasil.GetValue(5).ToString());
+                tampung.kasir_id = drHasil.IsDBNull(5) ? 1 : int.Parse(drHasil.GetValue(5).ToString());
                 tampung.status = drHasil.GetValue(6).ToString();
                 listHasil.Add(tampung);
             }

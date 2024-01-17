@@ -153,3 +153,5 @@ C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_Se
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormLaporan.resources
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormProfile.resources
 C:\Users\chris\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\bin\Debug\Celikoor_Library.dll
+C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormProfile.resources
+C:\Users\user\Documents\GitHub\Project_Database-Celikoor_Semangat18\Celikoor_SemangatKel18\Celikoor_SemangatKel18\obj\Debug\Celikoor_Semangat18.FormInvoice.resources
