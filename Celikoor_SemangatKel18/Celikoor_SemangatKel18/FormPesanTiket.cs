@@ -73,6 +73,7 @@ namespace Celikoor_Semangat18
 
         private void comboBoxJudul_SelectedIndexChanged(object sender, EventArgs e)
         {
+            panel10.Controls.Clear();
             if (finishLoad && comboBoxJudul.SelectedIndex != -1)
             {
                 Film selectedFilm = (Film)comboBoxJudul.SelectedItem;
@@ -138,6 +139,7 @@ namespace Celikoor_Semangat18
 
         private void comboBoxCinema_SelectedIndexChanged(object sender, EventArgs e)
         {
+            panel10.Controls.Clear();
             if (finishLoad &&  comboBoxJudul.SelectedIndex != -1 && comboBoxCinema.SelectedIndex != -1)
             {
                 Cinema selectedCinema = (Cinema)comboBoxCinema.SelectedItem;
@@ -168,6 +170,7 @@ namespace Celikoor_Semangat18
 
         private void comboBoxStudio_SelectedIndexChanged(object sender, EventArgs e)
         {
+            panel10.Controls.Clear();
             if (finishLoad && comboBoxJudul.SelectedIndex != -1 && 
                 comboBoxCinema.SelectedIndex != -1 && comboBoxStudio.SelectedIndex != -1 
             ) {
@@ -202,6 +205,7 @@ namespace Celikoor_Semangat18
 
         private void generateKursi(int jumlahKursi)
         {
+            panel10.Controls.Clear();
             List<string> listHuruf = new List<string>() { "A", "B", "C" };
             int ctrGenerated = 0;
             for (int i = 0; i < listHuruf.Count; i++)
@@ -213,7 +217,12 @@ namespace Celikoor_Semangat18
                         if (ctrGenerated >= jumlahKursi) break;
                         CheckBox checkBox = new CheckBox();
                         int seatNumber = (k + 1) + (j * 4);
-                        string seatName = $"{listHuruf[i]}{seatNumber}";
+                        string seatNumberString = seatNumber.ToString();
+                        if(seatNumberString.Length <= 2)
+                        {
+                            seatNumberString = seatNumberString.PadLeft(2, '0');
+                        }
+                        string seatName = $"{listHuruf[i]}{seatNumberString}";
                         checkBox.Name = seatName;
                         checkBox.Text = seatName;
                         checkBox.BackColor = Color.SlateBlue;
@@ -413,7 +422,7 @@ namespace Celikoor_Semangat18
         }
         private void GenerateCheckBoxes(string columnName, Panel panel)
         {
-            Studio s = (Studio)comboBoxStudio.SelectedItem;
+            /*Studio s = (Studio)comboBoxStudio.SelectedItem;
             int kapastitas = s.Kapasitas;
             int rows = (int)Math.Ceiling((decimal)kapastitas / 12);
             int limit = 4;
@@ -430,11 +439,11 @@ namespace Celikoor_Semangat18
                     panel.Controls.Add(cb);
                 }
                 CheckCheckBoxes(panel);
-            }
+            }*/
         }
         private void CheckCheckBoxes(Panel panel)
         {
-            Studio s = (Studio)comboBoxStudio.SelectedItem;
+            /*Studio s = (Studio)comboBoxStudio.SelectedItem;
             List<string> listKursi = new List<string>();
             listKursi = Tiket.GetNomorKursi(s, dataFilm);
             foreach (CheckBox checkBox in panel.Controls)
@@ -444,7 +453,7 @@ namespace Celikoor_Semangat18
                     checkBox.Enabled = false;
                     checkBox.Checked = true;
                 }
-            } 
+            }*/ 
         }
         private void label21_Click(object sender, EventArgs e)
         {
@@ -464,6 +473,11 @@ namespace Celikoor_Semangat18
         private void label21_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

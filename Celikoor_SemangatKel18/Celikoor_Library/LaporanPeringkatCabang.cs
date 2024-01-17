@@ -41,15 +41,21 @@ namespace Celikoor_Library
         {
             string perintah;
             if (filter == "")
+            {
                 perintah = "SELECT c.id AS cinema_id, c.nama_cabang, c.alamat, c.kota, SUM(t.harga) AS total_pendapatan" +
                     " FROM cinemas c INNER JOIN studios s ON c.id = s.cinemas_id INNER JOIN film_studio fs ON s.id = studios_id INNER JOIN sesi_films sf ON fs.studios_id = sf.studios_id INNER JOIN tikets t ON sf.studios_id = t.studios_id " +
                     "GROUP BY c.id, c.nama_cabang, c.alamat, c.kota " +
                     "ORDER BY total_pendapatan DESC LIMIT 3; ";
+            }
             else
+            {
                 perintah = "SELECT c.id AS cinema_id, c.nama_cabang, c.alamat, c.kota, SUM(t.harga) AS total_pendapatan" +
                     " FROM cinemas c INNER JOIN studios s ON c.id = s.cinemas_id INNER JOIN film_studio fs ON s.id = studios_id INNER JOIN sesi_films sf ON fs.studios_id = sf.studios_id INNER JOIN tikets t ON sf.studios_id = t.studios_id " +
                     "GROUP BY c.id, c.nama_cabang, c.alamat, c.kota " +
                     "ORDER BY total_pendapatan DESC LIMIT 3; ";
+
+            }
+                
 
             MySqlDataReader drHasil = Koneksi.JalankanPerintahSelect(perintah);
 

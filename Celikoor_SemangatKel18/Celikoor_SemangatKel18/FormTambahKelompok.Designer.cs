@@ -37,6 +37,7 @@ namespace Celikoor_Semangat18
             this.label2 = new System.Windows.Forms.Label();
             this.buttonBatal = new System.Windows.Forms.Button();
             this.buttonSimpan = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +58,7 @@ namespace Celikoor_Semangat18
             this.textBoxNama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNama.Location = new System.Drawing.Point(176, 49);
             this.textBoxNama.Name = "textBoxNama";
-            this.textBoxNama.Size = new System.Drawing.Size(198, 35);
+            this.textBoxNama.Size = new System.Drawing.Size(198, 26);
             this.textBoxNama.TabIndex = 4;
             // 
             // labelNama
@@ -66,7 +67,7 @@ namespace Celikoor_Semangat18
             this.labelNama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNama.Location = new System.Drawing.Point(26, 53);
             this.labelNama.Name = "labelNama";
-            this.labelNama.Size = new System.Drawing.Size(89, 29);
+            this.labelNama.Size = new System.Drawing.Size(59, 20);
             this.labelNama.TabIndex = 3;
             this.labelNama.Text = "Nama :";
             // 
@@ -77,7 +78,7 @@ namespace Celikoor_Semangat18
             this.textBoxId.Location = new System.Drawing.Point(176, 16);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.ReadOnly = true;
-            this.textBoxId.Size = new System.Drawing.Size(198, 35);
+            this.textBoxId.Size = new System.Drawing.Size(198, 26);
             this.textBoxId.TabIndex = 2;
             // 
             // label1
@@ -86,13 +87,13 @@ namespace Celikoor_Semangat18
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(26, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 29);
+            this.label1.Size = new System.Drawing.Size(31, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Id :";
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.DarkBlue;
+            this.label2.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(19, 18);
@@ -130,17 +131,36 @@ namespace Celikoor_Semangat18
             this.buttonSimpan.UseVisualStyleBackColor = false;
             this.buttonSimpan.Click += new System.EventHandler(this.buttonSimpan_Click);
             // 
+            // buttonExit
+            // 
+            this.buttonExit.BackColor = System.Drawing.Color.Transparent;
+            this.buttonExit.FlatAppearance.BorderSize = 0;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.ForeColor = System.Drawing.Color.Black;
+            this.buttonExit.Location = new System.Drawing.Point(387, 18);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(27, 38);
+            this.buttonExit.TabIndex = 36;
+            this.buttonExit.Text = "X";
+            this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
             // FormTambahKelompok
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(452, 274);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonBatal);
             this.Controls.Add(this.buttonSimpan);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "FormTambahKelompok";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTambahKelompok";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -158,5 +178,6 @@ namespace Celikoor_Semangat18
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonBatal;
         private System.Windows.Forms.Button buttonSimpan;
+        private System.Windows.Forms.Button buttonExit;
     }
 }

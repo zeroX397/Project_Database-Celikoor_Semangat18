@@ -52,19 +52,19 @@ namespace Celikoor_Semangat18
             this.panel1.Controls.Add(this.buttonPeringkat);
             this.panel1.Controls.Add(this.buttonFilmTerlaris);
             this.panel1.ForeColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(0, 6);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(601, 665);
+            this.panel1.Size = new System.Drawing.Size(451, 540);
             this.panel1.TabIndex = 55;
             // 
             // buttonKonsumenGenreComedy
             // 
             this.buttonKonsumenGenreComedy.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonKonsumenGenreComedy.Location = new System.Drawing.Point(45, 518);
-            this.buttonKonsumenGenreComedy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonKonsumenGenreComedy.Location = new System.Drawing.Point(34, 421);
+            this.buttonKonsumenGenreComedy.Margin = new System.Windows.Forms.Padding(2);
             this.buttonKonsumenGenreComedy.Name = "buttonKonsumenGenreComedy";
-            this.buttonKonsumenGenreComedy.Size = new System.Drawing.Size(485, 66);
+            this.buttonKonsumenGenreComedy.Size = new System.Drawing.Size(364, 54);
             this.buttonKonsumenGenreComedy.TabIndex = 61;
             this.buttonKonsumenGenreComedy.Text = "10 Konsumen yang sering menonton film komedi";
             this.buttonKonsumenGenreComedy.UseVisualStyleBackColor = true;
@@ -75,19 +75,20 @@ namespace Celikoor_Semangat18
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(39, 31);
+            this.label1.Location = new System.Drawing.Point(29, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 34);
+            this.label1.Size = new System.Drawing.Size(175, 26);
             this.label1.TabIndex = 19;
             this.label1.Text = "Laporan Sistem";
             // 
             // buttonStudioUtilitasRendah
             // 
             this.buttonStudioUtilitasRendah.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStudioUtilitasRendah.Location = new System.Drawing.Point(45, 418);
-            this.buttonStudioUtilitasRendah.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonStudioUtilitasRendah.Location = new System.Drawing.Point(34, 340);
+            this.buttonStudioUtilitasRendah.Margin = new System.Windows.Forms.Padding(2);
             this.buttonStudioUtilitasRendah.Name = "buttonStudioUtilitasRendah";
-            this.buttonStudioUtilitasRendah.Size = new System.Drawing.Size(485, 66);
+            this.buttonStudioUtilitasRendah.Size = new System.Drawing.Size(364, 54);
             this.buttonStudioUtilitasRendah.TabIndex = 60;
             this.buttonStudioUtilitasRendah.Text = "3 Studio dengan tingkat utilitas terendah";
             this.buttonStudioUtilitasRendah.UseVisualStyleBackColor = true;
@@ -95,10 +96,10 @@ namespace Celikoor_Semangat18
             // buttonFilmPenontonTdkHadir
             // 
             this.buttonFilmPenontonTdkHadir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFilmPenontonTdkHadir.Location = new System.Drawing.Point(45, 322);
-            this.buttonFilmPenontonTdkHadir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonFilmPenontonTdkHadir.Location = new System.Drawing.Point(34, 262);
+            this.buttonFilmPenontonTdkHadir.Margin = new System.Windows.Forms.Padding(2);
             this.buttonFilmPenontonTdkHadir.Name = "buttonFilmPenontonTdkHadir";
-            this.buttonFilmPenontonTdkHadir.Size = new System.Drawing.Size(485, 66);
+            this.buttonFilmPenontonTdkHadir.Size = new System.Drawing.Size(364, 54);
             this.buttonFilmPenontonTdkHadir.TabIndex = 59;
             this.buttonFilmPenontonTdkHadir.Text = "3 Film dengan Ketidakhadiran Penonton";
             this.buttonFilmPenontonTdkHadir.UseVisualStyleBackColor = true;
@@ -107,10 +108,10 @@ namespace Celikoor_Semangat18
             // buttonPeringkat
             // 
             this.buttonPeringkat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPeringkat.Location = new System.Drawing.Point(45, 207);
-            this.buttonPeringkat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonPeringkat.Location = new System.Drawing.Point(34, 168);
+            this.buttonPeringkat.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPeringkat.Name = "buttonPeringkat";
-            this.buttonPeringkat.Size = new System.Drawing.Size(485, 90);
+            this.buttonPeringkat.Size = new System.Drawing.Size(364, 73);
             this.buttonPeringkat.TabIndex = 58;
             this.buttonPeringkat.Text = "Peringkat 3 cabang dengan pemasukan terbanyak";
             this.buttonPeringkat.UseVisualStyleBackColor = true;
@@ -119,13 +120,14 @@ namespace Celikoor_Semangat18
             // buttonFilmTerlaris
             // 
             this.buttonFilmTerlaris.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFilmTerlaris.Location = new System.Drawing.Point(45, 108);
-            this.buttonFilmTerlaris.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonFilmTerlaris.Location = new System.Drawing.Point(34, 88);
+            this.buttonFilmTerlaris.Margin = new System.Windows.Forms.Padding(2);
             this.buttonFilmTerlaris.Name = "buttonFilmTerlaris";
-            this.buttonFilmTerlaris.Size = new System.Drawing.Size(485, 69);
+            this.buttonFilmTerlaris.Size = new System.Drawing.Size(364, 56);
             this.buttonFilmTerlaris.TabIndex = 57;
             this.buttonFilmTerlaris.Text = "Film Terlaris setiap bulan sepanjang 2023";
             this.buttonFilmTerlaris.UseVisualStyleBackColor = true;
+            this.buttonFilmTerlaris.Click += new System.EventHandler(this.buttonFilmTerlaris_Click);
             // 
             // buttonExit
             // 
@@ -134,36 +136,38 @@ namespace Celikoor_Semangat18
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.buttonExit.Location = new System.Drawing.Point(1203, 21);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonExit.Location = new System.Drawing.Point(902, 17);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(36, 32);
+            this.buttonExit.Size = new System.Drawing.Size(27, 26);
             this.buttonExit.TabIndex = 23;
             this.buttonExit.Text = "X";
             this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(635, 69);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(476, 56);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(581, 550);
+            this.dataGridView1.Size = new System.Drawing.Size(436, 447);
             this.dataGridView1.TabIndex = 56;
             // 
             // FormLaporan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1261, 634);
+            this.ClientSize = new System.Drawing.Size(946, 515);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormLaporan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLaporan";
             this.Load += new System.EventHandler(this.FormLaporan_Load);
             this.panel1.ResumeLayout(false);

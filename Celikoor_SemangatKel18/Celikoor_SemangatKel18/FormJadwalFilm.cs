@@ -289,5 +289,10 @@ namespace Celikoor_Semangat18
                 MessageBox.Show("Ada masalah menambahkan data, " + ex.Message);
             }
         }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

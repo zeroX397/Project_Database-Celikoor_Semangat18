@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textSinopsis = new System.Windows.Forms.Label();
             this.textKelompok = new System.Windows.Forms.Label();
             this.textGenre = new System.Windows.Forms.Label();
             this.textAktor = new System.Windows.Forms.Label();
@@ -62,11 +63,11 @@
             this.labelWeekday = new System.Windows.Forms.Label();
             this.textKapasitas = new System.Windows.Forms.Label();
             this.textJenisStudio = new System.Windows.Forms.Label();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonCancel = new System.Windows.Forms.Button();
-            this.textSinopsis = new System.Windows.Forms.Label();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -178,6 +179,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(528, 315);
             this.panel2.TabIndex = 3;
+            // 
+            // textSinopsis
+            // 
+            this.textSinopsis.Font = new System.Drawing.Font("Century", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSinopsis.ForeColor = System.Drawing.Color.White;
+            this.textSinopsis.Location = new System.Drawing.Point(11, 34);
+            this.textSinopsis.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.textSinopsis.Name = "textSinopsis";
+            this.textSinopsis.Size = new System.Drawing.Size(503, 131);
+            this.textSinopsis.TabIndex = 11;
+            this.textSinopsis.Text = "-";
             // 
             // textKelompok
             // 
@@ -513,6 +525,20 @@
             this.textJenisStudio.TabIndex = 53;
             this.textJenisStudio.Text = "-";
             // 
+            // buttonCancel
+            // 
+            this.buttonCancel.BackColor = System.Drawing.Color.Black;
+            this.buttonCancel.Font = new System.Drawing.Font("Century", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.ForeColor = System.Drawing.Color.White;
+            this.buttonCancel.Location = new System.Drawing.Point(574, 530);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(186, 42);
+            this.buttonCancel.TabIndex = 21;
+            this.buttonCancel.Text = "Keluar";
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -546,30 +572,21 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // buttonCancel
+            // buttonExit
             // 
-            this.buttonCancel.BackColor = System.Drawing.Color.Black;
-            this.buttonCancel.Font = new System.Drawing.Font("Century", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancel.ForeColor = System.Drawing.Color.White;
-            this.buttonCancel.Location = new System.Drawing.Point(574, 530);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(186, 42);
-            this.buttonCancel.TabIndex = 21;
-            this.buttonCancel.Text = "Keluar";
-            this.buttonCancel.UseVisualStyleBackColor = false;
-            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
-            // 
-            // textSinopsis
-            // 
-            this.textSinopsis.Font = new System.Drawing.Font("Century", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSinopsis.ForeColor = System.Drawing.Color.White;
-            this.textSinopsis.Location = new System.Drawing.Point(11, 34);
-            this.textSinopsis.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.textSinopsis.Name = "textSinopsis";
-            this.textSinopsis.Size = new System.Drawing.Size(503, 131);
-            this.textSinopsis.TabIndex = 11;
-            this.textSinopsis.Text = "-";
+            this.buttonExit.BackColor = System.Drawing.Color.Transparent;
+            this.buttonExit.FlatAppearance.BorderSize = 0;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.ForeColor = System.Drawing.Color.White;
+            this.buttonExit.Location = new System.Drawing.Point(1303, 9);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(27, 26);
+            this.buttonExit.TabIndex = 25;
+            this.buttonExit.Text = "X";
+            this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // FormJadwalFilm
             // 
@@ -577,11 +594,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1353, 641);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormJadwalFilm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPesanTiket";
             this.Load += new System.EventHandler(this.FormPesanTiket_Load);
             this.panel2.ResumeLayout(false);
@@ -636,5 +655,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerTanggal;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Label textSinopsis;
+        private System.Windows.Forms.Button buttonExit;
     }
 }

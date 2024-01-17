@@ -36,6 +36,7 @@
             this.radioButtonAktor2 = new System.Windows.Forms.RadioButton();
             this.textBoxCari = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -43,6 +44,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.buttonExit);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(2, 0);
@@ -75,7 +77,7 @@
             this.label1.Location = new System.Drawing.Point(19, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(413, 39);
+            this.label1.Size = new System.Drawing.Size(279, 26);
             this.label1.TabIndex = 19;
             this.label1.Text = "Pencatatan Kedatangan";
             // 
@@ -117,7 +119,7 @@
             this.textBoxCari.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCari.Location = new System.Drawing.Point(113, 75);
             this.textBoxCari.Name = "textBoxCari";
-            this.textBoxCari.Size = new System.Drawing.Size(187, 35);
+            this.textBoxCari.Size = new System.Drawing.Size(187, 26);
             this.textBoxCari.TabIndex = 51;
             // 
             // label2
@@ -126,9 +128,25 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(30, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 29);
+            this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 49;
             this.label2.Text = "Barcode :";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(724, 17);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(27, 26);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormPencatatanKedatangan
             // 
@@ -141,7 +159,9 @@
             this.Controls.Add(this.radioButtonAktor2);
             this.Controls.Add(this.textBoxCari);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPencatatanKedatangan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPencatatanKedatangan";
             this.Load += new System.EventHandler(this.FormPencatatanKedatangan_Load);
             this.panel1.ResumeLayout(false);
@@ -162,5 +182,6 @@
         private System.Windows.Forms.RadioButton radioButtonAktor2;
         private System.Windows.Forms.TextBox textBoxCari;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }

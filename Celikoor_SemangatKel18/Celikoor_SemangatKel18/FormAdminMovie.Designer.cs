@@ -61,7 +61,7 @@ namespace Celikoor_Semangat18
             this.radioButtonAktor.Location = new System.Drawing.Point(23, 160);
             this.radioButtonAktor.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonAktor.Name = "radioButtonAktor";
-            this.radioButtonAktor.Size = new System.Drawing.Size(112, 38);
+            this.radioButtonAktor.Size = new System.Drawing.Size(77, 27);
             this.radioButtonAktor.TabIndex = 54;
             this.radioButtonAktor.TabStop = true;
             this.radioButtonAktor.Text = "Aktor";
@@ -76,7 +76,7 @@ namespace Celikoor_Semangat18
             this.radioButtonKelompok.Location = new System.Drawing.Point(23, 92);
             this.radioButtonKelompok.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonKelompok.Name = "radioButtonKelompok";
-            this.radioButtonKelompok.Size = new System.Drawing.Size(178, 38);
+            this.radioButtonKelompok.Size = new System.Drawing.Size(123, 27);
             this.radioButtonKelompok.TabIndex = 53;
             this.radioButtonKelompok.TabStop = true;
             this.radioButtonKelompok.Text = "Kelompok";
@@ -91,7 +91,7 @@ namespace Celikoor_Semangat18
             this.radioButtonGenre.Location = new System.Drawing.Point(173, 92);
             this.radioButtonGenre.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonGenre.Name = "radioButtonGenre";
-            this.radioButtonGenre.Size = new System.Drawing.Size(126, 38);
+            this.radioButtonGenre.Size = new System.Drawing.Size(85, 27);
             this.radioButtonGenre.TabIndex = 52;
             this.radioButtonGenre.TabStop = true;
             this.radioButtonGenre.Text = "Genre";
@@ -106,7 +106,7 @@ namespace Celikoor_Semangat18
             this.radioButtonFilm.Location = new System.Drawing.Point(190, 172);
             this.radioButtonFilm.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonFilm.Name = "radioButtonFilm";
-            this.radioButtonFilm.Size = new System.Drawing.Size(93, 38);
+            this.radioButtonFilm.Size = new System.Drawing.Size(65, 27);
             this.radioButtonFilm.TabIndex = 50;
             this.radioButtonFilm.TabStop = true;
             this.radioButtonFilm.Text = "Film";
@@ -127,6 +127,7 @@ namespace Celikoor_Semangat18
             this.buttonExit.TabIndex = 23;
             this.buttonExit.Text = "X";
             this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // label1
             // 
@@ -137,7 +138,7 @@ namespace Celikoor_Semangat18
             this.label1.Location = new System.Drawing.Point(19, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(278, 39);
+            this.label1.Size = new System.Drawing.Size(187, 26);
             this.label1.TabIndex = 19;
             this.label1.Text = "Halaman Admin";
             // 
@@ -157,7 +158,7 @@ namespace Celikoor_Semangat18
             this.textBoxCari.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCari.Location = new System.Drawing.Point(539, 96);
             this.textBoxCari.Name = "textBoxCari";
-            this.textBoxCari.Size = new System.Drawing.Size(214, 35);
+            this.textBoxCari.Size = new System.Drawing.Size(214, 26);
             this.textBoxCari.TabIndex = 65;
             // 
             // label2
@@ -166,7 +167,7 @@ namespace Celikoor_Semangat18
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(332, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 29);
+            this.label2.Size = new System.Drawing.Size(49, 20);
             this.label2.TabIndex = 63;
             this.label2.Text = "Cari : ";
             // 
@@ -177,7 +178,7 @@ namespace Celikoor_Semangat18
             this.comboBoxCari.FormattingEnabled = true;
             this.comboBoxCari.Location = new System.Drawing.Point(398, 93);
             this.comboBoxCari.Name = "comboBoxCari";
-            this.comboBoxCari.Size = new System.Drawing.Size(121, 37);
+            this.comboBoxCari.Size = new System.Drawing.Size(121, 28);
             this.comboBoxCari.TabIndex = 64;
             // 
             // dataGridView1
@@ -255,7 +256,7 @@ namespace Celikoor_Semangat18
             this.radioButtonJadwalFilm.Location = new System.Drawing.Point(190, 230);
             this.radioButtonJadwalFilm.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonJadwalFilm.Name = "radioButtonJadwalFilm";
-            this.radioButtonJadwalFilm.Size = new System.Drawing.Size(197, 38);
+            this.radioButtonJadwalFilm.Size = new System.Drawing.Size(138, 27);
             this.radioButtonJadwalFilm.TabIndex = 67;
             this.radioButtonJadwalFilm.TabStop = true;
             this.radioButtonJadwalFilm.Text = "Jadwal Film";
@@ -270,7 +271,7 @@ namespace Celikoor_Semangat18
             this.radioButtonActorFilm.Location = new System.Drawing.Point(22, 230);
             this.radioButtonActorFilm.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonActorFilm.Name = "radioButtonActorFilm";
-            this.radioButtonActorFilm.Size = new System.Drawing.Size(175, 38);
+            this.radioButtonActorFilm.Size = new System.Drawing.Size(120, 27);
             this.radioButtonActorFilm.TabIndex = 66;
             this.radioButtonActorFilm.TabStop = true;
             this.radioButtonActorFilm.Text = "Actor Film";
@@ -285,7 +286,7 @@ namespace Celikoor_Semangat18
             this.radioButtonFilmStudio.Location = new System.Drawing.Point(23, 307);
             this.radioButtonFilmStudio.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonFilmStudio.Name = "radioButtonFilmStudio";
-            this.radioButtonFilmStudio.Size = new System.Drawing.Size(184, 38);
+            this.radioButtonFilmStudio.Size = new System.Drawing.Size(127, 27);
             this.radioButtonFilmStudio.TabIndex = 68;
             this.radioButtonFilmStudio.TabStop = true;
             this.radioButtonFilmStudio.Text = "Film Studio";
@@ -300,7 +301,7 @@ namespace Celikoor_Semangat18
             this.radioButtonSesiFilm.Location = new System.Drawing.Point(211, 307);
             this.radioButtonSesiFilm.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonSesiFilm.Name = "radioButtonSesiFilm";
-            this.radioButtonSesiFilm.Size = new System.Drawing.Size(153, 38);
+            this.radioButtonSesiFilm.Size = new System.Drawing.Size(105, 27);
             this.radioButtonSesiFilm.TabIndex = 69;
             this.radioButtonSesiFilm.TabStop = true;
             this.radioButtonSesiFilm.Text = "Sesi Film";
@@ -315,7 +316,7 @@ namespace Celikoor_Semangat18
             this.radioButtonGenreFilm.Location = new System.Drawing.Point(22, 376);
             this.radioButtonGenreFilm.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonGenreFilm.Name = "radioButtonGenreFilm";
-            this.radioButtonGenreFilm.Size = new System.Drawing.Size(187, 38);
+            this.radioButtonGenreFilm.Size = new System.Drawing.Size(127, 27);
             this.radioButtonGenreFilm.TabIndex = 70;
             this.radioButtonGenreFilm.TabStop = true;
             this.radioButtonGenreFilm.Text = "Genre Film";
@@ -345,8 +346,10 @@ namespace Celikoor_Semangat18
             this.Controls.Add(this.radioButtonGenre);
             this.Controls.Add(this.radioButtonFilm);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormAdminMovie";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAdminMovie";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

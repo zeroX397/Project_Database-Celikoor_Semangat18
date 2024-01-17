@@ -206,5 +206,10 @@ namespace Celikoor_Semangat18
                 MessageBox.Show("Pilih radio button terlebih dahulu");
             }
         }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -52,7 +52,7 @@ namespace Celikoor_Semangat18
             this.textBoxCari.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCari.Location = new System.Drawing.Point(551, 86);
             this.textBoxCari.Name = "textBoxCari";
-            this.textBoxCari.Size = new System.Drawing.Size(198, 35);
+            this.textBoxCari.Size = new System.Drawing.Size(198, 26);
             this.textBoxCari.TabIndex = 57;
             // 
             // label2
@@ -61,7 +61,7 @@ namespace Celikoor_Semangat18
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(340, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 29);
+            this.label2.Size = new System.Drawing.Size(49, 20);
             this.label2.TabIndex = 55;
             this.label2.Text = "Cari : ";
             // 
@@ -72,7 +72,7 @@ namespace Celikoor_Semangat18
             this.comboBoxCari.FormattingEnabled = true;
             this.comboBoxCari.Location = new System.Drawing.Point(421, 90);
             this.comboBoxCari.Name = "comboBoxCari";
-            this.comboBoxCari.Size = new System.Drawing.Size(121, 37);
+            this.comboBoxCari.Size = new System.Drawing.Size(121, 28);
             this.comboBoxCari.TabIndex = 56;
             // 
             // dataGridView1
@@ -94,7 +94,7 @@ namespace Celikoor_Semangat18
             this.radioButtonJenisStudio.Location = new System.Drawing.Point(162, 137);
             this.radioButtonJenisStudio.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonJenisStudio.Name = "radioButtonJenisStudio";
-            this.radioButtonJenisStudio.Size = new System.Drawing.Size(198, 38);
+            this.radioButtonJenisStudio.Size = new System.Drawing.Size(135, 27);
             this.radioButtonJenisStudio.TabIndex = 48;
             this.radioButtonJenisStudio.TabStop = true;
             this.radioButtonJenisStudio.Text = "Jenis Studio";
@@ -109,7 +109,7 @@ namespace Celikoor_Semangat18
             this.radioButtonCinema.Location = new System.Drawing.Point(32, 86);
             this.radioButtonCinema.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonCinema.Name = "radioButtonCinema";
-            this.radioButtonCinema.Size = new System.Drawing.Size(148, 38);
+            this.radioButtonCinema.Size = new System.Drawing.Size(102, 27);
             this.radioButtonCinema.TabIndex = 46;
             this.radioButtonCinema.TabStop = true;
             this.radioButtonCinema.Text = "Cinema";
@@ -186,6 +186,7 @@ namespace Celikoor_Semangat18
             this.buttonExit.TabIndex = 23;
             this.buttonExit.Text = "X";
             this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // label1
             // 
@@ -196,7 +197,7 @@ namespace Celikoor_Semangat18
             this.label1.Location = new System.Drawing.Point(19, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(278, 39);
+            this.label1.Size = new System.Drawing.Size(187, 26);
             this.label1.TabIndex = 19;
             this.label1.Text = "Halaman Admin";
             // 
@@ -208,7 +209,7 @@ namespace Celikoor_Semangat18
             this.radioButtonStudio.Location = new System.Drawing.Point(35, 137);
             this.radioButtonStudio.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonStudio.Name = "radioButtonStudio";
-            this.radioButtonStudio.Size = new System.Drawing.Size(123, 38);
+            this.radioButtonStudio.Size = new System.Drawing.Size(85, 27);
             this.radioButtonStudio.TabIndex = 47;
             this.radioButtonStudio.TabStop = true;
             this.radioButtonStudio.Text = "Studio";
@@ -243,8 +244,10 @@ namespace Celikoor_Semangat18
             this.Controls.Add(this.buttonHapus);
             this.Controls.Add(this.radioButtonStudio);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormAdminCinema";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAdminCinema";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

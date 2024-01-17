@@ -120,7 +120,7 @@ namespace Celikoor_Library
             Console.WriteLine(sql);
             Koneksi.JalankanPerintahNonQuery(sql);
         }
-        public static List<string> GetNomerkursi(Studio studios, Film films)
+        /*public static List<string> GetNomerkursi(Studio studios, Film films)
         {
             string sql = "SELECT tikets.nomor kursi, studios.id, films.judul FROM tikets " +
                 "INNER JOIN sesi_films on sesi_films.films.id = tikets.films_id and sesi_films.jadwal_film_id = tikets.jadwal_film_id and sesi_films.studios_id tikets_studios.id " +
@@ -138,7 +138,7 @@ namespace Celikoor_Library
             }
             
 
-        }
+        }*/
 
     }
 }

@@ -80,7 +80,7 @@ namespace Celikoor_Library
         public static void TambahData(Studio studios)
         {
             string perintah = "INSERT INTO studios (nama, kapasitas, jenis_studios_id, cinemas_id, harga_weekday, harga_weekend) VALUES ("+
-                $"'{studios.Id}', '{studios.kapasitas}', '{studios.jenisStudioId}', '{studios.cinemaId}', '{studios.hargaWeekday}', '{studios.hargaWeekend}');";
+                $"'{studios.Nama}', '{studios.kapasitas}', '{studios.jenisStudioId}', '{studios.cinemaId}', '{studios.hargaWeekday}', '{studios.hargaWeekend}');";
 
             Koneksi.JalankanPerintahNonQuery(perintah);
         }

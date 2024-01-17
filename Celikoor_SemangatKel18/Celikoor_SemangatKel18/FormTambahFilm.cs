@@ -102,5 +102,10 @@ namespace Celikoor_Semangat18
         {
 
         }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

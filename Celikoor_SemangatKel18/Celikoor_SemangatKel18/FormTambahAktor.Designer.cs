@@ -43,6 +43,7 @@ namespace Celikoor_Semangat18
             this.label2 = new System.Windows.Forms.Label();
             this.buttonBatal = new System.Windows.Forms.Button();
             this.buttonSimpan = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +76,7 @@ namespace Celikoor_Semangat18
             this.comboBox1.Location = new System.Drawing.Point(204, 129);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(198, 37);
+            this.comboBox1.Size = new System.Drawing.Size(198, 28);
             this.comboBox1.TabIndex = 32;
             // 
             // textBoxNegara
@@ -83,7 +84,7 @@ namespace Celikoor_Semangat18
             this.textBoxNegara.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNegara.Location = new System.Drawing.Point(204, 172);
             this.textBoxNegara.Name = "textBoxNegara";
-            this.textBoxNegara.Size = new System.Drawing.Size(198, 35);
+            this.textBoxNegara.Size = new System.Drawing.Size(198, 26);
             this.textBoxNegara.TabIndex = 21;
             // 
             // label6
@@ -92,7 +93,7 @@ namespace Celikoor_Semangat18
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(26, 162);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(157, 29);
+            this.label6.Size = new System.Drawing.Size(104, 20);
             this.label6.TabIndex = 20;
             this.label6.Text = "Negara Asal :";
             // 
@@ -102,7 +103,7 @@ namespace Celikoor_Semangat18
             this.dateTimePickerTglLahir.Location = new System.Drawing.Point(204, 88);
             this.dateTimePickerTglLahir.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePickerTglLahir.Name = "dateTimePickerTglLahir";
-            this.dateTimePickerTglLahir.Size = new System.Drawing.Size(198, 35);
+            this.dateTimePickerTglLahir.Size = new System.Drawing.Size(198, 26);
             this.dateTimePickerTglLahir.TabIndex = 19;
             // 
             // label5
@@ -111,7 +112,7 @@ namespace Celikoor_Semangat18
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(26, 123);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 29);
+            this.label5.Size = new System.Drawing.Size(71, 20);
             this.label5.TabIndex = 7;
             this.label5.Text = "Gender :";
             // 
@@ -121,7 +122,7 @@ namespace Celikoor_Semangat18
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(26, 88);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(173, 29);
+            this.label4.Size = new System.Drawing.Size(113, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "Tanggal Lahir :";
             // 
@@ -130,7 +131,7 @@ namespace Celikoor_Semangat18
             this.textBoxNama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNama.Location = new System.Drawing.Point(204, 50);
             this.textBoxNama.Name = "textBoxNama";
-            this.textBoxNama.Size = new System.Drawing.Size(198, 35);
+            this.textBoxNama.Size = new System.Drawing.Size(198, 26);
             this.textBoxNama.TabIndex = 4;
             // 
             // labelNama
@@ -139,7 +140,7 @@ namespace Celikoor_Semangat18
             this.labelNama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNama.Location = new System.Drawing.Point(26, 53);
             this.labelNama.Name = "labelNama";
-            this.labelNama.Size = new System.Drawing.Size(89, 29);
+            this.labelNama.Size = new System.Drawing.Size(59, 20);
             this.labelNama.TabIndex = 3;
             this.labelNama.Text = "Nama :";
             // 
@@ -149,7 +150,7 @@ namespace Celikoor_Semangat18
             this.textBoxId.Location = new System.Drawing.Point(204, 9);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.ReadOnly = true;
-            this.textBoxId.Size = new System.Drawing.Size(198, 35);
+            this.textBoxId.Size = new System.Drawing.Size(198, 26);
             this.textBoxId.TabIndex = 2;
             // 
             // label1
@@ -158,13 +159,13 @@ namespace Celikoor_Semangat18
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(26, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 29);
+            this.label1.Size = new System.Drawing.Size(31, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Id :";
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.DarkBlue;
+            this.label2.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(67, 23);
@@ -202,17 +203,36 @@ namespace Celikoor_Semangat18
             this.buttonSimpan.UseVisualStyleBackColor = false;
             this.buttonSimpan.Click += new System.EventHandler(this.buttonSimpan_Click);
             // 
+            // buttonExit
+            // 
+            this.buttonExit.BackColor = System.Drawing.Color.Transparent;
+            this.buttonExit.FlatAppearance.BorderSize = 0;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.ForeColor = System.Drawing.Color.Black;
+            this.buttonExit.Location = new System.Drawing.Point(480, 23);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(27, 26);
+            this.buttonExit.TabIndex = 32;
+            this.buttonExit.Text = "X";
+            this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
             // FormTambahAktor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 414);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonBatal);
             this.Controls.Add(this.buttonSimpan);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "FormTambahAktor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTambahAktor";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -236,5 +256,6 @@ namespace Celikoor_Semangat18
         private System.Windows.Forms.Button buttonBatal;
         private System.Windows.Forms.Button buttonSimpan;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button buttonExit;
     }
 }

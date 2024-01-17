@@ -433,5 +433,10 @@ namespace Celikoor_Semangat18
                 MessageBox.Show("No data available.");
             }
         }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

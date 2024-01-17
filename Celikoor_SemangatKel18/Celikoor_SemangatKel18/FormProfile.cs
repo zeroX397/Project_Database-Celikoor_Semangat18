@@ -28,5 +28,10 @@ namespace Celikoor_Semangat18
             textUsername.Text = konsumenLogin.Username_Konsumen;
             textPassword.Text = konsumenLogin.Password_Konsumen;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

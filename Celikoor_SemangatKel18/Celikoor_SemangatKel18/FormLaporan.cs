@@ -34,5 +34,15 @@ namespace Celikoor_Semangat18
             List<LaporanFilmDgnKetidakhadiran> listHasil = LaporanFilmDgnKetidakhadiran.BacaData();
             dataGridView1.DataSource = listHasil;
         }
+
+        private void buttonFilmTerlaris_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

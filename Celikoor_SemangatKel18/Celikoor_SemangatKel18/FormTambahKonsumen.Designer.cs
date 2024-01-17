@@ -47,6 +47,7 @@ namespace Celikoor_Semangat18
             this.label2 = new System.Windows.Forms.Label();
             this.buttonBatal = new System.Windows.Forms.Button();
             this.buttonSimpan = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +83,7 @@ namespace Celikoor_Semangat18
             "P"});
             this.comboBoxGender.Location = new System.Drawing.Point(269, 131);
             this.comboBoxGender.Name = "comboBoxGender";
-            this.comboBoxGender.Size = new System.Drawing.Size(198, 37);
+            this.comboBoxGender.Size = new System.Drawing.Size(198, 28);
             this.comboBoxGender.TabIndex = 39;
             // 
             // textBoxPass
@@ -90,7 +91,7 @@ namespace Celikoor_Semangat18
             this.textBoxPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPass.Location = new System.Drawing.Point(269, 234);
             this.textBoxPass.Name = "textBoxPass";
-            this.textBoxPass.Size = new System.Drawing.Size(198, 35);
+            this.textBoxPass.Size = new System.Drawing.Size(198, 26);
             this.textBoxPass.TabIndex = 28;
             // 
             // textBoxUsername
@@ -98,7 +99,7 @@ namespace Celikoor_Semangat18
             this.textBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername.Location = new System.Drawing.Point(269, 196);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(198, 35);
+            this.textBoxUsername.Size = new System.Drawing.Size(198, 26);
             this.textBoxUsername.TabIndex = 27;
             // 
             // label8
@@ -107,7 +108,7 @@ namespace Celikoor_Semangat18
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(26, 234);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(132, 29);
+            this.label8.Size = new System.Drawing.Size(86, 20);
             this.label8.TabIndex = 26;
             this.label8.Text = "Password :";
             // 
@@ -125,7 +126,7 @@ namespace Celikoor_Semangat18
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(26, 166);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(209, 29);
+            this.label7.Size = new System.Drawing.Size(135, 20);
             this.label7.TabIndex = 24;
             this.label7.Text = "Tempat,Tgl Lahir :";
             // 
@@ -135,7 +136,7 @@ namespace Celikoor_Semangat18
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(26, 202);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(136, 29);
+            this.label6.Size = new System.Drawing.Size(91, 20);
             this.label6.TabIndex = 23;
             this.label6.Text = "Username :";
             // 
@@ -144,7 +145,7 @@ namespace Celikoor_Semangat18
             this.textBoxNoHP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNoHP.Location = new System.Drawing.Point(269, 90);
             this.textBoxNoHP.Name = "textBoxNoHP";
-            this.textBoxNoHP.Size = new System.Drawing.Size(198, 35);
+            this.textBoxNoHP.Size = new System.Drawing.Size(198, 26);
             this.textBoxNoHP.TabIndex = 22;
             // 
             // labelPass
@@ -153,7 +154,7 @@ namespace Celikoor_Semangat18
             this.labelPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPass.Location = new System.Drawing.Point(26, 129);
             this.labelPass.Name = "labelPass";
-            this.labelPass.Size = new System.Drawing.Size(106, 29);
+            this.labelPass.Size = new System.Drawing.Size(71, 20);
             this.labelPass.TabIndex = 20;
             this.labelPass.Text = "Gender :";
             // 
@@ -163,7 +164,7 @@ namespace Celikoor_Semangat18
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(26, 90);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 29);
+            this.label5.Size = new System.Drawing.Size(63, 20);
             this.label5.TabIndex = 7;
             this.label5.Text = "No HP :";
             // 
@@ -172,7 +173,7 @@ namespace Celikoor_Semangat18
             this.textBoxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxEmail.Location = new System.Drawing.Point(269, 49);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(198, 35);
+            this.textBoxEmail.Size = new System.Drawing.Size(198, 26);
             this.textBoxEmail.TabIndex = 6;
             // 
             // label4
@@ -181,7 +182,7 @@ namespace Celikoor_Semangat18
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(26, 55);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 29);
+            this.label4.Size = new System.Drawing.Size(56, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "Email :";
             // 
@@ -190,7 +191,7 @@ namespace Celikoor_Semangat18
             this.textBoxNama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNama.Location = new System.Drawing.Point(269, 14);
             this.textBoxNama.Name = "textBoxNama";
-            this.textBoxNama.Size = new System.Drawing.Size(198, 35);
+            this.textBoxNama.Size = new System.Drawing.Size(198, 26);
             this.textBoxNama.TabIndex = 4;
             // 
             // label3
@@ -199,7 +200,7 @@ namespace Celikoor_Semangat18
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(26, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 29);
+            this.label3.Size = new System.Drawing.Size(63, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Nama : ";
             // 
@@ -243,17 +244,36 @@ namespace Celikoor_Semangat18
             this.buttonSimpan.UseVisualStyleBackColor = false;
             this.buttonSimpan.Click += new System.EventHandler(this.buttonSimpan_Click);
             // 
+            // buttonExit
+            // 
+            this.buttonExit.BackColor = System.Drawing.Color.Transparent;
+            this.buttonExit.FlatAppearance.BorderSize = 0;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.ForeColor = System.Drawing.Color.Black;
+            this.buttonExit.Location = new System.Drawing.Point(495, 6);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(27, 38);
+            this.buttonExit.TabIndex = 36;
+            this.buttonExit.Text = "X";
+            this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
             // FormTambahKonsumen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 460);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonSimpan);
             this.Controls.Add(this.buttonBatal);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "FormTambahKonsumen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTambahKonsumen";
             this.Load += new System.EventHandler(this.FormTambahKonsumen_Load);
             this.groupBox1.ResumeLayout(false);
@@ -282,5 +302,6 @@ namespace Celikoor_Semangat18
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBoxGender;
+        private System.Windows.Forms.Button buttonExit;
     }
 }

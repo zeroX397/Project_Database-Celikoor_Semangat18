@@ -61,7 +61,12 @@ namespace Celikoor_Semangat18
         }
         private void buttonBatal_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
