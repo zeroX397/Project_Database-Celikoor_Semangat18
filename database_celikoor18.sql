@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: kresnayangasli.my.id:12788
--- Generation Time: Dec 08, 2023 at 01:04 PM
+-- Generation Time: Jan 19, 2024 at 01:38 AM
 -- Server version: 10.9.8-MariaDB-1:10.9.8+maria~ubu2204
 -- PHP Version: 8.2.13
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `database_celikoor18`
 --
-CREATE DATABASE IF NOT EXISTS `database_celikoor18` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `database_celikoor18`;
 
 -- --------------------------------------------------------
 
@@ -67,8 +65,7 @@ INSERT INTO `aktors` (`id`, `nama`, `tgl_lahir`, `gender`, `negara_asal`) VALUES
 (23, 'Sam Worthington', '1976-08-02', 'L', 'Australia'),
 (24, 'Zoe Saldana', '1978-06-19', 'P', 'USA'),
 (25, 'Sigourney Weaver', '1949-10-08', 'L', 'USA'),
-(26, 'Stephen Lang', '1952-07-11', 'L', 'USA'),
-(27, 'xxx', '2023-12-08', 'L', 'USA');
+(26, 'Stephen Lang', '1952-07-11', 'L', 'USA');
 
 -- --------------------------------------------------------
 
@@ -87,10 +84,15 @@ CREATE TABLE `aktor_film` (
 --
 
 INSERT INTO `aktor_film` (`aktors_id`, `films_id`, `peran`) VALUES
-(7, 6, 'UTAMA'),
+(1, 1, 'PEMBANTU'),
+(1, 5, 'UTAMA'),
+(1, 6, 'UTAMA'),
+(2, 5, 'UTAMA'),
 (8, 6, 'PEMBANTU'),
+(8, 10, 'PEMBANTU'),
 (9, 6, 'FIGURAN'),
-(10, 6, 'PEMBANTU');
+(11, 5, 'FIGURAN'),
+(11, 6, 'PEMBANTU');
 
 -- --------------------------------------------------------
 
@@ -112,11 +114,15 @@ CREATE TABLE `cinemas` (
 
 INSERT INTO `cinemas` (`id`, `nama_cabang`, `alamat`, `tgl_dibuka`, `kota`) VALUES
 (1, 'Ciputra World XXI', 'Jl. Mayjen Sungkono No. 89', '2000-01-01', 'Surabaya'),
-(2, 'Delta', 'Jl. Pemuda 31-37', '2000-01-01', 'Surabaya'),
+(2, 'Delta Plaza Surabaya', 'Jl. Pemuda 31-37', '2000-01-01', 'Surabaya'),
 (3, 'Galaxy XXI', 'Jl. Dharma Husada No. 35-37', '2010-10-10', 'Surabaya'),
 (4, 'Pakuwon City XXI', 'Jl. Kejawen Putih Mutiara No. 17', '2000-01-01', 'Surabaya'),
-(5, 'Pakuwon Mall XXI', 'Jln. Puncak Indah Lontar No. 2', '2000-01-01', 'Surabaya'),
-(6, 'Tunjungan', 'Jl. Basuki Rahmat', '2023-12-05', 'Surabaya');
+(5, 'Pakuwon Mall XXI', 'Jl. Puncak Indah Lontar No. 2', '2000-01-01', 'Surabaya'),
+(6, 'Tunjungan Plaza 3', 'Jl. Basuki Rahmat 8-12', '2000-01-01', 'Surabaya'),
+(7, 'Tunjungan Plaza 5', 'Jl. Basuki Rahmat 8-12', '2000-01-01', 'Surabaya'),
+(8, 'Galaxy Mall', 'Jl. Dharma Husada No. 35-37', '2000-01-01', 'Surabaya'),
+(9, 'Lenmarc Mall', 'Jl Raya Lontar Bukit Darmo Golf', '2000-01-01', 'Surabaya'),
+(10, 'Transmart Rungkut', 'Jl. Kali Rungkut', '2000-01-01', 'Surabaya');
 
 -- --------------------------------------------------------
 
@@ -142,16 +148,17 @@ CREATE TABLE `films` (
 --
 
 INSERT INTO `films` (`id`, `judul`, `sinopsis`, `tahun`, `durasi`, `kelompoks_id`, `bahasa`, `is_sub_indo`, `cover_image`, `diskon_nominal`) VALUES
-(1, 'The Marvels', 'Kekuatan Captain Marvel (Brie Larson) ternyata terhubung dengan Ms. Marvel (Iman Vellani) dan Monica Rambeau (Teyonah Parris). Hal ini membuat ketiganya terus menerus bertukar tempat. Mereka akhirnya bertemu dan mencari tahu kenapa kekuatan mereka saling terkoneksi. Dengan ancaman baru yang datang, ketiganya memutuskan menjadi satu tim untuk menyelamatkan alam semesta sebagai The Marvels.', 2023, 105, 4, 'EN', 1, NULL, NULL),
+(1, 'The Marvels', 'Kekuatan Captain Marvel (Brie Larson) ternyata terhubung dengan Ms. Marvel (Iman Vellani) dan Monica Rambeau (Teyonah Parris). Hal ini membuat ketiganya terus menerus bertukar tempat. Mereka akhirnya bertemu dan mencari tahu kenapa kekuatan mereka saling terkoneksi. Dengan ancaman baru yang datang, ketiganya memutuskan menjadi satu tim untuk menyelamatkan alam semesta sebagai The Marvels.', 2023, 105, 4, 'EN', 1, NULL, 5000),
 (2, 'Sijjin', 'Irma (Anggika Bolsterli) jatuh cinta pada Galang (Ibrahim Risyad), sepupunya yang sudah beristri dan punya anak. Namun Irma masih terobsesi dan ingin menjadi perempuan satu-satunya di hidup Galang. Irma datang ke dukun untuk mengirim santet pada istri Galang. Sejak saat itu teror dimulai. Gangguan mistis, kesurupan, dan kematian terjadi di rumah Galang. Namun, yang tak diduga Irma, ancaman itu juga mengincar nyawanya sendiri.', 2023, 100, 5, 'ID', 1, NULL, NULL),
-(3, 'Trolls Band Together', 'Poppy (Anna Kendrick) mengetahui bahwa Branch (Justin Timberlake) pernah menjadi bagian dari boy band, BroZone, bersama saudara-saudaranya: Floyd (Troye Sivan), John Dory (Eric Andre), Spruce (Daveed Diggs), dan Clay (Kid Cudi). Namun saat Floyd diculik, Branch dan Poppy melakukan perjalanan untuk menyatukan kembali saudara-saudara lainnya dan menyelamatkan Floyd.', 2023, 91, 1, 'EN', 1, NULL, NULL),
+(3, 'Trolls Band Together', 'Poppy (Anna Kendrick) mengetahui bahwa Branch (Justin Timberlake) pernah menjadi bagian dari boy band, BroZone, bersama saudara-saudaranya: Floyd (Troye Sivan), John Dory (Eric Andre), Spruce (Daveed Diggs), dan Clay (Kid Cudi). Namun saat Floyd diculik, Branch dan Poppy melakukan perjalanan untuk menyatukan kembali saudara-saudara lainnya dan menyelamatkan Floyd.', 2023, 91, 1, 'EN', 1, NULL, 20000),
 (4, 'Panggonan Wingit', 'RAINA (Luna Maya) dan adiknya, FEY (Bianca Hello) pindah dari Jakarta ke Semarang untuk mengelola Hotel Ambar Mangun, sebuah hotel warisan ayah mereka yang tidak pernah mereka kunjungi sebelumnya dan selama ini dikelola oleh SUKTINI (Oce Permatasari) dan GARINTO (Budi Ros), nenek dan kakek mereka.\r\n\r\nSuatu malam Raina mendengar suara tangis dari lantai tiga yang dilarang dimasuki siapapun lalu ia membuka pintu sebuah kamar tak bernomor di sana. Ternyata kamar itu adalah “Panggonan Wingit”, sebuah tempat yang sudah lama dihuni oleh sosok gaib. Jika ada yang membuka kamar itu, ia akan melihat sosok wanita berkulit putih dan berambut putih yang mengatakan “Telung dino, tengah wengi” yang artinya “Tiga hari, tengah malam”, lalu tiga hari kemudian akan mati dikuliti saat tengah malam.\r\n\r\nSekarang nyawa Raina terancam. Ia bersama ARDO (Christian Sugiono) – mantan pacarnya yang seorang jurnalis – Fey, Suktini, dan Garinto mencari cara supaya bisa selamat. Misteri demi misteri yang penuh teka-teki masa lalu terkuak. Akankah mereka bisa selamat dari kematian? Waktu mereka sangat sempit.', 2023, 110, 4, 'ID', 1, NULL, NULL),
 (5, 'Aquaman and the Lost Kingdom', 'Arthur Curry (Jason Momoa) harus kembali melawan Black Manta (Yahya Abdul-Mateen II) yang sekarang semakin kuat dan menjadi ancaman besar bagi kehidupan Atlantis. Arthur terpaksa bekerja sama dengan Orm (Patrick Wilson) saudaranya sekaligus musuhnya demi nasib Atlantis.', 2023, 124, 4, 'EN', 1, NULL, NULL),
 (6, 'The Creator', 'As a future war between the human race and artificial intelligence rages on, ex-special forces agent Joshua is recruited to hunt down and kill the Creator, the elusive architect of advanced AI. The Creator has developed a mysterious weapon that has the power to end the war and all of mankind. As Joshua and his team of elite operatives venture into enemy-occupied territory, they soon discover the world-ending weapon is actually an AI in the form of a young child\r\n', 2023, 133, 4, 'EN', 1, NULL, NULL),
 (7, 'Oppenheimer', 'During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb. Their work comes to fruition on July 16, 1945, as they witness the world\'s first nuclear explosion, forever changing the course of history.', 2023, 180, 5, 'EN', 1, NULL, NULL),
 (8, 'Godzilla vs. Kong', 'King Kong is transported out of his containment zone after Godzilla resurfaces and creates mayhem. Humans need his help to reach Hollow Earth and find a way to subdue the king of the monsters.', 2021, 113, 4, 'EN', 1, NULL, NULL),
 (9, 'Avatar: The Way of Water', 'Jake Sully and Ney\'tiri have formed a family and are doing everything to stay together. However, they must leave their home and explore the regions of Pandora. When an ancient threat resurfaces, Jake must fight a difficult war against the humans.', 2022, 192, 4, 'EN', 1, NULL, NULL),
-(10, 'Happy Death Day 2U', 'Tree Gelbman is the survivor of a time loop in which she was repeatedly murdered by a sadistic killer. However, when she finds herself in the same situation again, she sets out to stop it for good.', 2019, 100, 4, 'EN', 1, NULL, NULL);
+(10, 'Happy Death Day 2U', 'Tree Gelbman is the survivor of a time loop in which she was repeatedly murdered by a sadistic killer. However, when she finds herself in the same situation again, she sets out to stop it for good.', 2019, 100, 4, 'EN', 1, NULL, NULL),
+(12, 'Moana', 'Moana, daughter of chief Tui, embarks on a journey to return the heart of goddess Te Fitti from Maui, a demigod, after the plants and the fish on her island start dying due to a blight.', 2016, 107, 1, 'EN', 1, '', 2500);
 
 -- --------------------------------------------------------
 
@@ -171,9 +178,12 @@ CREATE TABLE `film_studio` (
 INSERT INTO `film_studio` (`studios_id`, `films_id`) VALUES
 (1, 1),
 (1, 2),
+(1, 3),
+(1, 8),
 (2, 3),
 (3, 3),
-(3, 4);
+(3, 4),
+(7, 7);
 
 -- --------------------------------------------------------
 
@@ -217,8 +227,10 @@ INSERT INTO `genre_film` (`films_id`, `genres_id`) VALUES
 (1, 1),
 (2, 5),
 (3, 2),
+(4, 1),
 (4, 5),
-(5, 1);
+(5, 1),
+(7, 5);
 
 -- --------------------------------------------------------
 
@@ -235,6 +247,18 @@ CREATE TABLE `invoices` (
   `kasir_id` int(11) DEFAULT NULL,
   `status` enum('PENDING','VALIDASI','TERBAYAR') NOT NULL DEFAULT 'PENDING'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+
+--
+-- Dumping data for table `invoices`
+--
+
+INSERT INTO `invoices` (`id`, `tanggal`, `grand_total`, `diskon_nominal`, `konsumens_id`, `kasir_id`, `status`) VALUES
+(12, '2024-01-16 00:00:00', 115000, 5000, 7, NULL, 'PENDING'),
+(13, '2024-01-16 00:00:00', 115000, 5000, 7, NULL, 'PENDING'),
+(14, '2024-01-17 00:00:00', 25000, 5000, 1, NULL, 'PENDING'),
+(15, '2024-01-17 00:00:00', 145000, 5000, 7, NULL, 'PENDING'),
+(16, '2024-01-18 00:00:00', 85000, 5000, 1, NULL, 'PENDING'),
+(17, '2024-01-18 00:00:00', 25000, 5000, 1, NULL, 'PENDING');
 
 -- --------------------------------------------------------
 
@@ -262,7 +286,15 @@ INSERT INTO `jadwal_films` (`id`, `tanggal`, `jam_pemutaran`) VALUES
 (7, '2023-12-12', 'I'),
 (8, '2023-12-12', 'II'),
 (9, '2023-12-12', 'III'),
-(10, '2023-12-12', 'IV');
+(10, '2023-12-12', 'IV'),
+(13, '2024-01-15', 'I'),
+(14, '2024-01-15', 'I'),
+(15, '2024-01-15', 'I'),
+(16, '2024-01-15', 'IV'),
+(17, '2024-01-21', 'II'),
+(18, '2024-01-23', 'III'),
+(19, '2024-01-24', 'III'),
+(20, '2024-01-18', 'I');
 
 -- --------------------------------------------------------
 
@@ -306,8 +338,7 @@ INSERT INTO `kelompoks` (`id`, `nama`) VALUES
 (2, 'Prasekolah'),
 (3, 'Anak-anak'),
 (4, 'Remaja'),
-(5, 'Dewasa'),
-(6, 'xxx');
+(5, 'Dewasa');
 
 -- --------------------------------------------------------
 
@@ -332,11 +363,13 @@ CREATE TABLE `konsumens` (
 --
 
 INSERT INTO `konsumens` (`id`, `nama`, `email`, `no_hp`, `gender`, `tgl_lahir`, `saldo`, `username`, `password`) VALUES
-(1, 'Juan', 'juan@domain.com', '081234567891', 'L', '1990-10-31', 150000, 'juan1031', 'juanjuan'),
+(1, 'Juan', 'juan@domain.com', '081234567891', 'L', '1990-10-31', 40000, 'juan1031', 'juanjuan'),
 (2, 'John Smith', 'john@smith.com', '081112223334', 'L', '1990-06-03', 0, 'john36', 'johnthesmith'),
 (3, 'Diane Chen Chen', 'chen123@domain.com', '081684513654', 'P', '2000-02-16', 1250000, 'princess.chen', 'chenzilauw'),
 (4, 'Stephanie Rodriguez', 'stephan.rgz@email.com', '089756413587', 'P', '1988-05-28', 50000, 'stephan_rgz', 'rdgz28588'),
-(5, 'Jonathan Kim', 'john@kim.com', '098227576251', 'L', '1977-11-12', 450000, 'kimjo', 'kimjo2377');
+(5, 'Jonathan Kim', 'john@kim.com', '098227576251', 'L', '1977-11-12', 450000, 'a', 'kimjo2377'),
+(7, 'kdjsbdj', 'nnsdknds', '979', 'P', '2024-01-12', 9625000, 'a', 'a'),
+(10, 'Windah', 'windah@email.com', '081234567890', 'L', '1945-08-06', 0, 'bocil', 'kematian');
 
 -- --------------------------------------------------------
 
@@ -363,7 +396,7 @@ INSERT INTO `pegawais` (`id`, `nama`, `email`, `username`, `password`, `roles`) 
 (3, 'Farhan Kebab', 'farhan@farhankebab.com', 'kebabenak', 'yafarhankebab', 'OPERATOR'),
 (4, 'Dita Leni', 'dita@leni.com', 'dita77', 'ditalenirafia', 'KASIR'),
 (5, 'Ryan', 'ryan@email.com', 'ryan', 'ryan', 'ADMIN'),
-(6, 'Lisa', 'lisa@lisa.com', 'lisaa', 'rahasia', 'ADMIN');
+(7, 'Ipin', 'upin@ipin.com', 'ipin', 'betul3kali', 'KASIR');
 
 -- --------------------------------------------------------
 
@@ -376,6 +409,19 @@ CREATE TABLE `sesi_films` (
   `studios_id` int(11) NOT NULL,
   `films_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+
+--
+-- Dumping data for table `sesi_films`
+--
+
+INSERT INTO `sesi_films` (`jadwal_film_id`, `studios_id`, `films_id`) VALUES
+(1, 1, 1),
+(15, 3, 3),
+(16, 3, 3),
+(17, 3, 3),
+(18, 1, 2),
+(19, 7, 7),
+(20, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -407,7 +453,12 @@ INSERT INTO `studios` (`id`, `nama`, `kapasitas`, `jenis_studios_id`, `cinemas_i
 (7, 'II', 84, 1, 3, 40000, 50000),
 (8, 'I', 84, 4, 5, 100000, 150000),
 (9, 'I', 72, 2, 5, 55000, 65000),
-(10, 'I', 84, 3, 1, 30000, 35000);
+(10, 'III', 84, 3, 1, 30000, 35000),
+(12, 'IV', 48, 2, 7, 55000, 80000),
+(13, 'IV', 52, 4, 9, 40000, 55000),
+(14, 'IV', 60, 1, 6, 35000, 40000),
+(15, 'II', 60, 1, 4, 35000, 50000),
+(16, 'II', 60, 1, 10, 35000, 50000);
 
 -- --------------------------------------------------------
 
@@ -419,12 +470,35 @@ CREATE TABLE `tikets` (
   `invoices_id` int(11) NOT NULL,
   `nomor_kursi` varchar(3) NOT NULL,
   `status_hadir` tinyint(4) DEFAULT NULL,
-  `operator_id` int(11) NOT NULL,
+  `operator_id` int(11) DEFAULT NULL,
   `harga` double NOT NULL,
   `jadwal_film_id` int(11) NOT NULL,
   `studios_id` int(11) NOT NULL,
   `films_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+
+--
+-- Dumping data for table `tikets`
+--
+
+INSERT INTO `tikets` (`invoices_id`, `nomor_kursi`, `status_hadir`, `operator_id`, `harga`, `jadwal_film_id`, `studios_id`, `films_id`) VALUES
+(12, 'B17', 1, 5, 30000, 1, 1, 1),
+(12, 'B18', 1, 5, 30000, 1, 1, 1),
+(12, 'B19', 1, 5, 30000, 1, 1, 1),
+(12, 'B20', 0, NULL, 30000, 1, 1, 1),
+(13, 'A01', 1, 5, 30000, 1, 1, 1),
+(13, 'A06', 1, 5, 30000, 1, 1, 1),
+(13, 'C04', 1, 2, 30000, 1, 1, 1),
+(13, 'C07', 0, NULL, 30000, 1, 1, 1),
+(15, 'B01', 1, 5, 30000, 1, 1, 1),
+(15, 'B02', 1, 5, 30000, 1, 1, 1),
+(15, 'B03', 0, NULL, 30000, 1, 1, 1),
+(15, 'B04', 0, NULL, 30000, 1, 1, 1),
+(15, 'B08', 0, NULL, 30000, 1, 1, 1),
+(16, 'A05', 0, NULL, 30000, 1, 1, 1),
+(16, 'A08', 0, NULL, 30000, 1, 1, 1),
+(16, 'A09', 0, NULL, 30000, 1, 1, 1),
+(17, 'B12', 0, NULL, 30000, 1, 1, 1);
 
 --
 -- Indexes for dumped tables
@@ -550,67 +624,67 @@ ALTER TABLE `tikets`
 -- AUTO_INCREMENT for table `aktors`
 --
 ALTER TABLE `aktors`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `cinemas`
 --
 ALTER TABLE `cinemas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `films`
 --
 ALTER TABLE `films`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `genres`
 --
 ALTER TABLE `genres`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `invoices`
 --
 ALTER TABLE `invoices`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `jadwal_films`
 --
 ALTER TABLE `jadwal_films`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `jenis_studios`
 --
 ALTER TABLE `jenis_studios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `kelompoks`
 --
 ALTER TABLE `kelompoks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `konsumens`
 --
 ALTER TABLE `konsumens`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `pegawais`
 --
 ALTER TABLE `pegawais`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `studios`
 --
 ALTER TABLE `studios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Constraints for dumped tables

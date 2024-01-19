@@ -72,6 +72,12 @@ namespace Celikoor_Library
         #endregion
 
         #region METHODS
+        public int HitungUsia()
+        {
+            int usia = DateTime.Now.Year - Ttl_Konsumen.Year;
+            return usia;
+        }
+
         public static void TambahData(Konsumen obj)
         {
             string sql = "INSERT INTO konsumens(nama, email, no_hp, gender, tgl_lahir, saldo, username, password) " + 
@@ -101,46 +107,53 @@ namespace Celikoor_Library
             Console.WriteLine(sql);
             Koneksi.JalankanPerintahNonQuery(sql);
         }
-
-
         public static List<Konsumen> BacaData(string kriteria = "", string nilaiKriteria = "")
         {
-            string sql;
-            if (kriteria == "")
+            try
             {
-                sql = "SELECT * from konsumens";
-            }
-            else
-            {
-                sql = "SELECT * from konsumens" + "WHERE " + kriteria + " LIKE '%" + nilaiKriteria + "%'";
-            }
-            MySqlDataReader result = Koneksi.JalankanPerintahSelect(sql);
-            List<Konsumen> userList = new List<Konsumen>();
+                if (HitungUsia() < 12)
+                {
+                    string sql;
+                    if (kriteria == "")
+                    {
+                        sql = "SELECT * from konsumens";
+                    }
+                    else
+                    {
+                        sql = "SELECT * from konsumens WHERE " + kriteria + " LIKE '%" + nilaiKriteria + "%'";
+                    }
+                    MySqlDataReader result = Koneksi.JalankanPerintahSelect(sql);
+                    List<Konsumen> userList = new List<Konsumen>();
 
-            while (result.Read() == true)
-            {
-                Konsumen tmp = new Konsumen();
-                tmp.Id_Konsumen = int.Parse(result.GetValue(0).ToString());
-                tmp.Nama_Konsumen = result.GetValue(1).ToString();
-                tmp.Email_Konsumen = result.GetValue(2).ToString();
-                tmp.NoHP_Konsumen = result.GetValue(3).ToString();
-                tmp.Gender_Konsumen = result.GetValue(4).ToString();
-                tmp.Ttl_Konsumen = DateTime.Parse(result.GetValue(5).ToString());
-                tmp.Saldo_Konsumen = int.Parse(result.GetValue(6).ToString());
-                tmp.Username_Konsumen = result.GetValue(7).ToString();
-                tmp.Password_Konsumen = result.GetValue(8).ToString();
-                userList.Add(tmp);
+                    while (result.Read() == true)
+                    {
+                        Konsumen tmp = new Konsumen();
+                        tmp.Id_Konsumen = int.Parse(result.GetValue(0).ToString());
+                        tmp.Nama_Konsumen = result.GetValue(1).ToString();
+                        tmp.Email_Konsumen = result.GetValue(2).ToString();
+                        tmp.NoHP_Konsumen = result.GetValue(3).ToString();
+                        tmp.Gender_Konsumen = result.GetValue(4).ToString();
+                        tmp.Ttl_Konsumen = DateTime.Parse(result.GetValue(5).ToString());
+                        tmp.Saldo_Konsumen = int.Parse(result.GetValue(6).ToString());
+                        tmp.Username_Konsumen = result.GetValue(7).ToString();
+                        tmp.Password_Konsumen = result.GetValue(8).ToString();
+                        userList.Add(tmp);
+                    }
+                    return userList;
+                }
+                return null;
             }
-            return userList;
+            catch (Exception ex)
+            {
+                throw new ArgumentException("Error: " + ex.Message);
+            }
         }
-
         public static void HapusData(string KodeHapus)
         {   //susun perintah query
             string perintah = "delete from konsumens where id='" + KodeHapus + "';";
 
             Koneksi.JalankanPerintahNonQuery(perintah); //kirim ke command
         }
-
         public static Konsumen Login(string username, string password)
         {
             string sql = "SELECT * FROM konsumens ";
@@ -159,7 +172,6 @@ namespace Celikoor_Library
             Konsumen konsumenHasil = new Konsumen();
             if (hasil.Read() == true)
             {
-
                 konsumenHasil.Id_Konsumen = hasil.GetInt32(0);
                 konsumenHasil.Nama_Konsumen = hasil.GetValue(1).ToString();
                 konsumenHasil.Email_Konsumen = hasil.GetValue(2).ToString();
@@ -172,12 +184,9 @@ namespace Celikoor_Library
                 Console.WriteLine("Nama Konsumen:" + konsumenHasil.nama_Konsumen);
                 Console.WriteLine("Email Konsumen:" + konsumenHasil.email_Konsumen);
                 return konsumenHasil;
-
             }
             return null;
         }
-
         #endregion
-
     }
 }
